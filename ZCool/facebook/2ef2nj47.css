@@ -1,0 +1,94 @@
+/*    HTTP Host:  b.static.ak.fbcdn.net                                        */
+/*    Generated:  December 22nd 2009 10:05:43 AM PST                           */
+/*      Machine:  10.16.140.109                                                */
+/*       Source:  Global Cache                                                 */
+/*     Location:  css/6d896xvvmmsc0sso.pkg.css h:2ef2nj47                      */
+/*       Locale:  nu_ll                                                        */
+/*         Path:  css/6d896xvvmmsc0sso.pkg.css                                 */
+
+#attachment_buttons_list{clear:both}
+#attachment_buttons_list label{float:left;display:block;padding:6px 4px;color:#666}
+#attachment_buttons_list .empty_item{padding:6px 0 0 4px}
+#attachment_buttons_list .attachment_link{float:left}
+#attachment_buttons_list .attachment_link a{display:block;margin:2px;white-space:nowrap;cursor:pointer}
+#attachment_buttons_list .attachment_link a span{display:block;padding:4px 6px 4px 24px;background-repeat:no-repeat;background-position:5% 3px}
+#attachment_buttons_list .attachment_link a:hover{color:#444;margin:1px;border:1px solid #a9a9a9;background:#f1f1f1 url(/rsrc.php/z1LTZ/hash/eu9ojh1u.gif) repeat-x top left}
+.attachment_dialog .generic_dialog_popup{width:500px}
+.attachment_view_wrapper{display:none;margin:6px 0 8px 0}
+.attachment_edit_loading,
+.attachment_view_loading{display:none;background:url(/rsrc.php/zBS5C/hash/7hwy7at6.gif) center no-repeat;clear:both;padding:6px 0}
+.attachment_view_container{float:left;padding-bottom:6px}
+.attachment_view_loading{padding-bottom:0}
+.attachment_remove{font-size:10px;text-align:right;padding-bottom:3px}
+.attachment_edit .attachment_stage{background:white;border:0 none}
+.attachment_edit .attachment_stage_area{padding:0}
+.attachment_edit .attachment_stage_area .share_a_link .inputtext{width:300px}
+.attachment_edit .attachment_stage .has_image .summary_wrap{width:334px}
+.attachment_view{width:378px}
+.attachment_view .attachment_stage .has_image .summary_wrap{width:243px}
+.attachment_stage .UIStoryAttachment_MediaSingle{padding-right:5px}
+.attachment_view .attached_item{background:white;border:1px solid #bdc7d8;padding:6px;margin-top:0}
+.attached_item{margin:10px 0 0;padding:0 0 0 7px;border-left:2px solid #e0e0e0;overflow:hidden}
+.attached_item.no_text,
+.attached_item_info.no_text{margin-top:0}
+div.attachment_info{clear:both;color:#666;font-size:10px;padding:8px 0 3px 0}
+div.attachment_info span{padding:3px 0 2px 21px;background-repeat:no-repeat;background-position:center left}
+#attachment_more_menu{float:left;margin-top:3px}
+#attachment_more_menu #attachment_more_link{padding:1px 5px 3px 13px;color:#3b5998;display:inline-block;border:1px solid #fff;background:url(/rsrc.php/z58JV/hash/5pfa3ppg.gif) no-repeat left 1px}
+#attachment_more_menu #attachment_more_link:hover,
+#attachment_more_menu #attachment_more_link.active,
+#attachment_more_menu #attachment_more_link.active:hover{color:#fff;cursor:pointer;background-color:#5c75aa;background-position:left -15px;text-decoration:none}
+#attachment_more_menu #attachment_more_link.active,
+#attachment_more_menu #attachment_more_link.active:hover{border:1px solid #3b5998}
+#attachment_more_menu #wall_attachment_more_menu{padding:5px 0;position:absolute;top:18px;left:0;background:white;border:solid 1px #3b5998}
+#attachment_more_menu #wall_attachment_more_menu a{display:block;color:#3b5998;width:112px;padding:3px 5px 3px 7px}
+#attachment_more_menu #wall_attachment_more_menu a:hover{text-decoration:none;background:#5c75aa;color:#fff;cursor:pointer}
+#wall_attachment_more_menu{width:128px}
+#wall_attachment_more_menu .menu_content{padding:5px 0}
+#wall_attachment_more_menu a:hover
+.attachment_more_menu_option_icon{background-position:top left}
+#wall_attachment_more_menu
+.attachment_more_menu_option_icon{float:left;width:16px;line-height:16px;background-position:-16px 0;background-repeat:no-repeat}
+#wall_attachment_more_menu
+.attachment_more_menu_option_text{float:left;display:block;text-align:left;padding-left:6px}
+html>body .attachment_compact .wall_video_thumb .play{*margin-top:-22px;*padding-bottom:3px}
+.sidebar{padding-right:176px;overflow:hidden;background:#fff url(/rsrc.php/z43O5/hash/4gnmxnl7.gif) repeat-y top right}
+.sidebar.other_side{padding-left:176px;padding-right:0;background:#fff url(/rsrc.php/zBLNJ/hash/5m86itcs.gif) repeat-y top left}
+.sidebar .content_frame{float:left;width:100%;margin-right:-176px;padding-right:176px}
+.sidebar .content_frame.other_side{float:right;margin-left:-176px;margin-right:0;padding-left:176px;border-right:none}
+.sidebar .sidebar_frame{float:left;width:176px;margin-right:-176px}
+.sidebar .sidebar_frame.other_side{float:right;margin-left:-176px;margin-right:0}
+.sidebar .sidebar_frame .panel{padding:10px 10px 10px 11px}
+.UIObjectListing{border-bottom:1px solid #eee;min-height:50px;padding:2px 0}
+.UIObjectListing_Pic{float:left;width:50px;height:50px;position:relative;overflow:hidden}
+.UIObjectListing_PicPadding .UIObjectListing_Pic{padding-left:5px}
+.UIObjectListing_MetaData{float:left;padding-left:10px;padding-top:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#FriendsPage_Container .UIObjectListing_MetaData{width:300px}
+#FriendsPage_Container .UIObjectListing_RightContent{width:200px}
+.UIObjectListing_MetaDataSecondary{overflow:hidden;text-overflow:ellipsis}
+.UIObjectListing_Title{font-size:14px;font-weight:bold}
+.UIObjectListing_TitleNormal .UIObjectListing_Title{font-weight:normal}
+.UIObjectListing_Subtext{color:#666}
+.UIObjectListing_Padding{padding-right:5px}
+.UIObjectListing_RightContent{float:right}
+.ff2 .UIObjectListing_RightContent{float:none}
+.UIObjectListing_ActionContainer{float:right;white-space:nowrap;padding-top:13px;padding-right:19px}
+.UIObjectListing_HasRemoveControl .UIObjectListing_ActionContainer{padding-right:8px;border-right:1px solid #e7e7e7;height:27px;padding-top:4px;margin-top:10px}
+.UIObjectListing_RemoveContainer{float:right;padding-right:19px;padding-top:16px;padding-left:8px}
+.UIObjectListing_RemoveLink{background:transparent url(/rsrc.php/z3NUO/hash/5up5g102.gif) no-repeat top left;width:18px;height:18px;display:block}
+.UIObjectListing_RemoveLink:hover{text-decoration:none;background-position:top right}
+.tooltip_lock{margin-left:4px}
+.tooltip{position:absolute;z-index:4;overflow:hidden;display:none}
+.tooltip_right_center{background:transparent url(/rsrc.php/zDX0M/hash/5ot5kxah.gif) 0 center no-repeat;padding-left:4px}
+.tooltip_top_center{background:transparent url(/rsrc.php/zDEWE/hash/2vrzx50l.gif) bottom center no-repeat;padding-bottom:4px}
+.tooltip_bottom_center{background:transparent url(/rsrc.php/z713H/hash/b8c5la4e.gif) top center no-repeat;padding-top:4px}
+.tooltip_left_center{background:transparent url(/rsrc.php/z972M/hash/5xk50m1d.gif) right center no-repeat;padding-right:4px}
+.tooltip_inner{margin:0;padding:4px 8px;font-size:12px;color:#fff;background-color:#282828;overflow:hidden;max-width:215px}
+.UIToolbarWell_Content{overflow:hidden;padding:0 6px}
+.UIToolbarWell_MainContent{height:23px;padding:6px 0}
+.UIToolbarWell_Left{text-align:left;float:left}
+.UIToolbarWell_Right{float:right;text-align:right}
+.UIToolbarWell_Left .UIToolbarWell_Button .UIButton{margin-right:6px}
+.UIToolbarWell_SecondaryContent{border-top:1px solid #d7d7d7;padding:5px 0}
+
+#bootloader_css_6d896xvvmmsc0sso_pkg_css { height: 42px; }

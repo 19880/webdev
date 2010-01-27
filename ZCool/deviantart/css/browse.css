@@ -1,0 +1,745 @@
+/*
+ *  © 2000-2009 deviantART, Inc. All rights reserved.
+ */
+/* TODO: Merge into mudkip.css after launch */
+
+.shopBrowse .browse2 #catBar {
+    height: 37px !important;
+}
+
+div#shopCatBarDesc {
+    height: 100%;
+    width:170px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 6px 5px 0px 10px;
+}
+
+div#shopCatBarDesc h1 {
+    line-height:50px;
+    margin:0px 0 0 12px;
+}
+
+div#shopCattab {
+    margin: -8px -15px -20px 155px;
+    padding:9px 10px 0;
+    height: 34px;
+    background: url(/browse/cattab.png?1) repeat-x;
+    border-bottom: 1px solid #b3b3b3;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #9eb1a2;
+    position: relative;
+    overflow: hidden;
+}
+
+div#shopCattab h1#prodName {
+    color: #000;
+    font-size: 18pt;
+    font-style: bold;
+    float: left;
+}
+div#shopCattab #smallDesc {
+    color: #000;
+    line-height: 30px;
+    margin-left: 15px;
+    margin-right: 235px;
+    display: inline-block;
+    z-index: 5;
+}
+div#shopCattab #expandButton {
+    color: #337287;
+    line-height: 30px;
+    margin-left: 8px;
+}
+#couchImg {
+    background: transparent url('/browse/couch.png') no-repeat;
+    height: 111px;
+    width: 157px;
+    position: absolute;
+    right: 140px;
+    top: -69px;
+    z-index: 4;
+}
+#searchForm .form {
+    z-index: 5;
+}
+input.cartButton {
+    background: transparent url(/browse/devwear/devwear-darkcart.gif?2) no-repeat;
+    height: 29px;
+    width: 120px;
+    border: none;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 5;
+}
+input.checkoutButton {
+    background: transparent url(/browse/devwear/devwear-darkcheckout.gif?2) no-repeat;
+    height: 29px;
+    width: 120px;
+    border: none;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 5;
+}
+input.cartButton:hover,
+input.checkoutButton:hover {
+    background-position: 0px -29px;
+}
+input.cartButton:active,
+input.checkoutButton:active {
+    background-position: 0px -58px;
+}
+div#glitzExpander {
+    background-color: #b2c5ae;
+    position: relative;
+}
+.devwearBrowse div#glitzExpander {
+    background-color: #222722;
+    color: white;
+    border-bottom: 1px solid #9eb1a2;
+    border-top: 1px solid #414541;
+}
+
+#output div.bubbleview div.browse2 .devwearCatbar {
+    background:#040404 url(/browse/devwear/devwear-logo-sprites.gif) repeat-x -1px 0;
+    border-top: none;
+    height: 39px !important;
+    position: relative;
+    overflow: visible !important;
+}
+#output div.bubbleview div.browse2 .devwearCatbar #devwearLogo {
+    position: absolute;
+    left:0;
+    top: 0;
+    background:url(/browse/devwear/devwear-logo-sprites.gif) no-repeat 0 -46px;
+    height:40px;
+    width: 164px;
+}
+#output div.bubbleview div.browse2 .devwearCatbar #contentArea {
+    margin-left: 150px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+}
+#output div.bubbleview div.browse2 .devwearCatbar #contentArea input.cartButton,
+#output div.bubbleview div.browse2 .devwearCatbar #contentArea input.checkoutButton {
+    top: 2px;
+}
+
+#output div.bubbleview div.browse2 .devwearCatbar #contentArea h2 {
+    line-height: 40px;
+    font-size:15pt;
+    line-height:36px;
+    color: #727272;
+    display: inline-block;
+}
+#output div.bubbleview div.browse2 .devwearCatbar #contentArea h2.bannertext {
+    margin-left: 20px;
+}
+#output div.bubbleview div.browse2 .devwearCatbar #contentArea h2.subcat {
+    color: #cdf402;
+}
+#output div.bubbleview div.browse2 .devwearCatbar #contentArea #productFont {
+    position: absolute;
+    top: -7px;
+    left: 0px;
+    width: 297px;
+    height: 46px;
+    background: transparent url('/browse/devwear/devwear-products.gif?1') no-repeat;
+}
+.devwearCatbar #smallDesc {
+    color: #c2c2c2;
+    line-height: 32px;
+    margin-left: 170px;
+    margin-right: 255px;
+    display: inline-block;
+    font-size: 17pt;
+    z-index: 5;
+}
+.devwearCatbar #expandButton {
+    color: white;
+    margin-left: 8px;
+    font-size: 9pt;
+}
+#shirtImg {
+    background: transparent url('/browse/devwear/devwear-tee.gif?1') no-repeat;
+    height: 120px;
+    width: 192px;
+    position: absolute;
+    right: 125px;
+    bottom: 0px;
+    z-index: 4;
+}
+
+*html #shirtImg {
+    bottom: 1px;
+}
+
+.productShot1{
+    border: 2px solid #c2c2c2;
+    float: left;
+    margin-right: 18px;
+}
+
+
+div#shopCatBarDesc span.catTitle a ,
+div#shopCatBarDesc span.catTitle a {
+    color:#2c3635;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.6);
+    font-family:trebuchet ms;
+    font-size:18pt;
+    font-size-adjust:none;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:bold;
+    letter-spacing:-0.05em;
+    line-height:normal;
+}
+
+span.histogramCount {
+    color:#728776;
+    font-size:0.9em;
+    padding-left:3px;
+}
+
+div.facetTagIcon {
+    width: 25px;
+    height: 20px;
+    float: left;
+    margin: -2px 0px 0px 0px;
+}
+div.facetTagHist {
+    display: none;
+    width: 15px;
+    height: 10px;
+    float: left;
+    margin: 2px 4px 0px -10px;
+    background: url(/browse/histogram_bars.png?1) no-repeat;
+    background: url(/browse/histogram_bars.png/3.png) no-repeat;
+}
+div.facetTagTitle {
+    /*margin-left: 10px;*/
+}
+
+/* Facet Area */
+
+div.browseFacet {
+    background: #d3dfd1 url(/browse/pickle_gradients.png?1) repeat-x 0px 0px; 
+    border-top:1px solid #EFF3EF;
+}
+
+/* SLIDING-MENU */
+.non-sliding-menu,
+.sliding-menu {
+    border-bottom: 1px solid #9eb1a2;
+    border-top: 1px solid #dce4d9;
+}
+
+.non-sliding-menu .noncollapseHeader, 
+.sliding-menu .noncollapseHeader, 
+.sliding-menu .collapseHeader {
+    color:#2C3635;
+    cursor:text;
+    display:block;
+    font-family:tahoma,verdana,sans-serif;
+    font-size:1.1em;
+    letter-spacing:1px;
+    margin: 5px 0 2px;
+    padding:0px 0 2px 13px;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+
+}
+.sliding-menu .noncollapseHeader, 
+.sliding-menu .collapseHeader {
+    position: relative;
+    background-color: #C5D3C2;
+    z-index: 5;
+}
+.sliding-menu ul,
+.sliding-menu li,
+.sliding-menu a.more,
+.sliding-menu li a {
+    background-image: none;
+}
+
+.non-sliding-menu li {
+    display: inline; /* for IE */
+    clear: left;
+}
+.non-sliding-menu li.active,
+.non-sliding-menu ul li a.selected,
+.sliding-menu li.active,
+.sliding-menu ul li a.selected,
+#categories-menu ul li a.selected,
+#categories-menu ul .selected {
+    color:#B0623E;
+    background-color: transparent;
+    text-decoration:none;
+    background-image: none;
+    font-weight: bold;
+}
+.non-sliding-menu li.active a,
+.non-sliding-menu ul li a.selected a,
+.sliding-menu li.active a,
+.sliding-menu ul li a.selected a,
+#categories-menu ul .selected a{
+    color: #2c3635;
+    background-color: none;
+    font-weight: bold;
+    background-image: none;
+}
+.non-sliding-menu .hover, 
+.sliding-menu .hover, 
+.non-sliding-menu ul a:hover,
+.sliding-menu ul a:hover,
+#categories-menu ul a:hover {
+    background-color:#D6E1D2;
+    background-image: none;
+    background-color:#C2CCC2;
+    background-position:right -100px;
+    cursor:pointer;
+}
+
+.sliding-menu .hover, 
+.non-sliding-menu .hover, 
+.sliding-menu ul a.selected:hover,
+.non-sliding-menu ul a.selected:hover {
+    background-color:#C5D3C2;
+}
+.sliding-menu ul ul a,
+.non-sliding-menu ul ul a {
+    padding-left:16px;
+}
+.sliding-menu ul a,
+.non-sliding-menu ul a {
+    color:#337287;
+    display:block;
+    padding:4px 15px 4px 8px;
+    text-decoration:none !important;
+}
+.non-sliding-menu * {
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin:0;
+}
+.sliding-menu ,
+.non-sliding-menu {
+    font-family:Verdana;
+    font-size:11px;
+}
+.sliding-menu, .sliding-menu ul,
+.non-sliding-menu, .non-sliding-menu ul {
+    margin:0;
+    width:170px;
+    padding: 0 0 4px 0;
+}
+
+
+/* Navbar */
+#browseNavbar {
+    z-index: 10;
+    width: 100%;
+    height: 25px;
+    background: #d3dfd1 url(/browse/pickle_gradients.png?1) repeat-x 0px 0px; 
+    background-color: #dbe4da;
+    border-bottom: 1px solid #9eb1a2;
+    border-top: 1px solid #eff3ef;
+}
+#browseNavbar div.age-range {
+    top: 0px;
+    margin-top: 0px;
+    margin-right: 5px;
+}
+#browseNavbar div a {
+    text-decoration: none;
+}
+#popularTimeranges div.switcher a.selected,
+#browseNavbar div.age-range div.switcher span {
+    color: #b0623e;
+}
+
+div.navbarLeft {
+    height: 20px
+    width: 250px;
+    margin: 3px 10px 0px 5px;
+    float: left;
+}
+#navbarLeftShop.navbarLeft {
+    width: 315px;
+}
+
+div.navbarLeft .tabInactive {
+    color:#337287;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.6);
+}
+div.navbarLeft .tabActive {
+    color:#B0623E;
+    font-weight:bold;
+    text-shadow:0 1px 0 rgba(255, 255, 255, 0.9);
+}
+div.navbarLeft .tabActive,
+div.navbarLeft .tabInactive {
+    margin: 0px 10px 0px 5px;
+    text-decoration:none;
+    letter-spacing:-0.5px;
+}
+span.tabInactive {
+    cursor: pointer;
+}
+
+
+
+/* shop Notice */
+
+#output div.bubbleview #deviantwear-blog td.shopNotices {
+    padding: 15px;
+    background-color: #c5d3c2;
+    border-color:#9EB1A2;
+    border-style:solid;
+    border-width:0 0 1px 1px;
+}
+
+
+div#shopNotice {
+    z-index: 5;
+    background-color:#C5D3C2;
+    border-color:#9EB1A2;
+    border-style:solid;
+    border-width:0 0 1px 1px;
+    float:right;
+    padding:15px 15px 30px;
+    margin: -48px 14px 20px 15px;
+}
+div#noticeEmailSignup {
+    width: 180px;
+    text-align: left;
+}
+div#noticeEmailSignup h2 {
+    color: #C74B17;
+    margin-bottom: 5px;
+}
+div#noticeEmailSignup input {
+    margin: 5px 0;
+}
+
+/* displayStream */
+
+div.gr_display_stream {
+    overflow: hidden;
+    margin: 10px 30px;
+}
+
+div.displayStream {
+    height: 170px;
+}
+
+div.gr_display_stream div.artistDisplayStream {
+    height: 230px;
+}
+
+div.displayStream div.headLabel {
+    height: 20px;
+    text-align: center;
+}
+div.displayStream div.headLabel h2 {
+    color: #2c3635;
+    font-size: 14pt;
+}
+
+div.displayStream div.dw-frame {
+    display: inline-block;
+    margin: 10px 20px 100px;
+    text-align: left;
+}
+
+div.displayStream div.dw-frame h4 {
+    font-size: 12pt;
+}
+
+div.devwearDisplayStream h2 {
+    font-size: 22px;
+    text-transform:uppercase;
+}
+
+
+
+
+/* Thumb Area */
+#browse2 {
+    background-color: #ccd9c8;
+}
+div.browse2-results #critiqueBrowser div.stream {
+    min-height: 225px !important;
+}
+#critiqueBrowser {
+    padding: 0px 20px;
+    text-align: left;
+}
+div.streamHeader {
+    text-align: left;
+    padding: 10px 30px;
+}
+div#featureBlurb {
+    background-color:#2A3737;
+    color:#DAE4D9;
+    float:right;
+    height:120px;
+    margin:20px 10px 0px;
+    padding:10px;
+    text-align:left;
+    width:40%;
+}
+div#browseStreamHead {
+    background-color:#DAE4D9;
+    border-bottom:1px solid #9EB1A2;
+    border-top:1px solid #EFF3EF;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+
+div#heybox {
+    border-bottom: 1px solid #eff3ef;
+}
+div#heyboxContents {
+    padding: 0px 10px 4px;
+    background-color:#C5D3C2;
+    border-bottom: 1px solid #9eb1a2;
+}
+div#heyboxShadow {
+    background: url('/minish/widgets/pickle_sprite.gif?1') repeat-x;
+    height: 10px;
+    width: 100%;
+}
+.sitbackButton .large {
+    background: url('/minish/widgets/pickle_sprite.gif?1') no-repeat -40px -17px;
+    height:29px;
+    width:30px;
+}
+div.bubbleview div.shop-tt a.t {
+    color: #337287;
+    font-size: 13px;
+}
+div.bubbleview div.shop-tt a.auth {
+    color: #2c3635;
+    font-size: 11px;
+}
+div.bubbleview div.shop-tt a.cat {
+    color: #728776;
+    font-size: 11px;
+}
+div.bubbleview div.shop-tt .moreLikeThis {
+    background: transparent url(/browse/morelikethissprite.gif) no-repeat;
+    width: 98px;
+    height: 22px;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.bubbleview div.shop-tt .moreLikeThis:hover {
+    background-position: 0px -21px;
+}
+div.bubbleview div.shop-tt .moreLikeThis:active {
+    background-position: 0px -42px;
+}
+
+/* Navigation elements */
+span.active24, span.active60, span.active120, span.active22, span.inactive24, 
+span.inactive60, span.inactive120, span.inactive22 {
+    background-image: url('/browse/browse-picklejuice.gif');
+}
+div.bubbleview div.nav span.shadow span {
+    background-color: #C5D3C2;
+    border-color:#9EB1A2;
+}
+#catbutton, a.catbutton, a.custobutton, a.frontbutton, a.feedbutton, a.replybutton, a.moodbutton {
+    background-image: url(/browse/hubblebuttons-picklejuice.gif);
+}
+
+
+/* Wayback */
+#wayback-menu td.highlighted {
+    color:#B0623E;
+    font-weight: bold;
+}
+#wayback-menu td.regular {
+    color:#337287;
+}
+#wayback-menu table span.dropdown {
+    color:#B0623E;
+}
+#wayback-menu table td.day {
+    cursor: pointer;
+}
+#wayback-menu table td.jsSelected {
+    background-color:#B0623E;
+    color:#D3DFD1;
+    font-weight: bold;
+}
+
+/* Shop modules */
+#shopZoneTable {
+    width: 100%;
+    padding: 0;
+    border-spacing: 0px;
+    border: none;
+}
+#shopZoneTable tr {
+    padding: 0;
+}
+#shopZoneTable td {
+    vertical-align: top;
+    padding: 0;
+}
+#shopZoneTable td.halfColumn {
+    width: 50%;
+}
+#shopZoneTable div.gr-top {
+    display: none;
+}
+div.shopZone{
+    padding: 0px 15px;
+}
+#shopZoneTable td.leftColumn div.shopZone {
+    padding-top: 15px;
+    padding-right: 7px;
+}
+#shopZoneTable td.rightColumn div.shopZone {
+    padding-top: 15px;
+    padding-left: 7px;
+}
+#shopZoneTable div.ppp {
+    background-color: #e1ebe2;
+}
+div.noBox {
+    padding: 0px;
+    margin: 0px -15px;
+}
+
+/* shopStream Module */
+div.shopstream {
+    text-align: center;
+    height: 400px;
+}
+div.holdingArea {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 15px auto;
+}
+div.activeHoldingArea,
+div.inactiveHoldingArea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+/* need to allow shop modules to overflow their container */
+.shopModuleBrowse .browse2-right {
+    overflow: visible !important;
+}
+
+
+/* Devwear */
+
+#deviantwear-blog .dw-frame {
+    display: inline-block;
+    float: none;
+}
+*html #deviantwear-blog .dw-frame {
+    display: inline;
+}
+#deviantwear-blog .dw-frame h2 {
+    text-align: left;
+}
+
+div.stopFingInlining {
+    float: none !important;
+    display: inline-block !important;
+    text-align: center !important;
+}
+
+#prev-next-links #goNext {
+    margin-left: 3px;
+}
+
+/* Artist Info */
+#artistInfo {
+    height: 50px;
+    padding: 10px;
+    background: url(/browse/pickle_gradients.png) repeat-x 0px -200px;
+    border-top: 1px solid #D1DCCE;
+    border-bottom: 1px solid #8CA191;
+}
+#artistInfo > a {
+    float: left;
+}
+#artistInfo div.useridentity {
+    float: left;
+    margin-left: 10px;
+    width: 300px;
+    color: #192021;
+    font-size: 13px;
+}
+#artistInfo div.useridentity h3 a, 
+#artistInfo div.useridentity h3 {
+    color: #192021;
+    font-size: 26px;
+}
+#artistInfo div.userdata {
+    float: left;
+    width: 300px;
+    border-left: 1px dotted #192021;
+    padding: 10px;
+    height: 30px;
+}
+
+#newButton {
+    width: 25px;
+    height: 25px;
+    background: url(/browse/newbut.gif?1) no-repeat;
+    position: absolute;
+    top: 48px;
+    left: -15px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+div.homepage div.dw-blog {
+    margin: 11px 0px 30px;
+}
+div.homepage div.dw-frame {
+    margin: 4px 10px 0px 0;
+    position: relative;
+}
+div.homepage div.dw-frame h3 {
+    position: absolute;
+    background-color: black;
+    top: 3px;
+    left: 3px;
+    width: auto;
+    display: inline;
+    color: #CEF502;
+    z-index: 11;
+    padding: 4px;
+}
+div.homepage div.dw-frame span {
+    display: none;
+}
+.devwearBrowse .f1 .pppp {
+    padding-right: 0;
+}
+
+#devwearLogo {
+    cursor: pointer;
+}
+

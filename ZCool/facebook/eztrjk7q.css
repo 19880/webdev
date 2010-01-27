@@ -1,0 +1,287 @@
+/*    HTTP Host:  static.ak.fbcdn.net                                          */
+/*    Generated:  December 23rd 2009 3:44:14 PM PST                            */
+/*      Machine:  10.16.140.106                                                */
+/*       Source:  Global Cache                                                 */
+/*     Location:  css/3i7vakhlzbqcg84c.pkg.css h:eztrjk7q                      */
+/*       Locale:  nu_ll                                                        */
+/*         Path:  css/3i7vakhlzbqcg84c.pkg.css                                 */
+
+.GBControlHeader{overflow:hidden;padding:5px 6px 5px;clear:both}
+.GBControlHeader .GBSelectList{color:#808080;float:left;font-weight:bold;padding:2px 0}
+.GBControlHeader .GBSelectList a{font-weight:normal}
+.GBControlHeader .GBTabset{float:right}
+.GBToolbarSearch .UIWell{border:none;background:none}
+.GBToolbarSearch .UIToolbarWell_Content{padding:1px 0 0}
+.GBSearchBox_Input{background-color:#fff;border:1px solid #777;border-right:none;float:left;width:125px}
+.GBSearchBox_Input input{border-width:0;font-size:12px;padding:2px 4px 1px;*padding:2px 4px;width:109px}
+.ff2 .GBSearchBox_Input input{padding:3px 4px 4px}
+.ff3 .GBSearchBox_Input input{padding:3px 4px}
+.GBSearchBox_Input input.typeahead_found{background-color:#fff}
+.GBSearchBox_Input input:focus{outline:0}
+.GBSearchBox_Submit{border:1px solid #777;border-left:none;float:left}
+.GBSearchBox_SubmitLink{border-left:1px solid #e6e6e6;display:block;width:22px}
+a.GBSearchBox_SubmitLink:hover{text-decoration:none}
+.GBSearchBox_Button{background:white url(cfaa4veq.png) no-repeat scroll center center;display:block;padding:4px 4px 3px}
+.ff2 .GBSearchBox_Button{padding:3px 4px 4px}
+.ff3 .GBSearchBox_Button{padding-bottom:2px}
+.GBTabset{font-weight:bold;overflow:hidden}
+.GBTabset_Label{color:#808080;float:left;padding:2px 8px 2px}
+.GBTabset_Pill,
+.GBTabset_Pill span,
+.GBTabset_Pill span span,
+.GBTabset_Pill span span span{float:left;background-position:left top}
+.GBTabset_Pill span{background-position:right top}
+.GBTabset_Pill span span{background-position:right bottom}
+.GBTabset_Pill span span span{background-position:left bottom;padding:2px 8px}
+.GBTabset .selected,
+.GBTabset .selected span,
+.GBTabset .selected span span,
+.GBTabset .selected span span span{background-image:url(7x0yx3gz.gif);color:#fff}
+.GBTabset .selected:hover{text-decoration:none}
+.GBUndoAction_notification_text{font-weight:bold}
+.GBUndoAction_link{margin-left:6px}
+.ThreadListWrapper{min-height:300px;margin-bottom:10px}
+.ThreadListFallback{line-height:300px;text-align:center}
+.message div.attachment_info{padding-bottom:6px}
+#compose_message .attached_item,
+.message .attached_item{width:367px}
+.message_attachment .note_with_thumb .excerpt .textual{width:195px}
+.message_attachment .event_has_photo .event_info{width:220px}
+.message_attachment .ad_body{width:189px}
+.message_attachment .mp3player .has_artwork .info_and_player{width:225px}
+.message_attachment .mp3player .has_artwork .info_field span{width:170px}
+.message_attachment .mp3player .no_artwork .info_field span{width:280px}
+.message_attachment .textual .metadata .summary{padding-bottom:2px;color:#777}
+.message_attachment .swfvideo .textual .metadata{width:200px}
+.message_attachment .video_for_share{padding:0}
+.message_attachment .fb_photo .photo_thumb,
+.message_attachment .share_ext_photo .has_thumb .extra{float:none;padding-left:0}
+.message_attachment .fb_photo .photo_thumb,
+.message_attachment .share_ext_photo .share_thumb{width:360px}
+.sharebox .set_divider{border-top:1px solid #ccc;margin:0}
+.sharebox #content{padding:0}
+.sharebox .media_header .inputtext{margin:0 7px}
+.tab_bar{padding:12px 10px 0 10px}
+.sharer_bar{text-align:left}
+.sharer_bar .inputtext{margin:0 0 10px 0;width:170px;direction:ltr}
+.sharebox .empty_message{background:white;font-size:14px}
+.sharebox .empty_message .empty_sharer{background:#f7f7f7;padding:10px;text-align:center;border:1px solid #ccc;margin-top:10px}
+.sharebox .empty_message .empty_sharer #u{width:300px;margin-right:5px}
+.sharebox .empty_message .empty_sharer .inputsubmit{height:21px}
+.sharebox .sharebox_dialog{padding:0 0 15px 0}
+.sharebox .sharebox_dialog .status{margin:0}
+.thread .status{margin:10px 10px 0}
+.sharebox .sharebox_dialog #error{margin:0}
+.sharebox .share_help_dialog ul{padding:3px 0 0 0;line-height:16px}
+.sharebox .post_actions{padding:6px 20px 5px;background:#f7f7f7;border-top:solid 1px #b7b7b7;border-bottom:solid 1px #ccc}
+.sharebox .sharebox_item{padding:0 0 20px}
+.sharebox_item{clear:both;padding:10px 20px 30px 20px}
+.share_owner_thumb{float:left;padding:0 0 10px 0;text-align:left;width:58px}
+.share_owner_thumb .user_picture{float:left;margin-right:10px;overflow:hidden;height:40px;width:40px}
+.share_owner_thumb img{display:block}
+.sharebox .share_contents{width:480px}
+.share_contents{float:left;width:365px}
+.no_thumb .share_contents{float:none;width:auto}
+.share_contents .share_header{background-color:#f7f7f7;border-bottom:1px solid #d8dfea;border-top:1px solid #3b5998;padding:4px 5px 2px 5px}
+.share_contents .share_header .shareicon{float:left;padding-right:8px;margin-bottom:8px}
+.share_contents .share_header .main_line{padding:0 0 2px 0}
+.share_contents .share_header .sub_line{font-size:10px;padding:0 0 1px 0}
+.share_contents .share_header a.owner{font-weight:bold}
+.share_contents .share_header .share_and_hide{float:right;margin:1px 0 0 5px}
+.share_contents .share_media{padding:8px 5px}
+.sharebox .summary_bar{border-bottom:0;border-top:1px solid #d8dfea;padding:4px 0 8px 5px}
+.sharebox .posted_side_column{padding:0 10px}
+.sharebox .posted_side_column .sidecolumn_module{padding:10px 0}
+.sharebox .posted_side_column .sidecolumn_module h2{margin:0;padding:0 0 5px 0;font-size:12px}
+.sharebox .posted_side_column .sidecolumn_module .friend_select select{margin-top:5px;width:178px}
+.accessibility_instructions{display:none}
+.sharebox .divider{border-bottom:solid 1px #fff;border-top:solid 1px #ddd;clear:both;height:0;margin:0}
+.sharebox .divider hr{display:none}
+.sharebox #syndication_sidebar{padding-left:0}
+.sharebox #share_button p{margin:5px 0 0 0}
+.sharebox #share_button label{display:block;padding:0 0 4px 0}
+.sharebox #share_button .share_bookmarklet a{background:#999;border:1px solid #999;color:#fff;display:block;float:left;font-weight:bold;padding:2px 4px}
+.sharebox #share_button .share_bookmarklet a:hover{text-decoration:none}
+.sharebox #share_button_dialog{background:white;border:1px solid #ccc;color:#000;padding:8px}
+.sharebox .footer_bar{background:white;clear:both}
+.share_options #content, .share_help #content, .share_partners #content{padding:0}
+.share_options .frame, .share_partners .frame{padding:20px}
+.share_help .frame{padding:0 15px 15px;margin-bottom:10px;background:#fff}
+.share_options #content h2 a, .share_partners #content h2 a, .share_help h2 a{margin-left:8px;font-weight:normal;font-size:12px}
+.share_options .steps{float:left;margin-top:8px;width:390px}
+.share_options .protip{border:1px solid #eee;background:#f7f7f7;padding:5px 8px;margin:12px 0 10px;width:155px;float:right}
+.share_options .paragraphs{float:left;margin:0 0 10px 0}
+.share_options .images{text-align:left;margin-right:8px}
+.share_options p{margin:0 0 10px 0}
+.share_options .step1, .share_options .step2{padding:10px 0 0 0}
+.share_options .step1{border-bottom:1px solid #d8dfea}
+.share_options .step1 .paragraphs{width:250px}
+.share_options .step1 .images{float:left;padding:7px 0 7px 0;width:125px}
+.share_options .step1 .images .arrow{margin:0 5px 0 0;float:right}
+.share_options .step2 .paragraphs{width:155px}
+.share_options .step2 .images{float:left;margin-top:-5px;width:220px}
+.share_help h3, .share_partners h3{padding:20px 0 5px;border-bottom:1px solid #d8dfea;font-size:13px;font-weight:bold;clear:both}
+.share_partners h3.sharepro_header{border-bottom:0;padding-bottom:0}
+.share_partners h3{font-size:14px;padding:0 0 5px 0}
+.share_partners h4{margin:0;padding:10px 0 3px 2px;font-size:13px;color:#444;border-bottom:1px solid #d8dfea}
+.share_partners .sample_button{padding:10px 0}
+.share_partners .button_preview{float:left;padding:3px 0 0 5px}
+.share_partners .code_block{float:right;width:510px;padding:2px 3px 3px;font-size:12px;background:#fff;margin-right:7px;border:1px solid #ccc;color:#555}
+.share_partners h5{margin:10px 0 5px;color:#666}
+.share_partners .advanced_code_block{margin-bottom:10px;padding:6px 10px;border:1px solid #dedede;background:#fff}
+.share_partners .share_section{margin-bottom:35px}
+#sharepro_wizard{padding-left:0}
+#sharepro_wizard .options{width:430px}
+#sharepro_wizard .preview_container{width:200px}
+#sharepro_wizard ol{padding-left:20px}
+#sharepro_code{height:7em}
+a.share_button_browser_link:hover{text-decoration:none}
+.share_button_browser div{background-repeat:no-repeat;text-align:center;white-space:nowrap}
+.share_button_browser div div{background-position:top right}
+.share_button_browser div div div{background-position:bottom right}
+.share_button_browser div div div div{background-position:bottom left;padding:1px 3px}
+.share_button_safari_mac div,
+.share_button_safari_win div{background-image:url(/rsrc.php/z6IQK/hash/804e16ek.png);color:#fff;font-weight:bold;text-shadow:.1em .1em .2em black
+}
+.share_button_ff_mac div{background-image:url(/rsrc.php/z6JMB/hash/44azt49m.png);color:#fff;font-weight:bold}
+.share_button_ie_win div{background-image:url(/rsrc.php/zBHA7/hash/83vornc3.gif);height:1%}
+.share_button_ff_win div{background-image:url(/rsrc.php/z24DT/hash/ce0pqaro.png)}
+.share_button_ie_win div div div div,
+.share_button_ff_win div div div div{color:#000;padding:5px 23px 6px;text-align:left}
+.share_button_ff_linux div div div div{background:#eee;border:1px solid #b0b0b0;border-top:1px solid white;border-left:1px solid white;color:#000;padding:4px}
+.share_button_ff_linux div div div{border:1px solid black;border-top:0;border-left:0}
+html > body #shareitems .share_and_hide{*width:60px}
+html > body #shareitems .x_to_hide{*float:right}
+.GBThreadMessageRow{border-top:1px solid #ddd;margin:0 0 8px;padding:8px 0 0 0;overflow:hidden}
+.GBThreadMessageRow_Image{position:relative;height:50px;width:50px;margin-right:10px;float:left}
+.GBThreadMessageRow_Info{margin-bottom:4px}
+.GBThreadMessageRow_AuthorLink_Wrapper{font-size:14px;font-weight:bold;color:#333}
+.GBThreadMessageRow_Date{color:#777;font-size:12px;margin-bottom:4px}
+.GBThreadMessageRow_ReportLink{color:#777;font-size:12px;margin-bottom:4px}
+.GBThreadMessageRow_Body{color:#333;width:460px;float:left;overflow:hidden;font-size:14px}
+.GBThreadMessageRow_ReferrerLink{margin:10px 0 0 0;font-size:10px;color:#777}
+.GBThreadMessageRow_Body_Attachment{font-size:12px}
+.GBThreadMessageRow .UIStoryAttachment_MediaSingle{padding:0 10px 10px 0}
+.GBThreadMessageRow .attached_photo{border:1px solid #ccc;display:-moz-inline-box;display:inline-block;line-height:0;padding:2px;zoom:1;*display:inline}
+.GBThreadMessageRow .attached_photo:hover{border-color:#999}
+.GBThreadMessageRow .share_button{padding:2px 0}
+.GBThreadMessage_PhotoDialog .dialog_body{text-align:center}
+.GBThreadRow_Inaccessible table{display:none}
+.GBThreadRow_Inaccessible .GBThreadRow_InaccessibleWarning{color:#ddd;cursor:default;font-weight:bold;margin:21px 0 0 260px}
+.GBThreadRow{border-top:1px solid #e5e5e5;height:56px;overflow:hidden;position:relative}
+.GBThreadRow_NoBorder{border-top:0}
+.GBThreadRow table{border-collapse:collapse;width:100%}
+.GBThreadRow .line{color:#3b5998;font-size:12px}
+.GBThreadRow_Hover .subject{text-decoration:underline}
+.GBThreadRow_HoverBlocker .subject{text-decoration:none}
+.GBThreadRow .unread{background-color:#eceef4}
+.GBThreadRow .unread .subject{font-weight:bold}
+.GBThreadRow tr{height:56px;vertical-align:middle}
+.GBThreadRow td.checkbox{text-align:center;width:25px}
+.ie6 .GBThreadRow td.checkbox,
+.ie7 .GBThreadRow td.checkbox{padding-top:1px;vertical-align:top}
+.GBThreadRow td.checkbox label{cursor:default;display:table-cell;height:50px;width:25px}
+.GBThreadRow td.checkbox input{height:50px;margin:0;vertical-align:middle}
+.GBThreadRow td.badge_column,
+.GBThreadRow a.badge{width:17px}
+.GBThreadRow a.badge,
+.GBFolder_Sent .GBThreadRow a.badge{background:url(ebqvjyrq.png) no-repeat -570px -170px;cursor:pointer;display:block;height:55px}
+.GBThreadRow .replied a.badge,
+.GBFolder_Sent .GBThreadRow .replied a.badge:hover{background-position:-588px -170px}
+.GBThreadRow .unread a.badge,
+.GBThreadRow .unread a.badge:hover,
+.GBFolder_Sent .GBThreadRow .unread a.badge:hover{background-position:-606px -170px;cursor:pointer}
+.GBThreadRow a.badge:hover{background-position:-624px -170px}
+.GBFolder_Sent .GBThreadRow a.badge:hover{cursor:default;background-position:-570px -170px}
+.GBThreadRow td.icon{width:50px}
+.GBThreadRow td.attachment{width:18px}
+.GBThreadRow .envelope{padding-left:5px;width:150px}
+.GBThreadRow .thread_detail{padding-left:10px}
+.GBThreadRow div.Thread_Icon{float:left;position:relative;height:50px;width:50px;margin:3px 3px 3px 0}
+.ie7 .GBThreadRow div.Thread_Icon{margin:0}
+.GBThreadRow .tagline{color:#808080}
+.GBThreadRow .date{font-size:10px}
+.GBThreadRow .delete_button{float:right;margin:0 7px}
+.UIButtonStrip{margin-right:7px}
+.UIButtonStrip .UIButtonStrip_Wrapper{margin-right:-1px}
+.UIButtonStrip .UIButtonStrip_EnabledToDisabled{margin-right:0}
+.UIButtonStrip .UIButtonStrip_DisabledFromEnabled .UIActionButton{border-left:none}
+.UINestedFilterList{padding-top:6px}
+.UINestedFilterList_Item,
+.UINestedFilterList_SubItem{position:relative;width:150px}
+.UINestedFilterList_Item{border-bottom:1px solid #d6d9de}
+.UINestedFilterList_SubList .UINestedFilterList_SubItem .UINestedFilterList_SubItem_Link{padding-left:10px}
+.UINestedFilterList_Item_SubList{display:none}
+.UINestedFilterList_Item_SubList_Open{display:inline}
+.ie6 .UINestedFilterList_Item_SubList_Open,
+.ie7 .UINestedFilterList_Item_SubList_Open{display:inline-block}
+.UINestedFilterList_Item_Contents{position:relative}
+.UINestedFilterList_Item_Link:hover,
+.UINestedFilterList_SubItem_Link:hover,
+.UINestedFilterList_SubSelected .UINestedFilterList_Item_Link:hover,
+.UINestedFilterList_CollapseLink:hover{background-color:#eceef4;border-color:#eceef4;text-decoration:none}
+.UINestedFilterList_Item_Link,
+.UINestedFilterList_SubItem_Link{border:1px solid white;display:block;height:23px;overflow:hidden;padding:0 2px;position:relative}
+.UINestedFilterList_SubItem_Link{background-position:0 1000px;background-color:#f2f2f2;border-color:#f2f2f2}
+.UINestedFilterList_Selected .UINestedFilterList_Item_Link,
+.UINestedFilterList_Selected .UINestedFilterList_Item_Link:hover,
+.UINestedFilterList_SubItem_Selected .UINestedFilterList_SubItem_Link{background-color:#6d84b4;border-color:#3b5998;margin-top:-1px;padding:0 2px;height:24px}
+.UINestedFilterList_SubSelected .UINestedFilterList_Item_Link{background-color:#f2f2f2;border-color:#f2f2f2}
+.UINestedFilterList_Icon{float:left;width:16px;height:16px;margin:3px 1px 0 2px}
+.UINestedFilterList_Selected .UINestedFilterList_Icon,
+.UINestedFilterList_SubItem_Selected .UINestedFilterList_Icon{margin-top:4px}
+.UINestedFilterList_IconNonSprite{background-position:top right;background-repeat:no-repeat}
+.UINestedFilterList_Selected .UINestedFilterList_Icon,
+.UINestedFilterList_Selected .UINestedFilterList_IconNonSprite,
+.UINestedFilterList_SubItem_Selected .UINestedFilterList_IconNonSprite{background-position:top left}
+.UINestedFilterList_Item_CloseLinkWrapper{display:block;padding:6px;position:absolute;top:0;right:0}
+.UINestedFilterList_Item_CloseLink_Icon{background:url(/rsrc.php/z574F/hash/38fffwed.gif) no-repeat;display:block;width:13px;height:14px}
+.UINestedFilterList_Selected .UINestedFilterList_Item_CloseLink_Icon{background-position:right top}
+.UINestedFilterList_Item_CloseLink_Icon:hover{background:url(/rsrc.php/zD93Q/hash/6aqv88j2.gif) no-repeat}
+.UINestedFilterList_Title{color:#333;display:block;float:left;padding:5px 5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:112px}
+.UINestedFilterList_Item_hasCloseLink .UINestedFilterList_Title{width:97px}
+.UINestedFilterList_SubItem .UINestedFilterList_Title{padding:4px 0 0 5px}
+.UINestedFilterList_SubItem_Selected .UINestedFilterList_Title{padding:0 0 0 5px}
+.UINestedFilterList_Selected .UINestedFilterList_Title,
+.UINestedFilterList_SubItem_Selected .UINestedFilterList_Title{color:#fff;padding-top:5px}
+.UINestedFilterList .BubbleCount{position:absolute;top:5px;right:7px}
+.UINestedFilterList_Selected .BubbleCount,
+.UINestedFilterList_Selected .UINestedFilterList_Item_Link:hover .BubbleCount{color:#8497bf;background-position:0 0}
+.UINestedFilterList_Selected .BubbleCount .BubbleCount_Right,
+.UINestedFilterList_Selected .UINestedFilterList_Item_Link:hover .BubbleCount .BubbleCount_Right{background-position:0 -14px}
+.UINestedFilterList_Item_Link:hover .BubbleCount{background-position:0 -56px}
+.UINestedFilterList_Item_Link:hover .BubbleCount .BubbleCount_Right{background-position:0 -70px}
+.UINestedFilterList_ItemRight{position:absolute;top:0;right:0;display:block;width:3px;height:27px;z-index:0}
+.UINestedFilterList_Icon,
+.UINestedFilterList_Title,
+.BubbleCount{z-index:1}
+.UINestedFilterList_SubItem_Collapsed{display:none}
+.UINestedFilterList_SubList_Footer{display:inline;background:#f7f7f7}
+.UINestedFilterList_CollapseLink{display:block;background:#f7f7f7;overflow:hidden;padding:3px 2px 3px 15px}
+.UINestedFilterList_CollapseIcon{background:transparent url(/rsrc.php/zAWC2/hash/d7fdlh61.gif) top left no-repeat;display:inline-block;width:9px;height:6px;margin:0 2px}
+.UINestedFilterList_CollapseLinkHide .UINestedFilterList_CollapseIcon{background-position:left -6px}
+.ie6 .UINestedFilterList_SubList .UINestedFilterList_CollapseLinkMore .UINestedFilterList_CollapseIcon{background-position:left 7px;position:relative;bottom:2px}
+.ie6 .UINestedFilterList_SubList .UINestedFilterList_CollapseLinkHide .UINestedFilterList_CollapseIcon{position:relative;top:5px}
+#gigaboxx_wrapper{visibility:hidden}
+.GigaboxxContent{min-height:100px}
+#gigaboxx_wrapper .UIToolbarWell .GBSearchBox{float:left}
+#gigaboxx_wrapper .UIToolbarWell .GBTabset{padding-top:7px;padding-right:7px}
+#gigaboxx_wrapper .UIToolbarWell .GBToolbarDivider{border-color:#d6d6d6;border-left:0;cursor:default;height:19px;padding:0;vertical-align:top}
+.gigaboxx_error{margin:10px 10px 200px;display:block;text-align:center;padding:50px;background-color:#ffebe8;border:solid 2px #dd3c10}
+#gigaboxx_wrapper .UIWell{margin-bottom:7px}
+.GigaboxxContent.async_saving{background:url(/rsrc.php/zBS5C/hash/7hwy7at6.gif) no-repeat scroll 382px 10px
+}
+#gigaboxx_wrapper #safety_dialog_message{margin-bottom:10px}
+#gigaboxx_wrapper #sidebar_ads{padding-top:8px}
+#gigaboxx_wrapper #gb_muffin_area{display:none;float:right}
+#gb_content_and_toolbar{float:left;width:780px}
+.gb_has_muffin #gb_content_and_toolbar{width:585px}
+.message_pane{padding:0 8px}
+.gigaboxx_thread_header{display:block;overflow:hidden;margin:0 0 1px 0;padding:5px 20px 5px 0;border-bottom:1px solid #b3b3b3}
+.gigaboxx_thread_header_subject{display:block;font-size:16px;color:#333}
+.gigaboxx_thread_header_authors{display:block;font-size:12px;color:#555;padding:3px 0}
+.gigaboxx_thread_branch_message{font-size:12px;background-color:#fffbe2;border:1px solid #ffe222;padding:10px;margin:15px 0}
+.gigaboxx_thread_hidden_messages{background-color:#edeff4;border:1px solid #d4dae8;font-size:12px;font-weight:normal;margin:15px 0 15px}
+.gigaboxx_thread_hidden_messages a{background:url(/rsrc.php/zBCCR/hash/bax863jk.gif) no-repeat 15px 15px;display:block;padding:10px 15px 10px 30px}
+
+#bootloader_css_3i7vakhlzbqcg84c_pkg_css { height: 42px; }

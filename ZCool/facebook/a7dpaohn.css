@@ -1,0 +1,72 @@
+/*    HTTP Host:  b.static.ak.fbcdn.net                                        */
+/*    Generated:  January 6th 2010 5:26:53 PM PST                              */
+/*      Machine:  10.16.140.102                                                */
+/*       Source:  Backing Store                                                */
+/*     Location:  css/5w99uvqbpukgw4oo.pkg.css h:a7dpaohn                      */
+/*       Locale:  nu_ll                                                        */
+/*         Path:  css/5w99uvqbpukgw4oo.pkg.css                                 */
+
+.UITwoColumnLayout_Container{margin:0}
+.UITwoColumnLayout_Content{float:left}
+.UITwoColumnLayout_NarrowContent{float:right}
+.UITwoColumnLayout_LeftOrientation .UITwoColumnLayout_Content{float:right}
+.UITwoColumnLayout_LeftOrientation .UITwoColumnLayout_NarrowContent{float:left}
+.UITwoColumnLayout_TopMargin{padding:17px 0 0 0}
+.UIEditorTwoColumnLayout .UITwoColumnLayout_Content{padding:19px 0 15px 0}
+.UIEditorTwoColumnLayout .UITwoColumnLayout_NarrowContent{padding:11px 0 11px 0}
+.UIThreeColumnLayout_Container{margin:0}
+.UIThreeColumnLayout_Left{float:left;padding-right:20px}
+.UIThreeColumnLayout_Center{float:left}
+.UIThreeColumnLayout_Right{float:right}
+.friend_guesses.list{background:#f3f7ff;padding:2px 0 4px}
+.friend_guesses.list h2{margin:0;padding:6px 12px 5px}
+.friend_guesses.list p{margin:2px 0 0 0;padding:5px 12px 5px}
+.friend_guesses.list .fguess{background:#fff;border:solid #ccc 1px;margin:8px;padding:8px}
+.friend_guesses.list .fguess img{float:left;margin-right:8px}
+.friend_guesses.list .fguess .fg_name{font-size:12px;font-weight:bold}
+.friend_guesses.list .fguess .fg_mutual{display:block;margin-top:4px}
+.friend_guesses.list .fguess .inactive{color:#666}
+.friend_grid .friend_grid_row{margin:10px 0 5px}
+.friend_grid .friend_grid_col{margin-left:10px;float:left;width:174px;overflow:hidden}
+.friend_grid form.async_saving{opacity:.50;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter:alpha(opacity=50)}
+.friend_grid .friend_grid_col .fg_img{float:left;width:50px;margin:0;padding:0}
+.friend_grid .friend_grid_col .fg_name{font-size:12px;font-weight:bold;margin:0 0 1px 0;line-height:14px}
+.friend_grid .friend_grid_col .fg_explain{line-height:14px;padding:0;margin:2px 0 1px 0;color:#777}
+.friend_grid .friend_grid_col .fg_action_add{margin-top:2px}
+.friend_grid .friend_grid_col .fg_action_add .button_img{margin-top:-1px}
+.friend_grid .friend_grid_col .fg_action_add button.as_link{padding-top:1px;vertical-align:top}
+.friend_grid .friend_grid_col .fg_action_add button.as_link span{display:inline;vertical-align:top}
+.friend_grid .friend_grid_col .fg_action_add .inactive{color:#666}
+.friend_grid .friend_grid_col .fg_action_add_icon .UIImageBlock_ICON_Image{margin-top:1px;margin-right:6px}
+.friend_grid .friend_grid_col .fg_action_hide{display:block;font-size:0;line-height:0;border-width:0;width:11px;height:13px;padding:0;margin:1px 2px 0 6px;text-indent:-5000px;background:transparent url(ebqvjyrq.png) no-repeat -869px -65px}
+.friend_grid .friend_grid_col .fg_action_hide:hover{background-position:-857px -65px;background-color:#3b5998;text-decoration:none}
+.pymk_participants_not_expanded .pymk_participants_long,
+.pymk_participants_expanded .pymk_participants_short{display:none}
+.UITitledBox{overflow:hidden}
+.UITitledBox_Top{border-bottom:1px solid #ccc;overflow:hidden;padding:0 0 3px;vertical-align:bottom}
+.UITitledBox_TitleBar .UITitle{float:left}
+.UITitledBox_SubTitle{float:right}
+div.UIHomeBox{margin-bottom:20px}
+.UIHomeBox .UITitledBox_Top{padding:0 0 4px}
+.UIHomeBox .UITitledBox_Content{margin-top:6px}
+.UIHomeBox_More{float:right}
+.UIHomeBox_Loading{float:right;display:none}
+.UIHomeBox_Next{padding-left:4px}
+.UIHomeBox_Previous{padding-right:4px}
+.UIHomeBox_Initial .UIHomeBox_Previous{display:none}
+.UIRequestBox_Request{display:block;margin-top:4px}
+.UIRequestBox_RequestFirst{margin-top:-1px}
+.UIRequestBox_Short .UIRequestBox_Request{float:left;width:125px}
+.UIRequestBox_Short .UIRequestBox_RequestOdd{clear:left}
+.UIRequestBox_Short .UIRequestBox_RequestSecond{margin-top:-1px}
+.fbx .UIRequestBox_Short .UIRequestBox_RequestSecond{margin-top:4px}
+.UIMessageBox{padding:10px;border-width:1px;border-style:solid}
+.UIMessageBox .sub_message{margin:4px 0 0}
+.status{background-color:#fff9d7;border-color:#e2c822}
+.error{background-color:#ffebe8;border-color:#dd3c10}
+.error a{color:#dd3c10}
+.explanation_note{background-color:#fff;border-color:#bdc7d8}
+.explanation_note .main_message{font-size:12px}
+.explanation_note a{color:#dd3c10}
+
+#bootloader_css_5w99uvqbpukgw4oo_pkg_css { height: 42px; }
