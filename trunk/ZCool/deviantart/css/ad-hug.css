@@ -1,0 +1,1595 @@
+/*
+ *  © 2000-2009 deviantART, Inc. All rights reserved.
+ */
+/*
+@@require cssms/chrome/ads.css
+*/
+
+div.banner-cco div.ch i.c i,
+div.banner-cco div.ch div.ch-ctrl {
+    border-color:#000;
+}
+div.banner-cco div.ch div.ch-ctrl {
+    background:#263985 url(http://st.deviantart.com/minish/promos/ads/companyco.jpg?1) no-repeat center;
+}
+div.banner-cco div.sleekadfooter {
+    display:none
+}
+
+div.banner-white div.ch div.ch-ctrl {
+    background:#FFF !important;
+}
+div.square-white {
+    background:#FFF !important;
+}
+
+/*
+@@require cssms/chrome/ads.css
+*/
+
+div.journal-banner {
+    position: inherit;
+}
+div.journal-banner div.ch {
+    margin: 0 0 8px 0;
+    background: #728776;
+    color: #cbd6c9;
+}
+div.journal-banner div.ch div.ch-ctrl {
+    padding-bottom:1px;
+    padding-top:1px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background-repeat: repeat-x;
+}
+div.journal-banner table {
+    border-collapse: collapse !important;
+}
+div.journal-banner table tr, 
+div.journal-banner table td {
+    padding:0;
+    margin: 0;
+}
+div.journal-banner div.sleekadfooter,
+div.journal-banner .subbyCloseX {
+    display:none
+}
+div.journal-banner i.c {
+    display: block;
+}
+div.journal-ad-banner {
+    text-align: center;
+}
+div.journal-ad-banner div.bannerText {
+    padding-top: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+div.journal-top-banner div.journal-ad-banner {
+    width:468px;
+    height:50px;
+}
+div.journal-bottom-banner div.journal-ad-banner {
+    width:468px;
+    height:30px;
+}
+div.journal-bottom-banner div.ch,
+div.journal-bottom-banner div.ch div.ch-ctrl {
+    margin-left: 0;
+    margin-right: 0;
+}
+div.journal-bottom-banner div.ch div.ch-ctrl {
+    height: 32px !important;
+    background-position: 0 -9px;
+}
+div.journal-bottom-banner div.ch div.ch-ctrl div.journal-ad-banner {
+    margin-top:-9px;
+}
+div.journal-bottom-banner div.ch i.tr,
+div.journal-bottom-banner div.ch i.br,
+div.journal-bottom-banner div.ch i.tl,
+div.journal-bottom-banner div.ch i.bl {
+    display:none;
+}
+div.journal-banner i {
+    border-color: #728776;
+}
+div.journal-info-banner {
+    background: #E9F1ED;
+    color: #2C3635;
+    height: 23px;
+    padding-top: 7px;
+    text-align: center;
+}
+
+/* Universal Pictures Ad Hug */
+div.square-9dvd {background: url(http://st.deviantart.com/minish/hugs/9dvd_300x250.gif) no-repeat center;}
+div.square-9dvd div.sleekadfooter,
+div.square-9dvd .subbyCloseX {visibility: hidden;}
+
+/* banner */
+
+div.banner-9dvd div.ch i.c i,
+div.banner-9dvd div.ch i.c b{display:none;}
+div.banner-9dvd div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-9dvd div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/generic_728x90_left.gif) !important;
+}
+
+div.banner-9dvd div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/generic_728x90_right.gif) !important;
+}
+
+div.banner-9dvd div.ch i.bl {
+    display:none;
+}
+
+div.banner-9dvd div.ch i.br {
+    display:none;
+}
+
+div.banner-9dvd div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/generic_728x90_middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-9dvd div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-9dvd div.sleekadfooter {
+    width:140px;
+    height:34px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/9dvd_728x90.gif) no-repeat center;
+}
+
+div.banner-9dvd div.sleekadfooter a,
+div.banner-9dvd div.sleekadfooter div.promo-text,
+div.banner-9dvd .subbyCloseX,
+div.banner-9dvd i.c {display:none}
+
+/* square */
+
+div.square-adobe {background: url(http://st.deviantart.com/minish/hugs/adobe300x250bg.gif) no-repeat center;}
+div.square-adobe div.sleekadfooter {visibility: hidden;}
+div.square-adobe .subbyCloseX{visibility: hidden;}
+
+/* banner */
+
+div.banner-adobe div.ch i.c i,
+div.banner-adobe div.ch i.c b{display:none;}
+div.banner-adobe div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-adobe div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-adobe div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-adobe div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-adobe div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-adobe div.sleekadfooter {
+    width:133px;
+    height:34px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/adobe728x90text.gif) no-repeat center;
+}
+
+div.banner-adobe div.sleekadfooter a,
+div.banner-adobe div.sleekadfooter div.promo-text,
+div.banner-adobe .subbyCloseX,
+div.banner-adobe i.c {display:none}
+
+/* square */
+
+div.square-aioca {background: url(http://st.deviantart.com/minish/hugs/aioca_300x250.gif) no-repeat center;}
+div.square-aioca div.sleekadfooter {visibility: hidden;}
+div.square-aioca .subbyCloseX{visibility: hidden;}
+
+/* banner */
+
+div.banner-aioca div.ch i.c i,
+div.banner-aioca div.ch i.c b{display:none;}
+div.banner-aioca div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-aioca div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-aioca div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-aioca div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-aioca div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-aioca div.sleekadfooter {
+    width:133px;
+    height:34px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/aioca_728x90.gif?1) no-repeat center;
+}
+
+div.banner-aioca div.sleekadfooter a,
+div.banner-aioca div.sleekadfooter div.promo-text,
+div.banner-aioca .subbyCloseX,
+div.banner-aioca i.c {display:none}
+
+/*ninja assassin hug*/
+div.square-assassin {background: url(http://st.deviantart.com/minish/hugs/assassin_300x250.gif) no-repeat center;}
+div.square-assassin div.sleekadfooter,
+div.square-assassin .subbyCloseX {visibility: hidden}
+
+/* banner */
+
+div.banner-assassin div.ch i.c i,
+div.banner-assassin div.ch i.c b{display:none;}
+div.banner-assassin div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-assassin div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-assassin div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-assassin div.ch i.bl {
+    display:none;
+}
+
+div.banner-assassin div.ch i.br {
+    display:none;
+}
+
+div.banner-assassin div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-assassin div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-assassin div.sleekadfooter {
+    width:140px;
+    height:34px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/assassin-banner-text.gif?1) no-repeat center;
+}
+
+div.banner-assassin div.sleekadfooter a,
+div.banner-assassin div.sleekadfooter div.promo-text,
+div.banner-assassin .subbyCloseX,
+div.banner-assassin i.c {display:none}
+
+/* square */
+
+div.square-boostr {background: url(http://st.deviantart.com/minish/hugs/boostr_300x250.gif) no-repeat center;}
+div.square-boostr div.sleekadfooter {visibility: hidden;}
+div.square-boostr .subbyCloseX{visibility: hidden;}
+
+/* banner */
+
+div.banner-boostr div.ch i.c i,
+div.banner-boostr div.ch i.c b{display:none;}
+div.banner-boostr div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-boostr div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-boostr div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-boostr div.ch i.bl {
+    display:none;
+}
+
+div.banner-boostr div.ch i.br {
+    display:none;
+}
+
+div.banner-boostr div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-boostr div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-boostr div.sleekadfooter {
+    width:132px;
+    height:22px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/boostr_728x90.gif) no-repeat center;
+}
+
+div.banner-boostr div.sleekadfooter a,
+div.banner-boostr div.sleekadfooter div.promo-text,
+div.banner-boostr .subbyCloseX,
+div.banner-boostr i.c {display:none}
+
+/* Namco Bandai DBZ Ad Hug */
+div.square-dbz {background: url(http://st.deviantart.com/minish/hugs/dbz_300x250.gif) no-repeat center;}
+div.square-dbz div.sleekadfooter,
+div.square-dbz .subbyCloseX {visibility: hidden;}
+
+/* banner */
+
+div.banner-dbz div.ch i.c i,
+div.banner-dbz div.ch i.c b{display:none;}
+div.banner-dbz div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-dbz div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/generic_728x90_left.gif) !important;
+}
+
+div.banner-dbz div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/generic_728x90_right.gif) !important;
+}
+
+div.banner-dbz div.ch i.bl {
+    display:none;
+}
+
+div.banner-dbz div.ch i.br {
+    display:none;
+}
+
+div.banner-dbz div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/generic_728x90_middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-dbz div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-dbz div.sleekadfooter {
+    width:140px;
+    height:34px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/dbz_728x90.gif) no-repeat center;
+}
+
+div.banner-dbz div.sleekadfooter a,
+div.banner-dbz div.sleekadfooter div.promo-text,
+div.banner-dbz .subbyCloseX,
+div.banner-dbz i.c {display:none}
+
+/* square */
+
+div.square-eureka {background: transparent url(http://st.deviantart.com/minish/hugs/bandai_adhug_300x250.gif) no-repeat center;}
+div.square-eureka div.sleekadfooter {visibility: hidden;}
+div.square-eureka .subbyCloseX{visibility: hidden;}
+
+/* banner */
+
+div.banner-eureka div.ch i.c i,
+div.banner-eureka div.ch i.c b{display:none;}
+div.banner-eureka div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-eureka div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-eureka div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-eureka div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-eureka div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-eureka div.sleekadfooter {
+    width:141px;
+    height:34px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/bandai_adhug_728x90.gif) no-repeat center;
+}
+
+div.banner-eureka div.sleekadfooter a,
+div.banner-eureka div.sleekadfooter div.promo-text,
+div.banner-eureka .subbyCloseX,
+div.banner-eureka i.c {display:none}
+
+/* Square Enix Ad Hug */
+div.square-enix {background: url(http://st.deviantart.com/minish/hugs/enix_300x250.gif) no-repeat center;}
+div.square-enix div.sleekadfooter,
+div.square-enix .subbyCloseX {visibility: hidden;}
+
+/* banner */
+
+div.banner-enix div.ch i.c i,
+div.banner-enix div.ch i.c b{display:none;}
+div.banner-enix div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-enix div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/generic_728x90_left.gif) !important;
+}
+
+div.banner-enix div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/generic_728x90_right.gif) !important;
+}
+
+div.banner-enix div.ch i.bl {
+    display:none;
+}
+
+div.banner-enix div.ch i.br {
+    display:none;
+}
+
+div.banner-enix div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/generic_728x90_middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-enix div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-enix div.sleekadfooter {
+    width:140px;
+    height:34px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/enix_728x90.gif?1) no-repeat center;
+}
+
+div.banner-enix div.sleekadfooter a,
+div.banner-enix div.sleekadfooter div.promo-text,
+div.banner-enix .subbyCloseX,
+div.banner-enix i.c {display:none}
+
+/* square */
+
+div.square-focus {background: url(http://st.deviantart.com/minish/hugs/focus_300x250.gif) no-repeat center;}
+div.square-focus div.sleekadfooter {visibility: hidden;}
+div.square-focus .subbyCloseX{visibility: hidden;}
+
+/* banner */
+
+div.banner-focus div.ch i.c i,
+div.banner-focus div.ch i.c b{display:none;}
+div.banner-focus div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-focus div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-focus div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-focus div.ch i.bl {
+    display:none;
+}
+
+div.banner-focus div.ch i.br {
+    display:none;
+}
+
+div.banner-focus div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-focus div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-focus div.sleekadfooter {
+    width:133px;
+    height:22px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/focus_728x90.gif) no-repeat center;
+}
+
+div.banner-focus div.sleekadfooter a,
+div.banner-focus div.sleekadfooter div.promo-text,
+div.banner-focus .subbyCloseX,
+div.banner-focus i.c {display:none}
+
+/* square */
+
+div.square-freelance {background: url(http://st.deviantart.com/minish/hugs/lgrumor_300x250.gif?1) no-repeat center;}
+div.square-freelance div.sleekadfooter {visibility: hidden;}
+div.square-freelance .subbyCloseX{visibility: hidden;}
+
+/* banner */
+
+div.banner-freelance div.ch i.c i,
+div.banner-freelance div.ch i.c b{display:none;}
+div.banner-freelance div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-freelance div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-freelance div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-freelance div.ch i.bl {
+    display:none;
+}
+
+div.banner-freelance div.ch i.br {
+    display:none;
+}
+
+div.banner-freelance div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-freelance div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-freelance div.sleekadfooter {
+    width:120px;
+    height:34px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/freelance_728x90.gif) no-repeat center;
+}
+
+div.banner-freelance div.sleekadfooter a,
+div.banner-freelance div.sleekadfooter div.promo-text,
+div.banner-freelance .subbyCloseX,
+div.banner-freelance i.c {display:none}
+
+/* square */
+
+div.square-fullsail {background: transparent url(http://st.deviantart.com/minish/hugs/adobe300x250bg.gif) no-repeat center;}
+div.square-fullsail div.sleekadfooter {visibility: hidden;}
+div.square-fullsail .subbyCloseX{visibility: hidden;}
+
+/* banner */
+
+div.banner-fullsail div.ch i.c i,
+div.banner-fullsail div.ch i.c b{display:none;}
+div.banner-fullsail div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-fullsail div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-fullsail div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-fullsail div.ch i.bl {
+    display:none;
+}
+
+div.banner-fullsail div.ch i.br {
+    display:none;
+}
+
+div.banner-fullsail div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-fullsail div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-fullsail div.sleekadfooter {
+    width:141px;
+    height:22px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/fullsail728x90text.gif) no-repeat center;
+}
+
+div.banner-fullsail div.sleekadfooter a,
+div.banner-fullsail div.sleekadfooter div.promo-text,
+div.banner-fullsail .subbyCloseX,
+div.banner-fullsail i.c {display:none}
+
+/* square */
+
+div.square-funimation {background: transparent url(http://st.deviantart.com/minish/hugs/funimation-square-bg.gif) no-repeat center;}
+div.square-funimation div.sleekadfooter {visibility: hidden;}
+div.square-funimation .subbyCloseX{visibility: hidden;}
+
+/* banner */
+
+div.banner-funimation div.ch i.c i,
+div.banner-funimation div.ch i.c b{display:none;}
+div.banner-funimation div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-funimation div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-funimation div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-funimation div.ch i.bl {
+    display:none;
+}
+
+div.banner-funimation div.ch i.br {
+    display:none;
+}
+
+div.banner-funimation div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-funimation div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-funimation div.sleekadfooter {
+    width:101px;
+    height:34px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/funimation-banner-text.gif) no-repeat center;
+}
+
+div.banner-funimation div.sleekadfooter a,
+div.banner-funimation div.sleekadfooter div.promo-text,
+div.banner-funimation .subbyCloseX,
+div.banner-funimation i.c {display:none}
+
+/* square */
+
+div.square-nbc {background: url(http://st.deviantart.com/minish/hugs/nbc_300x250.gif) no-repeat center;}
+div.square-nbc div.sleekadfooter {visibility: hidden;}
+div.square-nbc .subbyCloseX{visibility: hidden;}
+
+/* banner */
+
+div.banner-nbc div.ch i.c i,
+div.banner-nbc div.ch i.c b{display:none;}
+div.banner-nbc div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-nbc div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-nbc div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-nbc div.ch i.bl {
+    display:none;
+}
+
+div.banner-nbc div.ch i.br {
+    display:none;
+}
+
+div.banner-nbc div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-nbc div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-nbc div.sleekadfooter {
+    width:123px;
+    height:34px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/nbc_728x90.gif) no-repeat center;
+}
+
+div.banner-nbc div.sleekadfooter a,
+div.banner-nbc div.sleekadfooter div.promo-text,
+div.banner-nbc .subbyCloseX,
+div.banner-nbc i.c {display:none}
+
+/* square */
+
+div.square-nfwb {background: transparent url(http://st.deviantart.com/minish/hugs/300x250_nfwb_adhug.gif) no-repeat center;}
+div.square-nfwb div.sleekadfooter {visibility: hidden;}
+div.square-nfwb .subbyCloseX{visibility: hidden;}
+
+/* banner */
+
+div.banner-nfwb div.ch i.c i,
+div.banner-nfwb div.ch i.c b{display:none;}
+div.banner-nfwb div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-nfwb div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-nfwb div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-nfwb div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-nfwb div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-nfwb div.sleekadfooter {
+    width:141px;
+    height:34px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/728x90_nfwb_adhug.gif) no-repeat center;
+}
+
+div.banner-nfwb div.sleekadfooter a,
+div.banner-nfwb div.sleekadfooter div.promo-text,
+div.banner-nfwb .subbyCloseX,
+div.banner-nfwb i.c {display:none}
+
+/*nikon ad hug*/
+div.square-nikon {background: url(http://st.deviantart.com/minish/hugs/nikon_300x250.gif) no-repeat center;}
+div.square-nikon div.sleekadfooter,
+div.square-nikon .subbyCloseX {visibility: hidden;}
+
+/* banner */
+
+div.banner-nikon div.ch i.c i,
+div.banner-nikon div.ch i.c b{display:none;}
+div.banner-nikon div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-nikon div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-nikon div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-nikon div.ch i.bl {
+    display:none;
+}
+
+div.banner-nikon div.ch i.br {
+    display:none;
+}
+
+div.banner-nikon div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-nikon div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-nikon div.sleekadfooter {
+    width:138px;
+    height:35px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/nikon-banner-text.gif?1) no-repeat center;
+}
+
+div.banner-nikon div.sleekadfooter a,
+div.banner-nikon div.sleekadfooter div.promo-text,
+div.banner-nikon .subbyCloseX,
+div.banner-nikon i.c {display:none}
+
+/*nvidia ad hug*/
+div.square-nvidia {background: url(http://st.deviantart.com/minish/hugs/nvidia_300x250.gif) no-repeat center;}
+div.square-nvidia div.sleekadfooter,
+div.square-nvidia .subbyCloseX {visibility: hidden;}
+
+/* banner */
+
+div.banner-nvidia div.ch i.c i,
+div.banner-nvidia div.ch i.c b{display:none;}
+div.banner-nvidia div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-nvidia div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-nvidia div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-nvidia div.ch i.bl {
+    display:none;
+}
+
+div.banner-nvidia div.ch i.br {
+    display:none;
+}
+
+div.banner-nvidia div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-nvidia div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-nvidia div.sleekadfooter {
+    width:138px;
+    height:35px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/nvidia-banner-text.gif?1) no-repeat center;
+}
+
+div.banner-nvidia div.sleekadfooter a,
+div.banner-nvidia div.sleekadfooter div.promo-text,
+div.banner-nvidia .subbyCloseX,
+div.banner-nvidia i.c {display:none}
+
+/*playfish hug*/
+div.square-playfish {background: url(http://st.deviantart.com/minish/hugs/playfish_300x250.gif) no-repeat center;}
+div.square-playfish div.sleekadfooter,
+div.square-playfish .subbyCloseX {visibility: hidden;}
+
+/* banner */
+
+div.banner-playfish div.ch i.c i,
+div.banner-playfish div.ch i.c b{display:none;}
+div.banner-playfish div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-playfish div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-playfish div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-playfish div.ch i.bl {
+    display:none;
+}
+
+div.banner-playfish div.ch i.br {
+    display:none;
+}
+
+div.banner-playfish div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-playfish div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-playfish div.sleekadfooter {
+    width:129px;
+    height:22px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/playfish-banner-text.gif?1) no-repeat center;
+}
+
+div.banner-playfish div.sleekadfooter a,
+div.banner-playfish div.sleekadfooter div.promo-text,
+div.banner-playfish .subbyCloseX,
+div.banner-playfish i.c {display:none}
+
+/* square */
+
+div.square-redbull {background: url(http://st.deviantart.com/minish/hugs/redbull_300x250.gif) no-repeat center;}
+div.square-redbull div.sleekadfooter {visibility: hidden;}
+div.square-redbull .subbyCloseX{visibility: hidden;}
+
+/* banner */
+
+div.banner-redbull div.ch i.c i,
+div.banner-redbull div.ch i.c b{display:none;}
+div.banner-redbull div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-redbull div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-redbull div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-redbull div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-redbull div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-redbull div.sleekadfooter {
+    width:133px;
+    height:34px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/aioca_728x90.gif?1) no-repeat center;
+}
+
+div.banner-redbull div.sleekadfooter a,
+div.banner-redbull div.sleekadfooter div.promo-text,
+div.banner-redbull .subbyCloseX,
+div.banner-redbull i.c {display:none}
+
+/*spectrobes hug*/
+div.square-spectrobes {background: url(http://st.deviantart.com/minish/hugs/spectrobes_300x250.gif) no-repeat center;}
+div.square-spectrobes div.sleekadfooter,
+div.square-spectrobes .subbyCloseX {visibility: hidden;}
+
+/* banner */
+
+div.banner-spectrobes div.ch i.c i,
+div.banner-spectrobes div.ch i.c b{display:none;}
+div.banner-spectrobes div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-spectrobes div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-spectrobes div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-spectrobes div.ch i.bl {
+    display:none;
+}
+
+div.banner-spectrobes div.ch i.br {
+    display:none;
+}
+
+div.banner-spectrobes div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-spectrobes div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-spectrobes div.sleekadfooter {
+    width:102px;
+    height:34px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/spectrobes-banner-text.gif?1) no-repeat center;
+}
+
+div.banner-spectrobes div.sleekadfooter a,
+div.banner-spectrobes div.sleekadfooter div.promo-text,
+div.banner-spectrobes .subbyCloseX,
+div.banner-spectrobes i.c {display:none}
+
+/*tattooed steel ad hug*/
+div.square-tattooed {background: url(http://st.deviantart.com/minish/hugs/tattooed_300x250.gif) no-repeat center;}
+div.square-tattooed div.sleekadfooter,
+div.square-tattooed .subbyCloseX {visibility: hidden;}
+
+/* banner */
+
+div.banner-tattooed div.ch i.c i,
+div.banner-tattooed div.ch i.c b{display:none;}
+div.banner-tattooed div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-tattooed div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-tattooed div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-tattooed div.ch i.bl {
+    display:none;
+}
+
+div.banner-tattooed div.ch i.br {
+    display:none;
+}
+
+div.banner-tattooed div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-tattooed div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-tattooed div.sleekadfooter {
+    width:119px;
+    height:34px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/tattooed-banner-text.gif?1) no-repeat center;
+}
+
+div.banner-tattooed div.sleekadfooter a,
+div.banner-tattooed div.sleekadfooter div.promo-text,
+div.banner-tattooed .subbyCloseX,
+div.banner-tattooed i.c {display:none}
+
+/*The Art Institutes ad hug*/
+div.square-theai {background: url(http://st.deviantart.com/minish/hugs/theai_300x250.gif) no-repeat center;}
+div.square-theai div.sleekadfooter,
+div.square-theai .subbyCloseX {visibility: hidden;}
+
+/* banner */
+
+div.banner-theai div.ch i.c i,
+div.banner-theai div.ch i.c b{display:none;}
+div.banner-theai div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-theai div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-theai div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-theai div.ch i.bl {
+    display:none;
+}
+
+div.banner-theai div.ch i.br {
+    display:none;
+}
+
+div.banner-theai div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-theai div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-theai div.sleekadfooter {
+    width:138px;
+    height:35px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/theai-banner-text.gif?1) no-repeat center;
+}
+
+div.banner-theai div.sleekadfooter a,
+div.banner-theai div.sleekadfooter div.promo-text,
+div.banner-theai .subbyCloseX,
+div.banner-theai i.c {display:none}
+
+/* THQ Ad Hug */
+div.square-thq {background: url(http://st.deviantart.com/minish/hugs/thq_300x250.gif) no-repeat center;}
+div.square-thq div.sleekadfooter,
+div.square-thq .subbyCloseX {visibility: hidden;}
+
+/* banner */
+
+div.banner-thq div.ch i.c i,
+div.banner-thq div.ch i.c b{display:none;}
+div.banner-thq div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-thq div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/generic_728x90_left.gif) !important;
+}
+
+div.banner-thq div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/generic_728x90_right.gif) !important;
+}
+
+div.banner-thq div.ch i.bl {
+    display:none;
+}
+
+div.banner-thq div.ch i.br {
+    display:none;
+}
+
+div.banner-thq div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/generic_728x90_middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-thq div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-thq div.sleekadfooter {
+    width:140px;
+    height:34px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/thq_728x90.gif) no-repeat center;
+}
+
+div.banner-thq div.sleekadfooter a,
+div.banner-thq div.sleekadfooter div.promo-text,
+div.banner-thq .subbyCloseX,
+div.banner-thq i.c {display:none}
+
+/* Wacom Ad Hug */
+div.square-wacom {background: url(http://st.deviantart.com/minish/hugs/wacom_300x250.gif) no-repeat center;}
+div.square-wacom div.sleekadfooter,
+div.square-wacom .subbyCloseX {visibility: hidden;}
+
+/* banner */
+
+div.banner-wacom div.ch i.c i,
+div.banner-wacom div.ch i.c b{display:none;}
+div.banner-wacom div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-wacom div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/generic_728x90_left.gif) !important;
+}
+
+div.banner-wacom div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/generic_728x90_right.gif) !important;
+}
+
+div.banner-wacom div.ch i.bl {
+    display:none;
+}
+
+div.banner-wacom div.ch i.br {
+    display:none;
+}
+
+div.banner-wacom div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/generic_728x90_middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-wacom div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-wacom div.sleekadfooter {
+    width:140px;
+    height:34px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/wacom-banner-text.gif?1) no-repeat center;
+}
+
+div.banner-wacom div.sleekadfooter a,
+div.banner-wacom div.sleekadfooter div.promo-text,
+div.banner-wacom .subbyCloseX,
+div.banner-wacom i.c {display:none}
+
+/*wizards of the coast hug*/
+div.square-wizards {background: url(http://st.deviantart.com/minish/hugs/wizards_300x250.gif) no-repeat center;}
+div.square-wizards div.sleekadfooter,
+div.square-wizards .subbyCloseX {visibility: hidden;}
+
+/* banner */
+
+div.banner-wizards div.ch i.c i,
+div.banner-wizards div.ch i.c b{display:none;}
+div.banner-wizards div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-wizards div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-wizards div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-wizards div.ch i.bl {
+    display:none;
+}
+
+div.banner-wizards div.ch i.br {
+    display:none;
+}
+
+div.banner-wizards div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-wizards div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-wizards div.sleekadfooter {
+    width:138px;
+    height:35px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/wizards-banner-text.gif?1) no-repeat center;
+}
+
+div.banner-wizards div.sleekadfooter a,
+div.banner-wizards .subbyCloseX,
+div.banner-wizards i.c {display:none}
+
+/* square */
+
+div.square-xbox {background: url(http://st.deviantart.com/minish/hugs/xbox_300x250.gif) no-repeat center;}
+div.square-xbox div.sleekadfooter {visibility: hidden;}
+div.square-xbox .subbyCloseX{visibility: hidden;}
+
+/* banner */
+
+div.banner-xbox div.ch i.c i,
+div.banner-xbox div.ch i.c b{display:none;}
+div.banner-xbox div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:100px;
+}
+div.banner-xbox div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90left.gif) !important;
+}
+
+div.banner-xbox div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/adobe728x90right.gif) !important;
+}
+
+div.banner-xbox div.ch i.bl {
+    display:none;
+}
+
+div.banner-xbox div.ch i.br {
+    display:none;
+}
+
+div.banner-xbox div.ch div.ch-ctrl {
+    height:98px;
+    _height: 100px;
+    padding-top:2px;
+    border: none;
+    margin-left:5px;
+    margin-right:5px;
+    background: #333 url(http://st.deviantart.com/minish/hugs/adobe728x90middle.gif) repeat-x;
+    overflow:hidden;
+}
+
+div.banner-xbox div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+div.banner-xbox div.sleekadfooter {
+    width:141px;
+    height:22px;
+    margin-left:8px;
+    background: transparent url(http://st.deviantart.com/minish/hugs/xbox_728x90.gif) no-repeat center;
+}
+
+div.banner-xbox div.sleekadfooter a,
+div.banner-xbox .subbyCloseX,
+div.banner-xbox i.c {display:none}
+
+/* Ninja Assassins - journal skins sponsor banners*/
+
+/* banner */
+div.journal-banner-ninjas div.ch i.c i,
+div.journal-banner-ninjas div.ch i.c b{display:none;}
+div.journal-banner-ninjas div.ch i {
+    display:block; position:absolute;top:-1px;
+    width:5px;height:50px;
+}
+div.journal-banner-ninjas div.ch i.tl {
+    left:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/ninjas_468x60_left.gif) !important;
+}
+
+div.journal-banner-ninjas div.ch i.tr {
+    right:0px;
+    background-image: url(http://st.deviantart.com/minish/hugs/ninjas_468x60_right.gif?1) !important;
+}
+
+div.journal-banner-ninjas div.ch i.bl {
+    display:none;
+}
+
+div.journal-banner-ninjas div.ch i.br {
+    display:none;
+}
+
+div.journal-banner-ninjas,
+div.journal-banner-ninjas div.ch,
+div.journal-banner-ninjas div.ch div.ch-ctrl {
+    height: 50px;
+    _height: 51px;
+}
+div.journal-banner-ninjas div.ch div.ch-ctrl {
+    background-image: url(http://st.deviantart.com/minish/hugs/ninjas_468x60_middle.gif);
+    overflow:hidden;
+}
+
+div.journal-banner-ninjas div.ch {
+    position:relative;
+    background: transparent !important;
+    overflow: visible;
+}
+
+

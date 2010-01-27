@@ -1,0 +1,470 @@
+/*    HTTP Host:  b.static.ak.fbcdn.net                                        */
+/*    Generated:  January 12th 2010 9:38:01 AM PST                             */
+/*      Machine:  10.16.140.101                                                */
+/*       Source:  Backing Store                                                */
+/*     Location:  css/eomd8ccikfcoc88o.pkg.css h:6wngjtai                      */
+/*       Locale:  nu_ll                                                        */
+/*         Path:  css/eomd8ccikfcoc88o.pkg.css                                 */
+
+.buddy_list .subheader,
+.buddy_list .hide_idle_marker,
+.buddy_list .suppress,
+.buddy_list .hide_empty_item,
+.buddy_list .list_drop_zone,
+.buddy_list .other_friends_list .friend_list_container .list_drop_zone,
+.buddy_list .hide_friend_list,
+.buddy_list .hover.drag_over .friendlist_name .edit_link,
+#buddy_list.reorder_fl .buddy_list_typeahead,
+.buddy_list .hover.other_friends_list .friendlist_name .edit_link,
+#buddy_list.reorder_fl .list_select .suppress,
+#buddy_list.reorder_fl .switch,
+#buddy_list_panel span.offline,
+.buddy_list .offline .list_drop_zone,
+.buddy_list .drag_over .friend_list_container .droppable_placeholder,
+#presence #buddy_list_content .hover .titletip,
+.buddy_list.error #buddy_list_content,
+.buddy_list .buddy_list_error{display:none}
+.buddy_list_typeahead{background-color:#fff;border-top:1px solid #b9c4da;padding:0;position:relative}
+#buddy_list .buddy_list_typeahead #buddy_list_typeahead_input{background:white url(ebqvjyrq.png) no-repeat left 4px;background-position:3px 5px;border-color:#93a2c1;border-width:1px 0 0 0;height:14px;padding:4px 4px 4px 21px;width:175px}
+.buddy_list a.friend em{background-color:#dce1e8;font-style:normal;font-weight:bold}
+.buddy_list a.selected em,
+.buddy_list_content a:hover em{background-color:#5670a6}
+.buddy_list .friendlist_name{background-color:#fff;color:#888;float:left;padding:0 5px 0 6px}
+.buddy_list span.title a,
+.buddy_list span.title a:hover{font-size:12px;background:#fff;color:#888;display:block;float:left;padding:0;text-decoration:none}
+.buddy_list .friendlist_name .edit_link{font-size:10px;display:none;float:left}
+.buddy_list .friendlist_name .edit_link a{display:inline-block;padding:2px 4px 0 6px}
+.buddy_list .hover .friendlist_name .edit_link{display:block}
+.buddy_list a.friend{background:url(/rsrc.php/z524L/hash/8e9gpxc8.gif) no-repeat right 8px;clear:left}
+.buddy_list a.friend span{float:left;padding:5px 15px 0 1px;width:130px}
+.buddy_list .compact a.friend span{padding:3px 15px 3px 10px}
+.buddy_list a.friend:hover,
+.buddy_list a.selected,
+.buddy_list a.drag{background-color:#3b5998 !important;background-position:right -52px;color:#fff;text-decoration:none}
+.buddy_list .drag_active a.friend:hover{background-color:#fff !important;color:#3b5998}
+.buddy_list .drag_active a.friend.drag{background-color:#3b5998 !important;color:#fff}
+.buddy_list a.idle{background-position:right -112px}
+.buddy_list a.idle:hover,
+.buddy_list a.selected.idle,
+.buddy_list a.drag.idle{background-position:right -172px}
+.buddy_list a.friend img{float:left;margin:2px 5px 2px 10px}
+.buddy_list .friend_list_container{clear:both;padding:2px 0 0 0}
+.buddy_list .friend_list{background:#fff url(/rsrc.php/zD9WR/hash/6e47avqg.gif) 0 10px repeat-x;padding:4px 0 0}
+.buddy_list .show_empty_list{display:block !important}
+.ie6 .buddy_list .friend_list{z-index:-1}
+.reorder_fl span.title a,
+.reorder_fl span.title a:hover{background:transparent}
+#buddy_list.reorder_fl .friendlist_name span.title{background:url(/rsrc.php/zELVG/hash/9tebw7dx.gif) 4px 0 no-repeat;display:block;float:left;padding:0 20px}
+#buddy_list.reorder_fl .friend_list{background:none;margin:0 5px;overflow:hidden}
+.ie6 #buddy_list.reorder_fl .friend_list,
+.ie7 #buddy_list.reorder_fl .friend_list{overflow:auto}
+#buddy_list.reorder_fl .friend_list div.friendlist_name{background:#ededed;border-top:1px solid #d0d0d0;clear:left;color:#000;cursor:move;margin:3px 0;padding:5px 0;width:94%}
+#buddy_list.reorder_fl .friend_list div.friendlist_name span.title a{cursor:move}
+#buddy_list #reorder_fl_alert{background:#fff9d7;border-bottom:1px solid #e2c822;padding:4px 6px;text-align:center}
+#buddy_list #reorder_fl_alert span{display:block;text-align:left}
+#buddy_list #reorder_fl_alert input{margin:4px auto 0 auto}
+#presence_bar .available .show_available,
+#presence_bar .unavailable .show_unavailable,
+#presence_bar .idle .show_idle,
+#presence_bar .availability_loading .show_loading,
+#presence_bar .chat_setting_loading .show_loading,
+#presence_bar .hide_loading,
+#presence_popout_sidebar .available .show_available,
+#presence_popout_sidebar .idle .show_available,
+#presence_popout_sidebar .unavailable .show_unavailable,
+#presence_popout_sidebar .availability_loading .show_loading,
+#presence_popout_sidebar .chat_setting_loading .show_loading,
+#presence_popout_sidebar .hide_loading{display:block}
+#presence_bar .available .show_unavailable,
+#presence_bar .available .show_idle,
+#presence_bar .idle .show_unavailable,
+#presence_bar .unavailable .show_available,
+#presence_bar .unavailable .show_idle,
+#presence_bar .idle .show_available,
+#presence_bar .available .availability_loading .hide_loading,
+#presence_bar .unavailable .availability_loading .hide_loading,
+#presence_bar .show_loading,
+#presence_bar .chat_setting_loading .hide_loading{display:none}
+#buddy_list_panel{background:#ededed;border-bottom:1px solid #808080}
+#buddy_list_panel .lists,
+#buddy_list_panel .settings{border-right:1px solid #999;float:left;position:relative;z-index:11}
+#buddy_list_panel .flyout{background:#eee;border:1px solid #333;padding:6px 0;position:absolute;right:-1px;top:20px;width:186px;z-index:10}
+#buddy_list_panel .flyout_reversed{bottom:19px;top:auto}
+#buddy_list_panel #buddy_list_panel_settings_flyout{padding:4px 0 6px 0}
+#buddy_list_panel .flyout .text,
+#buddy_list_panel .flyout .new_list span{color:#555;cursor:default}
+#buddy_list_panel .flyout .text{padding:0 0 1px 8px}
+#buddy_list_panel .lists a.panel_item,
+#buddy_list_panel .settings a.panel_item{border-top:1px solid #fff;display:block;background:#eee url(/rsrc.php/z1V2B/hash/apfsevhg.png) repeat-x 0 0;padding:0 1px 0 1px}
+#buddy_list_panel .lists a:hover,
+#buddy_list_panel .settings a:hover{background-color:#fff;background-image:none;text-decoration:none}
+#buddy_list_panel .flyout_open a.panel_item{border-top:1px solid #333;background-color:#333;background-image:none}
+#buddy_list_panel .flyout_open a:hover{background-color:#333;background-image:none}
+#buddy_list_panel .lists a.panel_item span,
+#buddy_list_panel .settings a.panel_item span{border-top:1px solid #f4f4f4;color:#333;display:block;line-height:11px;font-weight:bold;padding:2px 7px 5px 0;text-shadow:#fff 0 1px 0}
+.Locale_ca_ES #buddy_list_panel a.panel_item span,
+.Locale_da_DK #buddy_list_panel a.panel_item span,
+.Locale_es_LA #buddy_list_panel a.panel_item span,
+.Locale_es_ES #buddy_list_panel a.panel_item span,
+.Locale_ru_RU #buddy_list_panel a.panel_item span,
+.Locale_sk_SK #buddy_list_panel a.panel_item span,
+.Locale_sl_SI #buddy_list_panel a.panel_item span,
+.Locale_vi_VN #buddy_list_panel a.panel_item span,
+.Locale_tr_TR #buddy_list_panel a.panel_item span,
+.Locale_el_GR #buddy_list_panel a.panel_item span,
+.Locale_bg_BG #buddy_list_panel a.panel_item span,
+.Locale_mk_MK #buddy_list_panel a.panel_item span,
+.Locale_sr_RS #buddy_list_panel a.panel_item span{font-size:11px}
+.Locale_cy_GB #buddy_list_panel a.panel_item span,
+.Locale_hu_HU #buddy_list_panel a.panel_item span{font-size:10px}
+.Locale_tl_PH #buddy_list_panel a.panel_item span{font-size:10px;font-weight:normal;padding:2px 1px 5px 2px}
+.Locale_tl_PH #buddy_list_panel a.panel_item span div.panel_icon{display:none}
+#buddy_list_panel .lists a:hover span,
+#buddy_list_panel .settings a:hover span{border-top:1px solid #fff}
+#buddy_list_panel .flyout_open a:hover span{border-top:0}
+#buddy_list_panel a.panel_item .panel_icon{background-image:url(ebqvjyrq.png);background-repeat:no-repeat;float:left;height:8px;margin:2px 3px 0 5px;overflow:hidden;width:8px}
+#buddy_list_panel .flyout_open{border-right:1px solid #333}
+#buddy_list_panel .flyout_open a.panel_item span{border-top:1px solid #4a4a4a;color:#fff;text-shadow:none}
+#buddy_list_panel a.panel_item #options_item .panel_icon{background-position:-623px -101px}
+#buddy_list_panel a.panel_item #lists_item .panel_icon{background-position:-615px -101px}
+#buddy_list_panel .flyout_open a.panel_item #options_item .panel_icon{background-position:-623px -109px}
+#buddy_list_panel .flyout_open a.panel_item #lists_item .panel_icon{background-position:-615px -109px}
+#buddy_list_panel .flyout .new_list{margin:5px 0 0 8px}
+#buddy_list_panel .flyout .new_list input{margin-top:2px;width:162px}
+#buddy_list_panel .chat_setting{padding:0 0 6px 4px}
+#buddy_list_panel .chat_setting .input_box{float:left;width:16px;height:16px}
+#buddy_list_panel .chat_setting label{float:left;padding:2px 2px 0 6px;font-weight:normal;color:#000;width:118px;cursor:default}
+#buddy_list_panel .options_actions{margin:0;padding:0 0 2px 0}
+#buddy_list_panel .flyout a{color:#333;display:block}
+#buddy_list_panel .flyout a:hover{color:#fff}
+#buddy_list_panel .flyout .menu_divider{background-color:#ccc;border:0;color:#ccc;height:1px;margin:0 8px 4px 8px;padding:0}
+#buddy_list_panel .options_actions a span{display:block;padding:2px 8px 3px 26px}
+#buddy_list_panel .flyout a .menu_icon{background-image:url(ebqvjyrq.png);background-repeat:no-repeat;display:block;height:8px;float:left;margin:5px 0 0 11px;overflow:hidden;width:8px}
+.ie6 #buddy_list_panel .flyout a .menu_icon,
+.ie6 #buddy_list_panel .flyout a.list_reorder_control .menu_icon{margin:5px 0 0 5px}
+.ie6 #buddy_list_panel .flyout a:hover{background:#333}
+#buddy_list_panel .flyout a.go_offline_control .menu_icon{background-position:-589px -101px}
+#buddy_list_panel .flyout a.list_reorder_control .menu_icon{background-position:-597px -101px;height:9px;margin-left:10px;width:10px}
+#buddy_list_panel .flyout a.list_popout_control .menu_icon{background-position:-607px -101px}
+#buddy_list_panel .flyout a:hover.go_offline_control .menu_icon{background-position:-589px -109px}
+#buddy_list_panel .flyout a:hover.list_reorder_control .menu_icon{background-position:-597px -110px}
+#buddy_list_panel .flyout a:hover.list_popout_control .menu_icon{background-position:-607px -109px}
+.buddy_list .switch{background:#fff;display:block;padding:3px 6px;float:right;position:relative}
+.buddy_list .switch a{background-color:#fff;background-image:url(ebqvjyrq.png);background-repeat:no-repeat;background-position:-663px -101px;cursor:pointer;display:block;height:8px;width:17px;padding:0}
+.buddy_list .switch a:hover{background-position:-663px -109px;background-color:#fff}
+.buddy_list .switch a:active{background-position:-680px -101px}
+.buddy_list .offline .switch a{background-position:-680px -109px}
+.buddy_list .offline .switch a:hover{background-position:-697px -101px}
+.buddy_list .offline .switch a:active{background-position:-697px -109px}
+.buddy_list .drag{left:0 !important;right:0;z-index:1}
+.buddy_list .drag span{background-image:none}
+.buddy_list .show_empty_list .list_drop_zone{display:none !important}
+.buddy_list .empty_friend_list .list_drop_zone{background:url(/rsrc.php/z7BYL/hash/owa7t3h0.gif) top left no-repeat;display:block;margin:3px 13px;padding:3px 0 0 0;width:174px}
+.buddy_list .scroll .empty_friend_list .list_drop_zone{margin:3px 6px}
+.ie6 .buddy_list .empty_friend_list .list_drop_zone{margin:3px 5px}
+.buddy_list .empty_friend_list .list_drop_zone .list_drop_zone_inner{background:url(/rsrc.php/z7BYL/hash/owa7t3h0.gif) bottom left no-repeat;color:#999;display:block;margin-top:8px;padding:0 10px 10px 10px;text-align:center}
+.buddy_list .drag_over .friend_list_container .list_drop_zone{background-position:-196px 0}
+.buddy_list .drag_over .friend_list_container .list_drop_zone .list_drop_zone_inner{background-position:-196px bottom;padding:15px 10px 26px 10px;color:#fff}
+#presence #buddy_list_content .hover .switch a:hover .titletip,
+#presence_popout_sidebar #buddy_list_content .hover .switch a:hover .titletip{display:block}
+#presence #buddy_list_content .titletip,
+#presence_popout_sidebar #buddy_list_content .titletip{background:url(/rsrc.php/zOSV4/hash/d9fmazqs.gif) no-repeat right 5px;top:-3px;bottom:auto;right:26px;padding-right:5px}
+.buddy_list.error .buddy_list_error{display:block}
+.buddy_list .buddy_error,
+.buddy_list .info_text{color:#666;padding:6px 8px}
+html>body #buddy_list ul li.subheader{*margin-top:-6px}
+html>body #buddy_list .compact ul li{*margin-top:-2px}
+#chat_previous_tab,
+#chat_next_tab{padding:0 4px}
+#chat_previous_tab span,
+#chat_next_tab span{background-repeat:no-repeat;background-image:url(ebqvjyrq.png);background-position:-820px -75px;width:4px;height:8px;margin:8px 2px 0 0;float:left}
+#chat_previous_tab span{float:right;background-position:-826px -75px}
+#chat_next_tab.disabled span{background-position:-820px -66px}
+#chat_previous_tab.disabled span{background-position:-826px -66px}
+#presence .presence_bar_button .count_missed{padding:5px 0}
+#presence .disabled .count_missed{color:#999}
+#chat_tabs div{padding:0}
+#chat_tab_bar .tab_handle{color:#333;position:relative;float:left;height:25px;margin:1px 0 0 0;border-left:1px solid #b5b5b5;border-right:1px solid #e0e0e0}
+#presence #presence_ui #chat_tab_bar .tab_handle.focused{z-index:13}
+#chat_tab_bar .tab_handle.highlight.disabled,
+#chat_tab_bar .tab_handle.highlight{color:#fff;margin:0;height:27px;padding:1px 0 0;border-color:#3b5998;background-image:url(ebqvjyrq.png);background-position:0 -134px;background-repeat:repeat-x}
+#chat_tab_bar .tab_hit_area{position:relative;overflow:hidden;float:left;width:110px;cursor:pointer;padding:2px 4px 6px 6px}
+#chat_tab_bar .tab_count{position:absolute;top:-3px;right:12px;padding-top:1px;font-weight:bold;text-align:center;width:18px;height:16px;font-size:10px;color:#fff;display:none;background-image:url(ebqvjyrq.png);background-position:-801px -66px;background-repeat:no-repeat}
+#chat_tab_bar .highlight .tab_count{top:-3px}
+#chat_tab_bar .tab_button_div{height:24px}
+#chat_tab_bar .tab_button_div.hover{background-color:#fff}
+#chat_tab_bar .tab_button_div .tab_name{float:left;padding-top:3px;font-weight:bold;white-space:nowrap;background-repeat:no-repeat;background-position:right 5px;padding-right:12px}
+#chat_tab_bar .tab_button_div .tab_name .tab_availability{width:7px;height:7px;background:url(ebqvjyrq.png) no-repeat -715px -101px;margin:0 0 1px 4px}
+#chat_tab_bar .idle .tab_button_div .tab_name .tab_availability{background-position:-715px -108px}
+#chat_tab_bar .tab_handle.highlight .tab_button_div.hover .tab_name .tab_availability,
+#chat_tab_bar .tab_handle.highlight .tab_button_div .tab_name .tab_availability{background-position:-733px -101px}
+#chat_tab_bar .tab_handle.highlight.typing .tab_button_div .tab_name .tab_availability,
+#chat_tab_bar .typing .tab_button_div .tab_name .tab_availability{background-position:-722px -101px;height:11px;width:11px;margin:0 0 0 4px}
+#chat_tab_bar .disabled .tab_button_div .tab_name .tab_availability{background-position:-590px -102px}
+#chat_tab_bar .disabled .tab_button_div.hover .tab_name span,
+#chat_tab_bar .tab_button_div.hover .tab_name span{text-decoration:underline}
+#chat_tab_bar .tab_handle.disabled{color:#555;background:#cfcfcf;border-right:1px solid #cfcfcf}
+#chat_tab_bar .tab_handle.highlight.disabled{color:#c3cddf}
+#chat_tab_bar .tab_handle.disabled.focused{color:#555;background-color:#fff}
+#chat_tab_bar .tab_handle.focused{color:#111;border-color:#333;border-bottom:1px solid #333;margin-top:0;background:#fff}
+#chat_tab_bar .tab_handle.focused .tab_hit_area{margin-top:0;padding-top:3px;padding-bottom:5px}
+#chat_tab_bar .tab_x{float:right}
+#chat_tab_bar .tab_x,
+#chat_tab_bar .notification_x{margin:9px 4px 0 0;height:10px;width:9px;color:#666;font-weight:bold;text-align:center;cursor:pointer;background:url(ebqvjyrq.png) -870px -68px}
+#chat_tab_bar .notification_x{margin:0;position:absolute;right:6px}
+#chat_tab_bar .tab_x.hover,
+#chat_tab_bar .notification_x.hover,
+#chat_tab_bar .disabled.focused .tab_x,
+#chat_tab_bar .focused .tab_x.hover{background-position:-882px -68px}
+#chat_tab_bar .notifications{display:none}
+#chat_tab_bar .videocall_actions{margin-left:5px}
+#chat_tab_bar .videocall_action{color:#3b5998}
+#chat_tab_bar .videocall_action:hover{text-decoration:underline;cursor:pointer}
+#chat_tab_bar .tab_handle.highlight .tab_x{background-position:-858px -68px}
+#chat_tab_bar .chat_window_wrapper{position:absolute;bottom:24px;margin-left:-99px;*margin-left:-219px;padding:6px 7px 0 8px;z-index:12}
+.ff2 #chat_tab_bar .chat_window_wrapper{position:fixed}
+#chat_tab_bar .tab_handle .chat_window_wrapper,
+#chat_tab_bar .tab_handle .chat_window{display:none}
+#chat_tab_bar .tab_handle.focused .chat_window_wrapper,
+#chat_tab_bar .tab_handle.focused .chat_window{display:block}
+#chat_tab_bar .chat_header{background:#526ea6;border:1px solid #254588;border-bottom:1px solid #526ea6;cursor:pointer}
+.in_videochat #chat_tab_bar .chat_header{cursor:auto}
+#chat_tab_bar .chat_header_name{margin-left:50px;padding:4px 0 3px 0}
+#chat_tab_bar .chat_header_name a{color:#fff;font-weight:bold;padding:4px 0 3px 4px}
+#chat_tab_bar .chat_header .header_buttons{float:right;width:32px;margin-top:2px;margin-right:2px;cursor:pointer}
+#chat_tab_bar .chat_header .header_buttons .minimize{float:right;display:block;height:15px;width:15px;background:url(ebqvjyrq.png) no-repeat -711px -58px}
+#chat_tab_bar .chat_header .header_buttons .minimize:hover,
+#chat_tab_bar .chat_header:hover .header_buttons .minimize{background-position:-728px -58px}
+#chat_tab_bar .chat_header.suppress_hover:hover .header_buttons .minimize{background-position:-711px -58px}
+#chat_tab_bar .chat_header .header_buttons .close{float:right;display:block;height:15px;width:15px;background:url(ebqvjyrq.png) no-repeat -843px -63px}
+#chat_tab_bar .chat_header .header_buttons .close:hover{background-position:-855px -63px}
+#chat_tab_bar .chat_info{padding:2px 0 2px 55px;border-left:1px solid #333;border-right:1px solid #333;background:#eee;min-height:28px;width:171px}
+#chat_tab_bar img.chat_info_pic{position:absolute;top:11px;left:13px;width:45px;height:45px;padding:0 1px 1px 0;background:url(ebqvjyrq.png) no-repeat -480px -166px}
+#chat_tab_bar .chat_window .chat_conv{overflow:auto;overflow-x:hidden;background:white none repeat scroll 0;color:#000;cursor:default;border-right:1px solid #333;border-left:1px solid #333;border-bottom:1px solid #b9c4da;position:relative}
+#chat_tab_bar .toolbox{background-color:#fff;border-left:1px solid #333;border-right:1px solid #333}
+.presence_popout #chat_tab_bar .toolbox{border-left:0;border-right:0}
+#chat_tab_bar .call_notifications{font-size:10px;padding:5px;background-color:#fff9d7;border-bottom:1px solid #ccc;position:relative}
+#chat_tab_bar .call_notifications img{margin-right:4px;vertical-align:middle}
+#chat_tab_bar .chat_actions{color:#3b5998;font-size:10px;padding:2px 5px;border-bottom:1px solid #ccc}
+#chat_tab_bar .chat_actions .divider{margin:0 2px}
+#chat_tab_bar .chat_actions .action,
+#chat_tab_bar .call_notifications,
+#chat_tab_bar .chat_actions .action_wrapper{white-space:nowrap}
+#chat_tab_bar .chat_actions .action_wrapper:hover{cursor:pointer}
+#chat_tab_bar .chat_actions .action_wrapper:hover .action{text-decoration:underline}
+#chat_tab_bar .chat_actions .action_wrapper img{margin-right:4px;vertical-align:middle}
+#chat_tab_bar .chat_actions .action:hover{cursor:pointer;text-decoration:underline}
+#chat_tab_bar .disabled .chat_window .chat_conv{background:#f7f7f7}
+#chat_tab_bar .chat_window .chat_conv .chat_conv_content{padding-bottom:3px}
+#chat_tab_bar .chat_window .chat_conv h5{font-size:12px;margin:2px 0 0 0;padding:3px 6px 1px;border-top:1px solid #eee}
+#chat_tab_bar .chat_window .chat_conv h5.self{color:#777}
+#chat_tab_bar .chat_window .chat_conv h5.other a{cursor:pointer}
+#chat_tab_bar .chat_window .time_stamp{color:#999;float:right;font-size:10px;font-weight:normal;padding:1px 0}
+#chat_tab_bar .chat_window .chat_conv p{color:#000;padding:2px 3px;margin:0 4px;line-height:14px}
+#chat_tab_bar .chat_window .chat_conv .msg_warning,
+#chat_tab_bar .chat_window .chat_conv .msg_error{margin:0;padding:1px 4px}
+#chat_tab_bar .chat_window .chat_conv .msg_error{background-color:#ffebe8}
+#chat_tab_bar .chat_window .chat_conv .msg_warning{background-color:#fff9d7}
+#chat_tab_bar .chat_window .chat_conv .visibility_change{background:#f7f7f7;color:#999;margin:0;padding:3px 6px 2px 6px}
+#chat_tab_bar .chat_window .chat_conv .chat_notice{font-size:10px;padding:4px 5px 5px 26px;margin:5px 0 0 0;background-position:4px 3px;background-repeat:no-repeat;background-color:#fff9d7}
+#chat_tab_bar .chat_window .chat_conv .chat_notice.sending{background-image:url(/rsrc.php/zBS5C/hash/7hwy7at6.gif);height:16px;padding-top:5px}
+#chat_tab_bar .chat_window .chat_conv .chat_notice.chat_signed_on{background-image:url(/rsrc.php/z2WR4/hash/f17le19o.gif)}
+#chat_tab_bar .chat_window .chat_conv .chat_notice.chat_signed_off{background-image:url(/rsrc.php/z4OZJ/hash/7dmza5gg.gif)}
+#chat_tab_bar .chat_window .chat_conv .chat_notice.chat_msg_not_sent{background-color:#ffebe8;background-position:4px 5px;background-image:url(/rsrc.php/z4OZJ/hash/7dmza5gg.gif)}
+#chat_tab_bar .chat_window .date_divider{margin-top:10px;font-size:10px;font-weight:bold;color:#777;padding-left:6px}
+#chat_tab_bar .chat_window .date_divider.first{margin-top:2px}
+#chat_tab_bar .chat_window .chat_input_div{padding:0;border-right:1px solid #333;border-left:1px solid #333;background:#fff;display:inline-block}
+#chat_tab_bar .chat_window .chat_input_div .chat_input_border{background:url(ebqvjyrq.png) no-repeat -590px -120px;width:100%;height:1px;display:block}
+.presence_popout #chat_tab_bar .chat_window .chat_input_div .chat_input_border{display:none}
+#chat_tab_bar .chat_window .chat_shadow_input,
+#chat_tab_bar .chat_window .chat_input{padding:4px 4px 4px 24px;border-color:#93a2c1;border-left:none;border-right:none;border-bottom:none;background:url(ebqvjyrq.png) no-repeat 4px -166px;margin:0}
+.presence_popout #chat_tab_bar .chat_window .chat_shadow_input,
+.presence_popout #chat_tab_bar .chat_window .chat_input{background:url(/rsrc.php/zCZC0/hash/bt2fm7qa.gif) no-repeat left 3px}
+#chat_tab_bar .chat_window .chat_shadow_input{position:fixed;left:-10000px;top:10000px;height:0;width:196px}
+#chat_tab_bar .chat_window .chat_input{overflow:auto;resize:none}
+.emote_text{display:none;*margin-bottom:-3px}
+.emote_img{overflow:hidden;width:16px;height:16px;margin-bottom:-5px;*margin-bottom:-3px}
+#presence #icon_garden{float:left;padding:0;width:158px}
+#presence_applications_icon_garden{border-left:1px solid #b5b5b5}
+#presence_applications_icon_garden div.icon_garden_elem{float:left;position:relative;top:1px}
+#presence_applications_icon_garden .app_icon,
+#presence_applications .app_icon{width:16px;height:16px}
+#presence_applications_icon_garden a:hover{text-decoration:none}
+#presence_applications_icon_garden .icon_garden_elem a.uiTooltip{padding:4px 5px 5px;height:16px;display:block;width:16px}
+#presence_applications_icon_garden .icon_garden_elem a.uiTooltip:hover{background:#fff}
+#presence_applications_icon_garden .icon_garden_elem .uiTooltipWrap{bottom:26px}
+.ie6 #presence #bookmarkable_app{width:90px;white-space:nowrap}
+#presence #presence_applications_bookmark_app{border-right:none;width:auto;padding:4px 4px 0 4px}
+.ie6 #presence #presence_applications_bookmark_app{margin-bottom:-4px}
+#presence #presence_applications_bookmark_app a:hover{text-decoration:none}
+#presence #presence_applications_bookmark_app img{opacity:.5;filter:alpha(opacity=50)}
+#presence #presence_applications_bookmark_app .bookmark_app_plus{background:url(/rsrc.php/z826P/hash/99tjlgdq.gif) left top no-repeat;display:block;margin-top:8px;position:absolute;width:16px;height:16px;z-index:1}
+#presence #presence_applications_bookmark_app .bookmark_text{color:#333;vertical-align:top;padding-left:4px}
+#presence #presence_applications_bookmark_app a:hover .bookmark_text{text-decoration:underline}
+.bookmark_top_container{margin-bottom:-42px}
+.bookmark_top_container .UIContentBox{padding-left:17px;width:163px;max-height:48px}
+.bookmark_top a{padding:6px 10px 5px 10px;display:block;overflow:hidden;position:relative;zoom:1}
+.bookmark_top a:hover{text-decoration:none}
+.bookmark_top img{opacity:.5;filter:alpha(opacity=50);float:left}
+.bookmark_top .bookmark_app_plus{background:url(/rsrc.php/z826P/hash/99tjlgdq.gif) left top no-repeat;display:block;top:14px;left:10px;position:absolute;width:16px;height:16px;z-index:1}
+.bookmark_top .bookmark_text{vertical-align:top;padding-left:5px;float:left;width:115px}
+.bookmark_top a:hover .bookmark_text{text-decoration:underline}
+#presence_bar .application_menu_header{background-color:#eee;padding:3px 0 4px 6px}
+#presence_bar .application_menu_header{overflow:hidden}
+#presence_bar .application_menu_header span.left{float:left}
+#presence_bar .application_menu_header span.right{float:right;padding-right:6px}
+#presence_applications_content{padding:5px}
+#presence_applications li{line-height:16px;padding:1px 0;overflow:hidden;zoom:1}
+#presence_bar #presence_applications_content .app_menu_undo_remove_bookmark{display:none;height:16px;padding:2px 0 2px 5px;background-color:#fff9d7}
+#presence_applications_content .app_menu_undo_remove_bookmark_link{float:right}
+#presence_applications li div.item{float:left;height:16px;width:16px;overflow:hidden;padding:2px 5px}
+#presence_bar div.application_menu_divider{border-bottom:1px solid #e9e9e9;margin:3px 2px 4px;color:#808080}
+#presence_bar .extra_menus div.application_menu_divider{margin:0 0 5px 0}
+#presence #presence_applications_tab{border-right:1px solid #b5b5b5;padding-left:4px;width:87px}
+#presence #presence_applications_tab .favi_apps,
+#presence #presence_applications_tab.async_saving .loading{display:block;float:left;margin-right:4px}
+#presence #presence_applications_tab.async_saving .favi_apps,
+#presence #presence_applications_tab .loading{display:none;margin-top:3px}
+#presence .wideapp #presence_applications_tab{width:111px}
+#presence_bar div.application_menu_logoless_item{padding:0 0 5px 5px}
+#presence_bar .presence_notifications:hover .titletip{display:block}
+#presence_bar #presence_notifications_content{padding:2px 2px 6px 2px}
+#presence_bar .presence_notifications_see_all{text-align:right;padding:4px 6px;display:block}
+#presence_bar .no_notifications{color:#666;padding:4px 5px 2px}
+#presence_bar .notification{padding:0 5px}
+#presence_bar .notification .body{border-top:1px solid #e0e0e0;padding:5px 0}
+#presence_bar .notification .time{color:#999;font-size:10px}
+#presence_bar .notif_unread{background-color:#fffbe2}
+#so_sound_player{position:absolute;top:0;left:0;z-index:1000}
+#sound_player_holder{position:absolute}
+body #presence{position:fixed;z-index:99;bottom:0;right:0;color:#111;font-size:12px;height:25px;padding:0;width:100%}
+html .ie6 #presence{margin-bottom:-1px}
+body.use_scroll_wrapper #presence{position:absolute}
+#channel_iframe{display:none;position:absolute;top:-1000px;left:-1000px;width:5px;height:5px}
+#presence_ui{background:url(ebqvjyrq.png) repeat-x 0 -24px;border-right:1px solid #b5b5b5;margin-left:15px;margin-right:15px;position:relative;overflow:visible ! important}
+.use_scroll_wrapper #presence_ui{margin-right:32px}
+#presence #presence_bar_right .presence_section{float:right}
+.presence_error .hide_on_presence_error,
+.show_on_presence_error,
+.show_popped_out,
+.show_on_uploader_progressing,
+.popped_out .show_popped_in,
+.bar_popout_ui .hide_on_presence_error,
+.bar_popout_ui #presence_ui #presence_bar .show_on_presence_error{display:none}
+.uploader_progressing .show_on_uploader_progressing,
+.popped_out .show_popped_out,
+.presence_error #presence_ui .show_on_presence_error{display:block}
+.ff2 #presence_bar_right{float:none}
+#presence .presence_section{float:left;padding:0;height:22px;margin-top:1px}
+#presence .presence_bar_button{padding:0 6px;height:25px;color:#333;cursor:pointer;border-left:1px solid #b5b5b5;border-right:1px solid #e0e0e0;width:16px;position:relative}
+#presence #presence_popout_section .presence_bar_button{border-left:none}
+#presence #presence_error_section{position:relative;border-left:1px solid #b5b5b5}
+#presence.popped_out .presence_bar_button{border-right:1px solid #b5b5b5}
+#presence #presence_applications_tab{border-left:1px solid #b5b5b5}
+#presence #presence_bar_right .hover,
+#presence #presence_bar_left .hover{color:#000;background-color:#fff}
+#presence #presence_bar_right #chat_tab_bar .highlight .hover{color:inherit;background:none}
+#presence #presence_bar_right .presence_popout_button.hover.focused{border-color:#333}
+#presence #presence_ui .focused{border-color:#333;background-color:#fff;margin:-1px 0 1px 0;z-index:15}
+#presence .presence_bar_button .inner_button{border-top:1px solid white;line-height:15px;padding:3px 0}
+#presence .presence_bar_button.focused{border-bottom:1px solid #333}
+#presence .presence_bar_button.focused .inner_button{border-top:1px solid #ccc;padding:4px 0}
+#presence .presence_bar_button:hover{background-color:#fff;text-decoration:none}
+#presence .titletip,
+#presence_popout_sidebar .titletip{background:url(cnbfiri3.gif) no-repeat right bottom;bottom:27px;display:none;padding-bottom:4px;position:absolute;right:6px;z-index:20}
+#presence #presence_ui .focused .titletip,
+#presence_popout_sidebar .focused .titletip{display:none}
+.accessibility_tip{position:absolute;right:-999px;top:-999px;filter:alpha(opacity=0);opacity:0;width:0;height:0;overflow:hidden}
+#presence .titletip a{color:#fff;text-decoration:underline}
+#presence #presence_bar_left .titletip{background:url(cnbfiri3.gif) no-repeat left bottom;left:6px;right:auto}
+#presence .hover .titletip{display:block}
+#presence .titletip strong,
+#presence_popout_sidebar .titletip strong{background:#282828;color:#fff;display:block;font-weight:normal;padding:3px 8px;text-align:center;white-space:nowrap;*margin:0}
+#presence .presence_menu_opts_wrapper{position:absolute;bottom:26px;z-index:14;right:0;padding:0;margin:0;background:none;border:none}
+.ie7 #presence .presence_menu_opts_wrapper{bottom:25px}
+#presence .presence_menu_offscreen{left:-10000px}
+.opera #presence .presence_menu_opts_wrapper{position:fixed;right:15px}
+#presence #presence_ui .presence_menu_opts_wrapper_left{right:auto;left:0}
+#presence .presence_menu_opts{cursor:auto;padding:0;border:1px solid #333;border-bottom:none;background:#fff;background-repeat:no-repeat;background-position:right bottom;width:231px;border-bottom:1px solid black}
+#presence #presence_bar_right .presence_menu_opts{width:200px}
+#presence.uploader_progressing #presence_bar_right .presence_menu_opts{width:230px}
+#presence_bar .presence_menu_opts h2{background-color:#526ea6;color:#fff;padding:0;margin:-1px -1px 0 -1px;font-size:12px;border:1px solid #254588;border-bottom:1px solid #526ea6;cursor:pointer;width:100%;position:relative}
+#presence_bar .presence_menu_opts h2 .presence_minimize{float:right;width:9px;height:2px;background-color:#adbed8;overflow:hidden;position:absolute;right:5px;top:10px}
+.ie6 #presence_bar .presence_menu_opts h2{margin:0;border:none}
+#presence_bar .presence_menu_opts h2:hover .presence_minimize{background-color:#fff}
+#presence_bar .presence_menu_opts h2 span{display:block;padding:3px 8px}
+.presence_menu_opts .presence_menu_header{background-color:#eee;padding:3px 6px 4px;text-align:right}
+.presence_menu_opts .presence_menu_subheader{padding:5px 6px 0;margin:1px;border:none;background:none}
+.presence_menu_opts .presence_menu_subheader h3{border-bottom:1px solid #b9c4da;color:#222;font-size:12px;padding-bottom:3px}
+.presence_menu_opts .presence_menu_content_wrapper{overflow:hidden;position:relative}
+.presence_menu_opts .presence_menu_content_wrapper.scroll{overflow:auto;overflow-x:hidden}
+#buddy_list .presence_menu_opts .presence_menu_content_wrapper.scroll{clear:both}
+#presence #presence_popout_section{width:30px}
+#presence #presence_popout_section .presence_bar_button{border-left:1px solid #e0e0e0}
+#presence #presence_popout_section .presence_bar_button .im_icon{display:none}
+#presence #presence_popout_section .presence_bar_button .pop_icon{margin-top:4px}
+.ie6 #presence #presence_bar_right #presence_popout_section .presence_bar_button{border-left:1px solid #e0e0e0;border-right:1px solid #b5b5b5}
+.ie6 #presence #presence_bar_right #presence_popout_section .presence_bar_button .im_icon{display:block;margin-top:4px}
+.ie6 #presence #presence_bar_right #presence_popout_section .presence_bar_button .pop_icon{display:none}
+#presence_bar .button_container{position:relative;float:left;width:28px}
+#presence_bar #presence_notifications_tab:hover{text-decoration:none}
+#presence .presence_section .slider_num_missed,
+#presence_bar #presence_notifications_count strong{color:#fff;position:absolute;top:-4px;right:0;padding:1px 0 0;height:16px;width:17px;font-size:10px;background-image:url(ebqvjyrq.png);background-position:-801px -66px;background-repeat:no-repeat;text-align:center}
+#presence_bar .del_button{visibility:hidden;cursor:pointer;float:right;height:16px;width:16px;background:url(/rsrc.php/z4HKO/hash/2w85g3xc.gif) no-repeat center top}
+#presence_bar .hover .del_button{visibility:visible}
+#presence_bar .drag .del_button{visibility:hidden}
+#presence_bar .del_button:hover{background-image:url(/rsrc.php/zD93Q/hash/6aqv88j2.gif);background-position:center top}
+#presence_notifications_loading{padding:5px;display:block;margin:0 auto}
+#presence #buddy_list_tab{padding-right:5px;width:159px;white-space:nowrap}
+#presence.fbx_bar #buddy_list_tab{width:188px}
+#presence #buddy_list_tab .buddy_icon{float:left;margin:3px 2px 0 0}
+#presence #buddy_list_tab.focused{background-position:4px 5px}
+#presence_popout_sidebar.buddy_list_hidden .buddy_list{display:none}
+#presence.buddy_list_hidden.presence_error #buddy_list_tab{display:none}
+#presence #buddy_list_tab .buddy_icon{background:transparent url(ebqvjyrq.png) no-repeat scroll -631px -101px;width:16px !important;margin-right:4px}
+#presence.buddy_list_hidden #buddy_list_tab .buddy_icon{background:transparent url(ebqvjyrq.png) no-repeat scroll -647px -101px}
+#presence #buddy_list_tab #buddy_count .buddy_count_num{color:#777}
+#presence #buddy_list_tab #buddy_count strong{color:#333}
+#presence #chat{float:right;height:26px;padding:0}
+#chat_tab_bar{float:left}
+.bar_popout_ui #chat{display:none}
+#universal_search{padding:3px 11px 3px 4px;width:172px}
+#universal_search #universal_search_input{float:left;position:relative;width:151px}
+#universal_search #universal_search_input #q{background:white url(ebqvjyrq.png) no-repeat 0 -65px;border:1px solid #315091;border-right:0;float:left;margin:0;padding:3px 4px;width:143px}
+#universal_search #universal_search_input .typeahead_found#q{background:#e1e9f6}
+.typeahead_search{border-width:0;border-style:none}
+.typeahead_search .typeahead_list_with_shadow{background:transparent url(/rsrc.php/z9UWL/hash/2w7bwhgb.png) no-repeat bottom left;border:0 none;padding:0 4px 4px 4px}
+.ie6 .typeahead_search .typeahead_list_with_shadow{background-image:none;border:0 none;margin:0 4px 4px;padding:0}
+.typeahead_search .suggestions_bottom_border{border-bottom:solid 1px #3b5998}
+.typeahead_search .no_border_list{border:none}
+.typeahead_search .typeahead_suggestions{border-left:1px solid #95a5c6;border-right:1px solid #95a5c6;height:auto;width:auto}
+.typeahead_search .typeahead_suggestion{filter:alpha(opacity=100);opacity:1.0}
+.typeahead_search .icon{background-position:-16px 0;background-repeat:no-repeat;display:inline;float:left;margin-left:10px;margin-right:5px;height:16px;width:16px}
+.typeahead_search .typeahead_selected .icon{background-position:left top}
+.typeahead_search .app{overflow:hidden}
+.typeahead_search .app span{float:left;padding:1px 0 0 1px;width:142px}
+.typeahead_search .typeahead_suggestion{overflow:hidden;position:relative}
+.typeahead_search img{border:1px solid white;position:absolute;margin-top:2px;line-height:1px;height:25px;width:25px;top:1px}
+.ie6 .typeahead_search img{left:0}
+.typeahead_search .typeahead_selected img{border:1px solid #6e84b3}
+.typeahead_search .with_pic{padding-left:32px;min-height:27px}
+.typeahead_search .with_pic{_height:27px}
+.typeahead_search .typeahead_suggestion .with_pic small{padding:1px 0}
+.typeahead_search .typeahead_suggestion .with_pic small,
+.typeahead_search .typeahead_suggestion .with_pic span{display:block;padding-left:0}
+#universal_search #universal_search_submit{float:left;width:21px}
+#universal_search #universal_search_submit label{border:1px solid #315091;display:block;font-size:12px;margin:0;padding:0;text-decoration:none;width:19px;position:absolute;overflow:hidden}
+#universal_search #universal_search_submit label span{background:#6d84b4 url(ebqvjyrq.png) no-repeat -429px -65px;display:block;margin:0;padding:3px 0}
+#universal_search #universal_search_submit label input{position:absolute;top:-10px;width:1px;height:1px;overflow:hidden}
+#universal_search #universal_search_submit label:active{background:#5b75ab;border:1px solid #315091}
+#universal_search #universal_search_submit label:active span{background:url(ebqvjyrq.png) no-repeat -449px -65px}
+.typeahead_mentions{border:1px solid #bbb;border-top:none}
+.typeahead_mentions .typeahead_message{background:#f2f2f2;border:none;border-top:1px solid #ddd;padding:5px}
+.typeahead_mentions .typeahead_suggestions{border:none}
+#universal_search .uiTypeahead{border:none;width:auto}
+#universal_search .uiTypeahead .results{left:-88px;top:20px;width:250px}
+#universal_search .uiTypeahead .searchGrayText{top:4px;left:6px}
+#universal_search .uiTypeahead .searchProfileImg{right:1px}
+#universal_search #universal_search_input .uiTypeahead #q{background:#fff}
+
+#bootloader_css_eomd8ccikfcoc88o_pkg_css { height: 42px; }
