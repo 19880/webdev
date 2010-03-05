@@ -1276,7 +1276,6 @@ body { padding-bottom:10px }
 #search-input { width:200px; border:solid 1px #b2b2b2; padding:3px 2px; margin:0 }
 #search-submit .goog-button-body { padding:0 .15em }
 #search-restrict { width:130px; border-bottom:1px solid #fff; margin:0 4px }
-#search-restrict-button { position:absolute; padding-bottom:2px }
 .opera #search-restrict-button { position:relative }
 #search-restrict-button .search-restrict-contents { padding-bottom:2px }
 #search-restrict-input { color:#000; font-size:100%; padding:0; margin:0; width:104px; border:solid 1px #b2b2b2 }
@@ -1390,6 +1389,7 @@ body { background:none }
 </style>
 </head>
 <body>
+<div id="search-restrict-button">
 <div class="goog-button goog-button-base unselectable goog-inline-block goog-button-float-left goog-menu-button goog-button-tight" tabindex="0" role="wairole:button">
   <div class="goog-button-base-outer-box goog-inline-block">
     <div class="goog-button-base-inner-box goog-inline-block">
@@ -1406,6 +1406,7 @@ body { background:none }
       </div>
     </div>
   </div>
+</div>
 </div>
 <div title="&quot;提交&quot;" class="goog-button goog-button-base unselectable goog-inline-block goog-button-float-left" id="search-submit" tabindex="0" role="wairole:button">
   <div class="goog-button-base-outer-box goog-inline-block">
