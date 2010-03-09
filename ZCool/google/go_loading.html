@@ -1,3 +1,4 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -5,6 +6,7 @@
 </head>
 <style type="text/css">
 body { padding:0; margin:0; background:#C2CFF1; }
+* {overflow:visible !important}
 .message-area {
 font-family:Arial;
 font-size:12px;
@@ -41,6 +43,9 @@ margin:0 4px;
 font-size:1px;
 height:1px;
 }
+.remind-message .message-area-inner{
+background:#DDF8CC;
+}
 </style>
 <body>
 <div id="loading-area" class="message-area" style="width: 71px;"><div class="message-area-inner message-area-text-container"><span class="message-area-text" id="loading-area-text">正在加载...</span></div>
@@ -49,6 +54,11 @@ height:1px;
 <div class="message-area-inner message-area-bottom-3"></div></div><br>
 
 <div id="message-area-outer" class="message-area error-message" style="width: 214px;"><div class="message-area-inner message-area-text-container"><span class="message-area-text" id="message-area-inner">抱歉...发生错误。请几秒钟后重试。</span></div>
+<div class="message-area-inner message-area-bottom-1"></div>
+<div class="message-area-inner message-area-bottom-2"></div>
+<div class="message-area-inner message-area-bottom-3"></div></div><br>
+
+<div id="message-area-outer" class="message-area remind-message" style="width: 55%;"><div class="message-area-inner message-area-text-container"><span class="message-area-text" id="message-area-inner"> <b>Tip:</b> Project owners, see our <a href="http://code.google.com/p/support/wiki/GettingStarted">Getting Started</a> guide for steps to configure your project. <a href="#" title="Don't show this message again" style="margin-left: 3em;" onclick="return _CS_dismissCue('', {cue_id: 'tips_for_new_projects', token: codesite_token})">hide</a></span></div>
 <div class="message-area-inner message-area-bottom-1"></div>
 <div class="message-area-inner message-area-bottom-2"></div>
 <div class="message-area-inner message-area-bottom-3"></div></div>
