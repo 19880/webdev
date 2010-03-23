@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>FACEBOX</title>
+</head>
+<style type="text/css">
+* {
+padding:0;
+margin:0;
+}
+body {
+background:#FFF;
+font:12px/1.5 Segoe UI, Arial, Helvetica, sans-serif;
+}
+#facebox { display:none; position:absolute; left:0; top:0; text-align:left; z-index:101; }
+#facebox .popup { position:relative; }
+#facebox table { border-collapse:collapse; display:inline-block; }
+#facebox .b, #facebox .tl, #facebox .tr, #facebox .bl, #facebox .br { background-image:url(4xk9rts8.png); }
+#facebox .tl, #facebox .tr, #facebox  .bl, #facebox .br { width:10px; height:10px; overflow:hidden; }
+#facebox .b { background-position:-10px -40px; }
+#facebox .tl { background-position:0 0; }
+#facebox .tr { background-position:0 -10px; }
+#facebox .bl { background-position:0 -20px; }
+#facebox .br { background-position:0 -30px; }
+#facebox .title { padding:3px 5px; border:1px solid #3b5998; border-bottom:0 none; background:#6d84b4; color:#FFF; font-size:14px; font-weight:700; cursor:mover; }
+#facebox .body { position:relative; background:#FFF; margin:0; padding:0; }
+#facebox .body .title span { padding:3px 10px; }
+#facebox .content { position:relative; border:1px solid #555; border-top:0 none; background:#FFF; padding:5px; }
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://dev.iceburg.net/jquery/jqModal/jqModal.js"></script>
+<script type="text/javascript" src="http://dev.iceburg.net/jquery/jqDnR/jqDnR.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#jqmodal").click(function(){
+		$("#facebox").jqmShow();
+	});
+	$("#facebox").jqm({trigger:false, overlay:0}).jqDrag('.jqDrag');
+})
+</script>
+<body>
+<center><a id="jqmodal" href="#">Click Show FACEBOX</a></center>
+<div id="facebox">
+  <div class="popup">
+  	<table>
+      <tbody>
+      	<tr>
+          <td class="tl"></td>
+          <td class="b"></td>
+          <td class="tr"></td>
+        </tr>
+      	<tr>
+          <td class="b"></td>
+          <td class="body">
+            <div class="title jqDrag">WElCOME FACEBOX</div>
+            <div class="content">THIS IS FACEBOX! --- BY Stanley Zheng</div>
+          </td>
+          <td class="b"></td>
+        </tr>
+      	<tr>
+          <td class="bl"></td>
+          <td class="b"></td>
+          <td class="br"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>
