@@ -139,6 +139,18 @@ font-size:12px;
       myfunction(&nbsp;&amp;$var1,&nbsp;&amp;$var2&nbsp;);</td>
     <td>&nbsp;</td>
   </tr>
+  <tr>
+    <td>class Test {<br>
+      &nbsp;&nbsp;private $wgDB;<br>
+      &nbsp;&nbsp;public function getWgDB(){<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if ( null === $this-&gt;wgDB ) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;wgDB = &amp;wfGetDB (&nbsp;DB_SLAVE&nbsp;);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;$this-&gt;wgDB;<br>
+&nbsp;&nbsp; }<br>
+    }</td>
+    <td>如果 $wgDB 为空，创建它</td>
+  </tr>
 </table>
 <br>
 <table>
