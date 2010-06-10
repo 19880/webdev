@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<script type="text/javascript">
+var Library = {
+	WBook : function( bookName, writer, yearPublished ) {
+		this.Title 			=	bookName;
+		this.Author			=	writer;
+		this.CopyrightYear	=	yearPublished;
+		this.DisplayTitle	=	Library.showTitle;
+		this.DisplayAuthor	=	Library.IdentityAuthor;
+		this.DisplayYear	=	Library.showBookYear;
+		this.DisplayOther	=	Library.showBookOther;
+	},
+	showTitle : function(){
+		console.log( this.Title );	
+	},
+	IdentityAuthor : function(){
+		console.log( this.Author )	;
+	},
+	showBookYear : function(){
+		console.log( this.CopyrightYear )	;
+	},
+	showBookOther : function( other ){
+		console.log( other )	;
+	},
+	showBook : function( oneBook ) {
+		console.log( oneBook.Title );
+		console.log( oneBook.Author );
+		console.log( oneBook.CopyrightYear );	
+	},
+	createBook : function() {
+		var aBook = new Library.WBook("College Algebra - Fifth Edition",
+                        			  "Raymond A. Barnett - Michael R. Zigler", 1993);
+		return aBook;
+	}
+};
+
+console.info( "Creating an Object" );
+var book1 = new Library.WBook( "How to Play Piano", "Roger Evans", 1981 );
+console.log( book1.Title );
+console.log( book1.Author );
+console.log( book1.CopyrightYear );
+
+console.info( "Defining Methods" );
+book1.DisplayTitle();
+book1.DisplayAuthor();
+book1.DisplayYear();
+book1.DisplayOther( "This is Other!" );
+
+console.info( "Passing an Object as Argument" );
+Library.showBook(book1);
+
+console.info( "Returning an Object From a Function" );
+console.log(Library.createBook());
+</script>
+<body>
+From:   <a href="http://www.functionx.com/javascript/Lesson07.htm">JavaScript Tutorial - Lesson 7: Object-Oriented Programming </a>
+</body>
+</html>
