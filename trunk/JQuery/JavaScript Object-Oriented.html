@@ -39,6 +39,13 @@ var Library = {
 	}
 };
 
+function NBook ( bookName ) {
+	return {
+	    Title : bookName,
+		DisplayTitle : Library.showTitle
+	}
+}
+
 console.info( "Creating an Object" );
 var book1 = new Library.WBook( "How to Play Piano", "Roger Evans", 1981 );
 console.log( book1.Title );
@@ -56,6 +63,9 @@ Library.showBook(book1);
 
 console.info( "Returning an Object From a Function" );
 console.log(Library.createBook());
+
+console.info( "Direct return" );
+var book2 = new NBook("This is a new book!").DisplayTitle();
 </script>
 <body>
 From:   <a href="http://www.functionx.com/javascript/Lesson07.htm">JavaScript Tutorial - Lesson 7: Object-Oriented Programming </a>
