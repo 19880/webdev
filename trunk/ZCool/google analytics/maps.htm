@@ -1,0 +1,1453 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta content="IE=7" http-equiv="X-UA-Compatible">
+<title>Map Overlay -
+Google Analytics</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link title="" type="text/css" href="css/ga-ltr.css" rel="stylesheet">
+<!--[if IE]><link href="css/ie.css" rel="Stylesheet" type="text/css" /><![endif]-->
+<link href="images/icons/favicon.ico" type="image/x-icon" rel="shortcut icon">
+</head>
+<body class="report_body" dir="ltr">
+<div id="container" style="min-width: 800px;">
+  <div id="header">
+    <div id="main_header">
+      <p id="logo"><a href="/analytics/settings/home"></a></p>
+      <table id="global_header_nav">
+        <tbody>
+          <tr>
+            <td><span class="email_address" id="f_email">tercelx@gmail.com</span></td>
+            <td>|</td>
+            <td><a href="/analytics/settings/my_account?scid=7767254">Settings</a></td>
+            <td>|</td>
+            <td><a href="https://www.google.com/accounts/ManageAccount">My Account</a></td>
+            <td>|</td>
+            <td><a target="GoogleHelp" href="http://www.google.com/support/googleanalytics/?hl=en_US">Help</a></td>
+            <td>|</td>
+            <td><a id="logout" href="https://www.google.com/accounts/Logout?hl=en-US&amp;continue=https://www.google.com/analytics/settings/">Sign Out</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="subheader">
+      <div id="tlcorner">
+        <div id="trcorner">
+          <div id="blcorner">
+            <div id="brcorner">
+              <table cellspacing="0" cellpadding="0" id="account_profile_nav">
+                <tbody>
+                  <tr>
+                    <td><form method="get" action="/analytics/reporting/" id="account_profile_selector">
+                        <p id="profile_nav">
+                          <input type="hidden" value="1" name="reset">
+                          <a href="/analytics/settings/home?scid=7767254" id="settings_link" class="settings">Analytics Settings</a>
+                          <label for="profile"> View Reports: </label>
+                          <select onChange="this.form.submit()" id="profile" name="id">
+                            <option value="16031476" selected="">bbs.onwind.cn</option>
+                            <option value="17939039">mhss.onwind.cn</option>
+                            <option value="16031821">pass.onwind.cn</option>
+                            <option value="15643287">www.onwind.cn</option>
+                            <option value="15675646">xjsq.onwind.cn</option>
+                          </select>
+                        </p>
+                      </form></td>
+                    <td><form method="get" action="/analytics/reporting/" name="account_selector" id="account_selector">
+                        <p id="account_nav">
+                          <label for="account"> My Analytics Accounts: </label>
+                          <select onChange="submitAccountSelectorForm(this.value)" id="account" name="scid">
+                            <option value="7767254" selected="">onwind.cn</option>
+                            <option value="12106002">tercelx</option>
+                          </select>
+                        </p>
+                      </form></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="content">
+    <div id="main_content"> <b class="round_border"> <b class="round_border_layer3"></b> <b class="round_border_layer2"></b> <b class="round_border_layer1"></b> </b>
+      <div class="round_border_content main_reporting">
+        <table class="report_table">
+          <tbody>
+            <tr>
+              <td><div id="ReportContent">
+                  <div>
+                    <div>
+                      <div id="ControlPanel">
+                        <div id="report_tools"> <b class="controlbar_border"> <b class="controlbar_border_layer3"></b> <b class="controlbar_border_layer2"></b> <b class="controlbar_border_layer1"></b> </b>
+                          <div id="controlbar_border_content">
+                            <table cellspacing="0" cellpadding="0" class="report_menu_left">
+                              <tbody>
+                                <tr>
+                                  <td id="export_button_item"><a class="button menu" onClick="goog.analytics.Menu.toggle(&quot;f_export_format&quot;, &quot;f_export_format_options&quot;, goog.analytics.MenuType.CONTROL); return false;" id="f_export_format" href="#"><b><b><b>Export</b></b></b></a></td>
+                                  <td id="email_button_item"><a onClick="VisualizationModule.redirectReport(&quot;setup_email&quot;, &quot;fmt=0&quot;, true); return false;" class="button" href="setup_email?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average&amp;rpt=GeoMapReport"> <b><b><b>Email</b></b></b> </a></td>
+                                  <td id="dashboard_button_item"><a class="button" onClick="analytics.Dashboard.add(); return false;" href="#"><b><b><b>Add to Dashboard</b></b></b></a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table cellspacing="0" cellpadding="0" class="report_menu_right">
+                              <tbody>
+                                <tr>
+                                  <td id="segment_button_label"> Advanced Segments: </td>
+                                  <td id="segment_button_item"><a class="button menu" onClick="goog.analytics.Menu.toggle('f_segment_button', 'f_segment_button_options', goog.analytics.MenuType.CONTROL); window.controlPanel.showOrHideWarningMessage(); return false;" id="f_segment_button" href="#"> <b><b><b> All Visits </b></b></b> </a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <div style="display: none;" id="f_export_format_options" class="export_button_options">
+                              <div id="export_dropbox">
+                                <div id="export_dropbox_content">
+                                  <div id="export_dropbox_data">
+                                    <div class="export_dropbox_listbox">
+                                      <ul>
+                                        <li> <a onClick="gaNavigator.exportReport(&quot;fmt=0&quot;, &quot;export&quot;); return false;" href="export?fmt=0&amp;id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average&amp;rpt=GeoMapReport" id="pdf_export_format"> PDF </a> </li>
+                                        <li> <a onClick="gaNavigator.exportReport(&quot;fmt=1&quot;, &quot;export&quot;); return false;" href="export?fmt=1&amp;id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average&amp;rpt=GeoMapReport" id="xml_export_format"> XML </a> </li>
+                                        <li> <a onClick="gaNavigator.exportReport(&quot;fmt=2&quot;, &quot;export&quot;); return false;" href="export?fmt=2&amp;id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average&amp;rpt=GeoMapReport" id="csv_export_format"> CSV </a> </li>
+                                        <li> <a onClick="gaNavigator.exportReport(&quot;fmt=5&quot;, &quot;export&quot;); return false;" href="export?fmt=5&amp;id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average&amp;rpt=GeoMapReport" id="excel_export_format"> CSV for Excel </a> </li>
+                                        <li> <a onClick="gaNavigator.exportReport(&quot;fmt=3&quot;, &quot;export&quot;); return false;" href="export?fmt=3&amp;id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average&amp;rpt=GeoMapReport" id="tsv_export_format"> TSV </a> </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div style="display: none;" id="f_segment_button_options" class="segment_button_options">
+                              <div id="seg_dropbox">
+                                <div id="seg_dropbox_content">
+                                  <div id="seg_dropbox_info">
+                                    <h1>Advanced Segments</h1>
+                                    <p>Select up to four segments by which to filter your report</p>
+                                    <ul>
+                                      <li> <a onClick="analytics.Navigator.changeLocationWithState( 'add_segment', true, &quot;originatingReport\x3dmaps&quot;, true); return false;" href="#"> Create a new advanced segment </a> </li>
+                                      <li> <a onClick="return VisualizationModule.changeReport(&quot;manage_profile_segments&quot;, null, true);" id="f_managesegment_format" href="#"> Manage your advanced segments </a> </li>
+                                    </ul>
+                                  </div>
+                                  <div id="seg_dropbox_data">
+                                    <div class="seg_dropbox_listbox">
+                                      <h1>Custom Segments</h1>
+                                      <ul>
+                                      </ul>
+                                    </div>
+                                    <div class="seg_dropbox_listbox">
+                                      <h1>Default Segments</h1>
+                                      <ul>
+                                        <li>
+                                          <label for="segment_id_-1" style="background-color: rgb(255, 204, 102);">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" checked="" value="-1" name="All Visits" id="segment_id_-1">
+                                            All Visits </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-2">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-2" name="New Visitors" id="segment_id_-2">
+                                            New Visitors </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-3">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-3" name="Returning Visitors" id="segment_id_-3">
+                                            Returning Visitors </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-4">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-4" name="Paid Search Traffic" id="segment_id_-4">
+                                            Paid Search Traffic </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-5">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-5" name="Non-paid Search Traffic" id="segment_id_-5">
+                                            Non-paid Search Traffic </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-6">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-6" name="Search Traffic" id="segment_id_-6">
+                                            Search Traffic </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-7">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-7" name="Direct Traffic" id="segment_id_-7">
+                                            Direct Traffic </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-8">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-8" name="Referral Traffic" id="segment_id_-8">
+                                            Referral Traffic </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-9">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-9" name="Visits with Conversions" id="segment_id_-9">
+                                            Visits with Conversions </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-11">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-11" name="Mobile Traffic" id="segment_id_-11">
+                                            Mobile Traffic </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-12">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-12" name="Non-bounce Visits" id="segment_id_-12">
+                                            Non-bounce Visits </label>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div id="seg_dropbox_alert">
+                                    <p>When selecting multiple segments, Date Range Comparison will revert to only the primary date range.</p>
+                                  </div>
+                                  <div id="seg_dropbox_control">
+                                    <p>
+                                      <input type="submit" value="Apply" onClick="window.controlPanel.updateSegments(window.controlPanel.getAllSegmentCheckboxes()); goog.analytics.Menu.toggle('f_segment_button', 'f_segment_button_options', goog.analytics.MenuType.CONTROL); return false;" id="segment_options_submit">
+                                      <a onClick="window.controlPanel.onCancel(); goog.analytics.Menu.toggle('f_segment_button', 'f_segment_button_options', goog.analytics.MenuType.CONTROL); return false;" id="segment_options_cancel" href="#"> cancel </a> </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <b class="controlbar_border"> <b class="controlbar_border_layer1"></b> <b class="controlbar_border_layer2"></b> <b class="controlbar_border_layer3"></b> </b> </div>
+                        <a name="status_message_anchor"></a>
+                        <div style="display: none;" id="f_add_to_dashboard_message" class="status_message"> <b><b><b><b> Your report has been added.<a onClick="return VisualizationModule.changeReport('dashboard')" href="dashboard?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">View Dashboard</a> </b></b></b></b> </div>
+                        <div style="display: none;" id="f_message" class="status_message"> <b><b><b><b id="f_message_text"> </b></b></b></b> </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="breadcrumb" id="Breadcrumb"> <a onClick="VisualizationModule.changeReport(&quot;visitors&quot;); return false;" href="#">Overview</a> » </div>
+                    </div>
+                    <div>
+                      <div id="Title">
+                        <div id="report_header">
+                          <table width="100%" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td width="60%"><div class="title_container">
+                                    <div class="title_contents">
+                                      <h1 title="Map Overlay " class="title"> <span id="report_title_name" class="name"> Map Overlay </span> <span class="detail"> <span id="report_title_details_1" class="last"> </span> </span> </h1>
+                                    </div>
+                                  </div></td>
+                                <td><div class="date_range"> <a onClick="analytics.Menu.toggle('f_date_range', 'f_date_range_options', analytics.MenuType.CALENDAR); window.dateInputView.initFunction(); window.dateInputView.setStylesForDatePicker(); return false;" id="f_date_range" href="#"> <b><b><b> <span>
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding: 3px;"><table>
+                                              <tbody>
+                                                <tr>
+                                                  <td class="date_range_display"> Jun 12, 2010 - Jul 12, 2010 </td>
+                                                </tr>
+                                                <tr>
+                                                  <td><div class="comparison"> </div></td>
+                                                </tr>
+                                              </tbody>
+                                            </table></td>
+                                          <td class="comparison_dropdown">&nbsp;</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    </span> <span class="comparison_hide">&nbsp;</span> </b></b></b> </a> </div></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div id="f_date_range_options" class="date_range_options hidden">
+                        <div id="date_range_tools">
+                          <div class="wrapper">
+                            <div id="f_dateInputLoading" class="loading" style="display: none;"> <img width="16" height="16" alt="" src="images/icons/loading.gif"> </div>
+                            <div id="f_dateAlert" style="display: none;"> When comparing two date ranges, only a single advanced segment will be selected </div>
+                            <div class="date_controller_flash" id="f_dateInputFlash">
+                              <embed width="420" height="133" quality="high" bgcolor="#FFFFFF" id="flashProxy0" flashvars="input=%7B%22DateSlider%22%3A%7B%22Values%22%3A%5B%5D%2C%22FirstDayOfWeek%22%3A0%2C%22ComparisonType%22%3A%22AVERAGE%22%2C%22MaxDate%22%3A20100713%2C%22StateQuery%22%3A%22id%5Cu003d16031476%5Cu0026esig%5Cu003d0%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%5Cu0026rpt%5Cu003dGeoMapReport%22%2C%22TimelineTabString%22%3A%22Timeline%22%2C%22PrimaryDateRange%22%3A%2220100612-20100712%22%2C%22Compare%22%3Afalse%2C%22MonthNames%22%3A%5B%22January%22%2C%22February%22%2C%22March%22%2C%22April%22%2C%22May%22%2C%22June%22%2C%22July%22%2C%22August%22%2C%22September%22%2C%22October%22%2C%22November%22%2C%22December%22%5D%2C%22ShowCompare%22%3Atrue%2C%22CalendarTabString%22%3A%22Calendar%22%2C%22UrlPath%22%3A%22%2Fanalytics%2Freporting%2Fmaps%22%2C%22StateBaseQuery%22%3A%22id%5Cu003d16031476%5Cu0026esig%5Cu003d0%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%22%2C%22Id%22%3A%22DateSlider%22%2C%22DayAbbreviations%22%3A%5B%22S%22%2C%22M%22%2C%22T%22%2C%22W%22%2C%22T%22%2C%22F%22%2C%22S%22%5D%2C%22ComparisonOptions%22%3A%7B%7D%7D%7D&amp;profile=16031476&amp;locale=en-US&amp;JavascriptProxyId=flashProxy0" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" scale="noScale" salign="tl" src="/analytics/static/flash/date_controller.swf">
+                            </div>
+                            <form action="none" class="date_controller_form" id="f_dateInputForm" style="display: none;">
+                              <dl>
+                                <dt> Date Range </dt>
+                                <dd class="current"> <span class="focus_indicator" id="f_primaryBeginFocus">
+                                  <input type="text" class="date_input" id="f_primaryBegin">
+                                  </span> - <span class="focus_indicator" id="f_primaryEndFocus">
+                                  <input type="text" class="date_input" id="f_primaryEnd">
+                                  </span> </dd>
+                                <dt>
+                                  <label for="f_comparisonEnabledCheckbox"> Compare to Past </label>
+                                  <input type="checkbox" id="f_comparisonEnabledCheckbox">
+                                </dt>
+                                <dd class="previous" id="f_comparisonInputs"> <span class="focus_indicator" id="f_comparisonBeginFocus">
+                                  <input type="text" class="date_input" id="f_comparisonBegin">
+                                  </span> - <span class="focus_indicator" id="f_comparisonEndFocus">
+                                  <input type="text" class="date_input" id="f_comparisonEnd">
+                                  </span> </dd>
+                              </dl>
+                              <div id="f_dateRangeLengthNotice"> Date ranges are different lengths. </div>
+                              <div id="f_submitOptions">
+                                <p class="date_input_submit">
+                                  <input type="submit" value="Apply" id="f_apply">
+                                  <a id="f_cancel" href="#">cancel</a> </p>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div id="GeoMap">
+                      <div class="graph_options_header">
+                        <div onClick="goog.analytics.Menu.toggle(&quot;f_grapher_label&quot;, &quot;f_graph_options&quot;, goog.analytics.MenuType.CONTROL); return false;" id="f_grapher_label" class="graph_tab_options"> <b> <b>
+                          <div class="legend"> Visits </div>
+                          <div class="graph_tab_arrow"></div>
+                          </b> </b> </div>
+                      </div>
+                      <div style="display: none;" id="f_graph_options" class="graph_options">
+                        <form class="graph_option_list" method="get" action="#">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td><ul>
+                                    <li>
+                                      <div class="graph_option primary">
+                                        <input type="radio" onClick="analytics.PropertyManager._getInstance()._broadcastChange(&quot;map_index&quot;, 0);" class="graph_option primary" checked="" id="grapher_data_0" name="grapher_data">
+                                      </div>
+                                      <label class="graph_option_label" id="f_grapher_data_label_0" for="grapher_data_0">Visits</label>
+                                    </li>
+                                    <li>
+                                      <div class="graph_option primary">
+                                        <input type="radio" onClick="analytics.PropertyManager._getInstance()._broadcastChange(&quot;map_index&quot;, 1);" class="graph_option primary" id="grapher_data_1" name="grapher_data">
+                                      </div>
+                                      <label class="graph_option_label" id="f_grapher_data_label_1" for="grapher_data_1">Pages/Visit</label>
+                                    </li>
+                                    <li>
+                                      <div class="graph_option primary">
+                                        <input type="radio" onClick="analytics.PropertyManager._getInstance()._broadcastChange(&quot;map_index&quot;, 2);" class="graph_option primary" id="grapher_data_2" name="grapher_data">
+                                      </div>
+                                      <label class="graph_option_label" id="f_grapher_data_label_2" for="grapher_data_2">Avg. Time on Site</label>
+                                    </li>
+                                    <li>
+                                      <div class="graph_option primary">
+                                        <input type="radio" onClick="analytics.PropertyManager._getInstance()._broadcastChange(&quot;map_index&quot;, 3);" class="graph_option primary" id="grapher_data_3" name="grapher_data">
+                                      </div>
+                                      <label class="graph_option_label" id="f_grapher_data_label_3" for="grapher_data_3">% New Visits</label>
+                                    </li>
+                                    <li>
+                                      <div class="graph_option primary">
+                                        <input type="radio" onClick="analytics.PropertyManager._getInstance()._broadcastChange(&quot;map_index&quot;, 4);" class="graph_option primary" id="grapher_data_4" name="grapher_data">
+                                      </div>
+                                      <label class="graph_option_label" id="f_grapher_data_label_4" for="grapher_data_4">Bounce Rate</label>
+                                    </li>
+                                  </ul></td>
+                                <td><ul>
+                                    <li>
+                                      <div class="graph_option primary">
+                                        <input type="radio" onClick="analytics.PropertyManager._getInstance()._broadcastChange(&quot;map_index&quot;, 5);" class="graph_option primary" id="grapher_data_5" name="grapher_data">
+                                      </div>
+                                      <label class="graph_option_label" id="f_grapher_data_label_5" for="grapher_data_5">Goal1 Conversion Rate</label>
+                                    </li>
+                                    <li>
+                                      <div class="graph_option primary">
+                                        <input type="radio" onClick="analytics.PropertyManager._getInstance()._broadcastChange(&quot;map_index&quot;, 6);" class="graph_option primary" id="grapher_data_6" name="grapher_data">
+                                      </div>
+                                      <label class="graph_option_label" id="f_grapher_data_label_6" for="grapher_data_6">Goal Conversion Rate</label>
+                                    </li>
+                                    <li>
+                                      <div class="graph_option primary">
+                                        <input type="radio" onClick="analytics.PropertyManager._getInstance()._broadcastChange(&quot;map_index&quot;, 7);" class="graph_option primary" id="grapher_data_7" name="grapher_data">
+                                      </div>
+                                      <label class="graph_option_label" id="f_grapher_data_label_7" for="grapher_data_7">Per Visit Goal Value</label>
+                                    </li>
+                                  </ul></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </form>
+                      </div>
+                      <div class="map_overlay" id="GeoMap_vis">
+                        <embed width="100%" height="436" salign="tl" scale="noScale" quality="high" bgcolor="#FFFFFF" flashvars="input=%7B%22GeoMap%22%3A%7B%22ControlLabelSets%22%3A%5B%5B%7B%22ValueIndex%22%3A0%2C%22Message%22%3A%22Visits%22%7D%2C%7B%22ValueIndex%22%3A1%2C%22Message%22%3A%22Pages%2FVisit%22%7D%2C%7B%22ValueIndex%22%3A2%2C%22Message%22%3A%22Avg.%20Time%20on%20Site%22%7D%2C%7B%22ValueIndex%22%3A3%2C%22Message%22%3A%22%25%20New%20Visits%22%7D%2C%7B%22ValueIndex%22%3A4%2C%22Message%22%3A%22Bounce%20Rate%22%7D%5D%2C%5B%7B%22ValueIndex%22%3A0%2C%22Message%22%3A%22Visits%22%7D%2C%7B%22ValueIndex%22%3A5%2C%22Message%22%3A%22Goal1%20Conversion%20Rate%22%7D%2C%7B%22ValueIndex%22%3A6%2C%22Message%22%3A%22Goal%20Conversion%20Rate%22%7D%2C%7B%22ValueIndex%22%3A7%2C%22Message%22%3A%22Per%20Visit%20Goal%20Value%22%7D%5D%5D%2C%22Format%22%3A%22NORMAL%22%2C%22ValueLabel%22%3A%22Visits%22%2C%22DataLabels%22%3A%5B%22Visits%22%5D%2C%22StateQuery%22%3A%22id%5Cu003d16031476%5Cu0026esig%5Cu003d0%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%5Cu0026rpt%5Cu003dGeoMapReport%22%2C%22PrimarySegmentKey%22%3A%22COUNTRY%22%2C%22Regions%22%3A%5B%7B%22Lng%22%3A0.0%2C%22Values%22%3A%5B%5B%221753%22%2C%221%2C753%22%5D%5D%2C%22Name%22%3A%22China%22%2C%22Lat%22%3A0.0%2C%22Id%22%3A%22CN%22%2C%22ColorKey%22%3A1753%7D%2C%7B%22Lng%22%3A0.0%2C%22Values%22%3A%5B%5B%223%22%2C%223%22%5D%5D%2C%22Name%22%3A%22United%20States%22%2C%22Lat%22%3A0.0%2C%22Id%22%3A%22US%22%2C%22ColorKey%22%3A3%7D%2C%7B%22Lng%22%3A0.0%2C%22Values%22%3A%5B%5B%222%22%2C%222%22%5D%5D%2C%22Name%22%3A%22Taiwan%22%2C%22Lat%22%3A0.0%2C%22Id%22%3A%22TW%22%2C%22ColorKey%22%3A2%7D%2C%7B%22Lng%22%3A0.0%2C%22Values%22%3A%5B%5B%221%22%2C%221%22%5D%5D%2C%22Name%22%3A%22Hong%20Kong%22%2C%22Lat%22%3A0.0%2C%22Id%22%3A%22HK%22%2C%22ColorKey%22%3A1%7D%2C%7B%22Lng%22%3A0.0%2C%22Values%22%3A%5B%5B%221%22%2C%221%22%5D%5D%2C%22Name%22%3A%22Australia%22%2C%22Lat%22%3A0.0%2C%22Id%22%3A%22AU%22%2C%22ColorKey%22%3A1%7D%2C%7B%22Lng%22%3A0.0%2C%22Values%22%3A%5B%5B%221%22%2C%221%22%5D%5D%2C%22Name%22%3A%22United%20Arab%20Emirates%22%2C%22Lat%22%3A0.0%2C%22Id%22%3A%22AE%22%2C%22ColorKey%22%3A1%7D%2C%7B%22Lng%22%3A0.0%2C%22Values%22%3A%5B%5B%221%22%2C%221%22%5D%5D%2C%22Name%22%3A%22Netherlands%22%2C%22Lat%22%3A0.0%2C%22Id%22%3A%22NL%22%2C%22ColorKey%22%3A1%7D%2C%7B%22Lng%22%3A0.0%2C%22Values%22%3A%5B%5B%221%22%2C%221%22%5D%5D%2C%22Name%22%3A%22Brazil%22%2C%22Lat%22%3A0.0%2C%22Id%22%3A%22BR%22%2C%22ColorKey%22%3A1%7D%2C%7B%22Lng%22%3A0.0%2C%22Values%22%3A%5B%5B%221%22%2C%221%22%5D%5D%2C%22Name%22%3A%22France%22%2C%22Lat%22%3A0.0%2C%22Id%22%3A%22FR%22%2C%22ColorKey%22%3A1%7D%2C%7B%22Lng%22%3A0.0%2C%22Values%22%3A%5B%5B%221%22%2C%221%22%5D%5D%2C%22Name%22%3A%22Italy%22%2C%22Lat%22%3A0.0%2C%22Id%22%3A%22IT%22%2C%22ColorKey%22%3A1%7D%5D%2C%22Minimums%22%3A%5B%5B%221%22%2C%221%22%5D%5D%2C%22Compare%22%3Afalse%2C%22TargetId%22%3A%22world%22%2C%22DataIndex%22%3A0%2C%22LabelIndex%22%3A0%2C%22GeographyName%22%3A%22world_COUNTRIES.xml%22%2C%22Maximums%22%3A%5B%5B%221753%22%2C%221%2C753%22%5D%5D%2C%22ZoomOutEnabled%22%3Atrue%2C%22ZoomLevel%22%3A%22WORLD%22%2C%22UrlPath%22%3A%22%2Fanalytics%2Freporting%2Fmaps%22%2C%22StateBaseQuery%22%3A%22id%5Cu003d16031476%5Cu0026esig%5Cu003d0%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%22%2C%22Id%22%3A%22GeoMap%22%2C%22ZoomOutMessage%22%3A%22Zoom%20Out%22%7D%7D&amp;locale=en-US&amp;staticFilePath=%2Fanalytics%2Fstatic%2F" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" src="/analytics/static/flash/geomap.swf">
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div id="Narrative">
+                      <div class="narrative">
+                        <div>
+                          <div>
+                            <h2 class="standalone">
+                              <div class=" normal"> 1,765 visits came from 10 countries/territories </div>
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div id="ControlBar" class="horizontal_stack">
+                      <div class="subsections">
+                        <div class="section section_1">
+                          <dl class="ctrl" id="ZoomControl">
+                            <dt> Detail Level: </dt>
+                            <dd>
+                              <div class="ctrl_list" id="ZoomControl_menu">
+                                <div id="ZoomControl_listing"> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;city&quot;, &quot;0&quot;)"> City </a> | <span class="selected"> Country/Territory </span> | <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;sub_continent_region&quot;, &quot;0&quot;)"> Sub Continent Region </a> | <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;continent&quot;, &quot;0&quot;)"> Continent </a> </div>
+                              </div>
+                            </dd>
+                          </dl>
+                        </div>
+                        <div class="section section_2">
+                          <dl class="ctrl" id="SegmentControl">
+                            <dt> Dimension: </dt>
+                            <dd>
+                              <div class="btn dropdn" id="SegmentControl_button"> <b onClick="goog.analytics.Menu.toggle(&quot;SegmentControl_button&quot;, &quot;SegmentControl_menu&quot;, goog.analytics.MenuType.NARRATIVE);"> <b><b> None </b></b> </b> </div>
+                              <div style="display: none;" id="SegmentControl_menu">
+                                <div class="button_submenu" id="SegmentControl_listing">
+                                  <div>
+                                    <div>
+                                      <div>
+                                        <div>
+                                          <ul class="">
+                                            <li> None </li>
+                                          </ul>
+                                          <ul class="">
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;source&quot;, &quot;0&quot;)"> Source </a> </li>
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;medium&quot;, &quot;0&quot;)"> Medium </a> </li>
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;campaign&quot;, &quot;0&quot;)"> Campaign </a> </li>
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;keyword&quot;, &quot;0&quot;)"> Keyword </a> </li>
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;content&quot;, &quot;0&quot;)"> Ad Content </a> </li>
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;visitor_type&quot;, &quot;0&quot;)"> Visitor Type </a> </li>
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;request_uri_1&quot;, &quot;0&quot;)"> Landing Page </a> </li>
+                                          </ul>
+                                          <ul class="">
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;language&quot;, &quot;0&quot;)"> Language </a> </li>
+                                          </ul>
+                                          <ul class="">
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;browser&quot;, &quot;0&quot;)"> Browser </a> </li>
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;platform&quot;, &quot;0&quot;)"> Operating System </a> </li>
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;screen_colors&quot;, &quot;0&quot;)"> Screen Colors </a> </li>
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;screen_resolution&quot;, &quot;0&quot;)"> Screen Resolution </a> </li>
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;flash_version&quot;, &quot;0&quot;)"> Flash Version </a> </li>
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;java_enabled&quot;, &quot;0&quot;)"> Java Support </a> </li>
+                                          </ul>
+                                          <ul class="">
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;organization&quot;, &quot;0&quot;)"> Service Provider </a> </li>
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;hostname&quot;, &quot;0&quot;)"> Hostname </a> </li>
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;connection_speed&quot;, &quot;0&quot;)"> Connection Speed </a> </li>
+                                          </ul>
+                                          <ul class="last">
+                                            <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;geo_segmentation&quot;,&quot;user_defined_value&quot;, &quot;0&quot;)"> User Defined Value </a> </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div id="TabView">
+                      <div class="display_control_tabs">
+                        <dl>
+                          <dt> Show: </dt>
+                          <dd>
+                            <ul class="tabs">
+                              <li id="tab_0" class="first current"><a onClick="tabView._toggleTab(0); return false;" href="#">Site Usage</a></li>
+                              <li id="tab_1" class=" "><a onClick="tabView._toggleTab(1); return false;" href="#">Goal Set 1</a></li>
+                            </ul>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="records_view_options">
+                        <dl>
+                          <dt> Views: </dt>
+                          <dd>
+                            <ul>
+                              <li class="table_view_option" id="f_table_view_option_elem"><a onClick="tabView._toggleView(0); table._toggleView(0); return false;" class="current" id="f_table_view_option" href="#">Table</a>
+                                <div style="display: none;" class="hover_desc_container" id="hover_desc_table">
+                                  <div class="hover_desc_outerdiv">
+                                    <div class="hover_desc_innerdiv"><span>Table</span>
+                                      <div class="hover_desc_pointer">&nbsp;</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="pie_view_option" id="f_pie_view_option_elem"><a onClick="tabView._toggleView(1); table._toggleView(1); return false;" class="" id="f_pie_view_option" href="#">Percentage</a>
+                                <div style="display: none;" class="hover_desc_container" id="hover_desc_pie">
+                                  <div class="hover_desc_outerdiv">
+                                    <div class="hover_desc_innerdiv"><span>Percentage</span>
+                                      <div class="hover_desc_pointer">&nbsp;</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="performance_view_option" id="f_performance_view_option_elem"><a onClick="tabView._toggleView(2); table._toggleView(2); return false;" class="" id="f_performance_view_option" href="#">Performance</a>
+                                <div style="display: none;" class="hover_desc_container" id="hover_desc_performance">
+                                  <div class="hover_desc_outerdiv">
+                                    <div class="hover_desc_innerdiv"><span>Performance</span>
+                                      <div class="hover_desc_pointer">&nbsp;</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="comparison_view_option" id="f_comparison_view_option_elem"><a onClick="tabView._toggleView(3); table._toggleView(3); return false;" class="" id="f_comparison_view_option" href="#">Comparison</a>
+                                <div style="display: none;" class="hover_desc_container" id="hover_desc_comparison">
+                                  <div class="hover_desc_outerdiv">
+                                    <div class="hover_desc_innerdiv"><span>Comparison</span>
+                                      <div class="hover_desc_pointer">&nbsp;</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="pivot_alt_view_option" id="f_pivot_view_option_elem"><a onClick="tabView._toggleView(4); table._toggleView(4); return false;" class="" id="f_pivot_view_option" href="#">Pivot</a>
+                                <div style="display: none;" class="hover_desc_container" id="hover_desc_pivot">
+                                  <div class="hover_desc_outerdiv">
+                                    <div class="hover_desc_innerdiv"><span>Pivot</span>
+                                      <div class="hover_desc_pointer">&nbsp;</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div id="Scorecard">
+                      <table class="scorecard">
+                        <tbody>
+                          <tr style="" id="f_scorecard_0">
+                            <td class="first"><div class="statistic">
+                                <div onClick="goog.analytics.Menu.toggle('f_scorecard_help_link_0_0', 'f_scorecard_help_0_0');" onMouseOut="document.getElementById('f_scorecard_help_link_0_0').className=&quot;&quot;;" onMouseOver="document.getElementById('f_scorecard_help_link_0_0').className=&quot;current&quot;;" id="f_scorecard_help_container_0_0" class="contextual_help"> <a id="f_scorecard_help_link_0_0" onClick="return false" href="#"> </a>
+                                  <div style="display: none;" id="f_scorecard_help_0_0">
+                                    <dl>
+                                      <dt> Visits </dt>
+                                      <dd> The number of visits to your site. </dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                                <h3> <span class="label"> Visits </span> </h3>
+                                <p> <span class="primary_value"> 1,765 </span> </p>
+                                <p class="date_comparison"> % of Site Total: <span class="comparison_value"> 100.00% </span> </p>
+                              </div></td>
+                            <td class=""><div class="statistic">
+                                <div onClick="goog.analytics.Menu.toggle('f_scorecard_help_link_0_1', 'f_scorecard_help_0_1');" onMouseOut="document.getElementById('f_scorecard_help_link_0_1').className=&quot;&quot;;" onMouseOver="document.getElementById('f_scorecard_help_link_0_1').className=&quot;current&quot;;" id="f_scorecard_help_container_0_1" class="contextual_help"> <a id="f_scorecard_help_link_0_1" onClick="return false" href="#"> </a>
+                                  <div style="display: none;" id="f_scorecard_help_0_1">
+                                    <dl>
+                                      <dt> Pages/Visit </dt>
+                                      <dd> The average number of pages viewed during a visit to your site. Repeated views of a single page are counted. </dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                                <h3> <span class="label"> Pages/Visit </span> </h3>
+                                <p> <span class="primary_value"> 2.83 </span> </p>
+                                <p class="date_comparison"> Site Avg: <span class="comparison_value"> 2.83 </span> <span class="neutral_comparison"> (0.00%) </span> </p>
+                              </div></td>
+                            <td class=""><div class="statistic">
+                                <div onClick="goog.analytics.Menu.toggle('f_scorecard_help_link_0_2', 'f_scorecard_help_0_2');" onMouseOut="document.getElementById('f_scorecard_help_link_0_2').className=&quot;&quot;;" onMouseOver="document.getElementById('f_scorecard_help_link_0_2').className=&quot;current&quot;;" id="f_scorecard_help_container_0_2" class="contextual_help"> <a id="f_scorecard_help_link_0_2" onClick="return false" href="#"> </a>
+                                  <div style="display: none;" id="f_scorecard_help_0_2">
+                                    <dl>
+                                      <dt> Avg. Time on Site </dt>
+                                      <dd> The average duration of a visit to your site. </dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                                <h3> <span class="label"> Avg. Time on Site </span> </h3>
+                                <p> <span class="primary_value"> 00:01:18 </span> </p>
+                                <p class="date_comparison"> Site Avg: <span class="comparison_value"> 00:01:18 </span> <span class="neutral_comparison"> (0.00%) </span> </p>
+                              </div></td>
+                            <td class=""><div class="statistic">
+                                <div onClick="goog.analytics.Menu.toggle('f_scorecard_help_link_0_3', 'f_scorecard_help_0_3');" onMouseOut="document.getElementById('f_scorecard_help_link_0_3').className=&quot;&quot;;" onMouseOver="document.getElementById('f_scorecard_help_link_0_3').className=&quot;current&quot;;" id="f_scorecard_help_container_0_3" class="contextual_help"> <a id="f_scorecard_help_link_0_3" onClick="return false" href="#"> </a>
+                                  <div style="display: none;" id="f_scorecard_help_0_3">
+                                    <dl>
+                                      <dt> % New Visits </dt>
+                                      <dd> The percentage of visits by people who had never visited your site before. </dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                                <h3> <span class="label"> % New Visits </span> </h3>
+                                <p> <span class="primary_value"> 85.44% </span> </p>
+                                <p class="date_comparison"> Site Avg: <span class="comparison_value"> 85.55% </span> <span class="negative_comparison"> (-0.13%) </span> </p>
+                              </div></td>
+                            <td class="last"><div class="statistic">
+                                <div onClick="goog.analytics.Menu.toggle('f_scorecard_help_link_0_4', 'f_scorecard_help_0_4');" onMouseOut="document.getElementById('f_scorecard_help_link_0_4').className=&quot;&quot;;" onMouseOver="document.getElementById('f_scorecard_help_link_0_4').className=&quot;current&quot;;" id="f_scorecard_help_container_0_4" class="contextual_help"> <a id="f_scorecard_help_link_0_4" onClick="return false" href="#"> </a>
+                                  <div style="display: none;" id="f_scorecard_help_0_4">
+                                    <dl>
+                                      <dt> Bounce Rate </dt>
+                                      <dd> The percentage of single-page visits (i.e. visits in which the person left your site from the entrance page). </dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                                <h3> <span class="label"> Bounce Rate </span> </h3>
+                                <p> <span class="primary_value"> 79.21% </span> </p>
+                                <p class="date_comparison"> Site Avg: <span class="comparison_value"> 79.21% </span> <span class="neutral_comparison"> (0.00%) </span> </p>
+                              </div></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div>
+                    <div id="Table">
+                      <table class="records table_view" id="f_table_data">
+                        <tbody>
+                          <tr id="f_table_sort_header">
+                            <th class="empty"></th>
+                            <th class="key_column only  goog-control" id="f_key_column_0" style="-moz-user-select: none;"> <dl class="ctrl" id="ZoomMenuControl">
+                                <dt> Detail Level: </dt>
+                                <dd>
+                                  <div class="btn dropdn" id="ZoomMenuControl_button"> <b onClick="goog.analytics.Menu.toggle(&quot;ZoomMenuControl_button&quot;, &quot;ZoomMenuControl_menu&quot;, goog.analytics.MenuType.NARRATIVE);"> <b><b> Country/Territory </b></b> </b> </div>
+                                  <div style="display: none;" id="ZoomMenuControl_menu">
+                                    <div class="button_submenu" id="ZoomMenuControl_listing">
+                                      <div>
+                                        <div>
+                                          <div>
+                                            <div>
+                                              <ul class="last">
+                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;city&quot;, &quot;0&quot;)"> City </a> </li>
+                                                <li> Country/Territory </li>
+                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;sub_continent_region&quot;, &quot;0&quot;)"> Sub Continent Region </a> </li>
+                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;continent&quot;, &quot;0&quot;)"> Continent </a> </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </dd>
+                              </dl>
+                            </th>
+                            <th class="default_var sort  goog-control" id="f_column_0" style="-moz-user-select: none;"> <div class="column_header"> Visits </div>
+                            </th>
+                            <th class=" goog-control" id="f_column_1" style="-moz-user-select: none;"> <div class="column_header"> Pages/Visit </div>
+                            </th>
+                            <th class="  goog-control" id="f_column_2" style="-moz-user-select: none;"> <div class="column_header"> Avg. Time on Site </div>
+                            </th>
+                            <th class="  goog-control" id="f_column_3" style="-moz-user-select: none;"> <div class="column_header"> % New Visits </div>
+                            </th>
+                            <th class="  goog-control" id="f_column_4" style="-moz-user-select: none;"> <div class="column_header"> Bounce Rate </div>
+                            </th>
+                          </tr>
+                        </tbody>
+                        <tbody id="f_tbody_0">
+                          <tr class="highlight">
+                            <td class="count">1.</td>
+                            <td colspan="1" class="text"><div id="f_primary_segment0" title="China" class="text_wrapper">
+                                <div class="text_wrapper"> <a onClick="table._drillDown(0); return false;" href="#"> China </a> </div>
+                              </div></td>
+                            <td id="f_cell_0_0" class="sort "> 1,753 </td>
+                            <td id="f_cell_0_1" class=" "> 2.84 </td>
+                            <td id="f_cell_0_2" class=" "> 00:01:18 </td>
+                            <td id="f_cell_0_3" class=" "> 85.34% </td>
+                            <td id="f_cell_0_4" class=" "> 79.12% </td>
+                          </tr>
+                        </tbody>
+                        <tbody id="f_tbody_1">
+                          <tr class="">
+                            <td class="count">2.</td>
+                            <td colspan="1" class="text"><div id="f_primary_segment1" title="United States" class="text_wrapper">
+                                <div class="text_wrapper"> <a onClick="table._drillDown(1); return false;" href="#"> United States </a> </div>
+                              </div></td>
+                            <td id="f_cell_1_0" class="sort "> 3 </td>
+                            <td id="f_cell_1_1" class=" "> 1.00 </td>
+                            <td id="f_cell_1_2" class=" "> 00:00:00 </td>
+                            <td id="f_cell_1_3" class=" "> 100.00% </td>
+                            <td id="f_cell_1_4" class=" "> 100.00% </td>
+                          </tr>
+                        </tbody>
+                        <tbody id="f_tbody_2">
+                          <tr class="highlight">
+                            <td class="count">3.</td>
+                            <td colspan="1" class="text"><div id="f_primary_segment2" title="Taiwan" class="text_wrapper">
+                                <div class="text_wrapper"> <a onClick="table._drillDown(2); return false;" href="#"> Taiwan </a> </div>
+                              </div></td>
+                            <td id="f_cell_2_0" class="sort "> 2 </td>
+                            <td id="f_cell_2_1" class=" "> 1.50 </td>
+                            <td id="f_cell_2_2" class=" "> 00:00:47 </td>
+                            <td id="f_cell_2_3" class=" "> 100.00% </td>
+                            <td id="f_cell_2_4" class=" "> 50.00% </td>
+                          </tr>
+                        </tbody>
+                        <tbody id="f_tbody_3">
+                          <tr class="">
+                            <td class="count">4.</td>
+                            <td colspan="1" class="text"><div id="f_primary_segment3" title="Hong Kong" class="text_wrapper">
+                                <div class="text_wrapper"> <a onClick="table._drillDown(3); return false;" href="#"> Hong Kong </a> </div>
+                              </div></td>
+                            <td id="f_cell_3_0" class="sort "> 1 </td>
+                            <td id="f_cell_3_1" class=" "> 1.00 </td>
+                            <td id="f_cell_3_2" class=" "> 00:00:00 </td>
+                            <td id="f_cell_3_3" class=" "> 100.00% </td>
+                            <td id="f_cell_3_4" class=" "> 100.00% </td>
+                          </tr>
+                        </tbody>
+                        <tbody id="f_tbody_4">
+                          <tr class="highlight">
+                            <td class="count">5.</td>
+                            <td colspan="1" class="text"><div id="f_primary_segment4" title="Australia" class="text_wrapper">
+                                <div class="text_wrapper"> <a onClick="table._drillDown(4); return false;" href="#"> Australia </a> </div>
+                              </div></td>
+                            <td id="f_cell_4_0" class="sort "> 1 </td>
+                            <td id="f_cell_4_1" class=" "> 1.00 </td>
+                            <td id="f_cell_4_2" class=" "> 00:00:00 </td>
+                            <td id="f_cell_4_3" class=" "> 100.00% </td>
+                            <td id="f_cell_4_4" class=" "> 100.00% </td>
+                          </tr>
+                        </tbody>
+                        <tbody id="f_tbody_5">
+                          <tr class="">
+                            <td class="count">6.</td>
+                            <td colspan="1" class="text"><div id="f_primary_segment5" title="United Arab Emirates" class="text_wrapper">
+                                <div class="text_wrapper"> <a onClick="table._drillDown(5); return false;" href="#"> United Arab Emirates </a> </div>
+                              </div></td>
+                            <td id="f_cell_5_0" class="sort "> 1 </td>
+                            <td id="f_cell_5_1" class=" "> 1.00 </td>
+                            <td id="f_cell_5_2" class=" "> 00:00:00 </td>
+                            <td id="f_cell_5_3" class=" "> 100.00% </td>
+                            <td id="f_cell_5_4" class=" "> 100.00% </td>
+                          </tr>
+                        </tbody>
+                        <tbody id="f_tbody_6">
+                          <tr class="highlight">
+                            <td class="count">7.</td>
+                            <td colspan="1" class="text"><div id="f_primary_segment6" title="Netherlands" class="text_wrapper">
+                                <div class="text_wrapper"> <a onClick="table._drillDown(6); return false;" href="#"> Netherlands </a> </div>
+                              </div></td>
+                            <td id="f_cell_6_0" class="sort "> 1 </td>
+                            <td id="f_cell_6_1" class=" "> 1.00 </td>
+                            <td id="f_cell_6_2" class=" "> 00:00:00 </td>
+                            <td id="f_cell_6_3" class=" "> 100.00% </td>
+                            <td id="f_cell_6_4" class=" "> 100.00% </td>
+                          </tr>
+                        </tbody>
+                        <tbody id="f_tbody_7">
+                          <tr class="">
+                            <td class="count">8.</td>
+                            <td colspan="1" class="text"><div id="f_primary_segment7" title="Brazil" class="text_wrapper">
+                                <div class="text_wrapper"> <a onClick="table._drillDown(7); return false;" href="#"> Brazil </a> </div>
+                              </div></td>
+                            <td id="f_cell_7_0" class="sort "> 1 </td>
+                            <td id="f_cell_7_1" class=" "> 1.00 </td>
+                            <td id="f_cell_7_2" class=" "> 00:00:00 </td>
+                            <td id="f_cell_7_3" class=" "> 100.00% </td>
+                            <td id="f_cell_7_4" class=" "> 100.00% </td>
+                          </tr>
+                        </tbody>
+                        <tbody id="f_tbody_8">
+                          <tr class="highlight">
+                            <td class="count">9.</td>
+                            <td colspan="1" class="text"><div id="f_primary_segment8" title="France" class="text_wrapper">
+                                <div class="text_wrapper"> <a onClick="table._drillDown(8); return false;" href="#"> France </a> </div>
+                              </div></td>
+                            <td id="f_cell_8_0" class="sort "> 1 </td>
+                            <td id="f_cell_8_1" class=" "> 1.00 </td>
+                            <td id="f_cell_8_2" class=" "> 00:00:00 </td>
+                            <td id="f_cell_8_3" class=" "> 100.00% </td>
+                            <td id="f_cell_8_4" class=" "> 100.00% </td>
+                          </tr>
+                        </tbody>
+                        <tbody id="f_tbody_9">
+                          <tr class="">
+                            <td class="count">10.</td>
+                            <td colspan="1" class="text"><div id="f_primary_segment9" title="Italy" class="text_wrapper">
+                                <div class="text_wrapper"> <a onClick="table._drillDown(9); return false;" href="#"> Italy </a> </div>
+                              </div></td>
+                            <td id="f_cell_9_0" class="sort "> 1 </td>
+                            <td id="f_cell_9_1" class=" "> 1.00 </td>
+                            <td id="f_cell_9_2" class=" "> 00:00:00 </td>
+                            <td id="f_cell_9_3" class=" "> 100.00% </td>
+                            <td id="f_cell_9_4" class=" "> 100.00% </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="records">
+                        <tbody>
+                          <tr>
+                            <td class="table_controls" colspan="3"><div class="box">
+                                <form onSubmit="table._setFilterString(document.getElementById(&quot;f_filter_str&quot;).value); table._filter(); return false;" action="">
+                                  <div style="display: block;" class="filter_controls" id="filter_controls">
+                                    <div id="basic_filter"> <span class="button_label"> Filter Country/Territory: </span>
+                                      <select onChange="table._toggleFilterType(this.options[this.selectedIndex].value)" id="basic_filter_drpdown">
+                                        <option selected="" value="0"> containing </option>
+                                        <option value="1"> excluding </option>
+                                      </select>
+                                      <input type="text" onChange="table._setFilterString(this.value)" value="" id="f_filter_str">
+                                      <a title="Go" class="button" onClick="table._filter(); return false;" href="#"> <b><b><b>Go</b></b></b> </a> <span class="filter_tab_options"> <a onClick="table.toggleTableFilter_(&quot;f_popout_filter&quot;, &quot;basic_filter&quot;); return false;" name="toggle_filter" id="f_toggle_filter" href="#"> <b> <b> Advanced Filter </b> </b> </a> </span> </div>
+                                  </div>
+                                </form>
+                                <form onSubmit="table._toggleRowStart(document.getElementById(&quot;f_row_start&quot;).value); return false;" action="">
+                                  <div class="pagination_controls"> <span class="button_label">Go to:</span>
+                                    <input type="text" onChange="table._toggleRowStart(this.value)" value="1" size="5" id="f_row_start">
+                                    <span class="button_label">Show rows:</span>
+                                    <select onChange="table._toggleRowShow(this.options[this.selectedIndex].value)">
+                                      <option selected="" value="10">10</option>
+                                      <option value="25">25</option>
+                                      <option value="50">50</option>
+                                      <option value="100">100</option>
+                                      <option value="250">250</option>
+                                      <option value="500">500</option>
+                                    </select>
+                                    <span class="button_label"> 1 - 10 of 10 </span> <a title="previous" class="button previous" onClick="table._togglePage(-1); return false;" href="#"> <b> <b> <b> previous </b> </b> </b> </a> <a title="next" class="button next" onClick="table._togglePage(1); return false;" href="#"> <b> <b> <b> next </b> </b> </b> </a> </div>
+                                </form>
+                              </div></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div>
+                    <div id="TableFilter">
+                      <div style="display: none;" id="f_popout_filter" class="popout_filter">
+                        <div>
+                          <div id="advanced_filters"> <span class="advfilter_button_label"> Filter </span>
+                            <div id="applied_filters" style="display: block;">
+                              <div id="basic_tablefilter" class="keyFilterContainerDiv">
+                                <div class="keyMatchTypeMenusDiv" id="basic_tablefilter_label">
+                                  <div class="text_wrapper">Country/Territory</div>
+                                </div>
+                                <div class="keyMatchTypeMenu">
+                                  <div class="goog-inline-block goog-menu-button" title="" role="button" style="-moz-user-select: none;" tabindex="0" aria-haspopup="true">
+                                    <div class="goog-inline-block goog-menu-button-outer-box">
+                                      <div class="goog-inline-block goog-menu-button-inner-box">
+                                        <div class="goog-inline-block goog-menu-button-caption">Containing</div>
+                                        <div class="goog-inline-block goog-menu-button-dropdown">&nbsp;</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <input type="text" id="basic_tablefilter_input" class="tableFilterKeyInput">
+                                </div>
+                                <a href="javascript:;" class="modifyFilter">Delete</a>
+                                <div class="filter_error_message"></div>
+                              </div>
+                            </div>
+                            <div id="f_add_condition" style="display: block;"> <a onClick="tableFilter.clearCondnId(); tableFilter.showHideKeyValueFilterOptions('f_add_condition', 'f_keyValueOptions'); return false;" id="f_add_condition_label" href="#"><b><b><b>+ Add new condition</b></b></b></a> </div>
+                            <div style="display: none;" id="f_keyValueOptions">
+                              <div id="f_keyOptions">
+                                <div id="keyListLabel">Dimensions</div>
+                                <ul>
+                                  <div id="keyOptionsList">
+                                    <li>
+                                      <label for="country">
+                                        <input type="radio" onClick="tableFilter.renderKeyFilter('applied_filters', tableFilter.getCondnId(), &quot;Country/Territory&quot;, &quot;country&quot;, &quot;&quot;, &quot;&quot;);return false;" value="Country/Territory" id="country" name="keyGroup">
+                                        <span>Country/Territory</span> </label>
+                                    </li>
+                                  </div>
+                                </ul>
+                              </div>
+                              <div id="f_valueOptions">
+                                <div id="valueListLabel"> Metrics </div>
+                                <div id="valueGroupList">
+                                  <div id="valueGroupLabel">
+                                    <div>Site Usage</div>
+                                  </div>
+                                  <ul>
+                                    <div id="valueOptionsList">
+                                      <li>
+                                        <label for="visits">
+                                          <input type="radio" onClick="tableFilter.renderValueFilter('applied_filters', tableFilter.getCondnId(), &quot;visits&quot;, this.value, &quot;&quot;, &quot;&quot;, &quot;&quot;);return false;" value="Visits" id="visits" name="valueGroup">
+                                          <span>Visits</span> </label>
+                                      </li>
+                                    </div>
+                                    <div id="valueOptionsList">
+                                      <li>
+                                        <label for="avg_pageviews">
+                                          <input type="radio" onClick="tableFilter.renderValueFilter('applied_filters', tableFilter.getCondnId(), &quot;avg_pageviews&quot;, this.value, &quot;&quot;, &quot;&quot;, &quot;&quot;);return false;" value="Pages/Visit" id="avg_pageviews" name="valueGroup">
+                                          <span>Pages/Visit</span> </label>
+                                      </li>
+                                    </div>
+                                    <div id="valueOptionsList">
+                                      <li>
+                                        <label for="avg_session_time">
+                                          <input type="radio" onClick="tableFilter.renderValueFilter('applied_filters', tableFilter.getCondnId(), &quot;avg_session_time&quot;, this.value, &quot;&quot;, &quot;&quot;, &quot;&quot;);return false;" value="Avg. Time on Site" id="avg_session_time" name="valueGroup">
+                                          <span>Avg. Time on Site</span> </label>
+                                      </li>
+                                    </div>
+                                    <div id="valueOptionsList">
+                                      <li>
+                                        <label for="percent_new_visitors">
+                                          <input type="radio" onClick="tableFilter.renderValueFilter('applied_filters', tableFilter.getCondnId(), &quot;percent_new_visitors&quot;, this.value, &quot;&quot;, &quot;&quot;, &quot;&quot;);return false;" value="% New Visits" id="percent_new_visitors" name="valueGroup">
+                                          <span>% New Visits</span> </label>
+                                      </li>
+                                    </div>
+                                    <div id="valueOptionsList">
+                                      <li>
+                                        <label for="bounce_rate">
+                                          <input type="radio" onClick="tableFilter.renderValueFilter('applied_filters', tableFilter.getCondnId(), &quot;bounce_rate&quot;, this.value, &quot;&quot;, &quot;&quot;, &quot;&quot;);return false;" value="Bounce Rate" id="bounce_rate" name="valueGroup">
+                                          <span>Bounce Rate</span> </label>
+                                      </li>
+                                    </div>
+                                  </ul>
+                                </div>
+                                <div id="valueGroupList">
+                                  <div id="valueGroupLabel">
+                                    <div>Goal Set 1</div>
+                                  </div>
+                                  <ul>
+                                    <div id="valueOptionsList">
+                                      <li>
+                                        <label for="goal_conversion_rate_1">
+                                          <input type="radio" onClick="tableFilter.renderValueFilter('applied_filters', tableFilter.getCondnId(), &quot;goal_conversion_rate_1&quot;, this.value, &quot;&quot;, &quot;&quot;, &quot;&quot;);return false;" value="G1" id="goal_conversion_rate_1" name="valueGroup">
+                                          <span>G1</span> </label>
+                                      </li>
+                                    </div>
+                                    <div id="valueOptionsList">
+                                      <li>
+                                        <label for="goal_conversion_rate">
+                                          <input type="radio" onClick="tableFilter.renderValueFilter('applied_filters', tableFilter.getCondnId(), &quot;goal_conversion_rate&quot;, this.value, &quot;&quot;, &quot;&quot;, &quot;&quot;);return false;" value="Goal Conversion Rate" id="goal_conversion_rate" name="valueGroup">
+                                          <span>Goal Conversion Rate</span> </label>
+                                      </li>
+                                    </div>
+                                    <div id="valueOptionsList">
+                                      <li>
+                                        <label for="goal_value_per_visit">
+                                          <input type="radio" onClick="tableFilter.renderValueFilter('applied_filters', tableFilter.getCondnId(), &quot;goal_value_per_visit&quot;, this.value, &quot;&quot;, &quot;&quot;, &quot;&quot;);return false;" value="Per Visit Goal Value" id="goal_value_per_visit" name="valueGroup">
+                                          <span>Per Visit Goal Value</span> </label>
+                                      </li>
+                                    </div>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="submitButtons"> <a class="button" onClick="if(tableFilter.validate()){ tableFilter.applyAdvancedFilter();}return false;" href="#"> <b><b><b>Apply Filter</b></b></b> </a> <a onClick="tableFilter.cancel('f_popout_filter', 'applied_filters', 'advanced_filters_link', 'basic_filter');return false;" href="#"> <b><b><b>cancel</b></b></b> </a> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <b class="round_border"> <b class="round_border_layer1"></b> <b class="round_border_layer2"></b> <b class="round_border_layer3"></b> </b> </div>
+    <div id="main_context">
+      <div>
+        <div id="report_nav_div">
+          <div id="report_nav" class="menu-list"> <b class="round_border"> <b class="round_border_layer3"></b> <b class="round_border_layer2"></b> <b class="round_border_layer1"></b> </b>
+            <div class="round_border_content">
+              <div class="menu-item"> <a id="dashboard_nav_item" class="" onClick="return VisualizationModule.changeReport('dashboard', null)" href="dashboard?dashboard=1&amp;id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                <div class="r1">
+                  <div class="r2">
+                    <div class="r3">
+                      <div class="content">
+                        <div class="icon_wrapper">
+                          <div class="icon"></div>
+                        </div>
+                        Dashboard</div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+              <div class="menu-item"> <a id="intelligence_events_nav_item" class="" onClick="return VisualizationModule.changeReport('daily_events', null)" href="daily_events?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                <div class="r1">
+                  <div class="r2">
+                    <div class="r3">
+                      <div class="content">
+                        <div class="icon_wrapper">
+                          <div class="icon"></div>
+                        </div>
+                        Intelligence&nbsp;<sup class="beta_label small">Beta</sup></div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+              <div class="menu-item"> <a id="visitors_nav_item" class="current" onClick="return VisualizationModule.changeReport('visitors', null)" href="visitors?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                <div class="r1">
+                  <div class="r2">
+                    <div class="r3">
+                      <div class="content">
+                        <div class="icon_wrapper">
+                          <div class="icon"></div>
+                        </div>
+                        Visitors</div>
+                    </div>
+                  </div>
+                </div>
+                </a>
+                <div id="visitors_nav_item_items" class="menu-list">
+                  <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('visitors', null)" href="visitors?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                    <div class="r1">
+                      <div class="r2">
+                        <div class="r3">
+                          <div class="content">Overview</div>
+                        </div>
+                      </div>
+                    </div>
+                    </a> </div>
+                  <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReportAndComparison('benchmark', 'benchmark')" href="benchmark?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                    <div class="r1">
+                      <div class="r2">
+                        <div class="r3">
+                          <div class="content">Benchmarking</div>
+                        </div>
+                      </div>
+                    </div>
+                    </a> </div>
+                  <div class="menu-item"> <a class="current" onClick="return VisualizationModule.changeReport('maps', null)" href="maps?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                    <div class="r1">
+                      <div class="r2">
+                        <div class="r3">
+                          <div class="content">Map Overlay</div>
+                        </div>
+                      </div>
+                    </div>
+                    </a> </div>
+                  <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('visitor_types', 'view=1')" href="visitor_types?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                    <div class="r1">
+                      <div class="r2">
+                        <div class="r3">
+                          <div class="content">New vs. Returning</div>
+                        </div>
+                      </div>
+                    </div>
+                    </a> </div>
+                  <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('languages', null)" href="languages?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                    <div class="r1">
+                      <div class="r2">
+                        <div class="r3">
+                          <div class="content">Languages</div>
+                        </div>
+                      </div>
+                    </div>
+                    </a> </div>
+                  <div class="menu-item"> <a id="f_trending_nav" class="expandable" onClick="goog.analytics.Menu.toggle(&quot;f_trending_nav&quot;, &quot;f_trending_nav_items&quot;, goog.analytics.MenuType.NAV); return false; return false;" href="#">
+                    <div class="r1">
+                      <div class="r2">
+                        <div class="r3">
+                          <div class="content">
+                            <div class="icon_wrapper">
+                              <div class="icon"></div>
+                            </div>
+                            Visitor Trending</div>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <div style="display: none;" id="f_trending_nav_items" class="nested_report_nav menu-list">
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('visits', null)" href="visits?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Visits</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('unique_visitors', null)" href="unique_visitors?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Absolute Unique Visitors</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('pageviews', null)" href="pageviews?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Pageviews</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('average_pageviews', null)" href="average_pageviews?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Average Pageviews</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('time_on_site', null)" href="time_on_site?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Time on Site</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('bounce_rate', null)" href="bounce_rate?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Bounce Rate</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                    </div>
+                  </div>
+                  <div class="menu-item"> <a id="f_behaviors_nav" class="expandable" onClick="goog.analytics.Menu.toggle(&quot;f_behaviors_nav&quot;, &quot;f_behaviors_nav_items&quot;, goog.analytics.MenuType.NAV); return false; return false;" href="#">
+                    <div class="r1">
+                      <div class="r2">
+                        <div class="r3">
+                          <div class="content">
+                            <div class="icon_wrapper">
+                              <div class="icon"></div>
+                            </div>
+                            Visitor Loyalty</div>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <div style="display: none;" id="f_behaviors_nav_items" class="nested_report_nav menu-list">
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('loyalty', null)" href="loyalty?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Loyalty</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('recency', null)" href="recency?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Recency</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('length_of_visit', null)" href="length_of_visit?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Length of Visit</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('depth_of_visit', null)" href="depth_of_visit?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Depth of Visit</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                    </div>
+                  </div>
+                  <div class="menu-item"> <a id="f_browsers_nav" class="expandable" onClick="goog.analytics.Menu.toggle(&quot;f_browsers_nav&quot;, &quot;f_browsers_nav_items&quot;, goog.analytics.MenuType.NAV); return false; return false;" href="#">
+                    <div class="r1">
+                      <div class="r2">
+                        <div class="r3">
+                          <div class="content">
+                            <div class="icon_wrapper">
+                              <div class="icon"></div>
+                            </div>
+                            Browser Capabilities</div>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <div style="display: none;" id="f_browsers_nav_items" class="nested_report_nav menu-list">
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('browsers', 'view=1')" href="browsers?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Browsers</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('platforms', 'view=1')" href="platforms?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Operating Systems</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('os_browsers', 'view=1')" href="os_browsers?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Browsers and OS</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('colors', 'view=1')" href="colors?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Screen Colors</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('resolutions', 'view=1')" href="resolutions?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Screen Resolutions</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('flash', 'view=1')" href="flash?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Flash Versions</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('java', 'view=1')" href="java?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Java Support</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                    </div>
+                  </div>
+                  <div class="menu-item"> <a id="f_networks_nav" class="expandable" onClick="goog.analytics.Menu.toggle(&quot;f_networks_nav&quot;, &quot;f_networks_nav_items&quot;, goog.analytics.MenuType.NAV); return false; return false;" href="#">
+                    <div class="r1">
+                      <div class="r2">
+                        <div class="r3">
+                          <div class="content">
+                            <div class="icon_wrapper">
+                              <div class="icon"></div>
+                            </div>
+                            Network Properties</div>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <div style="display: none;" id="f_networks_nav_items" class="nested_report_nav menu-list">
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('networks', null)" href="networks?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Service Providers</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('hostnames', null)" href="hostnames?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Hostnames</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('speeds', null)" href="speeds?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Connection Speeds</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                    </div>
+                  </div>
+                  <div class="menu-item"> <a id="f_mobile_nav" class="expandable" onClick="goog.analytics.Menu.toggle(&quot;f_mobile_nav&quot;, &quot;f_mobile_nav_items&quot;, goog.analytics.MenuType.NAV); return false; return false;" href="#">
+                    <div class="r1">
+                      <div class="r2">
+                        <div class="r3">
+                          <div class="content">
+                            <div class="icon_wrapper">
+                              <div class="icon"></div>
+                            </div>
+                            Mobile</div>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                    <div style="display: none;" id="f_mobile_nav_items" class="nested_report_nav menu-list">
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('devices', null)" href="devices?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Mobile Devices</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('carriers', null)" href="carriers?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                        <div class="r1">
+                          <div class="r2">
+                            <div class="r3">
+                              <div class="content">Mobile Carriers</div>
+                            </div>
+                          </div>
+                        </div>
+                        </a> </div>
+                    </div>
+                  </div>
+                  <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('user_defined', null)" href="user_defined?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                    <div class="r1">
+                      <div class="r2">
+                        <div class="r3">
+                          <div class="content">User Defined</div>
+                        </div>
+                      </div>
+                    </div>
+                    </a> </div>
+                  <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('custom_variables_overview_report', null)" href="custom_variables_overview_report?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                    <div class="r1">
+                      <div class="r2">
+                        <div class="r3">
+                          <div class="content">Custom Variables</div>
+                        </div>
+                      </div>
+                    </div>
+                    </a> </div>
+                </div>
+              </div>
+              <div class="menu-item"> <a id="traffic_sources_nav_item" class="" onClick="return VisualizationModule.changeReport('sources', null)" href="sources?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                <div class="r1">
+                  <div class="r2">
+                    <div class="r3">
+                      <div class="content">
+                        <div class="icon_wrapper">
+                          <div class="icon"></div>
+                        </div>
+                        Traffic Sources</div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+              <div class="menu-item"> <a id="content_nav_item" class="" onClick="return VisualizationModule.changeReport('content', null)" href="content?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                <div class="r1">
+                  <div class="r2">
+                    <div class="r3">
+                      <div class="content">
+                        <div class="icon_wrapper">
+                          <div class="icon"></div>
+                        </div>
+                        Content</div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+              <div class="menu-item"> <a id="goals_nav_item" class="" onClick="return VisualizationModule.changeReport('goal_intro', null)" href="goal_intro?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                <div class="r1">
+                  <div class="r2">
+                    <div class="r3">
+                      <div class="content">
+                        <div class="icon_wrapper">
+                          <div class="icon"></div>
+                        </div>
+                        Goals</div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+            </div>
+            <b class="round_border"> <b class="round_border_layer1"></b> <b class="round_border_layer2"></b> <b class="round_border_layer3"></b> </b>
+            <div class="custom_reporting"> <b class="round_border"> <b class="round_border_layer3"></b> <b class="round_border_layer2"></b> <b class="round_border_layer1"></b> </b>
+              <div class="round_border_content">
+                <div class="menu-item"> <a id="custom_report_nav_item" class="custom_reporting_section" onClick="goog.analytics.Menu.toggle(&quot;custom_report_nav_item&quot;, &quot;custom_report_nav_item_items&quot;, goog.analytics.MenuType.NAV); return false; return false;" href="#">
+                  <div class="r1">
+                    <div class="r2">
+                      <div class="r3">
+                        <div class="content">
+                          <div class="icon_wrapper">
+                            <div class="icon"></div>
+                          </div>
+                          Custom Reporting</div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                  <div style="display: none;" id="custom_report_nav_item_items" class="menu-list">
+                    <div class="menu-item"> <a id="manage_custom_reports" class="" onClick="return VisualizationModule.changeReport('manage_profile_custom_reports', null)" href="manage_profile_custom_reports?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="r1">
+                        <div class="r2">
+                          <div class="r3">
+                            <div class="content">
+                              <div class="icon_wrapper">
+                                <div class="icon"></div>
+                              </div>
+                              Manage Custom Reports</div>
+                          </div>
+                        </div>
+                      </div>
+                      </a> </div>
+                  </div>
+                </div>
+              </div>
+              <b class="round_border"> <b class="round_border_layer1"></b> <b class="round_border_layer2"></b> <b class="round_border_layer3"></b> </b> </div>
+          </div>
+        </div>
+        <div class="feature settings">
+          <div class="r1">
+            <div class="r2">
+              <div class="r3">
+                <h4>My Customizations</h4>
+                <ul>
+                  <li class="custom_reports"><span class="setting_choice"><a onClick="return VisualizationModule.changeReport(&quot;manage_profile_custom_reports&quot;, null, true);" href="#">Custom Reports</a>&nbsp;</span></li>
+                  <li class="segments"><span class="setting_choice"><a onClick="return VisualizationModule.changeReport(&quot;manage_profile_segments&quot;, null, true);" href="#">Advanced Segments</a>&nbsp;</span></li>
+                  <li class="custom_alerts"><span class="setting_choice"><a onClick="return VisualizationModule.changeReport(&quot;manage_profile_custom_alerts&quot;, null, true);" href="#">Intelligence</a>&nbsp;<b class="beta_label small">Beta</b></span></li>
+                  <li class="emails"><span class="setting_choice"><a onClick="return VisualizationModule.changeReport(&quot;manage_emails&quot;, null, true);" href="#">Email</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feature help_resources">
+        <div class="r1">
+          <div class="r2">
+            <div class="r3">
+              <h4>Help Resources</h4>
+              <ul>
+                <li class="first"><a onClick="goog.analytics.Menu.toggle(&quot;f_help_about&quot;, &quot;f_help_about_menu&quot;); return false;" id="f_help_about" href="#">About this Report</a>
+                  <dl style="display: none;" class="contextual_help" id="f_help_about_menu">
+                    <dt><b>About this Report</b></dt>
+                    <dd>
+                      <div>Use this map to visualize volume (visits, pageviews) and quality (pageviews per visit, conversion rates, per visit value, etc) metrics by geographic region. You can select a metric from the pulldown menu above the map. Click on any region to zoom into the next level.</div>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="second"><a onClick="goog.analytics.Menu.toggle(&quot;f_help_cu&quot;, &quot;f_help_cu_menu&quot;); return false;" id="f_help_cu" href="#">Conversion University</a>
+                  <dl style="display: none;" class="contextual_help" id="f_help_cu_menu">
+                    <dt><b>Conversion University</b></dt>
+                    <dd>
+                      <div>Identifying promising regional markets will help you effectively target your marketing and site. For example, you may wish to purchase advertising in specific markets or create local AdWords search campaigns for high-traffic or conversion regions. Hint: You can learn which languages to target within this region by selecting the "Language" segment.</div>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="third"><a onClick="goog.analytics.Menu.toggle(&quot;f_help_faq&quot;, &quot;f_help_faq_menu&quot;); return false;" id="f_help_faq" href="#">Common Questions</a>
+                  <dl style="display: none;" class="contextual_help" id="f_help_faq_menu">
+                    <dt><b>Common Questions</b></dt>
+                    <dd>
+                      <div><a href="javascript: _openHelp('answer.py?answer=55614');"> Why does Google Analytics report different values than some other web analytics solutions? </a></div>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div id="global_footer_nav"><span>&copy; 2010 Google</span><span><a href="http://www.google.com/analytics/" target="GoogleHome">Analytics Home</a></span><span><a href="http://www.google.com/intl/en/analytics/tos.html">Terms of Service</a></span><span><a href="http://www.google.com/intl/en/privacy.html" target="GoogleHome">Privacy Policy</a></span><span><a href="http://www.google.com/support/googleanalytics/bin/request.py?hl=en_US" target="GoogleHelp">Contact us</a></span><span class="last"><a href="http://analytics.blogspot.com/" target="GoogleHome">Analytics Blog (in English)</a></span></div>
+  </div>
+  <div style="display: none;" id="f_loading_message" class="loading_message">
+    <p><b><b><b><img width="16" height="16" alt="" src="https://ssl.gstatic.com/analytics/20100608/images/icons/loading.gif">Loading...</b></b></b></p>
+  </div>
+</div>
+</body>
+</html>
