@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta content="IE=7" http-equiv="X-UA-Compatible">
-<title>New vs. Returning -
+<title>Visits for all visitors -
 Google Analytics</title>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 <link title="" type="text/css" href="css/ga-ltr.css" rel="stylesheet">
@@ -10,7 +10,7 @@ Google Analytics</title>
 <link href="images/icons/favicon.ico" type="image/x-icon" rel="shortcut icon">
 </head>
 <body class="report_body" dir="ltr">
-<div id="container" style="min-width: 800px;">
+<div id="container">
   <div id="header">
     <div id="main_header">
       <p id="logo"><a href="/analytics/settings/home"></a></p>
@@ -43,7 +43,7 @@ Google Analytics</title>
                           <input type="hidden" value="1" name="reset">
                           <a href="/analytics/settings/home?scid=7767254" id="settings_link" class="settings">Analytics Settings</a>
                           <label for="profile"> View Reports: </label>
-                          <select onChange="this.form.submit()" id="profile" name="id">
+                          <select onchange="this.form.submit()" id="profile" name="id">
                             <option value="16031476" selected="">bbs.onwind.cn</option>
                             <option value="17939039">mhss.onwind.cn</option>
                             <option value="16031821">pass.onwind.cn</option>
@@ -55,7 +55,7 @@ Google Analytics</title>
                     <td><form method="get" action="/analytics/reporting/" name="account_selector" id="account_selector">
                         <p id="account_nav">
                           <label for="account"> My Analytics Accounts: </label>
-                          <select onChange="submitAccountSelectorForm(this.value)" id="account" name="scid">
+                          <select onchange="submitAccountSelectorForm(this.value)" id="account" name="scid">
                             <option value="7767254" selected="">onwind.cn</option>
                             <option value="12106002">tercelx</option>
                           </select>
@@ -86,9 +86,8 @@ Google Analytics</title>
                               <tbody>
                                 <tr>
                                   <td id="export_button_item"><a class="button menu" href="#"><b><b><b>Export</b></b></b></a></td>
-                                  <td id="email_button_item"><a href="setup_email?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average&amp;rpt=VisitorTypesReport&amp;view=1"> <b><b><b>Email</b></b></b> </a></td>
+                                  <td id="email_button_item"><a href="setup_email?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average&amp;rpt=VisitsReport"> <b><b><b>Email</b></b></b> </a></td>
                                   <td id="dashboard_button_item"><a class="button" href="#"><b><b><b>Add to Dashboard</b></b></b></a></td>
-                                  <td id="adv_vis_button_item"><a id="adv_vis_button_link" class="button" href="#"> <b><b><b>Visualize</b></b></b> </a></td>
                                 </tr>
                               </tbody>
                             </table>
@@ -224,7 +223,7 @@ Google Analytics</title>
                               <tr>
                                 <td width="60%"><div class="title_container">
                                     <div class="title_contents">
-                                      <h1 title="New vs. Returning " class="title"> <span id="report_title_name" class="name"> New vs. Returning </span> </h1>
+                                      <h1 title="Visits for all visitors " class="title"> <span id="report_title_name" class="name"> Visits for all visitors </span> </h1>
                                     </div>
                                   </div></td>
                                 <td><div class="date_range"> <a href="#"> <b><b><b> <span>
@@ -259,7 +258,7 @@ Google Analytics</title>
                             <div id="f_dateInputLoading" class="loading" style="display: none;"> <img width="16" height="16" alt="" src="images/icons/loading.gif"> </div>
                             <div id="f_dateAlert" style="display: none;"> When comparing two date ranges, only a single advanced segment will be selected </div>
                             <div class="date_controller_flash" id="f_dateInputFlash">
-                              <embed width="420" height="133" quality="high" bgcolor="#FFFFFF" id="flashProxy0" flashvars="input=%7B%22DateSlider%22%3A%7B%22Values%22%3A%5B%5D%2C%22FirstDayOfWeek%22%3A0%2C%22ComparisonType%22%3A%22AVERAGE%22%2C%22MaxDate%22%3A20100713%2C%22StateQuery%22%3A%22id%5Cu003d16031476%5Cu0026esig%5Cu003d0%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%5Cu0026rpt%5Cu003dVisitorTypesReport%5Cu0026view%5Cu003d1%22%2C%22TimelineTabString%22%3A%22Timeline%22%2C%22PrimaryDateRange%22%3A%2220100612-20100712%22%2C%22Compare%22%3Afalse%2C%22MonthNames%22%3A%5B%22January%22%2C%22February%22%2C%22March%22%2C%22April%22%2C%22May%22%2C%22June%22%2C%22July%22%2C%22August%22%2C%22September%22%2C%22October%22%2C%22November%22%2C%22December%22%5D%2C%22ShowCompare%22%3Atrue%2C%22CalendarTabString%22%3A%22Calendar%22%2C%22UrlPath%22%3A%22%2Fanalytics%2Freporting%2Fvisitor_types%22%2C%22StateBaseQuery%22%3A%22id%5Cu003d16031476%5Cu0026esig%5Cu003d0%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%22%2C%22Id%22%3A%22DateSlider%22%2C%22DayAbbreviations%22%3A%5B%22S%22%2C%22M%22%2C%22T%22%2C%22W%22%2C%22T%22%2C%22F%22%2C%22S%22%5D%2C%22ComparisonOptions%22%3A%7B%7D%7D%7D&amp;profile=16031476&amp;locale=en-US&amp;JavascriptProxyId=flashProxy0" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" scale="noScale" salign="tl" src="/analytics/static/flash/date_controller.swf">
+                              <embed width="420" height="133" quality="high" bgcolor="#FFFFFF" id="flashProxy0" flashvars="input=%7B%22DateSlider%22%3A%7B%22Values%22%3A%5B%5D%2C%22FirstDayOfWeek%22%3A0%2C%22ComparisonType%22%3A%22AVERAGE%22%2C%22MaxDate%22%3A20100713%2C%22StateQuery%22%3A%22id%5Cu003d16031476%5Cu0026esig%5Cu003d0%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%5Cu0026rpt%5Cu003dVisitsReport%22%2C%22TimelineTabString%22%3A%22Timeline%22%2C%22PrimaryDateRange%22%3A%2220100612-20100712%22%2C%22Compare%22%3Afalse%2C%22MonthNames%22%3A%5B%22January%22%2C%22February%22%2C%22March%22%2C%22April%22%2C%22May%22%2C%22June%22%2C%22July%22%2C%22August%22%2C%22September%22%2C%22October%22%2C%22November%22%2C%22December%22%5D%2C%22ShowCompare%22%3Atrue%2C%22CalendarTabString%22%3A%22Calendar%22%2C%22UrlPath%22%3A%22%2Fanalytics%2Freporting%2Fvisits%22%2C%22StateBaseQuery%22%3A%22id%5Cu003d16031476%5Cu0026esig%5Cu003d0%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%22%2C%22Id%22%3A%22DateSlider%22%2C%22DayAbbreviations%22%3A%5B%22S%22%2C%22M%22%2C%22T%22%2C%22W%22%2C%22T%22%2C%22F%22%2C%22S%22%5D%2C%22ComparisonOptions%22%3A%7B%7D%7D%7D&amp;profile=16031476&amp;locale=en-US&amp;JavascriptProxyId=flashProxy0" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" scale="noScale" salign="tl" src="/analytics/static/flash/date_controller.swf">
                             </div>
                             <form action="none" class="date_controller_form" id="f_dateInputForm" style="display: none;">
                               <dl>
@@ -299,7 +298,16 @@ Google Analytics</title>
                             <dl>
                               <dt> Graph by: </dt>
                               <dd>
-                                <div class="view_by_nth_day alt" id="view_by_nth_day"> <a href="#">Day</a>
+                                <div class="view_by_hour " id="view_by_hour"> <a href="#">Hour</a>
+                                  <div style="display: none;" class="hover_desc_container" id="hover_desc_gdf_hour">
+                                    <div class="hover_desc_outerdiv">
+                                      <div class="hover_desc_innerdiv"><span>Hour</span>
+                                        <div class="hover_desc_pointer">&nbsp;</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="view_by_nth_day " id="view_by_nth_day"> <a href="#">Day</a>
                                   <div style="display: none;" class="hover_desc_container" id="hover_desc_gdf_nth_day">
                                     <div class="hover_desc_outerdiv">
                                       <div class="hover_desc_innerdiv"><span>Day</span>
@@ -377,71 +385,6 @@ Google Analytics</title>
                                         </div>
                                         <label for="graph_primary_option_visits" class="graph_option_label"> Visits </label>
                                       </li>
-                                      <li>
-                                        <div class="graph_option primary">
-                                          <input type="radio" id="graph_primary_option_avg_pageviews">
-                                        </div>
-                                        <div class="graph_option secondary">
-                                          <input type="radio" id="graph_secondary_option_avg_pageviews">
-                                        </div>
-                                        <label for="graph_primary_option_avg_pageviews" class="graph_option_label"> Pages/Visit </label>
-                                      </li>
-                                      <li>
-                                        <div class="graph_option primary">
-                                          <input type="radio" id="graph_primary_option_avg_session_time">
-                                        </div>
-                                        <div class="graph_option secondary">
-                                          <input type="radio" id="graph_secondary_option_avg_session_time">
-                                        </div>
-                                        <label for="graph_primary_option_avg_session_time" class="graph_option_label"> Avg. Time on Site </label>
-                                      </li>
-                                      <li>
-                                        <div class="graph_option primary">
-                                          <input type="radio" id="graph_primary_option_percent_new_visitors">
-                                        </div>
-                                        <div class="graph_option secondary">
-                                          <input type="radio" id="graph_secondary_option_percent_new_visitors">
-                                        </div>
-                                        <label for="graph_primary_option_percent_new_visitors" class="graph_option_label"> % New Visits </label>
-                                      </li>
-                                      <li>
-                                        <div class="graph_option primary">
-                                          <input type="radio" id="graph_primary_option_bounce_rate">
-                                        </div>
-                                        <div class="graph_option secondary">
-                                          <input type="radio" id="graph_secondary_option_bounce_rate">
-                                        </div>
-                                        <label for="graph_primary_option_bounce_rate" class="graph_option_label"> Bounce Rate </label>
-                                      </li>
-                                    </ul></td>
-                                  <td class=""><ul>
-                                      <li>
-                                        <div class="graph_option primary">
-                                          <input type="radio" id="graph_primary_option_goal_conversion_rate_1">
-                                        </div>
-                                        <div class="graph_option secondary">
-                                          <input type="radio" id="graph_secondary_option_goal_conversion_rate_1">
-                                        </div>
-                                        <label for="graph_primary_option_goal_conversion_rate_1" class="graph_option_label"> Goal1 Conversion Rate </label>
-                                      </li>
-                                      <li>
-                                        <div class="graph_option primary">
-                                          <input type="radio" id="graph_primary_option_goal_conversion_rate">
-                                        </div>
-                                        <div class="graph_option secondary">
-                                          <input type="radio" id="graph_secondary_option_goal_conversion_rate">
-                                        </div>
-                                        <label for="graph_primary_option_goal_conversion_rate" class="graph_option_label"> Goal Conversion Rate </label>
-                                      </li>
-                                      <li>
-                                        <div class="graph_option primary">
-                                          <input type="radio" id="graph_primary_option_goal_value_per_visit">
-                                        </div>
-                                        <div class="graph_option secondary">
-                                          <input type="radio" id="graph_secondary_option_goal_value_per_visit">
-                                        </div>
-                                        <label for="graph_primary_option_goal_value_per_visit" class="graph_option_label"> Per Visit Goal Value </label>
-                                      </li>
                                     </ul></td>
                                 </tr>
                               </tbody>
@@ -454,7 +397,7 @@ Google Analytics</title>
                       <div id="Graph">
                         <div class="">
                           <div style="height: 125px; width: 100%;" class="overtime_graph" id="Graph_vis">
-                            <embed width="100%" height="125" flashvars="input=%7B%22Graph%22%3A%7B%22ShowHover%22%3Atrue%2C%22MetricComparison%22%3Afalse%2C%22Format%22%3A%22NORMAL%22%2C%22UseAs3Graph%22%3Atrue%2C%22StateQuery%22%3A%22id%5Cu003d16031476%5Cu0026esig%5Cu003d0%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%5Cu0026rpt%5Cu003dVisitorTypesReport%5Cu0026view%5Cu003d1%22%2C%22DateRangeComparison%22%3Afalse%2C%22Compare%22%3Afalse%2C%22XAxisTitle%22%3A%22Day%22%2C%22XAxisLabels%22%3A%5B%5B%2220100614%22%2C%22Jun%2014%22%5D%2C%5B%2220100621%22%2C%22Jun%2021%22%5D%2C%5B%2220100628%22%2C%22Jun%2028%22%5D%2C%5B%2220100705%22%2C%22Jul%205%22%5D%2C%5B%2220100712%22%2C%22Jul%2012%22%5D%5D%2C%22AnnotationsEnabled%22%3Atrue%2C%22HoverType%22%3A%22primary_compare%22%2C%22UrlPath%22%3A%22%2Fanalytics%2Freporting%2Fvisitor_types%22%2C%22StateBaseQuery%22%3A%22id%5Cu003d16031476%5Cu0026esig%5Cu003d0%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%22%2C%22SelectedSeries%22%3A%5B%22primary%22%2C%22compare%22%5D%2C%22Series%22%3A%5B%7B%22SelectionStartIndex%22%3A0%2C%22SelectionEndIndex%22%3A30%2C%22Style%22%3A%7B%22Name%22%3A%22primary-blue%22%2C%22PointShape%22%3A%22CIRCLE%22%2C%22PointRadius%22%3A9%2C%22FillColor%22%3A30668%2C%22FillAlpha%22%3A10%2C%22LineThickness%22%3A4%2C%22ActiveColor%22%3A30668%2C%22InactiveColor%22%3A11654895%7D%2C%22Label%22%3A%22Visits%22%2C%22Id%22%3A%22primary%22%2C%22YLabels%22%3A%5B%5B%220%22%2C%220%22%5D%2C%5B%22100%22%2C%22100%22%5D%2C%5B%22200%22%2C%22200%22%5D%5D%2C%22ValueCategory%22%3A%22visits%22%2C%22Points%22%3A%5B%7B%22Value%22%3A%5B%2299%22%2C%2299%22%5D%2C%22Label%22%3A%5B%2220100612%22%2C%22Saturday%2C%20June%2012%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%22111%22%2C%22111%22%5D%2C%22Label%22%3A%5B%2220100613%22%2C%22Sunday%2C%20June%2013%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%22147%22%2C%22147%22%5D%2C%22Label%22%3A%5B%2220100614%22%2C%22Monday%2C%20June%2014%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2264%22%2C%2264%22%5D%2C%22Label%22%3A%5B%2220100615%22%2C%22Tuesday%2C%20June%2015%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2268%22%2C%2268%22%5D%2C%22Label%22%3A%5B%2220100616%22%2C%22Wednesday%2C%20June%2016%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2253%22%2C%2253%22%5D%2C%22Label%22%3A%5B%2220100617%22%2C%22Thursday%2C%20June%2017%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%22121%22%2C%22121%22%5D%2C%22Label%22%3A%5B%2220100618%22%2C%22Friday%2C%20June%2018%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2286%22%2C%2286%22%5D%2C%22Label%22%3A%5B%2220100619%22%2C%22Saturday%2C%20June%2019%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%22110%22%2C%22110%22%5D%2C%22Label%22%3A%5B%2220100620%22%2C%22Sunday%2C%20June%2020%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2278%22%2C%2278%22%5D%2C%22Label%22%3A%5B%2220100621%22%2C%22Monday%2C%20June%2021%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2261%22%2C%2261%22%5D%2C%22Label%22%3A%5B%2220100622%22%2C%22Tuesday%2C%20June%2022%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2258%22%2C%2258%22%5D%2C%22Label%22%3A%5B%2220100623%22%2C%22Wednesday%2C%20June%2023%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2240%22%2C%2240%22%5D%2C%22Label%22%3A%5B%2220100624%22%2C%22Thursday%2C%20June%2024%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2246%22%2C%2246%22%5D%2C%22Label%22%3A%5B%2220100625%22%2C%22Friday%2C%20June%2025%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2259%22%2C%2259%22%5D%2C%22Label%22%3A%5B%2220100626%22%2C%22Saturday%2C%20June%2026%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2233%22%2C%2233%22%5D%2C%22Label%22%3A%5B%2220100627%22%2C%22Sunday%2C%20June%2027%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2270%22%2C%2270%22%5D%2C%22Label%22%3A%5B%2220100628%22%2C%22Monday%2C%20June%2028%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2250%22%2C%2250%22%5D%2C%22Label%22%3A%5B%2220100629%22%2C%22Tuesday%2C%20June%2029%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2235%22%2C%2235%22%5D%2C%22Label%22%3A%5B%2220100630%22%2C%22Wednesday%2C%20June%2030%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2255%22%2C%2255%22%5D%2C%22Label%22%3A%5B%2220100701%22%2C%22Thursday%2C%20July%201%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2251%22%2C%2251%22%5D%2C%22Label%22%3A%5B%2220100702%22%2C%22Friday%2C%20July%202%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2231%22%2C%2231%22%5D%2C%22Label%22%3A%5B%2220100703%22%2C%22Saturday%2C%20July%203%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2233%22%2C%2233%22%5D%2C%22Label%22%3A%5B%2220100704%22%2C%22Sunday%2C%20July%204%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2240%22%2C%2240%22%5D%2C%22Label%22%3A%5B%2220100705%22%2C%22Monday%2C%20July%205%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2231%22%2C%2231%22%5D%2C%22Label%22%3A%5B%2220100706%22%2C%22Tuesday%2C%20July%206%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2232%22%2C%2232%22%5D%2C%22Label%22%3A%5B%2220100707%22%2C%22Wednesday%2C%20July%207%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2215%22%2C%2215%22%5D%2C%22Label%22%3A%5B%2220100708%22%2C%22Thursday%2C%20July%208%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2224%22%2C%2224%22%5D%2C%22Label%22%3A%5B%2220100709%22%2C%22Friday%2C%20July%209%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2224%22%2C%2224%22%5D%2C%22Label%22%3A%5B%2220100710%22%2C%22Saturday%2C%20July%2010%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2219%22%2C%2219%22%5D%2C%22Label%22%3A%5B%2220100711%22%2C%22Sunday%2C%20July%2011%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2221%22%2C%2221%22%5D%2C%22Label%22%3A%5B%2220100712%22%2C%22Monday%2C%20July%2012%2C%202010%22%5D%7D%5D%7D%5D%2C%22Id%22%3A%22Graph%22%7D%7D&amp;annotationsEnabled=true&amp;handCursorEnabled=true&amp;msgAnnotationSingular=1%20Annotation&amp;msgAnnotationsPlural=%25s%20Annotations&amp;msgCreateAnnotation=Create%20new%20annotation" allowscriptaccess="always" menu="false" wmode="opaque" salign="TL" scale="noScale" quality="high" name="Graph_vis_embed" id="Graph_vis_embed" style="" src="/analytics/static/flash/OverTimeGraphMain.swf" type="application/x-shockwave-flash">
+                            <embed width="100%" height="125" flashvars="input=%7B%22Graph%22%3A%7B%22ShowHover%22%3Atrue%2C%22MetricComparison%22%3Afalse%2C%22Format%22%3A%22NORMAL%22%2C%22UseAs3Graph%22%3Atrue%2C%22StateQuery%22%3A%22id%5Cu003d16031476%5Cu0026esig%5Cu003d0%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%5Cu0026rpt%5Cu003dVisitsReport%22%2C%22DateRangeComparison%22%3Afalse%2C%22Compare%22%3Afalse%2C%22XAxisTitle%22%3A%22Day%22%2C%22XAxisLabels%22%3A%5B%5B%2220100614%22%2C%22Jun%2014%22%5D%2C%5B%2220100621%22%2C%22Jun%2021%22%5D%2C%5B%2220100628%22%2C%22Jun%2028%22%5D%2C%5B%2220100705%22%2C%22Jul%205%22%5D%2C%5B%2220100712%22%2C%22Jul%2012%22%5D%5D%2C%22AnnotationsEnabled%22%3Atrue%2C%22HoverType%22%3A%22primary_compare%22%2C%22UrlPath%22%3A%22%2Fanalytics%2Freporting%2Fvisits%22%2C%22StateBaseQuery%22%3A%22id%5Cu003d16031476%5Cu0026esig%5Cu003d0%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%22%2C%22SelectedSeries%22%3A%5B%22primary%22%2C%22compare%22%5D%2C%22Series%22%3A%5B%7B%22SelectionStartIndex%22%3A0%2C%22SelectionEndIndex%22%3A30%2C%22Style%22%3A%7B%22Name%22%3A%22primary-blue%22%2C%22PointShape%22%3A%22CIRCLE%22%2C%22PointRadius%22%3A9%2C%22FillColor%22%3A30668%2C%22FillAlpha%22%3A10%2C%22LineThickness%22%3A4%2C%22ActiveColor%22%3A30668%2C%22InactiveColor%22%3A11654895%7D%2C%22Label%22%3A%22Visits%22%2C%22Id%22%3A%22primary%22%2C%22YLabels%22%3A%5B%5B%220%22%2C%220%22%5D%2C%5B%22100%22%2C%22100%22%5D%2C%5B%22200%22%2C%22200%22%5D%5D%2C%22ValueCategory%22%3A%22visits%22%2C%22Points%22%3A%5B%7B%22Value%22%3A%5B%2299%22%2C%2299%22%5D%2C%22Label%22%3A%5B%2220100612%22%2C%22Saturday%2C%20June%2012%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%22111%22%2C%22111%22%5D%2C%22Label%22%3A%5B%2220100613%22%2C%22Sunday%2C%20June%2013%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%22147%22%2C%22147%22%5D%2C%22Label%22%3A%5B%2220100614%22%2C%22Monday%2C%20June%2014%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2264%22%2C%2264%22%5D%2C%22Label%22%3A%5B%2220100615%22%2C%22Tuesday%2C%20June%2015%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2268%22%2C%2268%22%5D%2C%22Label%22%3A%5B%2220100616%22%2C%22Wednesday%2C%20June%2016%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2253%22%2C%2253%22%5D%2C%22Label%22%3A%5B%2220100617%22%2C%22Thursday%2C%20June%2017%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%22121%22%2C%22121%22%5D%2C%22Label%22%3A%5B%2220100618%22%2C%22Friday%2C%20June%2018%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2286%22%2C%2286%22%5D%2C%22Label%22%3A%5B%2220100619%22%2C%22Saturday%2C%20June%2019%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%22110%22%2C%22110%22%5D%2C%22Label%22%3A%5B%2220100620%22%2C%22Sunday%2C%20June%2020%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2278%22%2C%2278%22%5D%2C%22Label%22%3A%5B%2220100621%22%2C%22Monday%2C%20June%2021%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2261%22%2C%2261%22%5D%2C%22Label%22%3A%5B%2220100622%22%2C%22Tuesday%2C%20June%2022%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2258%22%2C%2258%22%5D%2C%22Label%22%3A%5B%2220100623%22%2C%22Wednesday%2C%20June%2023%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2240%22%2C%2240%22%5D%2C%22Label%22%3A%5B%2220100624%22%2C%22Thursday%2C%20June%2024%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2246%22%2C%2246%22%5D%2C%22Label%22%3A%5B%2220100625%22%2C%22Friday%2C%20June%2025%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2259%22%2C%2259%22%5D%2C%22Label%22%3A%5B%2220100626%22%2C%22Saturday%2C%20June%2026%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2233%22%2C%2233%22%5D%2C%22Label%22%3A%5B%2220100627%22%2C%22Sunday%2C%20June%2027%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2270%22%2C%2270%22%5D%2C%22Label%22%3A%5B%2220100628%22%2C%22Monday%2C%20June%2028%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2250%22%2C%2250%22%5D%2C%22Label%22%3A%5B%2220100629%22%2C%22Tuesday%2C%20June%2029%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2235%22%2C%2235%22%5D%2C%22Label%22%3A%5B%2220100630%22%2C%22Wednesday%2C%20June%2030%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2255%22%2C%2255%22%5D%2C%22Label%22%3A%5B%2220100701%22%2C%22Thursday%2C%20July%201%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2251%22%2C%2251%22%5D%2C%22Label%22%3A%5B%2220100702%22%2C%22Friday%2C%20July%202%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2231%22%2C%2231%22%5D%2C%22Label%22%3A%5B%2220100703%22%2C%22Saturday%2C%20July%203%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2233%22%2C%2233%22%5D%2C%22Label%22%3A%5B%2220100704%22%2C%22Sunday%2C%20July%204%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2240%22%2C%2240%22%5D%2C%22Label%22%3A%5B%2220100705%22%2C%22Monday%2C%20July%205%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2231%22%2C%2231%22%5D%2C%22Label%22%3A%5B%2220100706%22%2C%22Tuesday%2C%20July%206%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2232%22%2C%2232%22%5D%2C%22Label%22%3A%5B%2220100707%22%2C%22Wednesday%2C%20July%207%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2215%22%2C%2215%22%5D%2C%22Label%22%3A%5B%2220100708%22%2C%22Thursday%2C%20July%208%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2224%22%2C%2224%22%5D%2C%22Label%22%3A%5B%2220100709%22%2C%22Friday%2C%20July%209%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2224%22%2C%2224%22%5D%2C%22Label%22%3A%5B%2220100710%22%2C%22Saturday%2C%20July%2010%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2219%22%2C%2219%22%5D%2C%22Label%22%3A%5B%2220100711%22%2C%22Sunday%2C%20July%2011%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2221%22%2C%2221%22%5D%2C%22Label%22%3A%5B%2220100712%22%2C%22Monday%2C%20July%2012%2C%202010%22%5D%7D%5D%7D%5D%2C%22Id%22%3A%22Graph%22%7D%7D&amp;annotationsEnabled=true&amp;handCursorEnabled=true&amp;msgAnnotationSingular=1%20Annotation&amp;msgAnnotationsPlural=%25s%20Annotations&amp;msgCreateAnnotation=Create%20new%20annotation" allowscriptaccess="always" menu="false" wmode="opaque" salign="TL" scale="noScale" quality="high" name="Graph_vis_embed" id="Graph_vis_embed" style="" src="/analytics/static/flash/OverTimeGraphMain.swf" type="application/x-shockwave-flash">
                           </div>
                         </div>
                       </div>
@@ -506,445 +449,192 @@ Google Analytics</title>
                     </div>
                   </div>
                   <div>
-                    <div id="Narrative">
-                      <div class="narrative">
-                        <div>
-                          <div>
-                            <h2 class="standalone">
-                              <div class=" normal"> 1,765 visits from 2 visitor types </div>
-                            </h2>
+                    <div id="" class="divided_stack">
+                      <div class="subsections">
+                        <div class="section section_1">
+                          <div id="ItemSummary">
+                            <div class="statistic"> <span class="primary_value">
+                              <ul>
+                                <li class="item_value"> 1,765 </li>
+                                <span class="label"> Visits </span>
+                              </ul>
+                              </span> </div>
+                          </div>
+                        </div>
+                        <div class="section section_2">
+                          <div id="DailyAverageItemSummary">
+                            <div class="statistic"> <span class="primary_value">
+                              <ul>
+                                <li class="item_value"> 56.94 </li>
+                                <span class="label"> Visits / Day </span>
+                              </ul>
+                              </span> </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div>
-                    <div id="ControlBar" class="horizontal_stack">
-                      <div class="subsections"></div>
-                    </div>
-                  </div>
-                  <div>
-                    <div id="TabView">
-                      <div class="display_control_tabs">
-                        <dl>
-                          <dt> Show: </dt>
-                          <dd>
-                            <ul class="tabs">
-                              <li id="tab_0" class="first current"><a href="#">Site Usage</a></li>
-                              <li id="tab_1" class=" "><a href="#">Goal Set 1</a></li>
-                            </ul>
-                          </dd>
-                        </dl>
-                      </div>
-                      <div class="records_view_options">
-                        <dl>
-                          <dt> Views: </dt>
-                          <dd>
-                            <ul>
-                              <li class="table_view_option" id="f_table_view_option_elem"><a href="#">Table</a>
-                                <div style="display: none;" class="hover_desc_container" id="hover_desc_table">
-                                  <div class="hover_desc_outerdiv">
-                                    <div class="hover_desc_innerdiv"><span>Table</span>
-                                      <div class="hover_desc_pointer">&nbsp;</div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </li>
-                              <li class="pie_view_option" id="f_pie_view_option_elem"><a href="#">Percentage</a>
-                                <div style="display: none;" class="hover_desc_container" id="hover_desc_pie">
-                                  <div class="hover_desc_outerdiv">
-                                    <div class="hover_desc_innerdiv"><span>Percentage</span>
-                                      <div class="hover_desc_pointer">&nbsp;</div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </li>
-                              <li class="performance_view_option" id="f_performance_view_option_elem"><a href="#">Performance</a>
-                                <div style="display: none;" class="hover_desc_container" id="hover_desc_performance">
-                                  <div class="hover_desc_outerdiv">
-                                    <div class="hover_desc_innerdiv"><span>Performance</span>
-                                      <div class="hover_desc_pointer">&nbsp;</div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </li>
-                              <li class="comparison_view_option" id="f_comparison_view_option_elem"><a href="#">Comparison</a>
-                                <div style="display: none;" class="hover_desc_container" id="hover_desc_comparison">
-                                  <div class="hover_desc_outerdiv">
-                                    <div class="hover_desc_innerdiv"><span>Comparison</span>
-                                      <div class="hover_desc_pointer">&nbsp;</div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </li>
-                              <li class="pivot_alt_view_option" id="f_pivot_view_option_elem"><a href="#">Pivot</a>
-                                <div style="display: none;" class="hover_desc_container" id="hover_desc_pivot">
-                                  <div class="hover_desc_outerdiv">
-                                    <div class="hover_desc_innerdiv"><span>Pivot</span>
-                                      <div class="hover_desc_pointer">&nbsp;</div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </li>
-                            </ul>
-                          </dd>
-                        </dl>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div id="Scorecard">
-                      <table class="scorecard">
+                    <div id="hBar">
+                      <table class="records performance overtime" id="f_table_graph">
                         <tbody>
-                          <tr style="" id="f_scorecard_0">
-                            <td class="first"><div class="statistic">
-                                <div href="#"> </a>
-                                  <div style="display: none;" id="f_scorecard_help_0_0">
-                                    <dl>
-                                      <dt> Visits </dt>
-                                      <dd> The number of visits to your site. </dd>
-                                    </dl>
-                                  </div>
-                                </div>
-                                <h3> <span class="label"> Visits </span> </h3>
-                                <p> <span class="primary_value"> 1,765 </span> </p>
-                                <p class="date_comparison"> % of Site Total: <span class="comparison_value"> 100.00% </span> </p>
-                              </div></td>
-                            <td class=""><div class="statistic">
-                                <div href="#"> </a>
-                                  <div style="display: none;" id="f_scorecard_help_0_1">
-                                    <dl>
-                                      <dt> Pages/Visit </dt>
-                                      <dd> The average number of pages viewed during a visit to your site. Repeated views of a single page are counted. </dd>
-                                    </dl>
-                                  </div>
-                                </div>
-                                <h3> <span class="label"> Pages/Visit </span> </h3>
-                                <p> <span class="primary_value"> 2.83 </span> </p>
-                                <p class="date_comparison"> Site Avg: <span class="comparison_value"> 2.83 </span> <span class="neutral_comparison"> (0.00%) </span> </p>
-                              </div></td>
-                            <td class=""><div class="statistic">
-                                <div class=""> </a>
-                                  <div style="display: none;" id="f_scorecard_help_0_2">
-                                    <dl>
-                                      <dt> Avg. Time on Site </dt>
-                                      <dd> The average duration of a visit to your site. </dd>
-                                    </dl>
-                                  </div>
-                                </div>
-                                <h3> <span class="label"> Avg. Time on Site </span> </h3>
-                                <p> <span class="primary_value"> 00:01:18 </span> </p>
-                                <p class="date_comparison"> Site Avg: <span class="comparison_value"> 00:01:18 </span> <span class="neutral_comparison"> (0.00%) </span> </p>
-                              </div></td>
-                            <td class=""><div class="statistic">
-                                <div href="#"> </a>
-                                  <div style="display: none;" id="f_scorecard_help_0_3">
-                                    <dl>
-                                      <dt> % New Visits </dt>
-                                      <dd> The percentage of visits by people who had never visited your site before. </dd>
-                                    </dl>
-                                  </div>
-                                </div>
-                                <h3> <span class="label"> % New Visits </span> </h3>
-                                <p> <span class="primary_value"> 85.44% </span> </p>
-                                <p class="date_comparison"> Site Avg: <span class="comparison_value"> 85.55% </span> <span class="negative_comparison"> (-0.13%) </span> </p>
-                              </div></td>
-                            <td class="last"><div class="statistic">
-                                <div href="#"> </a>
-                                  <div style="display: none;" id="f_scorecard_help_0_4">
-                                    <dl>
-                                      <dt> Bounce Rate </dt>
-                                      <dd> The percentage of single-page visits (i.e. visits in which the person left your site from the entrance page). </dd>
-                                    </dl>
-                                  </div>
-                                </div>
-                                <h3> <span class="label"> Bounce Rate </span> </h3>
-                                <p> <span class="primary_value"> 79.21% </span> </p>
-                                <p class="date_comparison"> Site Avg: <span class="comparison_value"> 79.21% </span> <span class="neutral_comparison"> (0.00%) </span> </p>
-                              </div></td>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Saturday, June 12, 2010"> Saturday, June 12, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 53.878%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 5.61% (99) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Sunday, June 13, 2010"> Sunday, June 13, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 60.408%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 6.29% (111) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Monday, June 14, 2010"> Monday, June 14, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 80%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 8.33% (147) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Tuesday, June 15, 2010"> Tuesday, June 15, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 34.83%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 3.63% (64) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Wednesday, June 16, 2010"> Wednesday, June 16, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 37.007%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 3.85% (68) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Thursday, June 17, 2010"> Thursday, June 17, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 28.844%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 3.00% (53) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Friday, June 18, 2010"> Friday, June 18, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 65.85%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 6.86% (121) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Saturday, June 19, 2010"> Saturday, June 19, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 46.803%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 4.87% (86) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Sunday, June 20, 2010"> Sunday, June 20, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 59.864%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 6.23% (110) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Monday, June 21, 2010"> Monday, June 21, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 42.449%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 4.42% (78) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Tuesday, June 22, 2010"> Tuesday, June 22, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 33.197%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 3.46% (61) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Wednesday, June 23, 2010"> Wednesday, June 23, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 31.565%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 3.29% (58) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Thursday, June 24, 2010"> Thursday, June 24, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 21.769%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 2.27% (40) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Friday, June 25, 2010"> Friday, June 25, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 25.034%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 2.61% (46) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Saturday, June 26, 2010"> Saturday, June 26, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 32.109%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 3.34% (59) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Sunday, June 27, 2010"> Sunday, June 27, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 17.959%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 1.87% (33) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Monday, June 28, 2010"> Monday, June 28, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 38.095%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 3.97% (70) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Tuesday, June 29, 2010"> Tuesday, June 29, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 27.211%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 2.83% (50) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Wednesday, June 30, 2010"> Wednesday, June 30, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 19.048%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 1.98% (35) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Thursday, July 1, 2010"> Thursday, July 1, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 29.932%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 3.12% (55) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Friday, July 2, 2010"> Friday, July 2, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 27.755%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 2.89% (51) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Saturday, July 3, 2010"> Saturday, July 3, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 16.871%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 1.76% (31) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Sunday, July 4, 2010"> Sunday, July 4, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 17.959%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 1.87% (33) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Monday, July 5, 2010"> Monday, July 5, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 21.769%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 2.27% (40) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Tuesday, July 6, 2010"> Tuesday, July 6, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 16.871%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 1.76% (31) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Wednesday, July 7, 2010"> Wednesday, July 7, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 17.415%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 1.81% (32) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Thursday, July 8, 2010"> Thursday, July 8, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 8.163%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 0.85% (15) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Friday, July 9, 2010"> Friday, July 9, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 13.061%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 1.36% (24) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Saturday, July 10, 2010"> Saturday, July 10, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 13.061%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 1.36% (24) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Sunday, July 11, 2010"> Sunday, July 11, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 10.34%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 1.08% (19) </span></td>
+                          </tr>
+                          <tr class="hbar_primary">
+                            <td class="text"><div title="Monday, July 12, 2010"> Monday, July 12, 2010 </div></td>
+                            <td class="graph_variable_bar"><div style="width: 11.429%;" class="graph_hbar"> </div>
+                              <span class="graph_label"> 1.19% (21) </span></td>
                           </tr>
                         </tbody>
                       </table>
-                    </div>
-                  </div>
-                  <div>
-                    <div id="Table">
-                      <table class="records pie_view" id="f_table_graph">
-                        <thead>
-                          <tr>
-                            <th class="empty"></th>
-                            <th class="key_column first" id="f_key_column_0"> Visitor Type </th>
-                            <th class="key_column last" id="f_key_column_1"> <dl class="ctrl" id="SegmentDropdown1">
-                                <dt> </dt>
-                                <dd>
-                                  <div class="btn dropdn" id="SegmentDropdown1_button"> <b > <b><b> None </b></b> </b> </div>
-                                  <div style="display: none;" id="SegmentDropdown1_menu">
-                                    <div class="button_submenu" id="SegmentDropdown1_listing">
-                                      <div>
-                                        <div>
-                                          <div>
-                                            <div>
-                                              <ul class="">
-                                                <li> None </li>
-                                              </ul>
-                                              <ul class="">
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;source&quot;, &quot;1&quot;)"> Source </a> </li>
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;medium&quot;, &quot;1&quot;)"> Medium </a> </li>
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;campaign&quot;, &quot;1&quot;)"> Campaign </a> </li>
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;keyword&quot;, &quot;1&quot;)"> Keyword </a> </li>
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;content&quot;, &quot;1&quot;)"> Ad Content </a> </li>
-                                                <li> Visitor Type </li>
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;request_uri_1&quot;, &quot;1&quot;)"> Landing Page </a> </li>
-                                              </ul>
-                                              <ul class="">
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;language&quot;, &quot;1&quot;)"> Language </a> </li>
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;continent&quot;, &quot;1&quot;)"> Continent </a> </li>
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;sub_continent_region&quot;, &quot;1&quot;)"> Sub Continent Region </a> </li>
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;country&quot;, &quot;1&quot;)"> Country/Territory </a> </li>
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;region&quot;, &quot;1&quot;)"> Region </a> </li>
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;city&quot;, &quot;1&quot;)"> City </a> </li>
-                                              </ul>
-                                              <ul class="">
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;browser&quot;, &quot;1&quot;)"> Browser </a> </li>
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;platform&quot;, &quot;1&quot;)"> Operating System </a> </li>
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;screen_colors&quot;, &quot;1&quot;)"> Screen Colors </a> </li>
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;screen_resolution&quot;, &quot;1&quot;)"> Screen Resolution </a> </li>
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;flash_version&quot;, &quot;1&quot;)"> Flash Version </a> </li>
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;java_enabled&quot;, &quot;1&quot;)"> Java Support </a> </li>
-                                              </ul>
-                                              <ul class="">
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;organization&quot;, &quot;1&quot;)"> Service Provider </a> </li>
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;hostname&quot;, &quot;1&quot;)"> Hostname </a> </li>
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;connection_speed&quot;, &quot;1&quot;)"> Connection Speed </a> </li>
-                                              </ul>
-                                              <ul class="last">
-                                                <li> <a href="javascript:analytics.PropertyManager._getInstance()._broadcastChange(&quot;segment_by&quot;,&quot;user_defined_value&quot;, &quot;1&quot;)"> User Defined Value </a> </li>
-                                              </ul>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </dd>
-                              </dl>
-                            </th>
-                            <th class="graph_sort desc"> <a title="reverse sort direction" class="sort_direction" href="#"> [reverse sort direction] </a>
-                              <form action="">
-                                <select onChange="table.changeSorting(true, this.options[this.selectedIndex].value)" id="f_table_sort">
-                                  <option value="0" selected=""> Visits </option>
-                                  <option value="1"> Pages/Visit </option>
-                                  <option value="2"> Avg. Time on Site </option>
-                                  <option value="3"> % New Visits </option>
-                                  <option value="4"> Bounce Rate </option>
-                                </select>
-                              </form>
-                            </th>
-                            <th id="f_pie_pct_column">Visits</th>
-                            <th class="graph_variable"> <form action="">
-                                <span class="button_label"> Visitor Type contribution to total: </span>
-                                <select onChange="table._toggleChartCol(this.options[this.selectedIndex].value)" id="f_chart_col">
-                                  <option value="0" selected=""> Visits </option>
-                                  <option value="1"> Pageviews </option>
-                                  <option value="2"> Time on Site </option>
-                                  <option value="3"> New Visits </option>
-                                  <option value="4"> Bounces </option>
-                                </select>
-                              </form>
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody id="f_tbody_0">
-                          <tr class="rank_1 highlight">
-                            <td class="count">1.</td>
-                            <td colspan="2" class="text"><div id="f_primary_segment0" title="New Visitor" class="text_wrapper">
-                                <div class="text_wrapper">
-                                  <div class="legend"></div>
-                                  <div class="ie_fix_wrapper"> <a href=""> New Visitor </a> </div>
-                                </div>
-                              </div></td>
-                            <td class="graph_sort">1,508 </td>
-                            <td id="f_pie_pct_0">85.44%</td>
-                            <td rowspan="2" class="pie_graph" id="f_graph_pie"><div class="pie_graph_container">
-                                <div class="pie_graph_rendered" id="Table_pie_vis"><img src="pie?p=6lc14g&amp;w=340&amp;h=240"></div>
-                              </div></td>
-                          </tr>
-                        </tbody>
-                        <tbody id="f_tbody_1">
-                          <tr class="rank_2">
-                            <td class="count">2.</td>
-                            <td colspan="2" class="text"><div id="f_primary_segment1" title="Returning Visitor" class="text_wrapper">
-                                <div class="text_wrapper">
-                                  <div class="legend"></div>
-                                  <div class="ie_fix_wrapper"> <a href=""> Returning Visitor </a> </div>
-                                </div>
-                              </div></td>
-                            <td class="graph_sort">257 </td>
-                            <td id="f_pie_pct_1">14.56%</td>
-                            <td class="pie_hidden_column"></td>
-                          </tr>
-                        </tbody>
-                        <tbody>
-                          <tr>
-                            <td height="224" colspan="4" id="f_graph_pie_padding"></td>
-                            <td class="pie_hidden_column"></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <table class="records">
-                        <tbody>
-                          <tr>
-                            <td class="table_controls" colspan="3"><div class="box">
-                                <form onSubmit="table._setFilterString(document.getElementById(&quot;f_filter_str&quot;).value); table._filter(); return false;" action="">
-                                  <div style="display: block;" class="filter_controls" id="filter_controls">
-                                    <div id="basic_filter"> <span class="button_label"> Filter Visitor Type: </span>
-                                      <select onChange="table._toggleFilterType(this.options[this.selectedIndex].value)" id="basic_filter_drpdown">
-                                        <option selected="" value="0"> containing </option>
-                                        <option value="1"> excluding </option>
-                                      </select>
-                                      <input type="text" onChange="table._setFilterString(this.value)" value="" id="f_filter_str">
-                                      <a title="Go" class="button" href="#"> <b> <b> Advanced Filter </b> </b> </a> </span> </div>
-                                  </div>
-                                </form>
-                                <form onSubmit="table._toggleRowStart(document.getElementById(&quot;f_row_start&quot;).value); return false;" action="">
-                                  <div class="pagination_controls"> <span class="button_label">Go to:</span>
-                                    <input type="text" onChange="table._toggleRowStart(this.value)" value="1" size="5" id="f_row_start">
-                                    <span class="button_label">Show rows:</span>
-                                    <select onChange="table._toggleRowShow(this.options[this.selectedIndex].value)">
-                                      <option selected="" value="10">10</option>
-                                      <option value="25">25</option>
-                                      <option value="50">50</option>
-                                      <option value="100">100</option>
-                                      <option value="250">250</option>
-                                      <option value="500">500</option>
-                                    </select>
-                                    <span class="button_label"> 1 - 2 of 2 </span> <a title="previous" class="button previous" href="#"> <b> <b> <b> next </b> </b> </b> </a> </div>
-                                </form>
-                              </div></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                  <div>
-                    <div id="TableFilter">
-                      <div style="display: none;" id="f_popout_filter" class="popout_filter">
-                        <div>
-                          <div id="advanced_filters"> <span class="advfilter_button_label"> Filter </span>
-                            <div id="applied_filters" style="display: block;">
-                              <div id="basic_tablefilter" class="keyFilterContainerDiv">
-                                <div class="keyMatchTypeMenusDiv" id="basic_tablefilter_label">
-                                  <div class="text_wrapper">Visitor Type</div>
-                                </div>
-                                <div class="keyMatchTypeMenu">
-                                  <div class="goog-inline-block goog-menu-button" title="" role="button" style="-moz-user-select: none;" tabindex="0" aria-haspopup="true">
-                                    <div class="goog-inline-block goog-menu-button-outer-box">
-                                      <div class="goog-inline-block goog-menu-button-inner-box">
-                                        <div class="goog-inline-block goog-menu-button-caption">Containing</div>
-                                        <div class="goog-inline-block goog-menu-button-dropdown">&nbsp;</div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div>
-                                  <input type="text" id="basic_tablefilter_input" class="tableFilterKeyInput">
-                                </div>
-                                <a href="javascript:;" class="modifyFilter">Delete</a>
-                                <div class="filter_error_message"></div>
-                              </div>
-                            </div>
-                            <div id="f_add_condition" style="display: block;"> <a href="#"><b><b><b>+ Add new condition</b></b></b></a> </div>
-                            <div style="display: none;" id="f_keyValueOptions">
-                              <div id="f_keyOptions">
-                                <div id="keyListLabel">Dimensions</div>
-                                <ul>
-                                  <div id="keyOptionsList">
-                                    <li>
-                                      <label for="visitor_type">
-                                        <input type="radio" name="keyGroup">
-                                        <span>Visitor Type</span> </label>
-                                    </li>
-                                  </div>
-                                </ul>
-                              </div>
-                              <div id="f_valueOptions">
-                                <div id="valueListLabel"> Metrics </div>
-                                <div id="valueGroupList">
-                                  <div id="valueGroupLabel">
-                                    <div>Site Usage</div>
-                                  </div>
-                                  <ul>
-                                    <div id="valueOptionsList">
-                                      <li>
-                                        <label for="visits">
-                                          <input type="radio" name="valueGroup">
-                                          <span>Visits</span> </label>
-                                      </li>
-                                    </div>
-                                    <div id="valueOptionsList">
-                                      <li>
-                                        <label for="avg_pageviews">
-                                          <input type="radio" name="valueGroup">
-                                          <span>Pages/Visit</span> </label>
-                                      </li>
-                                    </div>
-                                    <div id="valueOptionsList">
-                                      <li>
-                                        <label for="avg_session_time">
-                                          <input type="radio" name="valueGroup">
-                                          <span>Avg. Time on Site</span> </label>
-                                      </li>
-                                    </div>
-                                    <div id="valueOptionsList">
-                                      <li>
-                                        <label for="percent_new_visitors">
-                                          <input type="radio" name="valueGroup">
-                                          <span>% New Visits</span> </label>
-                                      </li>
-                                    </div>
-                                    <div id="valueOptionsList">
-                                      <li>
-                                        <label for="bounce_rate">
-                                          <input type="radio" name="valueGroup">
-                                          <span>Bounce Rate</span> </label>
-                                      </li>
-                                    </div>
-                                  </ul>
-                                </div>
-                                <div id="valueGroupList">
-                                  <div id="valueGroupLabel">
-                                    <div>Goal Set 1</div>
-                                  </div>
-                                  <ul>
-                                    <div id="valueOptionsList">
-                                      <li>
-                                        <label for="goal_conversion_rate_1">
-                                          <input type="radio" name="valueGroup">
-                                          <span>G1</span> </label>
-                                      </li>
-                                    </div>
-                                    <div id="valueOptionsList">
-                                      <li>
-                                        <label for="goal_conversion_rate">
-                                          <input type="radio" name="valueGroup">
-                                          <span>Goal Conversion Rate</span> </label>
-                                      </li>
-                                    </div>
-                                    <div id="valueOptionsList">
-                                      <li>
-                                        <label for="goal_value_per_visit">
-                                          <input type="radio" name="valueGroup">
-                                          <span>Per Visit Goal Value</span> </label>
-                                      </li>
-                                    </div>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div id="submitButtons"> <a class="button" href="#"> <b><b><b>cancel</b></b></b> </a> </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div></td>
@@ -1025,7 +715,7 @@ Google Analytics</title>
                       </div>
                     </div>
                     </a> </div>
-                  <div class="menu-item"> <a class="current" href="visitor_types?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                  <div class="menu-item"> <a class="" href="visitor_types?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                     <div class="r1">
                       <div class="r2">
                         <div class="r3">
@@ -1043,7 +733,7 @@ Google Analytics</title>
                       </div>
                     </div>
                     </a> </div>
-                  <div class="menu-item"> <a id="f_trending_nav" class="expandable" href="#">
+                  <div class="menu-item"> <a id="f_trending_nav" class="expandable expanded" href="#">
                     <div class="r1">
                       <div class="r2">
                         <div class="r3">
@@ -1056,8 +746,8 @@ Google Analytics</title>
                       </div>
                     </div>
                     </a>
-                    <div style="display: none;" id="f_trending_nav_items" class="nested_report_nav menu-list">
-                      <div class="menu-item"> <a class="" href="visits?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                    <div id="f_trending_nav_items" class="nested_report_nav menu-list">
+                      <div class="menu-item"> <a class="current" href="visits?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1443,7 +1133,7 @@ Google Analytics</title>
                   <dl style="display: none;" class="contextual_help" id="f_help_about_menu">
                     <dt><b>About this Report</b></dt>
                     <dd>
-                      <div>A high number of new visitors suggests that you are successful at driving traffic to your site while a high number of return visitors suggests that the site content is engaging enough for visitors to come back. You can see how frequently visitors return and how many times they return in Recency report and the Loyalty report, both under Visitor Loyalty in the Visitors section.</div>
+                      <div>The number of visits your site receives is the most basic measure of how effectively you promote your site. Starting and stopping ads, changing your keyword buys, viral marketing events, and search rank are some examples of factors that influence the number of visits your site receives.</div>
                     </dd>
                   </dl>
                 </li>
@@ -1451,7 +1141,7 @@ Google Analytics</title>
                   <dl style="display: none;" class="contextual_help" id="f_help_cu_menu">
                     <dt><b>Conversion University</b></dt>
                     <dd>
-                      <div>Hint: By setting a comparison date range (choose from the date range pulldown located above the graph), you can mouse over the graph and see how much traffic has increased or decreased for each day.</div>
+                      <div>Hint: By setting a comparison date range (choose from the date range pulldown located above the graph), you can mouse over the graph and see how much traffic hs increased or decreased for each day.</div>
                     </dd>
                   </dl>
                 </li>
@@ -1459,7 +1149,8 @@ Google Analytics</title>
                   <dl style="display: none;" class="contextual_help" id="f_help_faq_menu">
                     <dt><b>Common Questions</b></dt>
                     <dd>
-                      <div><a href="javascript: _openHelp('answer.py?answer=55614');"> Why does Google Analytics report different values than some other web analytics solutions? </a></div>
+                      <div><a href="javascript: _openHelp('answer.py?answer=55614');"> Why does Google Analytics report different values than some other web analytics solutions? </a> <br>
+                        <a href="javascript: _openHelp('answer.py?answer=57164');"> What's the difference between clicks, visits, visitors, pageviews, and unique pageviews? </a></div>
                     </dd>
                   </dl>
                 </li>

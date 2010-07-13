@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
 <meta content="IE=7" http-equiv="X-UA-Compatible">
@@ -85,9 +85,9 @@ Google Analytics</title>
                             <table cellspacing="0" cellpadding="0" class="report_menu_left">
                               <tbody>
                                 <tr>
-                                  <td id="export_button_item"><a class="button menu" onClick="goog.analytics.Menu.toggle(&quot;f_export_format&quot;, &quot;f_export_format_options&quot;, goog.analytics.MenuType.CONTROL); return false;" id="f_export_format" href="#"><b><b><b>Export</b></b></b></a></td>
-                                  <td id="email_button_item"><a onClick="VisualizationModule.redirectReport(&quot;setup_email&quot;, &quot;fmt=0&quot;, true); return false;" class="button" href="setup_email?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average&amp;rpt=GeoMapReport"> <b><b><b>Email</b></b></b> </a></td>
-                                  <td id="dashboard_button_item"><a class="button" onClick="analytics.Dashboard.add(); return false;" href="#"><b><b><b>Add to Dashboard</b></b></b></a></td>
+                                  <td id="export_button_item"><a class="button menu" href="#"><b><b><b>Export</b></b></b></a></td>
+                                  <td id="email_button_item"><a href="setup_email?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average&amp;rpt=GeoMapReport"> <b><b><b>Email</b></b></b> </a></td>
+                                  <td id="dashboard_button_item"><a class="button" href="#"><b><b><b>Add to Dashboard</b></b></b></a></td>
                                 </tr>
                               </tbody>
                             </table>
@@ -95,7 +95,7 @@ Google Analytics</title>
                               <tbody>
                                 <tr>
                                   <td id="segment_button_label"> Advanced Segments: </td>
-                                  <td id="segment_button_item"><a class="button menu" onClick="goog.analytics.Menu.toggle('f_segment_button', 'f_segment_button_options', goog.analytics.MenuType.CONTROL); window.controlPanel.showOrHideWarningMessage(); return false;" id="f_segment_button" href="#"> <b><b><b> All Visits </b></b></b> </a></td>
+                                  <td id="segment_button_item"><a class="button menu" href="#"> <b><b><b> All Visits </b></b></b> </a></td>
                                 </tr>
                               </tbody>
                             </table>
@@ -105,11 +105,11 @@ Google Analytics</title>
                                   <div id="export_dropbox_data">
                                     <div class="export_dropbox_listbox">
                                       <ul>
-                                        <li> <a onClick="gaNavigator.exportReport(&quot;fmt=0&quot;, &quot;export&quot;); return false;" href="export?fmt=0&amp;id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average&amp;rpt=GeoMapReport" id="pdf_export_format"> PDF </a> </li>
-                                        <li> <a onClick="gaNavigator.exportReport(&quot;fmt=1&quot;, &quot;export&quot;); return false;" href="export?fmt=1&amp;id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average&amp;rpt=GeoMapReport" id="xml_export_format"> XML </a> </li>
-                                        <li> <a onClick="gaNavigator.exportReport(&quot;fmt=2&quot;, &quot;export&quot;); return false;" href="export?fmt=2&amp;id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average&amp;rpt=GeoMapReport" id="csv_export_format"> CSV </a> </li>
-                                        <li> <a onClick="gaNavigator.exportReport(&quot;fmt=5&quot;, &quot;export&quot;); return false;" href="export?fmt=5&amp;id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average&amp;rpt=GeoMapReport" id="excel_export_format"> CSV for Excel </a> </li>
-                                        <li> <a onClick="gaNavigator.exportReport(&quot;fmt=3&quot;, &quot;export&quot;); return false;" href="export?fmt=3&amp;id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average&amp;rpt=GeoMapReport" id="tsv_export_format"> TSV </a> </li>
+                                        <li> <a id="pdf_export_format"> PDF </a> </li>
+                                        <li> <a id="xml_export_format"> XML </a> </li>
+                                        <li> <a id="csv_export_format"> CSV </a> </li>
+                                        <li> <a id="excel_export_format"> CSV for Excel </a> </li>
+                                        <li> <a id="tsv_export_format"> TSV </a> </li>
                                       </ul>
                                     </div>
                                   </div>
@@ -123,8 +123,8 @@ Google Analytics</title>
                                     <h1>Advanced Segments</h1>
                                     <p>Select up to four segments by which to filter your report</p>
                                     <ul>
-                                      <li> <a onClick="analytics.Navigator.changeLocationWithState( 'add_segment', true, &quot;originatingReport\x3dmaps&quot;, true); return false;" href="#"> Create a new advanced segment </a> </li>
-                                      <li> <a onClick="return VisualizationModule.changeReport(&quot;manage_profile_segments&quot;, null, true);" id="f_managesegment_format" href="#"> Manage your advanced segments </a> </li>
+                                      <li> <a href="#"> Create a new advanced segment </a> </li>
+                                      <li> <a href="#"> Manage your advanced segments </a> </li>
                                     </ul>
                                   </div>
                                   <div id="seg_dropbox_data">
@@ -138,57 +138,57 @@ Google Analytics</title>
                                       <ul>
                                         <li>
                                           <label for="segment_id_-1" style="background-color: rgb(255, 204, 102);">
-                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" checked="" value="-1" name="All Visits" id="segment_id_-1">
+                                            <input type="checkbox" id="segment_id_-1">
                                             All Visits </label>
                                         </li>
                                         <li>
                                           <label for="segment_id_-2">
-                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-2" name="New Visitors" id="segment_id_-2">
+                                            <input type="checkbox" id="segment_id_-2">
                                             New Visitors </label>
                                         </li>
                                         <li>
                                           <label for="segment_id_-3">
-                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-3" name="Returning Visitors" id="segment_id_-3">
+                                            <input type="checkbox" id="segment_id_-3">
                                             Returning Visitors </label>
                                         </li>
                                         <li>
                                           <label for="segment_id_-4">
-                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-4" name="Paid Search Traffic" id="segment_id_-4">
+                                            <input type="checkbox" id="segment_id_-4">
                                             Paid Search Traffic </label>
                                         </li>
                                         <li>
                                           <label for="segment_id_-5">
-                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-5" name="Non-paid Search Traffic" id="segment_id_-5">
+                                            <input type="checkbox" id="segment_id_-5">
                                             Non-paid Search Traffic </label>
                                         </li>
                                         <li>
                                           <label for="segment_id_-6">
-                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-6" name="Search Traffic" id="segment_id_-6">
+                                            <input type="checkbox" id="segment_id_-6">
                                             Search Traffic </label>
                                         </li>
                                         <li>
                                           <label for="segment_id_-7">
-                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-7" name="Direct Traffic" id="segment_id_-7">
+                                            <input type="checkbox" id="segment_id_-7">
                                             Direct Traffic </label>
                                         </li>
                                         <li>
                                           <label for="segment_id_-8">
-                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-8" name="Referral Traffic" id="segment_id_-8">
+                                            <input type="checkbox" id="segment_id_-8">
                                             Referral Traffic </label>
                                         </li>
                                         <li>
                                           <label for="segment_id_-9">
-                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-9" name="Visits with Conversions" id="segment_id_-9">
+                                            <input type="checkbox" id="segment_id_-9">
                                             Visits with Conversions </label>
                                         </li>
                                         <li>
                                           <label for="segment_id_-11">
-                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-11" name="Mobile Traffic" id="segment_id_-11">
+                                            <input type="checkbox" id="segment_id_-11">
                                             Mobile Traffic </label>
                                         </li>
                                         <li>
                                           <label for="segment_id_-12">
-                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-12" name="Non-bounce Visits" id="segment_id_-12">
+                                            <input type="checkbox" id="segment_id_-12">
                                             Non-bounce Visits </label>
                                         </li>
                                       </ul>
@@ -199,8 +199,8 @@ Google Analytics</title>
                                   </div>
                                   <div id="seg_dropbox_control">
                                     <p>
-                                      <input type="submit" value="Apply" onClick="window.controlPanel.updateSegments(window.controlPanel.getAllSegmentCheckboxes()); goog.analytics.Menu.toggle('f_segment_button', 'f_segment_button_options', goog.analytics.MenuType.CONTROL); return false;" id="segment_options_submit">
-                                      <a onClick="window.controlPanel.onCancel(); goog.analytics.Menu.toggle('f_segment_button', 'f_segment_button_options', goog.analytics.MenuType.CONTROL); return false;" id="segment_options_cancel" href="#"> cancel </a> </p>
+                                      <input type="submit" value="Apply" id="segment_options_submit">
+                                      <a href="#"> cancel </a> </p>
                                   </div>
                                 </div>
                               </div>
@@ -208,12 +208,12 @@ Google Analytics</title>
                           </div>
                           <b class="controlbar_border"> <b class="controlbar_border_layer1"></b> <b class="controlbar_border_layer2"></b> <b class="controlbar_border_layer3"></b> </b> </div>
                         <a name="status_message_anchor"></a>
-                        <div style="display: none;" id="f_add_to_dashboard_message" class="status_message"> <b><b><b><b> Your report has been added.<a onClick="return VisualizationModule.changeReport('dashboard')" href="dashboard?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">View Dashboard</a> </b></b></b></b> </div>
+                        <div style="display: none;" id="f_add_to_dashboard_message" class="status_message"> <b><b><b><b> Your report has been added.<a href="dashboard?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">View Dashboard</a> </b></b></b></b> </div>
                         <div style="display: none;" id="f_message" class="status_message"> <b><b><b><b id="f_message_text"> </b></b></b></b> </div>
                       </div>
                     </div>
                     <div>
-                      <div class="breadcrumb" id="Breadcrumb"> <a onClick="VisualizationModule.changeReport(&quot;visitors&quot;); return false;" href="#">Overview</a> » </div>
+                      <div class="breadcrumb" id="Breadcrumb"> <a href="#">Overview</a> » </div>
                     </div>
                     <div>
                       <div id="Title">
@@ -226,7 +226,7 @@ Google Analytics</title>
                                       <h1 title="Map Overlay " class="title"> <span id="report_title_name" class="name"> Map Overlay </span> <span class="detail"> <span id="report_title_details_1" class="last"> </span> </span> </h1>
                                     </div>
                                   </div></td>
-                                <td><div class="date_range"> <a onClick="analytics.Menu.toggle('f_date_range', 'f_date_range_options', analytics.MenuType.CALENDAR); window.dateInputView.initFunction(); window.dateInputView.setStylesForDatePicker(); return false;" id="f_date_range" href="#"> <b><b><b> <span>
+                                <td><div class="date_range"> <a href="#"> <b><b><b> <span>
                                     <table>
                                       <tbody>
                                         <tr>
@@ -293,7 +293,7 @@ Google Analytics</title>
                   <div>
                     <div id="GeoMap">
                       <div class="graph_options_header">
-                        <div onClick="goog.analytics.Menu.toggle(&quot;f_grapher_label&quot;, &quot;f_graph_options&quot;, goog.analytics.MenuType.CONTROL); return false;" id="f_grapher_label" class="graph_tab_options"> <b> <b>
+                        <div class="graph_tab_options"> <b> <b>
                           <div class="legend"> Visits </div>
                           <div class="graph_tab_arrow"></div>
                           </b> </b> </div>
@@ -306,31 +306,31 @@ Google Analytics</title>
                                 <td><ul>
                                     <li>
                                       <div class="graph_option primary">
-                                        <input type="radio" onClick="analytics.PropertyManager._getInstance()._broadcastChange(&quot;map_index&quot;, 0);" class="graph_option primary" checked="" id="grapher_data_0" name="grapher_data">
+                                        <input type="radio" name="grapher_data">
                                       </div>
                                       <label class="graph_option_label" id="f_grapher_data_label_0" for="grapher_data_0">Visits</label>
                                     </li>
                                     <li>
                                       <div class="graph_option primary">
-                                        <input type="radio" onClick="analytics.PropertyManager._getInstance()._broadcastChange(&quot;map_index&quot;, 1);" class="graph_option primary" id="grapher_data_1" name="grapher_data">
+                                        <input type="radio" name="grapher_data">
                                       </div>
                                       <label class="graph_option_label" id="f_grapher_data_label_1" for="grapher_data_1">Pages/Visit</label>
                                     </li>
                                     <li>
                                       <div class="graph_option primary">
-                                        <input type="radio" onClick="analytics.PropertyManager._getInstance()._broadcastChange(&quot;map_index&quot;, 2);" class="graph_option primary" id="grapher_data_2" name="grapher_data">
+                                        <input type="radio" name="grapher_data">
                                       </div>
                                       <label class="graph_option_label" id="f_grapher_data_label_2" for="grapher_data_2">Avg. Time on Site</label>
                                     </li>
                                     <li>
                                       <div class="graph_option primary">
-                                        <input type="radio" onClick="analytics.PropertyManager._getInstance()._broadcastChange(&quot;map_index&quot;, 3);" class="graph_option primary" id="grapher_data_3" name="grapher_data">
+                                        <input type="radio" name="grapher_data">
                                       </div>
                                       <label class="graph_option_label" id="f_grapher_data_label_3" for="grapher_data_3">% New Visits</label>
                                     </li>
                                     <li>
                                       <div class="graph_option primary">
-                                        <input type="radio" onClick="analytics.PropertyManager._getInstance()._broadcastChange(&quot;map_index&quot;, 4);" class="graph_option primary" id="grapher_data_4" name="grapher_data">
+                                        <input type="radio" name="grapher_data">
                                       </div>
                                       <label class="graph_option_label" id="f_grapher_data_label_4" for="grapher_data_4">Bounce Rate</label>
                                     </li>
@@ -338,19 +338,19 @@ Google Analytics</title>
                                 <td><ul>
                                     <li>
                                       <div class="graph_option primary">
-                                        <input type="radio" onClick="analytics.PropertyManager._getInstance()._broadcastChange(&quot;map_index&quot;, 5);" class="graph_option primary" id="grapher_data_5" name="grapher_data">
+                                        <input type="radio" name="grapher_data">
                                       </div>
                                       <label class="graph_option_label" id="f_grapher_data_label_5" for="grapher_data_5">Goal1 Conversion Rate</label>
                                     </li>
                                     <li>
                                       <div class="graph_option primary">
-                                        <input type="radio" onClick="analytics.PropertyManager._getInstance()._broadcastChange(&quot;map_index&quot;, 6);" class="graph_option primary" id="grapher_data_6" name="grapher_data">
+                                        <input type="radio" name="grapher_data">
                                       </div>
                                       <label class="graph_option_label" id="f_grapher_data_label_6" for="grapher_data_6">Goal Conversion Rate</label>
                                     </li>
                                     <li>
                                       <div class="graph_option primary">
-                                        <input type="radio" onClick="analytics.PropertyManager._getInstance()._broadcastChange(&quot;map_index&quot;, 7);" class="graph_option primary" id="grapher_data_7" name="grapher_data">
+                                        <input type="radio" name="grapher_data">
                                       </div>
                                       <label class="graph_option_label" id="f_grapher_data_label_7" for="grapher_data_7">Per Visit Goal Value</label>
                                     </li>
@@ -395,7 +395,7 @@ Google Analytics</title>
                           <dl class="ctrl" id="SegmentControl">
                             <dt> Dimension: </dt>
                             <dd>
-                              <div class="btn dropdn" id="SegmentControl_button"> <b onClick="goog.analytics.Menu.toggle(&quot;SegmentControl_button&quot;, &quot;SegmentControl_menu&quot;, goog.analytics.MenuType.NARRATIVE);"> <b><b> None </b></b> </b> </div>
+                              <div class="btn dropdn" id="SegmentControl_button"> <b > <b><b> None </b></b> </b> </div>
                               <div style="display: none;" id="SegmentControl_menu">
                                 <div class="button_submenu" id="SegmentControl_listing">
                                   <div>
@@ -452,8 +452,8 @@ Google Analytics</title>
                           <dt> Show: </dt>
                           <dd>
                             <ul class="tabs">
-                              <li id="tab_0" class="first current"><a onClick="tabView._toggleTab(0); return false;" href="#">Site Usage</a></li>
-                              <li id="tab_1" class=" "><a onClick="tabView._toggleTab(1); return false;" href="#">Goal Set 1</a></li>
+                              <li id="tab_0" class="first current"><a href="#">Site Usage</a></li>
+                              <li id="tab_1" class=" "><a href="#">Goal Set 1</a></li>
                             </ul>
                           </dd>
                         </dl>
@@ -463,7 +463,7 @@ Google Analytics</title>
                           <dt> Views: </dt>
                           <dd>
                             <ul>
-                              <li class="table_view_option" id="f_table_view_option_elem"><a onClick="tabView._toggleView(0); table._toggleView(0); return false;" class="current" id="f_table_view_option" href="#">Table</a>
+                              <li class="table_view_option" id="f_table_view_option_elem"><a href="#">Table</a>
                                 <div style="display: none;" class="hover_desc_container" id="hover_desc_table">
                                   <div class="hover_desc_outerdiv">
                                     <div class="hover_desc_innerdiv"><span>Table</span>
@@ -472,7 +472,7 @@ Google Analytics</title>
                                   </div>
                                 </div>
                               </li>
-                              <li class="pie_view_option" id="f_pie_view_option_elem"><a onClick="tabView._toggleView(1); table._toggleView(1); return false;" class="" id="f_pie_view_option" href="#">Percentage</a>
+                              <li class="pie_view_option" id="f_pie_view_option_elem"><a href="#">Percentage</a>
                                 <div style="display: none;" class="hover_desc_container" id="hover_desc_pie">
                                   <div class="hover_desc_outerdiv">
                                     <div class="hover_desc_innerdiv"><span>Percentage</span>
@@ -481,7 +481,7 @@ Google Analytics</title>
                                   </div>
                                 </div>
                               </li>
-                              <li class="performance_view_option" id="f_performance_view_option_elem"><a onClick="tabView._toggleView(2); table._toggleView(2); return false;" class="" id="f_performance_view_option" href="#">Performance</a>
+                              <li class="performance_view_option" id="f_performance_view_option_elem"><a href="#">Performance</a>
                                 <div style="display: none;" class="hover_desc_container" id="hover_desc_performance">
                                   <div class="hover_desc_outerdiv">
                                     <div class="hover_desc_innerdiv"><span>Performance</span>
@@ -490,7 +490,7 @@ Google Analytics</title>
                                   </div>
                                 </div>
                               </li>
-                              <li class="comparison_view_option" id="f_comparison_view_option_elem"><a onClick="tabView._toggleView(3); table._toggleView(3); return false;" class="" id="f_comparison_view_option" href="#">Comparison</a>
+                              <li class="comparison_view_option" id="f_comparison_view_option_elem"><a href="#">Comparison</a>
                                 <div style="display: none;" class="hover_desc_container" id="hover_desc_comparison">
                                   <div class="hover_desc_outerdiv">
                                     <div class="hover_desc_innerdiv"><span>Comparison</span>
@@ -499,7 +499,7 @@ Google Analytics</title>
                                   </div>
                                 </div>
                               </li>
-                              <li class="pivot_alt_view_option" id="f_pivot_view_option_elem"><a onClick="tabView._toggleView(4); table._toggleView(4); return false;" class="" id="f_pivot_view_option" href="#">Pivot</a>
+                              <li class="pivot_alt_view_option" id="f_pivot_view_option_elem"><a href="#">Pivot</a>
                                 <div style="display: none;" class="hover_desc_container" id="hover_desc_pivot">
                                   <div class="hover_desc_outerdiv">
                                     <div class="hover_desc_innerdiv"><span>Pivot</span>
@@ -520,7 +520,7 @@ Google Analytics</title>
                         <tbody>
                           <tr style="" id="f_scorecard_0">
                             <td class="first"><div class="statistic">
-                                <div onClick="goog.analytics.Menu.toggle('f_scorecard_help_link_0_0', 'f_scorecard_help_0_0');" onMouseOut="document.getElementById('f_scorecard_help_link_0_0').className=&quot;&quot;;" onMouseOver="document.getElementById('f_scorecard_help_link_0_0').className=&quot;current&quot;;" id="f_scorecard_help_container_0_0" class="contextual_help"> <a id="f_scorecard_help_link_0_0" onClick="return false" href="#"> </a>
+                                <div href="#"> </a>
                                   <div style="display: none;" id="f_scorecard_help_0_0">
                                     <dl>
                                       <dt> Visits </dt>
@@ -533,7 +533,7 @@ Google Analytics</title>
                                 <p class="date_comparison"> % of Site Total: <span class="comparison_value"> 100.00% </span> </p>
                               </div></td>
                             <td class=""><div class="statistic">
-                                <div onClick="goog.analytics.Menu.toggle('f_scorecard_help_link_0_1', 'f_scorecard_help_0_1');" onMouseOut="document.getElementById('f_scorecard_help_link_0_1').className=&quot;&quot;;" onMouseOver="document.getElementById('f_scorecard_help_link_0_1').className=&quot;current&quot;;" id="f_scorecard_help_container_0_1" class="contextual_help"> <a id="f_scorecard_help_link_0_1" onClick="return false" href="#"> </a>
+                                <div href="#"> </a>
                                   <div style="display: none;" id="f_scorecard_help_0_1">
                                     <dl>
                                       <dt> Pages/Visit </dt>
@@ -546,7 +546,7 @@ Google Analytics</title>
                                 <p class="date_comparison"> Site Avg: <span class="comparison_value"> 2.83 </span> <span class="neutral_comparison"> (0.00%) </span> </p>
                               </div></td>
                             <td class=""><div class="statistic">
-                                <div onClick="goog.analytics.Menu.toggle('f_scorecard_help_link_0_2', 'f_scorecard_help_0_2');" onMouseOut="document.getElementById('f_scorecard_help_link_0_2').className=&quot;&quot;;" onMouseOver="document.getElementById('f_scorecard_help_link_0_2').className=&quot;current&quot;;" id="f_scorecard_help_container_0_2" class="contextual_help"> <a id="f_scorecard_help_link_0_2" onClick="return false" href="#"> </a>
+                                <div href="#"> </a>
                                   <div style="display: none;" id="f_scorecard_help_0_2">
                                     <dl>
                                       <dt> Avg. Time on Site </dt>
@@ -559,7 +559,7 @@ Google Analytics</title>
                                 <p class="date_comparison"> Site Avg: <span class="comparison_value"> 00:01:18 </span> <span class="neutral_comparison"> (0.00%) </span> </p>
                               </div></td>
                             <td class=""><div class="statistic">
-                                <div onClick="goog.analytics.Menu.toggle('f_scorecard_help_link_0_3', 'f_scorecard_help_0_3');" onMouseOut="document.getElementById('f_scorecard_help_link_0_3').className=&quot;&quot;;" onMouseOver="document.getElementById('f_scorecard_help_link_0_3').className=&quot;current&quot;;" id="f_scorecard_help_container_0_3" class="contextual_help"> <a id="f_scorecard_help_link_0_3" onClick="return false" href="#"> </a>
+                                <div href="#"> </a>
                                   <div style="display: none;" id="f_scorecard_help_0_3">
                                     <dl>
                                       <dt> % New Visits </dt>
@@ -572,7 +572,7 @@ Google Analytics</title>
                                 <p class="date_comparison"> Site Avg: <span class="comparison_value"> 85.55% </span> <span class="negative_comparison"> (-0.13%) </span> </p>
                               </div></td>
                             <td class="last"><div class="statistic">
-                                <div onClick="goog.analytics.Menu.toggle('f_scorecard_help_link_0_4', 'f_scorecard_help_0_4');" onMouseOut="document.getElementById('f_scorecard_help_link_0_4').className=&quot;&quot;;" onMouseOver="document.getElementById('f_scorecard_help_link_0_4').className=&quot;current&quot;;" id="f_scorecard_help_container_0_4" class="contextual_help"> <a id="f_scorecard_help_link_0_4" onClick="return false" href="#"> </a>
+                                <div href="#"> </a>
                                   <div style="display: none;" id="f_scorecard_help_0_4">
                                     <dl>
                                       <dt> Bounce Rate </dt>
@@ -598,7 +598,7 @@ Google Analytics</title>
                             <th class="key_column only  goog-control" id="f_key_column_0" style="-moz-user-select: none;"> <dl class="ctrl" id="ZoomMenuControl">
                                 <dt> Detail Level: </dt>
                                 <dd>
-                                  <div class="btn dropdn" id="ZoomMenuControl_button"> <b onClick="goog.analytics.Menu.toggle(&quot;ZoomMenuControl_button&quot;, &quot;ZoomMenuControl_menu&quot;, goog.analytics.MenuType.NARRATIVE);"> <b><b> Country/Territory </b></b> </b> </div>
+                                  <div class="btn dropdn" id="ZoomMenuControl_button"> <b > <b><b> Country/Territory </b></b> </b> </div>
                                   <div style="display: none;" id="ZoomMenuControl_menu">
                                     <div class="button_submenu" id="ZoomMenuControl_listing">
                                       <div>
@@ -636,7 +636,7 @@ Google Analytics</title>
                           <tr class="highlight">
                             <td class="count">1.</td>
                             <td colspan="1" class="text"><div id="f_primary_segment0" title="China" class="text_wrapper">
-                                <div class="text_wrapper"> <a onClick="table._drillDown(0); return false;" href="#"> China </a> </div>
+                                <div class="text_wrapper"> <a href="#"> China </a> </div>
                               </div></td>
                             <td id="f_cell_0_0" class="sort "> 1,753 </td>
                             <td id="f_cell_0_1" class=" "> 2.84 </td>
@@ -649,7 +649,7 @@ Google Analytics</title>
                           <tr class="">
                             <td class="count">2.</td>
                             <td colspan="1" class="text"><div id="f_primary_segment1" title="United States" class="text_wrapper">
-                                <div class="text_wrapper"> <a onClick="table._drillDown(1); return false;" href="#"> United States </a> </div>
+                                <div class="text_wrapper"> <a href="#"> United States </a> </div>
                               </div></td>
                             <td id="f_cell_1_0" class="sort "> 3 </td>
                             <td id="f_cell_1_1" class=" "> 1.00 </td>
@@ -662,7 +662,7 @@ Google Analytics</title>
                           <tr class="highlight">
                             <td class="count">3.</td>
                             <td colspan="1" class="text"><div id="f_primary_segment2" title="Taiwan" class="text_wrapper">
-                                <div class="text_wrapper"> <a onClick="table._drillDown(2); return false;" href="#"> Taiwan </a> </div>
+                                <div class="text_wrapper"> <a href="#"> Taiwan </a> </div>
                               </div></td>
                             <td id="f_cell_2_0" class="sort "> 2 </td>
                             <td id="f_cell_2_1" class=" "> 1.50 </td>
@@ -675,7 +675,7 @@ Google Analytics</title>
                           <tr class="">
                             <td class="count">4.</td>
                             <td colspan="1" class="text"><div id="f_primary_segment3" title="Hong Kong" class="text_wrapper">
-                                <div class="text_wrapper"> <a onClick="table._drillDown(3); return false;" href="#"> Hong Kong </a> </div>
+                                <div class="text_wrapper"> <a href="#"> Hong Kong </a> </div>
                               </div></td>
                             <td id="f_cell_3_0" class="sort "> 1 </td>
                             <td id="f_cell_3_1" class=" "> 1.00 </td>
@@ -688,7 +688,7 @@ Google Analytics</title>
                           <tr class="highlight">
                             <td class="count">5.</td>
                             <td colspan="1" class="text"><div id="f_primary_segment4" title="Australia" class="text_wrapper">
-                                <div class="text_wrapper"> <a onClick="table._drillDown(4); return false;" href="#"> Australia </a> </div>
+                                <div class="text_wrapper"> <a href="#"> Australia </a> </div>
                               </div></td>
                             <td id="f_cell_4_0" class="sort "> 1 </td>
                             <td id="f_cell_4_1" class=" "> 1.00 </td>
@@ -701,7 +701,7 @@ Google Analytics</title>
                           <tr class="">
                             <td class="count">6.</td>
                             <td colspan="1" class="text"><div id="f_primary_segment5" title="United Arab Emirates" class="text_wrapper">
-                                <div class="text_wrapper"> <a onClick="table._drillDown(5); return false;" href="#"> United Arab Emirates </a> </div>
+                                <div class="text_wrapper"> <a href="#"> United Arab Emirates </a> </div>
                               </div></td>
                             <td id="f_cell_5_0" class="sort "> 1 </td>
                             <td id="f_cell_5_1" class=" "> 1.00 </td>
@@ -714,7 +714,7 @@ Google Analytics</title>
                           <tr class="highlight">
                             <td class="count">7.</td>
                             <td colspan="1" class="text"><div id="f_primary_segment6" title="Netherlands" class="text_wrapper">
-                                <div class="text_wrapper"> <a onClick="table._drillDown(6); return false;" href="#"> Netherlands </a> </div>
+                                <div class="text_wrapper"> <a href="#"> Netherlands </a> </div>
                               </div></td>
                             <td id="f_cell_6_0" class="sort "> 1 </td>
                             <td id="f_cell_6_1" class=" "> 1.00 </td>
@@ -727,7 +727,7 @@ Google Analytics</title>
                           <tr class="">
                             <td class="count">8.</td>
                             <td colspan="1" class="text"><div id="f_primary_segment7" title="Brazil" class="text_wrapper">
-                                <div class="text_wrapper"> <a onClick="table._drillDown(7); return false;" href="#"> Brazil </a> </div>
+                                <div class="text_wrapper"> <a href="#"> Brazil </a> </div>
                               </div></td>
                             <td id="f_cell_7_0" class="sort "> 1 </td>
                             <td id="f_cell_7_1" class=" "> 1.00 </td>
@@ -740,7 +740,7 @@ Google Analytics</title>
                           <tr class="highlight">
                             <td class="count">9.</td>
                             <td colspan="1" class="text"><div id="f_primary_segment8" title="France" class="text_wrapper">
-                                <div class="text_wrapper"> <a onClick="table._drillDown(8); return false;" href="#"> France </a> </div>
+                                <div class="text_wrapper"> <a href="#"> France </a> </div>
                               </div></td>
                             <td id="f_cell_8_0" class="sort "> 1 </td>
                             <td id="f_cell_8_1" class=" "> 1.00 </td>
@@ -753,7 +753,7 @@ Google Analytics</title>
                           <tr class="">
                             <td class="count">10.</td>
                             <td colspan="1" class="text"><div id="f_primary_segment9" title="Italy" class="text_wrapper">
-                                <div class="text_wrapper"> <a onClick="table._drillDown(9); return false;" href="#"> Italy </a> </div>
+                                <div class="text_wrapper"> <a href="#"> Italy </a> </div>
                               </div></td>
                             <td id="f_cell_9_0" class="sort "> 1 </td>
                             <td id="f_cell_9_1" class=" "> 1.00 </td>
@@ -775,7 +775,7 @@ Google Analytics</title>
                                         <option value="1"> excluding </option>
                                       </select>
                                       <input type="text" onChange="table._setFilterString(this.value)" value="" id="f_filter_str">
-                                      <a title="Go" class="button" onClick="table._filter(); return false;" href="#"> <b><b><b>Go</b></b></b> </a> <span class="filter_tab_options"> <a onClick="table.toggleTableFilter_(&quot;f_popout_filter&quot;, &quot;basic_filter&quot;); return false;" name="toggle_filter" id="f_toggle_filter" href="#"> <b> <b> Advanced Filter </b> </b> </a> </span> </div>
+                                      <a title="Go" class="button" href="#"> <b> <b> Advanced Filter </b> </b> </a> </span> </div>
                                   </div>
                                 </form>
                                 <form onSubmit="table._toggleRowStart(document.getElementById(&quot;f_row_start&quot;).value); return false;" action="">
@@ -790,7 +790,7 @@ Google Analytics</title>
                                       <option value="250">250</option>
                                       <option value="500">500</option>
                                     </select>
-                                    <span class="button_label"> 1 - 10 of 10 </span> <a title="previous" class="button previous" onClick="table._togglePage(-1); return false;" href="#"> <b> <b> <b> previous </b> </b> </b> </a> <a title="next" class="button next" onClick="table._togglePage(1); return false;" href="#"> <b> <b> <b> next </b> </b> </b> </a> </div>
+                                    <span class="button_label"> 1 - 10 of 10 </span> <a title="previous" class="button previous" href="#"> <b> <b> <b> next </b> </b> </b> </a> </div>
                                 </form>
                               </div></td>
                           </tr>
@@ -825,7 +825,7 @@ Google Analytics</title>
                                 <div class="filter_error_message"></div>
                               </div>
                             </div>
-                            <div id="f_add_condition" style="display: block;"> <a onClick="tableFilter.clearCondnId(); tableFilter.showHideKeyValueFilterOptions('f_add_condition', 'f_keyValueOptions'); return false;" id="f_add_condition_label" href="#"><b><b><b>+ Add new condition</b></b></b></a> </div>
+                            <div id="f_add_condition" style="display: block;"> <a href="#"><b><b><b>+ Add new condition</b></b></b></a> </div>
                             <div style="display: none;" id="f_keyValueOptions">
                               <div id="f_keyOptions">
                                 <div id="keyListLabel">Dimensions</div>
@@ -833,7 +833,7 @@ Google Analytics</title>
                                   <div id="keyOptionsList">
                                     <li>
                                       <label for="country">
-                                        <input type="radio" onClick="tableFilter.renderKeyFilter('applied_filters', tableFilter.getCondnId(), &quot;Country/Territory&quot;, &quot;country&quot;, &quot;&quot;, &quot;&quot;);return false;" value="Country/Territory" id="country" name="keyGroup">
+                                        <input type="radio" name="keyGroup">
                                         <span>Country/Territory</span> </label>
                                     </li>
                                   </div>
@@ -849,35 +849,35 @@ Google Analytics</title>
                                     <div id="valueOptionsList">
                                       <li>
                                         <label for="visits">
-                                          <input type="radio" onClick="tableFilter.renderValueFilter('applied_filters', tableFilter.getCondnId(), &quot;visits&quot;, this.value, &quot;&quot;, &quot;&quot;, &quot;&quot;);return false;" value="Visits" id="visits" name="valueGroup">
+                                          <input type="radio" name="valueGroup">
                                           <span>Visits</span> </label>
                                       </li>
                                     </div>
                                     <div id="valueOptionsList">
                                       <li>
                                         <label for="avg_pageviews">
-                                          <input type="radio" onClick="tableFilter.renderValueFilter('applied_filters', tableFilter.getCondnId(), &quot;avg_pageviews&quot;, this.value, &quot;&quot;, &quot;&quot;, &quot;&quot;);return false;" value="Pages/Visit" id="avg_pageviews" name="valueGroup">
+                                          <input type="radio" name="valueGroup">
                                           <span>Pages/Visit</span> </label>
                                       </li>
                                     </div>
                                     <div id="valueOptionsList">
                                       <li>
                                         <label for="avg_session_time">
-                                          <input type="radio" onClick="tableFilter.renderValueFilter('applied_filters', tableFilter.getCondnId(), &quot;avg_session_time&quot;, this.value, &quot;&quot;, &quot;&quot;, &quot;&quot;);return false;" value="Avg. Time on Site" id="avg_session_time" name="valueGroup">
+                                          <input type="radio" name="valueGroup">
                                           <span>Avg. Time on Site</span> </label>
                                       </li>
                                     </div>
                                     <div id="valueOptionsList">
                                       <li>
                                         <label for="percent_new_visitors">
-                                          <input type="radio" onClick="tableFilter.renderValueFilter('applied_filters', tableFilter.getCondnId(), &quot;percent_new_visitors&quot;, this.value, &quot;&quot;, &quot;&quot;, &quot;&quot;);return false;" value="% New Visits" id="percent_new_visitors" name="valueGroup">
+                                          <input type="radio" name="valueGroup">
                                           <span>% New Visits</span> </label>
                                       </li>
                                     </div>
                                     <div id="valueOptionsList">
                                       <li>
                                         <label for="bounce_rate">
-                                          <input type="radio" onClick="tableFilter.renderValueFilter('applied_filters', tableFilter.getCondnId(), &quot;bounce_rate&quot;, this.value, &quot;&quot;, &quot;&quot;, &quot;&quot;);return false;" value="Bounce Rate" id="bounce_rate" name="valueGroup">
+                                          <input type="radio" name="valueGroup">
                                           <span>Bounce Rate</span> </label>
                                       </li>
                                     </div>
@@ -891,21 +891,21 @@ Google Analytics</title>
                                     <div id="valueOptionsList">
                                       <li>
                                         <label for="goal_conversion_rate_1">
-                                          <input type="radio" onClick="tableFilter.renderValueFilter('applied_filters', tableFilter.getCondnId(), &quot;goal_conversion_rate_1&quot;, this.value, &quot;&quot;, &quot;&quot;, &quot;&quot;);return false;" value="G1" id="goal_conversion_rate_1" name="valueGroup">
+                                          <input type="radio" name="valueGroup">
                                           <span>G1</span> </label>
                                       </li>
                                     </div>
                                     <div id="valueOptionsList">
                                       <li>
                                         <label for="goal_conversion_rate">
-                                          <input type="radio" onClick="tableFilter.renderValueFilter('applied_filters', tableFilter.getCondnId(), &quot;goal_conversion_rate&quot;, this.value, &quot;&quot;, &quot;&quot;, &quot;&quot;);return false;" value="Goal Conversion Rate" id="goal_conversion_rate" name="valueGroup">
+                                          <input type="radio" name="valueGroup">
                                           <span>Goal Conversion Rate</span> </label>
                                       </li>
                                     </div>
                                     <div id="valueOptionsList">
                                       <li>
                                         <label for="goal_value_per_visit">
-                                          <input type="radio" onClick="tableFilter.renderValueFilter('applied_filters', tableFilter.getCondnId(), &quot;goal_value_per_visit&quot;, this.value, &quot;&quot;, &quot;&quot;, &quot;&quot;);return false;" value="Per Visit Goal Value" id="goal_value_per_visit" name="valueGroup">
+                                          <input type="radio" name="valueGroup">
                                           <span>Per Visit Goal Value</span> </label>
                                       </li>
                                     </div>
@@ -913,7 +913,7 @@ Google Analytics</title>
                                 </div>
                               </div>
                             </div>
-                            <div id="submitButtons"> <a class="button" onClick="if(tableFilter.validate()){ tableFilter.applyAdvancedFilter();}return false;" href="#"> <b><b><b>Apply Filter</b></b></b> </a> <a onClick="tableFilter.cancel('f_popout_filter', 'applied_filters', 'advanced_filters_link', 'basic_filter');return false;" href="#"> <b><b><b>cancel</b></b></b> </a> </div>
+                            <div id="submitButtons"> <a class="button" href="#"> <b><b><b>cancel</b></b></b> </a> </div>
                           </div>
                         </div>
                       </div>
@@ -930,7 +930,7 @@ Google Analytics</title>
         <div id="report_nav_div">
           <div id="report_nav" class="menu-list"> <b class="round_border"> <b class="round_border_layer3"></b> <b class="round_border_layer2"></b> <b class="round_border_layer1"></b> </b>
             <div class="round_border_content">
-              <div class="menu-item"> <a id="dashboard_nav_item" class="" onClick="return VisualizationModule.changeReport('dashboard', null)" href="dashboard?dashboard=1&amp;id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+              <div class="menu-item"> <a id="dashboard_nav_item" class="" href="dashboard?dashboard=1&amp;id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                 <div class="r1">
                   <div class="r2">
                     <div class="r3">
@@ -943,7 +943,7 @@ Google Analytics</title>
                   </div>
                 </div>
                 </a> </div>
-              <div class="menu-item"> <a id="intelligence_events_nav_item" class="" onClick="return VisualizationModule.changeReport('daily_events', null)" href="daily_events?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+              <div class="menu-item"> <a id="intelligence_events_nav_item" class="" href="daily_events?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                 <div class="r1">
                   <div class="r2">
                     <div class="r3">
@@ -956,7 +956,7 @@ Google Analytics</title>
                   </div>
                 </div>
                 </a> </div>
-              <div class="menu-item"> <a id="visitors_nav_item" class="current" onClick="return VisualizationModule.changeReport('visitors', null)" href="visitors?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+              <div class="menu-item"> <a id="visitors_nav_item" class="current" href="visitors?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                 <div class="r1">
                   <div class="r2">
                     <div class="r3">
@@ -970,7 +970,7 @@ Google Analytics</title>
                 </div>
                 </a>
                 <div id="visitors_nav_item_items" class="menu-list">
-                  <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('visitors', null)" href="visitors?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                  <div class="menu-item"> <a class="" href="visitors?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                     <div class="r1">
                       <div class="r2">
                         <div class="r3">
@@ -979,7 +979,7 @@ Google Analytics</title>
                       </div>
                     </div>
                     </a> </div>
-                  <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReportAndComparison('benchmark', 'benchmark')" href="benchmark?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                  <div class="menu-item"> <a class="" href="benchmark?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                     <div class="r1">
                       <div class="r2">
                         <div class="r3">
@@ -988,7 +988,7 @@ Google Analytics</title>
                       </div>
                     </div>
                     </a> </div>
-                  <div class="menu-item"> <a class="current" onClick="return VisualizationModule.changeReport('maps', null)" href="maps?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                  <div class="menu-item"> <a class="current" href="maps?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                     <div class="r1">
                       <div class="r2">
                         <div class="r3">
@@ -997,7 +997,7 @@ Google Analytics</title>
                       </div>
                     </div>
                     </a> </div>
-                  <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('visitor_types', 'view=1')" href="visitor_types?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                  <div class="menu-item"> <a class="" href="visitor_types?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                     <div class="r1">
                       <div class="r2">
                         <div class="r3">
@@ -1006,7 +1006,7 @@ Google Analytics</title>
                       </div>
                     </div>
                     </a> </div>
-                  <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('languages', null)" href="languages?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                  <div class="menu-item"> <a class="" href="languages?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                     <div class="r1">
                       <div class="r2">
                         <div class="r3">
@@ -1015,7 +1015,7 @@ Google Analytics</title>
                       </div>
                     </div>
                     </a> </div>
-                  <div class="menu-item"> <a id="f_trending_nav" class="expandable" onClick="goog.analytics.Menu.toggle(&quot;f_trending_nav&quot;, &quot;f_trending_nav_items&quot;, goog.analytics.MenuType.NAV); return false; return false;" href="#">
+                  <div class="menu-item"> <a id="f_trending_nav" class="expandable" href="#">
                     <div class="r1">
                       <div class="r2">
                         <div class="r3">
@@ -1029,7 +1029,7 @@ Google Analytics</title>
                     </div>
                     </a>
                     <div style="display: none;" id="f_trending_nav_items" class="nested_report_nav menu-list">
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('visits', null)" href="visits?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="visits?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1038,7 +1038,7 @@ Google Analytics</title>
                           </div>
                         </div>
                         </a> </div>
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('unique_visitors', null)" href="unique_visitors?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="unique_visitors?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1047,7 +1047,7 @@ Google Analytics</title>
                           </div>
                         </div>
                         </a> </div>
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('pageviews', null)" href="pageviews?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="pageviews?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1056,7 +1056,7 @@ Google Analytics</title>
                           </div>
                         </div>
                         </a> </div>
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('average_pageviews', null)" href="average_pageviews?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="average_pageviews?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1065,7 +1065,7 @@ Google Analytics</title>
                           </div>
                         </div>
                         </a> </div>
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('time_on_site', null)" href="time_on_site?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="time_on_site?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1074,7 +1074,7 @@ Google Analytics</title>
                           </div>
                         </div>
                         </a> </div>
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('bounce_rate', null)" href="bounce_rate?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="bounce_rate?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1085,7 +1085,7 @@ Google Analytics</title>
                         </a> </div>
                     </div>
                   </div>
-                  <div class="menu-item"> <a id="f_behaviors_nav" class="expandable" onClick="goog.analytics.Menu.toggle(&quot;f_behaviors_nav&quot;, &quot;f_behaviors_nav_items&quot;, goog.analytics.MenuType.NAV); return false; return false;" href="#">
+                  <div class="menu-item"> <a id="f_behaviors_nav" class="expandable" href="#">
                     <div class="r1">
                       <div class="r2">
                         <div class="r3">
@@ -1099,7 +1099,7 @@ Google Analytics</title>
                     </div>
                     </a>
                     <div style="display: none;" id="f_behaviors_nav_items" class="nested_report_nav menu-list">
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('loyalty', null)" href="loyalty?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="loyalty?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1108,7 +1108,7 @@ Google Analytics</title>
                           </div>
                         </div>
                         </a> </div>
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('recency', null)" href="recency?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="recency?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1117,7 +1117,7 @@ Google Analytics</title>
                           </div>
                         </div>
                         </a> </div>
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('length_of_visit', null)" href="length_of_visit?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="length_of_visit?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1126,7 +1126,7 @@ Google Analytics</title>
                           </div>
                         </div>
                         </a> </div>
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('depth_of_visit', null)" href="depth_of_visit?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="depth_of_visit?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1137,7 +1137,7 @@ Google Analytics</title>
                         </a> </div>
                     </div>
                   </div>
-                  <div class="menu-item"> <a id="f_browsers_nav" class="expandable" onClick="goog.analytics.Menu.toggle(&quot;f_browsers_nav&quot;, &quot;f_browsers_nav_items&quot;, goog.analytics.MenuType.NAV); return false; return false;" href="#">
+                  <div class="menu-item"> <a id="f_browsers_nav" class="expandable" href="#">
                     <div class="r1">
                       <div class="r2">
                         <div class="r3">
@@ -1151,7 +1151,7 @@ Google Analytics</title>
                     </div>
                     </a>
                     <div style="display: none;" id="f_browsers_nav_items" class="nested_report_nav menu-list">
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('browsers', 'view=1')" href="browsers?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="browsers?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1160,7 +1160,7 @@ Google Analytics</title>
                           </div>
                         </div>
                         </a> </div>
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('platforms', 'view=1')" href="platforms?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="platforms?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1169,7 +1169,7 @@ Google Analytics</title>
                           </div>
                         </div>
                         </a> </div>
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('os_browsers', 'view=1')" href="os_browsers?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="os_browsers?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1178,7 +1178,7 @@ Google Analytics</title>
                           </div>
                         </div>
                         </a> </div>
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('colors', 'view=1')" href="colors?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="colors?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1187,7 +1187,7 @@ Google Analytics</title>
                           </div>
                         </div>
                         </a> </div>
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('resolutions', 'view=1')" href="resolutions?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="resolutions?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1196,7 +1196,7 @@ Google Analytics</title>
                           </div>
                         </div>
                         </a> </div>
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('flash', 'view=1')" href="flash?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="flash?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1205,7 +1205,7 @@ Google Analytics</title>
                           </div>
                         </div>
                         </a> </div>
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('java', 'view=1')" href="java?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="java?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1216,7 +1216,7 @@ Google Analytics</title>
                         </a> </div>
                     </div>
                   </div>
-                  <div class="menu-item"> <a id="f_networks_nav" class="expandable" onClick="goog.analytics.Menu.toggle(&quot;f_networks_nav&quot;, &quot;f_networks_nav_items&quot;, goog.analytics.MenuType.NAV); return false; return false;" href="#">
+                  <div class="menu-item"> <a id="f_networks_nav" class="expandable" href="#">
                     <div class="r1">
                       <div class="r2">
                         <div class="r3">
@@ -1230,7 +1230,7 @@ Google Analytics</title>
                     </div>
                     </a>
                     <div style="display: none;" id="f_networks_nav_items" class="nested_report_nav menu-list">
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('networks', null)" href="networks?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="networks?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1239,7 +1239,7 @@ Google Analytics</title>
                           </div>
                         </div>
                         </a> </div>
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('hostnames', null)" href="hostnames?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="hostnames?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1248,7 +1248,7 @@ Google Analytics</title>
                           </div>
                         </div>
                         </a> </div>
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('speeds', null)" href="speeds?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="speeds?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1259,7 +1259,7 @@ Google Analytics</title>
                         </a> </div>
                     </div>
                   </div>
-                  <div class="menu-item"> <a id="f_mobile_nav" class="expandable" onClick="goog.analytics.Menu.toggle(&quot;f_mobile_nav&quot;, &quot;f_mobile_nav_items&quot;, goog.analytics.MenuType.NAV); return false; return false;" href="#">
+                  <div class="menu-item"> <a id="f_mobile_nav" class="expandable" href="#">
                     <div class="r1">
                       <div class="r2">
                         <div class="r3">
@@ -1273,7 +1273,7 @@ Google Analytics</title>
                     </div>
                     </a>
                     <div style="display: none;" id="f_mobile_nav_items" class="nested_report_nav menu-list">
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('devices', null)" href="devices?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="devices?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1282,7 +1282,7 @@ Google Analytics</title>
                           </div>
                         </div>
                         </a> </div>
-                      <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('carriers', null)" href="carriers?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                      <div class="menu-item"> <a class="" href="carriers?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                         <div class="r1">
                           <div class="r2">
                             <div class="r3">
@@ -1293,7 +1293,7 @@ Google Analytics</title>
                         </a> </div>
                     </div>
                   </div>
-                  <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('user_defined', null)" href="user_defined?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                  <div class="menu-item"> <a class="" href="user_defined?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                     <div class="r1">
                       <div class="r2">
                         <div class="r3">
@@ -1302,7 +1302,7 @@ Google Analytics</title>
                       </div>
                     </div>
                     </a> </div>
-                  <div class="menu-item"> <a class="" onClick="return VisualizationModule.changeReport('custom_variables_overview_report', null)" href="custom_variables_overview_report?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                  <div class="menu-item"> <a class="" href="custom_variables_overview_report?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                     <div class="r1">
                       <div class="r2">
                         <div class="r3">
@@ -1313,7 +1313,7 @@ Google Analytics</title>
                     </a> </div>
                 </div>
               </div>
-              <div class="menu-item"> <a id="traffic_sources_nav_item" class="" onClick="return VisualizationModule.changeReport('sources', null)" href="sources?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+              <div class="menu-item"> <a id="traffic_sources_nav_item" class="" href="sources?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                 <div class="r1">
                   <div class="r2">
                     <div class="r3">
@@ -1326,7 +1326,7 @@ Google Analytics</title>
                   </div>
                 </div>
                 </a> </div>
-              <div class="menu-item"> <a id="content_nav_item" class="" onClick="return VisualizationModule.changeReport('content', null)" href="content?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+              <div class="menu-item"> <a id="content_nav_item" class="" href="content?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                 <div class="r1">
                   <div class="r2">
                     <div class="r3">
@@ -1339,7 +1339,7 @@ Google Analytics</title>
                   </div>
                 </div>
                 </a> </div>
-              <div class="menu-item"> <a id="goals_nav_item" class="" onClick="return VisualizationModule.changeReport('goal_intro', null)" href="goal_intro?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+              <div class="menu-item"> <a id="goals_nav_item" class="" href="goal_intro?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                 <div class="r1">
                   <div class="r2">
                     <div class="r3">
@@ -1356,7 +1356,7 @@ Google Analytics</title>
             <b class="round_border"> <b class="round_border_layer1"></b> <b class="round_border_layer2"></b> <b class="round_border_layer3"></b> </b>
             <div class="custom_reporting"> <b class="round_border"> <b class="round_border_layer3"></b> <b class="round_border_layer2"></b> <b class="round_border_layer1"></b> </b>
               <div class="round_border_content">
-                <div class="menu-item"> <a id="custom_report_nav_item" class="custom_reporting_section" onClick="goog.analytics.Menu.toggle(&quot;custom_report_nav_item&quot;, &quot;custom_report_nav_item_items&quot;, goog.analytics.MenuType.NAV); return false; return false;" href="#">
+                <div class="menu-item"> <a id="custom_report_nav_item" class="custom_reporting_section" href="#">
                   <div class="r1">
                     <div class="r2">
                       <div class="r3">
@@ -1370,7 +1370,7 @@ Google Analytics</title>
                   </div>
                   </a>
                   <div style="display: none;" id="custom_report_nav_item_items" class="menu-list">
-                    <div class="menu-item"> <a id="manage_custom_reports" class="" onClick="return VisualizationModule.changeReport('manage_profile_custom_reports', null)" href="manage_profile_custom_reports?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
+                    <div class="menu-item"> <a id="manage_custom_reports" class="" href="manage_profile_custom_reports?id=16031476&amp;esig=0&amp;pdr=20100612-20100712&amp;cmp=average">
                       <div class="r1">
                         <div class="r2">
                           <div class="r3">
@@ -1395,10 +1395,10 @@ Google Analytics</title>
               <div class="r3">
                 <h4>My Customizations</h4>
                 <ul>
-                  <li class="custom_reports"><span class="setting_choice"><a onClick="return VisualizationModule.changeReport(&quot;manage_profile_custom_reports&quot;, null, true);" href="#">Custom Reports</a>&nbsp;</span></li>
-                  <li class="segments"><span class="setting_choice"><a onClick="return VisualizationModule.changeReport(&quot;manage_profile_segments&quot;, null, true);" href="#">Advanced Segments</a>&nbsp;</span></li>
-                  <li class="custom_alerts"><span class="setting_choice"><a onClick="return VisualizationModule.changeReport(&quot;manage_profile_custom_alerts&quot;, null, true);" href="#">Intelligence</a>&nbsp;<b class="beta_label small">Beta</b></span></li>
-                  <li class="emails"><span class="setting_choice"><a onClick="return VisualizationModule.changeReport(&quot;manage_emails&quot;, null, true);" href="#">Email</a></span></li>
+                  <li class="custom_reports"><span class="setting_choice"><a href="#">Custom Reports</a>&nbsp;</span></li>
+                  <li class="segments"><span class="setting_choice"><a href="#">Advanced Segments</a>&nbsp;</span></li>
+                  <li class="custom_alerts"><span class="setting_choice"><a href="#">Intelligence</a>&nbsp;<b class="beta_label small">Beta</b></span></li>
+                  <li class="emails"><span class="setting_choice"><a href="#">Email</a></span></li>
                 </ul>
               </div>
             </div>
@@ -1411,7 +1411,7 @@ Google Analytics</title>
             <div class="r3">
               <h4>Help Resources</h4>
               <ul>
-                <li class="first"><a onClick="goog.analytics.Menu.toggle(&quot;f_help_about&quot;, &quot;f_help_about_menu&quot;); return false;" id="f_help_about" href="#">About this Report</a>
+                <li class="first"><a href="#">About this Report</a>
                   <dl style="display: none;" class="contextual_help" id="f_help_about_menu">
                     <dt><b>About this Report</b></dt>
                     <dd>
@@ -1419,7 +1419,7 @@ Google Analytics</title>
                     </dd>
                   </dl>
                 </li>
-                <li class="second"><a onClick="goog.analytics.Menu.toggle(&quot;f_help_cu&quot;, &quot;f_help_cu_menu&quot;); return false;" id="f_help_cu" href="#">Conversion University</a>
+                <li class="second"><a href="#">Conversion University</a>
                   <dl style="display: none;" class="contextual_help" id="f_help_cu_menu">
                     <dt><b>Conversion University</b></dt>
                     <dd>
@@ -1427,7 +1427,7 @@ Google Analytics</title>
                     </dd>
                   </dl>
                 </li>
-                <li class="third"><a onClick="goog.analytics.Menu.toggle(&quot;f_help_faq&quot;, &quot;f_help_faq_menu&quot;); return false;" id="f_help_faq" href="#">Common Questions</a>
+                <li class="third"><a href="#">Common Questions</a>
                   <dl style="display: none;" class="contextual_help" id="f_help_faq_menu">
                     <dt><b>Common Questions</b></dt>
                     <dd>
