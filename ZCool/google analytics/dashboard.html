@@ -1,0 +1,969 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta content="IE=7" http-equiv="X-UA-Compatible">
+<title>Dashboard -
+Google Analytics</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link title="" type="text/css" href="css/ga-ltr.css" rel="stylesheet">
+<!--[if IE]><link href="css/ie.css" rel="Stylesheet" type="text/css" /><![endif]-->
+<link href="images/icons/favicon.ico" type="image/x-icon" rel="shortcut icon">
+</head>
+<body class="report_body" dir="ltr">
+<div id="container">
+  <div id="header">
+    <div id="main_header">
+      <p id="logo"><a href="/analytics/settings/home"></a></p>
+      <table id="global_header_nav">
+        <tbody>
+          <tr>
+            <td><span class="email_address" id="f_email">tercelx@gmail.com</span></td>
+            <td>|</td>
+            <td><a href="/analytics/settings/my_account?scid=7767254">Settings</a></td>
+            <td>|</td>
+            <td><a href="https://www.google.com/accounts/ManageAccount">My Account</a></td>
+            <td>|</td>
+            <td><a target="GoogleHelp" href="http://www.google.com/support/googleanalytics/?hl=en_US">Help</a></td>
+            <td>|</td>
+            <td><a id="logout" href="https://www.google.com/accounts/Logout?hl=en-US&continue=https://www.google.com/analytics/settings/">Sign Out</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="subheader">
+      <div id="tlcorner">
+        <div id="trcorner">
+          <div id="blcorner">
+            <div id="brcorner">
+              <table cellspacing="0" cellpadding="0" id="account_profile_nav">
+                <tbody>
+                  <tr>
+                    <td><form method="get" action="/analytics/reporting/" id="account_profile_selector">
+                        <p id="profile_nav">
+                          <input type="hidden" value="1" name="reset">
+                          <a href="/analytics/settings/home?scid=7767254" id="settings_link" class="settings">Analytics Settings</a>
+                          <label for="profile"> View Reports: </label>
+                          <select onChange="this.form.submit()" id="profile" name="id">
+                            <option value="16031476" selected="">bbs.onwind.cn</option>
+                            <option value="17939039">mhss.onwind.cn</option>
+                            <option value="16031821">pass.onwind.cn</option>
+                            <option value="15643287">www.onwind.cn</option>
+                            <option value="15675646">xjsq.onwind.cn</option>
+                          </select>
+                        </p>
+                      </form></td>
+                    <td><form method="get" action="/analytics/reporting/" name="account_selector" id="account_selector">
+                        <p id="account_nav">
+                          <label for="account"> My Analytics Accounts: </label>
+                          <select onChange="submitAccountSelectorForm(this.value)" id="account" name="scid">
+                            <option value="7767254" selected="">onwind.cn</option>
+                            <option value="12106002">tercelx</option>
+                          </select>
+                        </p>
+                      </form></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="content">
+    <div id="main_content"> <b class="round_border"> <b class="round_border_layer3"></b> <b class="round_border_layer2"></b> <b class="round_border_layer1"></b> </b>
+      <div class="round_border_content main_reporting">
+        <table class="report_table">
+          <tbody>
+            <tr>
+              <td><div id="ReportContent">
+                  <div>
+                    <div>
+                      <div id="ControlPanel">
+                        <div id="report_tools"> <b class="controlbar_border"> <b class="controlbar_border_layer3"></b> <b class="controlbar_border_layer2"></b> <b class="controlbar_border_layer1"></b> </b>
+                          <div id="controlbar_border_content">
+                            <table cellspacing="0" cellpadding="0" class="report_menu_left">
+                              <tbody>
+                                <tr>
+                                  <td id="export_button_item"><a class="button menu" onClick="goog.analytics.Menu.toggle("f_export_format", "f_export_format_options", goog.analytics.MenuType.CONTROL); return false;" id="f_export_format" href="#"><b><b><b>Export</b></b></b></a></td>
+                                  <td id="email_button_item"><a onClick="VisualizationModule.redirectReport("setup_email", "fmt=0", true); return false;" class="button" href="setup_email?id=16031476&pdr=20100612-20100712&cmp=average&rpt=DashboardReport"> <b><b><b>Email</b></b></b> </a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table cellspacing="0" cellpadding="0" class="report_menu_right">
+                              <tbody>
+                                <tr>
+                                  <td id="segment_button_label"> Advanced Segments: </td>
+                                  <td id="segment_button_item"><a class="button menu" onClick="goog.analytics.Menu.toggle('f_segment_button', 'f_segment_button_options', goog.analytics.MenuType.CONTROL); window.controlPanel.showOrHideWarningMessage(); return false;" id="f_segment_button" href="#"> <b><b><b> All Visits </b></b></b> </a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <div style="display: none;" id="f_export_format_options" class="export_button_options">
+                              <div id="export_dropbox">
+                                <div id="export_dropbox_content">
+                                  <div id="export_dropbox_data">
+                                    <div class="export_dropbox_listbox">
+                                      <ul>
+                                        <li> <a onClick="gaNavigator.exportReport("fmt=0", "export"); return false;" href="export?fmt=0&id=16031476&pdr=20100612-20100712&cmp=average&rpt=DashboardReport" id="pdf_export_format"> PDF </a> </li>
+                                        <li> <a onClick="gaNavigator.exportReport("fmt=1", "export"); return false;" href="export?fmt=1&id=16031476&pdr=20100612-20100712&cmp=average&rpt=DashboardReport" id="xml_export_format"> XML </a> </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div style="display: none;" id="f_segment_button_options" class="segment_button_options">
+                              <div id="seg_dropbox">
+                                <div id="seg_dropbox_content">
+                                  <div id="seg_dropbox_info">
+                                    <h1>Advanced Segments</h1>
+                                    <p>Select up to four segments by which to filter your report</p>
+                                    <ul>
+                                      <li> <a onClick="analytics.Navigator.changeLocationWithState( 'add_segment', true, "originatingReport\x3ddashboard", true); return false;" href="#"> Create a new advanced segment </a> </li>
+                                      <li> <a onClick="return VisualizationModule.changeReport("manage_profile_segments", null, true);" id="f_managesegment_format" href="#"> Manage your advanced segments </a> </li>
+                                    </ul>
+                                  </div>
+                                  <div id="seg_dropbox_data">
+                                    <div class="seg_dropbox_listbox">
+                                      <h1>Custom Segments</h1>
+                                      <ul>
+                                      </ul>
+                                    </div>
+                                    <div class="seg_dropbox_listbox">
+                                      <h1>Default Segments</h1>
+                                      <ul>
+                                        <li>
+                                          <label for="segment_id_-1" style="background-color: rgb(255, 204, 102);">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" checked="" value="-1" name="All Visits" id="segment_id_-1">
+                                            All Visits </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-2">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-2" name="New Visitors" id="segment_id_-2">
+                                            New Visitors </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-3">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-3" name="Returning Visitors" id="segment_id_-3">
+                                            Returning Visitors </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-4">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-4" name="Paid Search Traffic" id="segment_id_-4">
+                                            Paid Search Traffic </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-5">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-5" name="Non-paid Search Traffic" id="segment_id_-5">
+                                            Non-paid Search Traffic </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-6">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-6" name="Search Traffic" id="segment_id_-6">
+                                            Search Traffic </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-7">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-7" name="Direct Traffic" id="segment_id_-7">
+                                            Direct Traffic </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-8">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-8" name="Referral Traffic" id="segment_id_-8">
+                                            Referral Traffic </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-9">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-9" name="Visits with Conversions" id="segment_id_-9">
+                                            Visits with Conversions </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-11">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-11" name="Mobile Traffic" id="segment_id_-11">
+                                            Mobile Traffic </label>
+                                        </li>
+                                        <li>
+                                          <label for="segment_id_-12">
+                                            <input type="checkbox" onClick="window.controlPanel.onSegmentCheckBoxClick(this.id);" value="-12" name="Non-bounce Visits" id="segment_id_-12">
+                                            Non-bounce Visits </label>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div id="seg_dropbox_alert">
+                                    <p>When selecting multiple segments, Date Range Comparison will revert to only the primary date range.</p>
+                                  </div>
+                                  <div id="seg_dropbox_control">
+                                    <p>
+                                      <input type="submit" value="Apply" onClick="window.controlPanel.updateSegments(window.controlPanel.getAllSegmentCheckboxes()); goog.analytics.Menu.toggle('f_segment_button', 'f_segment_button_options', goog.analytics.MenuType.CONTROL); return false;" id="segment_options_submit">
+                                      <a onClick="window.controlPanel.onCancel(); goog.analytics.Menu.toggle('f_segment_button', 'f_segment_button_options', goog.analytics.MenuType.CONTROL); return false;" id="segment_options_cancel" href="#"> cancel </a> </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <b class="controlbar_border"> <b class="controlbar_border_layer1"></b> <b class="controlbar_border_layer2"></b> <b class="controlbar_border_layer3"></b> </b> </div>
+                        <a name="status_message_anchor"></a>
+                        <div style="display: none;" id="f_message" class="status_message"> <b><b><b><b id="f_message_text"> </b></b></b></b> </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="breadcrumb" id="Breadcrumb"> </div>
+                    </div>
+                    <div>
+                      <div id="Title">
+                        <div id="report_header">
+                          <table width="100%" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td width="60%"><div class="title_container">
+                                    <div class="title_contents">
+                                      <h1 title="Dashboard " class="title"> <span id="report_title_name" class="name"> Dashboard </span> </h1>
+                                    </div>
+                                  </div></td>
+                                <td><div class="date_range"> <a onClick="analytics.Menu.toggle('f_date_range', 'f_date_range_options', analytics.MenuType.CALENDAR); window.dateInputView.initFunction(); window.dateInputView.setStylesForDatePicker(); return false;" id="f_date_range" href="#"> <b><b><b> <span>
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding: 3px;"><table>
+                                              <tbody>
+                                                <tr>
+                                                  <td class="date_range_display"> Jun 12, 2010 - Jul 12, 2010 </td>
+                                                </tr>
+                                                <tr>
+                                                  <td><div class="comparison"> </div></td>
+                                                </tr>
+                                              </tbody>
+                                            </table></td>
+                                          <td class="comparison_dropdown">&nbsp;</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    </span> <span class="comparison_hide">&nbsp;</span> </b></b></b> </a> </div></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div id="f_date_range_options" class="date_range_options hidden">
+                        <div id="date_range_tools">
+                          <div class="wrapper">
+                            <div id="f_dateInputLoading" class="loading" style="display: none;"> <img width="16" height="16" alt="" src="images/icons/loading.gif"> </div>
+                            <div id="f_dateAlert" style="display: none;"> When comparing two date ranges, only a single advanced segment will be selected </div>
+                            <div class="date_controller_flash" id="f_dateInputFlash">
+                              <embed width="420" height="133" quality="high" bgcolor="#FFFFFF" id="flashProxy0" flashvars="input=%7B%22DateSlider%22%3A%7B%22Values%22%3A%5B%5D%2C%22FirstDayOfWeek%22%3A0%2C%22ComparisonType%22%3A%22AVERAGE%22%2C%22MaxDate%22%3A20100713%2C%22StateQuery%22%3A%22id%5Cu003d16031476%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%5Cu0026rpt%5Cu003dDashboardReport%22%2C%22TimelineTabString%22%3A%22Timeline%22%2C%22PrimaryDateRange%22%3A%2220100612-20100712%22%2C%22Compare%22%3Afalse%2C%22MonthNames%22%3A%5B%22January%22%2C%22February%22%2C%22March%22%2C%22April%22%2C%22May%22%2C%22June%22%2C%22July%22%2C%22August%22%2C%22September%22%2C%22October%22%2C%22November%22%2C%22December%22%5D%2C%22ShowCompare%22%3Atrue%2C%22CalendarTabString%22%3A%22Calendar%22%2C%22UrlPath%22%3A%22%2Fanalytics%2Freporting%2F%22%2C%22StateBaseQuery%22%3A%22id%5Cu003d16031476%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%22%2C%22Id%22%3A%22DateSlider%22%2C%22DayAbbreviations%22%3A%5B%22S%22%2C%22M%22%2C%22T%22%2C%22W%22%2C%22T%22%2C%22F%22%2C%22S%22%5D%2C%22ComparisonOptions%22%3A%7B%7D%7D%7D&profile=16031476&locale=en-US&JavascriptProxyId=flashProxy0" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" scale="noScale" salign="tl" src="/analytics/static/flash/date_controller.swf">
+                            </div>
+                            <form action="none" class="date_controller_form" id="f_dateInputForm" style="display: none;">
+                              <dl>
+                                <dt> Date Range </dt>
+                                <dd class="current"> <span class="focus_indicator" id="f_primaryBeginFocus">
+                                  <input type="text" class="date_input" id="f_primaryBegin">
+                                  </span> - <span class="focus_indicator" id="f_primaryEndFocus">
+                                  <input type="text" class="date_input" id="f_primaryEnd">
+                                  </span> </dd>
+                                <dt>
+                                  <label for="f_comparisonEnabledCheckbox"> Compare to Past </label>
+                                  <input type="checkbox" id="f_comparisonEnabledCheckbox">
+                                </dt>
+                                <dd class="previous" id="f_comparisonInputs"> <span class="focus_indicator" id="f_comparisonBeginFocus">
+                                  <input type="text" class="date_input" id="f_comparisonBegin">
+                                  </span> - <span class="focus_indicator" id="f_comparisonEndFocus">
+                                  <input type="text" class="date_input" id="f_comparisonEnd">
+                                  </span> </dd>
+                              </dl>
+                              <div id="f_dateRangeLengthNotice"> Date ranges are different lengths. </div>
+                              <div id="f_submitOptions">
+                                <p class="date_input_submit">
+                                  <input type="submit" value="Apply" id="f_apply">
+                                  <a id="f_cancel" href="#">cancel</a> </p>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <div class="graph_options_container" id="GraphControls">
+                        <div class="graph_options_header">
+                          <div id="graph_date_options_GraphControls" class="graph_date_options">
+                            <dl>
+                              <dt> Graph by: </dt>
+                              <dd>
+                                <div class="view_by_nth_day alt" id="view_by_nth_day"> <a onClick="graphController.changeGraphDateFormat(this, "nth_day"); return false;" class="selected" id="gdf_nth_day" href="#">Day</a>
+                                  <div style="display: none;" class="hover_desc_container" id="hover_desc_gdf_nth_day">
+                                    <div class="hover_desc_outerdiv">
+                                      <div class="hover_desc_innerdiv"><span>Day</span>
+                                        <div class="hover_desc_pointer">&nbsp;</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="view_by_nth_week " id="view_by_nth_week"> <a onClick="graphController.changeGraphDateFormat(this, "nth_week"); return false;" class="active" id="gdf_nth_week" href="#">Week</a>
+                                  <div style="display: none;" class="hover_desc_container" id="hover_desc_gdf_nth_week">
+                                    <div class="hover_desc_outerdiv">
+                                      <div class="hover_desc_innerdiv"><span>Week</span>
+                                        <div class="hover_desc_pointer">&nbsp;</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="view_by_nth_month " id="view_by_nth_month"> <a onClick="graphController.changeGraphDateFormat(this, "nth_month"); return false;" class="active" id="gdf_nth_month" href="#">Month</a>
+                                  <div style="display: none;" class="hover_desc_container" id="hover_desc_gdf_nth_month">
+                                    <div class="hover_desc_outerdiv">
+                                      <div class="hover_desc_innerdiv"><span>Month</span>
+                                        <div class="hover_desc_pointer">&nbsp;</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </dd>
+                            </dl>
+                          </div>
+                          <div onClick="goog.analytics.Menu.toggle( "f_toggle_GraphControls", "f_popout_GraphControls", goog.analytics.MenuType.CONTROL); return false;" class="graph_tab_options graph_tab_options_clickable" id="f_toggle_GraphControls"> <b> <b>
+                            <div class="legend">
+                              <div class="average " id="f_GraphControls_legend_primary"> &nbsp;Visits </div>
+                            </div>
+                            <div class="legend">
+                              <div id="f_GraphControls_legend_secondary" class="graph_options_toggle site_average hidden"> Site:&nbsp;Visits </div>
+                            </div>
+                            <div class="graph_tab_arrow"></div>
+                            </b> </b> </div>
+                          <div class="graph_legend_labels hidden" id="f_GraphControls_primary_segment_label"> </div>
+                          <div class="graph_legend_labels hidden" id="f_GraphControls_legend">
+                            <div class="label line_1"> Selected Visits </div>
+                            <div class="label line_average"> Site Avg. </div>
+                          </div>
+                        </div>
+                        <div style="display: none;" class="graph_options" id="f_popout_GraphControls">
+                          <div class="graph_mode_selector " id="f_graph_mode_selector">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td class="graph_mode_label">Graph Mode:</td>
+                                  <td><table id="f_mode_list_GraphControls" class="graph_mode_list">
+                                      <tbody>
+                                        <tr>
+                                          <td class="primary"><div> <a onClick="graphController.changeMode( "primary", "", this); return false;" class="inactive" href="#"> One Metric</a> </div></td>
+                                          <td class="metric_comparison"><div> <a onClick="graphController.changeMode( "metric_comparison", "", this); return false;" class="active" href="#"> Compare Two Metrics</a> </div></td>
+                                          <td class="site_average"><div> <a onClick="graphController.changeMode( "site_average", "Site:", this); return false;" class="active" href="#"> Compare to Site</a> </div></td>
+                                        </tr>
+                                      </tbody>
+                                    </table></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <form class="graph_option_list primary" id="f_option_list_GraphControls" method="get" action="#">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td class="first"><ul>
+                                      <li>
+                                        <div class="graph_option primary selected">
+                                          <input type="radio" onClick="graphController.changePrimaryMetric("visits", "Visits", this.parentNode);" checked="" name="graph_primary_options" id="graph_primary_option_visits">
+                                        </div>
+                                        <div class="graph_option secondary selected">
+                                          <input type="radio" onClick="graphController.changeSecondaryMetric("visits", "Visits", this.parentNode);" checked="" name="graph_secondary_options" id="graph_secondary_option_visits">
+                                        </div>
+                                        <label for="graph_primary_option_visits" class="graph_option_label"> Visits </label>
+                                      </li>
+                                      <li>
+                                        <div class="graph_option primary">
+                                          <input type="radio" onClick="graphController.changePrimaryMetric("pageviews", "Pageviews", this.parentNode);" name="graph_primary_options" id="graph_primary_option_pageviews">
+                                        </div>
+                                        <div class="graph_option secondary">
+                                          <input type="radio" onClick="graphController.changeSecondaryMetric("pageviews", "Pageviews", this.parentNode);" name="graph_secondary_options" id="graph_secondary_option_pageviews">
+                                        </div>
+                                        <label for="graph_primary_option_pageviews" class="graph_option_label"> Pageviews </label>
+                                      </li>
+                                      <li>
+                                        <div class="graph_option primary">
+                                          <input type="radio" onClick="graphController.changePrimaryMetric("avg_pageviews", "Pages/Visit", this.parentNode);" name="graph_primary_options" id="graph_primary_option_avg_pageviews">
+                                        </div>
+                                        <div class="graph_option secondary">
+                                          <input type="radio" onClick="graphController.changeSecondaryMetric("avg_pageviews", "Pages/Visit", this.parentNode);" name="graph_secondary_options" id="graph_secondary_option_avg_pageviews">
+                                        </div>
+                                        <label for="graph_primary_option_avg_pageviews" class="graph_option_label"> Pages/Visit </label>
+                                      </li>
+                                      <li>
+                                        <div class="graph_option primary">
+                                          <input type="radio" onClick="graphController.changePrimaryMetric("avg_session_time", "Avg. Time on Site", this.parentNode);" name="graph_primary_options" id="graph_primary_option_avg_session_time">
+                                        </div>
+                                        <div class="graph_option secondary">
+                                          <input type="radio" onClick="graphController.changeSecondaryMetric("avg_session_time", "Avg. Time on Site", this.parentNode);" name="graph_secondary_options" id="graph_secondary_option_avg_session_time">
+                                        </div>
+                                        <label for="graph_primary_option_avg_session_time" class="graph_option_label"> Avg. Time on Site </label>
+                                      </li>
+                                      <li>
+                                        <div class="graph_option primary">
+                                          <input type="radio" onClick="graphController.changePrimaryMetric("bounce_rate", "Bounce Rate", this.parentNode);" name="graph_primary_options" id="graph_primary_option_bounce_rate">
+                                        </div>
+                                        <div class="graph_option secondary">
+                                          <input type="radio" onClick="graphController.changeSecondaryMetric("bounce_rate", "Bounce Rate", this.parentNode);" name="graph_secondary_options" id="graph_secondary_option_bounce_rate">
+                                        </div>
+                                        <label for="graph_primary_option_bounce_rate" class="graph_option_label"> Bounce Rate </label>
+                                      </li>
+                                      <li>
+                                        <div class="graph_option primary">
+                                          <input type="radio" onClick="graphController.changePrimaryMetric("percent_new_visitors", "% New Visits", this.parentNode);" name="graph_primary_options" id="graph_primary_option_percent_new_visitors">
+                                        </div>
+                                        <div class="graph_option secondary">
+                                          <input type="radio" onClick="graphController.changeSecondaryMetric("percent_new_visitors", "% New Visits", this.parentNode);" name="graph_secondary_options" id="graph_secondary_option_percent_new_visitors">
+                                        </div>
+                                        <label for="graph_primary_option_percent_new_visitors" class="graph_option_label"> % New Visits </label>
+                                      </li>
+                                    </ul></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div id="Graph">
+                        <div class="">
+                          <div style="height: 125px; width: 100%;" class="overtime_graph" id="Graph_vis">
+                            <embed width="100%" height="125" flashvars="input=%7B%22Graph%22%3A%7B%22ShowHover%22%3Atrue%2C%22MetricComparison%22%3Afalse%2C%22Format%22%3A%22NORMAL%22%2C%22UseAs3Graph%22%3Atrue%2C%22StateQuery%22%3A%22id%5Cu003d16031476%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%5Cu0026rpt%5Cu003dDashboardReport%22%2C%22DateRangeComparison%22%3Afalse%2C%22Compare%22%3Afalse%2C%22XAxisTitle%22%3A%22Day%22%2C%22XAxisLabels%22%3A%5B%5B%2220100614%22%2C%22Jun%2014%22%5D%2C%5B%2220100621%22%2C%22Jun%2021%22%5D%2C%5B%2220100628%22%2C%22Jun%2028%22%5D%2C%5B%2220100705%22%2C%22Jul%205%22%5D%2C%5B%2220100712%22%2C%22Jul%2012%22%5D%5D%2C%22AnnotationsEnabled%22%3Atrue%2C%22HoverType%22%3A%22primary_compare%22%2C%22UrlPath%22%3A%22%2Fanalytics%2Freporting%2F%22%2C%22StateBaseQuery%22%3A%22id%5Cu003d16031476%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%22%2C%22SelectedSeries%22%3A%5B%22primary%22%2C%22compare%22%5D%2C%22Series%22%3A%5B%7B%22SelectionStartIndex%22%3A0%2C%22SelectionEndIndex%22%3A30%2C%22Style%22%3A%7B%22Name%22%3A%22primary-blue%22%2C%22PointShape%22%3A%22CIRCLE%22%2C%22PointRadius%22%3A9%2C%22FillColor%22%3A30668%2C%22FillAlpha%22%3A10%2C%22LineThickness%22%3A4%2C%22ActiveColor%22%3A30668%2C%22InactiveColor%22%3A11654895%7D%2C%22Label%22%3A%22Visits%22%2C%22Id%22%3A%22primary%22%2C%22YLabels%22%3A%5B%5B%220%22%2C%220%22%5D%2C%5B%22100%22%2C%22100%22%5D%2C%5B%22200%22%2C%22200%22%5D%5D%2C%22ValueCategory%22%3A%22visits%22%2C%22Points%22%3A%5B%7B%22Value%22%3A%5B%2299%22%2C%2299%22%5D%2C%22Label%22%3A%5B%2220100612%22%2C%22Saturday%2C%20June%2012%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%22111%22%2C%22111%22%5D%2C%22Label%22%3A%5B%2220100613%22%2C%22Sunday%2C%20June%2013%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%22147%22%2C%22147%22%5D%2C%22Label%22%3A%5B%2220100614%22%2C%22Monday%2C%20June%2014%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2264%22%2C%2264%22%5D%2C%22Label%22%3A%5B%2220100615%22%2C%22Tuesday%2C%20June%2015%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2268%22%2C%2268%22%5D%2C%22Label%22%3A%5B%2220100616%22%2C%22Wednesday%2C%20June%2016%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2253%22%2C%2253%22%5D%2C%22Label%22%3A%5B%2220100617%22%2C%22Thursday%2C%20June%2017%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%22121%22%2C%22121%22%5D%2C%22Label%22%3A%5B%2220100618%22%2C%22Friday%2C%20June%2018%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2286%22%2C%2286%22%5D%2C%22Label%22%3A%5B%2220100619%22%2C%22Saturday%2C%20June%2019%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%22110%22%2C%22110%22%5D%2C%22Label%22%3A%5B%2220100620%22%2C%22Sunday%2C%20June%2020%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2278%22%2C%2278%22%5D%2C%22Label%22%3A%5B%2220100621%22%2C%22Monday%2C%20June%2021%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2261%22%2C%2261%22%5D%2C%22Label%22%3A%5B%2220100622%22%2C%22Tuesday%2C%20June%2022%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2258%22%2C%2258%22%5D%2C%22Label%22%3A%5B%2220100623%22%2C%22Wednesday%2C%20June%2023%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2240%22%2C%2240%22%5D%2C%22Label%22%3A%5B%2220100624%22%2C%22Thursday%2C%20June%2024%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2246%22%2C%2246%22%5D%2C%22Label%22%3A%5B%2220100625%22%2C%22Friday%2C%20June%2025%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2259%22%2C%2259%22%5D%2C%22Label%22%3A%5B%2220100626%22%2C%22Saturday%2C%20June%2026%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2233%22%2C%2233%22%5D%2C%22Label%22%3A%5B%2220100627%22%2C%22Sunday%2C%20June%2027%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2270%22%2C%2270%22%5D%2C%22Label%22%3A%5B%2220100628%22%2C%22Monday%2C%20June%2028%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2250%22%2C%2250%22%5D%2C%22Label%22%3A%5B%2220100629%22%2C%22Tuesday%2C%20June%2029%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2235%22%2C%2235%22%5D%2C%22Label%22%3A%5B%2220100630%22%2C%22Wednesday%2C%20June%2030%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2255%22%2C%2255%22%5D%2C%22Label%22%3A%5B%2220100701%22%2C%22Thursday%2C%20July%201%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2251%22%2C%2251%22%5D%2C%22Label%22%3A%5B%2220100702%22%2C%22Friday%2C%20July%202%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2231%22%2C%2231%22%5D%2C%22Label%22%3A%5B%2220100703%22%2C%22Saturday%2C%20July%203%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2233%22%2C%2233%22%5D%2C%22Label%22%3A%5B%2220100704%22%2C%22Sunday%2C%20July%204%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2240%22%2C%2240%22%5D%2C%22Label%22%3A%5B%2220100705%22%2C%22Monday%2C%20July%205%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2231%22%2C%2231%22%5D%2C%22Label%22%3A%5B%2220100706%22%2C%22Tuesday%2C%20July%206%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2232%22%2C%2232%22%5D%2C%22Label%22%3A%5B%2220100707%22%2C%22Wednesday%2C%20July%207%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2215%22%2C%2215%22%5D%2C%22Label%22%3A%5B%2220100708%22%2C%22Thursday%2C%20July%208%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2224%22%2C%2224%22%5D%2C%22Label%22%3A%5B%2220100709%22%2C%22Friday%2C%20July%209%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2224%22%2C%2224%22%5D%2C%22Label%22%3A%5B%2220100710%22%2C%22Saturday%2C%20July%2010%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2219%22%2C%2219%22%5D%2C%22Label%22%3A%5B%2220100711%22%2C%22Sunday%2C%20July%2011%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2221%22%2C%2221%22%5D%2C%22Label%22%3A%5B%2220100712%22%2C%22Monday%2C%20July%2012%2C%202010%22%5D%7D%5D%7D%5D%2C%22Id%22%3A%22Graph%22%7D%7D&annotationsEnabled=true&handCursorEnabled=true&msgAnnotationSingular=1%20Annotation&msgAnnotationsPlural=%25s%20Annotations&msgCreateAnnotation=Create%20new%20annotation" allowscriptaccess="always" menu="false" wmode="opaque" salign="TL" scale="noScale" quality="high" name="Graph_vis_embed" id="Graph_vis_embed" style="" src="/analytics/static/flash/OverTimeGraphMain.swf" type="application/x-shockwave-flash">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="annotations" id="AnnotationDrawer">
+                        <div style="display: none;" id="AnnotationDrawer_wrapper">
+                          <div class="annotation_controls" id="AnnotationDrawer_controls">
+                            <table class="full_width">
+                              <tbody>
+                                <tr>
+                                  <td>Show:&nbsp;<a class="no_filter button selected" onClick="return false;" href="#">All</a>&nbsp;|&nbsp;<a class="starred_filter button" onClick="return false;" href="#">Starred</a></td>
+                                  <td align="right"><a class="create_new button" onClick="return false;" href="#">+&nbsp;Create new annotation</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="annotations_content" id="AnnotationDrawer_content" style="max-height: 116px;">
+                            <table class="annotation_list" id="AnnotationDrawer_list">
+                              <tbody>
+                                <tr class="odd editable" style="display: none;">
+                                  <td class="star"><div class="icon"></div></td>
+                                  <td class="date">&nbsp;</td>
+                                  <td class="text"><span style="" class="access_label">
+                                    <div class="r1">
+                                      <div class="r2">
+                                        <div class="r3">private</div>
+                                      </div>
+                                    </div>
+                                    </span><span>&nbsp;</span></td>
+                                  <td class="action"><a onClick="return false;" href="#">edit</a></td>
+                                  <td class="creator">&nbsp;</td>
+                                </tr>
+                                <tr style="display: none;" class="error">
+                                  <td colspan="5">An error occured. Please <a href="javascript:window.location.reload()">refresh</a> your page and try again.</td>
+                                </tr>
+                              </tbody>
+                              <tbody>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="drawer_button_wrapper">
+                          <div class="clickable closed drawer_button" id="AnnotationDrawer_drawer_button">
+                            <div class="drawer_button_icon"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div id="Narrative">
+                      <div class="dashboard_intro">
+                        <div class="rounder"></div>
+                        <h2 class=""> Site Usage </h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div id="" class="report_section">
+                      <div class="subsections">
+                        <div class="section section_1">
+                          <div>
+                            <div class="sparkline">
+                              <div id="VisitsSparkline">
+                                <div class="visualization">
+                                  <div class="f_sparkline_outer">
+                                    <div class="f_sparkline_inner"> <img width="75" height="18" alt="" src="https://www.google.com/chart?cht=ls&chs=75x18&chm=B,e6f2fa,0,0.0,0.0&chco=0077cc&chd=s:pu9acVyjtgZYQTYNdUOWVMNQMNGJJHI"> </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="VisitsSummary">
+                                <div class="statistic"> <span class="primary_value">
+                                  <ul>
+                                    <li class="item_value"> 1,765 </li>
+                                    <span class="label"> <a onClick="return VisualizationModule.changeReport("visits");" href="visits?id=16031476&pdr=20100612-20100712&cmp=average"> Visits </a> </span>
+                                  </ul>
+                                  </span> </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="sparkline">
+                              <div id="PageviewsSparkline">
+                                <div class="visualization">
+                                  <div class="f_sparkline_outer">
+                                    <div class="f_sparkline_inner"> <img width="75" height="18" alt="" src="https://www.google.com/chart?cht=ls&chs=75x18&chm=B,e6f2fa,0,0.0,0.0&chco=0077cc&chd=s:ZhpXQN9x73kUKaZJiWNcZIdkNWDGmDL"> </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="PageviewsSummary">
+                                <div class="statistic"> <span class="primary_value">
+                                  <ul>
+                                    <li class="item_value"> 4,998 </li>
+                                    <span class="label"> <a onClick="return VisualizationModule.changeReport("pageviews");" href="pageviews?id=16031476&pdr=20100612-20100712&cmp=average"> Pageviews </a> </span>
+                                  </ul>
+                                  </span> </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="sparkline">
+                              <div id="AvgPageSparkline">
+                                <div class="visualization">
+                                  <div class="f_sparkline_outer">
+                                    <div class="f_sparkline_inner"> <img width="75" height="18" alt="" src="https://www.google.com/chart?cht=ls&chs=75x18&chm=B,e6f2fa,0,0.0,0.0&chco=0077cc&chd=s:JLKOJJTWUbWNJWQKSROTSKijQaHL9HV"> </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="AvgPageSummary">
+                                <div class="statistic"> <span class="primary_value">
+                                  <ul>
+                                    <li class="item_value"> 2.83 </li>
+                                    <span class="label"> <a onClick="return VisualizationModule.changeReport("average_pageviews");" href="average_pageviews?id=16031476&pdr=20100612-20100712&cmp=average"> Pages/Visit </a> </span>
+                                  </ul>
+                                  </span> </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="section section_2">
+                          <div>
+                            <div class="sparkline">
+                              <div id="BounceRateSparkline">
+                                <div class="visualization">
+                                  <div class="f_sparkline_outer">
+                                    <div class="f_sparkline_inner"> <img width="75" height="18" alt="" src="https://www.google.com/chart?cht=ls&chs=75x18&chm=B,e6f2fa,0,0.0,0.0&chco=0077cc&chd=s:16231zwyyvsx1u08rwzyv2ypv034i8q"> </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="BounceRateSummary">
+                                <div class="statistic"> <span class="primary_value">
+                                  <ul>
+                                    <li class="item_value"> 79.21% </li>
+                                    <span class="label"> <a onClick="return VisualizationModule.changeReport("bounce_rate");" href="bounce_rate?id=16031476&pdr=20100612-20100712&cmp=average"> Bounce Rate </a> </span>
+                                  </ul>
+                                  </span> </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="sparkline">
+                              <div id="TimeOnSiteSparkline">
+                                <div class="visualization">
+                                  <div class="f_sparkline_outer">
+                                    <div class="f_sparkline_inner"> <img width="75" height="18" alt="" src="https://www.google.com/chart?cht=ls&chs=75x18&chm=B,e6f2fa,0,0.0,0.0&chco=0077cc&chd=s:HFFOGGcKPgUJEYICNLHYQBOTPPBH9AQ"> </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="TimeOnSiteSummary">
+                                <div class="statistic"> <span class="primary_value">
+                                  <ul>
+                                    <li class="item_value"> 00:01:18 </li>
+                                    <span class="label"> <a onClick="return VisualizationModule.changeReport("time_on_site");" href="time_on_site?id=16031476&pdr=20100612-20100712&cmp=average"> Avg. Time on Site </a> </span>
+                                  </ul>
+                                  </span> </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="sparkline">
+                              <div id="NewVisitsSparkline">
+                                <div class="visualization">
+                                  <div class="f_sparkline_outer">
+                                    <div class="f_sparkline_inner"> <img width="75" height="18" alt="" src="https://www.google.com/chart?cht=ls&chs=75x18&chm=B,e6f2fa,0,0.0,0.0&chco=0077cc&chd=s:523635wy2v0xzxy1wuvrt55v1z49tw3"> </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="NewVisitsSummary">
+                                <div class="statistic"> <span class="primary_value">
+                                  <ul>
+                                    <li class="item_value"> 85.55% </li>
+                                    <span class="label"> <a onClick="return VisualizationModule.changeReport("visitor_types", "view\x3d1");" href="visitor_types?id=16031476&pdr=20100612-20100712&cmp=average&view=1"> % New Visits</a> </span>
+                                  </ul>
+                                  </span> </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div id="messageBox"></div>
+                    <div class="report_section dashboard" id="dashboardLayout">
+                      <div class="subsections">
+                        <div class="section section_1">
+                          <ul id="f_modules_col_1" class="dashboard_modules">
+                            <li>
+                              <div class="legacy" id="VisitorsOverviewReport1813083106_module">
+                                <div class="dashboard_module ">
+                                  <div id="VisitorsOverviewReport1813083106_module_title_bar" class="title_bar">
+                                    <div class="rounder"></div>
+                                    <span id="VisitorsOverviewReport1813083106_module_title" style="cursor: move;"> Visitors Overview </span> <a title="click to remove from dashboard" onClick="dashboard.remove("VisitorsOverviewReport1813083106_module", "9TXTyikBAAA.BW7Tkiv5pV03uEX7bN6K-IVKXbD4yecpUQr3i3M0R6mz5JO10aww0fwduD9gnZjX.GwmcTfpN53LtNctW2KEPEw"); return false;" class="gadget_remove_button" id="VisitorsOverviewReport1813083106_module_remove" href="#"> [remove] </a> </div>
+                                  <div id="VisitorsOverviewReport1813083106">
+                                    <div class="graph bars">
+                                      <div class="graph_wrapper">
+                                        <div class="graph_wrapper">
+                                          <div class="dash vis" id="DashboardComponent_210405858_vis">
+                                            <embed width="100%" height="90" salign="tl" scale="noScale" quality="high" bgcolor="#FFFFFF" flashvars="input=%7B%22Graph%22%3A%7B%22ShowHover%22%3Atrue%2C%22MetricComparison%22%3Afalse%2C%22Format%22%3A%22DASHBOARD%22%2C%22ValueLabel%22%3A%22Visitors%22%2C%22UseAs3Graph%22%3Atrue%2C%22StateQuery%22%3A%22id%5Cu003d16031476%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%5Cu0026trows%5Cu003d5%5Cu0026gdfmt%5Cu003dnth_day%5Cu0026eid%5Cu003dDashboardRequest%5Cu0026rpt%5Cu003dVisitorsOverviewReport%5Cu0026tab%5Cu003d0%5Cu0026tchcol%5Cu003d0%5Cu0026tst%5Cu003d0%5Cu0026tscol%5Cu003dv0%5Cu0026tsdir%5Cu003d0%5Cu0026mdet%5Cu003dWORLD%5Cu0026midx%5Cu003d0%5Cu0026gidx%5Cu003d0%5Cu0026glcnt%5Cu003d1%5Cu0026gdfmt%5Cu003dnth_day%22%2C%22DateRangeComparison%22%3Afalse%2C%22Compare%22%3Afalse%2C%22XAxisTitle%22%3A%22Day%22%2C%22SummaryValue%22%3A%5B%221568%22%2C%221%2C568%22%5D%2C%22XAxisLabels%22%3A%5B%5B%2220100614%22%2C%22Jun%2014%22%5D%2C%5B%2220100621%22%2C%22Jun%2021%22%5D%2C%5B%2220100628%22%2C%22Jun%2028%22%5D%2C%5B%2220100705%22%2C%22Jul%205%22%5D%2C%5B%2220100712%22%2C%22Jul%2012%22%5D%5D%2C%22Link%22%3A%22visitors%3Freset%5Cu003d1%22%2C%22AnnotationsEnabled%22%3Atrue%2C%22HoverType%22%3A%22primary_compare%22%2C%22UrlPath%22%3A%22%2Fanalytics%2Freporting%2Fvisitors%22%2C%22StateBaseQuery%22%3A%22id%5Cu003d16031476%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%5Cu0026trows%5Cu003d5%5Cu0026gdfmt%5Cu003dnth_day%22%2C%22SelectedSeries%22%3A%5B%22primary%22%2C%22compare%22%5D%2C%22Series%22%3A%5B%7B%22SelectionStartIndex%22%3A0%2C%22SelectionEndIndex%22%3A30%2C%22Style%22%3A%7B%22Name%22%3A%22primary-blue%22%2C%22PointShape%22%3A%22CIRCLE%22%2C%22PointRadius%22%3A9%2C%22FillColor%22%3A30668%2C%22FillAlpha%22%3A10%2C%22LineThickness%22%3A4%2C%22ActiveColor%22%3A30668%2C%22InactiveColor%22%3A11654895%7D%2C%22Label%22%3A%22Visitors%22%2C%22Id%22%3A%22primary%22%2C%22YLabels%22%3A%5B%5B%220%22%2C%220%22%5D%2C%5B%22100%22%2C%22100%22%5D%2C%5B%22200%22%2C%22200%22%5D%5D%2C%22ValueCategory%22%3A%22visitors%22%2C%22Points%22%3A%5B%7B%22Value%22%3A%5B%2299%22%2C%2299%22%5D%2C%22Label%22%3A%5B%2220100612%22%2C%22Saturday%2C%20June%2012%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%22109%22%2C%22109%22%5D%2C%22Label%22%3A%5B%2220100613%22%2C%22Sunday%2C%20June%2013%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%22145%22%2C%22145%22%5D%2C%22Label%22%3A%5B%2220100614%22%2C%22Monday%2C%20June%2014%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2262%22%2C%2262%22%5D%2C%22Label%22%3A%5B%2220100615%22%2C%22Tuesday%2C%20June%2015%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2265%22%2C%2265%22%5D%2C%22Label%22%3A%5B%2220100616%22%2C%22Wednesday%2C%20June%2016%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2253%22%2C%2253%22%5D%2C%22Label%22%3A%5B%2220100617%22%2C%22Thursday%2C%20June%2017%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%22106%22%2C%22106%22%5D%2C%22Label%22%3A%5B%2220100618%22%2C%22Friday%2C%20June%2018%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2284%22%2C%2284%22%5D%2C%22Label%22%3A%5B%2220100619%22%2C%22Saturday%2C%20June%2019%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%22106%22%2C%22106%22%5D%2C%22Label%22%3A%5B%2220100620%22%2C%22Sunday%2C%20June%2020%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2266%22%2C%2266%22%5D%2C%22Label%22%3A%5B%2220100621%22%2C%22Monday%2C%20June%2021%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2258%22%2C%2258%22%5D%2C%22Label%22%3A%5B%2220100622%22%2C%22Tuesday%2C%20June%2022%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2250%22%2C%2250%22%5D%2C%22Label%22%3A%5B%2220100623%22%2C%22Wednesday%2C%20June%2023%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2237%22%2C%2237%22%5D%2C%22Label%22%3A%5B%2220100624%22%2C%22Thursday%2C%20June%2024%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2241%22%2C%2241%22%5D%2C%22Label%22%3A%5B%2220100625%22%2C%22Friday%2C%20June%2025%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2258%22%2C%2258%22%5D%2C%22Label%22%3A%5B%2220100626%22%2C%22Saturday%2C%20June%2026%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2231%22%2C%2231%22%5D%2C%22Label%22%3A%5B%2220100627%22%2C%22Sunday%2C%20June%2027%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2263%22%2C%2263%22%5D%2C%22Label%22%3A%5B%2220100628%22%2C%22Monday%2C%20June%2028%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2244%22%2C%2244%22%5D%2C%22Label%22%3A%5B%2220100629%22%2C%22Tuesday%2C%20June%2029%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2232%22%2C%2232%22%5D%2C%22Label%22%3A%5B%2220100630%22%2C%22Wednesday%2C%20June%2030%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2247%22%2C%2247%22%5D%2C%22Label%22%3A%5B%2220100701%22%2C%22Thursday%2C%20July%201%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2245%22%2C%2245%22%5D%2C%22Label%22%3A%5B%2220100702%22%2C%22Friday%2C%20July%202%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2231%22%2C%2231%22%5D%2C%22Label%22%3A%5B%2220100703%22%2C%22Saturday%2C%20July%203%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2232%22%2C%2232%22%5D%2C%22Label%22%3A%5B%2220100704%22%2C%22Sunday%2C%20July%204%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2239%22%2C%2239%22%5D%2C%22Label%22%3A%5B%2220100705%22%2C%22Monday%2C%20July%205%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2230%22%2C%2230%22%5D%2C%22Label%22%3A%5B%2220100706%22%2C%22Tuesday%2C%20July%206%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2231%22%2C%2231%22%5D%2C%22Label%22%3A%5B%2220100707%22%2C%22Wednesday%2C%20July%207%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2215%22%2C%2215%22%5D%2C%22Label%22%3A%5B%2220100708%22%2C%22Thursday%2C%20July%208%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2224%22%2C%2224%22%5D%2C%22Label%22%3A%5B%2220100709%22%2C%22Friday%2C%20July%209%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2223%22%2C%2223%22%5D%2C%22Label%22%3A%5B%2220100710%22%2C%22Saturday%2C%20July%2010%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2219%22%2C%2219%22%5D%2C%22Label%22%3A%5B%2220100711%22%2C%22Sunday%2C%20July%2011%2C%202010%22%5D%7D%2C%7B%22Value%22%3A%5B%2221%22%2C%2221%22%5D%2C%22Label%22%3A%5B%2220100712%22%2C%22Monday%2C%20July%2012%2C%202010%22%5D%7D%5D%7D%5D%2C%22Id%22%3A%22DashboardComponent_210405858%22%7D%7D&locale=en-US" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" src="/analytics/static/flash/OverTimeMini.swf">
+                                          </div>
+                                          <dl class="mini_graph_label">
+                                            <dt>1,568</dt>
+                                            <dd>Visitors</dd>
+                                          </dl>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <p><b><a onClick="return VisualizationModule.changeToReportWithUrl("visitors?id\x3d16031476\x26pdr\x3d20100612-20100712\x26cmp\x3daverage\x26trows\x3d10\x26gdfmt\x3dnth_day\x26rpt\x3dVisitorsOverviewReport\x26tab\x3d0\x26tchcol\x3d0\x26tst\x3d0\x26tscol\x3dv0\x26tsdir\x3d0\x26mdet\x3dWORLD\x26midx\x3d0\x26gidx\x3d0\x26glcnt\x3d1\x26gdfmt\x3dnth_day");" href="visitors?id=16031476&pdr=20100612-20100712&cmp=average&trows=10&gdfmt=nth_day&rpt=VisitorsOverviewReport&tab=0&tchcol=0&tst=0&tscol=v0&tsdir=0&mdet=WORLD&midx=0&gidx=0&glcnt=1&gdfmt=nth_day" id="VisitorsOverviewReport1813083106_module_view_report"> view report</a></b></p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="legacy" id="TrafficSourcesReport100798177_module">
+                                <div class="dashboard_module ">
+                                  <div id="TrafficSourcesReport100798177_module_title_bar" class="title_bar">
+                                    <div class="rounder"></div>
+                                    <span id="TrafficSourcesReport100798177_module_title" style="cursor: move;"> Traffic Sources Overview </span> <a title="click to remove from dashboard" onClick="dashboard.remove("TrafficSourcesReport100798177_module", "9jXTyikBAAA.kw9zwAZX4GTtv7-iLvuGEaGquf_pkiN72KakWLppz1lB_PxXpFVroF8vg3d539PB.XbSx8AtmcASwCw5KBNHsnQ"); return false;" class="gadget_remove_button" id="TrafficSourcesReport100798177_module_remove" href="#"> [remove] </a> </div>
+                                  <div id="TrafficSourcesReport100798177">
+                                    <div class="graph pie">
+                                      <table class="pie_chart">
+                                        <tbody>
+                                          <tr>
+                                            <td><div id="DashboardComponent_141160220_vis">
+                                                <embed width="125" height="125" salign="tl" scale="noScale" quality="high" bgcolor="#FFFFFF" flashvars="input=%7B%22Pie%22%3A%7B%22Format%22%3A%22DASHBOARD%22%2C%22Link%22%3A%22sources%3Freset%5Cu003d1%22%2C%22Labels%22%3A%5B%22Search%20Engines%22%2C%22Direct%20Traffic%22%2C%22Referring%20Sites%22%5D%2C%22UrlPath%22%3A%22%2Fanalytics%2Freporting%2Fsources%22%2C%22StateBaseQuery%22%3A%22id%5Cu003d16031476%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%5Cu0026trows%5Cu003d5%5Cu0026gdfmt%5Cu003dnth_day%22%2C%22PercentValues%22%3A%5B%5B%220.6946175694465637%22%2C%2269.46%25%22%5D%2C%5B%220.19206799566745758%22%2C%2219.21%25%22%5D%2C%5B%220.11331444978713989%22%2C%2211.33%25%22%5D%5D%2C%22StateQuery%22%3A%22id%5Cu003d16031476%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%5Cu0026trows%5Cu003d5%5Cu0026gdfmt%5Cu003dnth_day%5Cu0026eid%5Cu003dDashboardRequest%5Cu0026rpt%5Cu003dTrafficSourcesReport%5Cu0026tab%5Cu003d0%5Cu0026tchcol%5Cu003d0%5Cu0026tst%5Cu003d0%5Cu0026tscol%5Cu003dv0%5Cu0026tsdir%5Cu003d0%5Cu0026mdet%5Cu003dWORLD%5Cu0026midx%5Cu003d0%5Cu0026gidx%5Cu003d0%5Cu0026glcnt%5Cu003d1%5Cu0026gdfmt%5Cu003dnth_day%22%2C%22Id%22%3A%22DashboardComponent_141160220%22%2C%22Compare%22%3Afalse%2C%22RawValues%22%3A%5B%5B%221226.0%22%2C%221%2C226.00%22%5D%2C%5B%22339.0%22%2C%22339.00%22%5D%2C%5B%22200.0%22%2C%22200.00%22%5D%5D%2C%22HasOtherSlice%22%3Afalse%7D%7D&locale=en-US" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" src="/analytics/static/flash/pie.swf">
+                                              </div></td>
+                                            <td><ul>
+                                                <li class="rank_1">
+                                                  <div class="legend"></div>
+                                                  <strong> Search Engines </strong> 1,226.00 (69.46%) </li>
+                                                <li class="rank_2">
+                                                  <div class="legend"></div>
+                                                  <strong> Direct Traffic </strong> 339.00 (19.21%) </li>
+                                                <li class="rank_3">
+                                                  <div class="legend"></div>
+                                                  <strong> Referring Sites </strong> 200.00 (11.33%) </li>
+                                              </ul></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                  <p><b><a onClick="return VisualizationModule.changeToReportWithUrl("sources?id\x3d16031476\x26pdr\x3d20100612-20100712\x26cmp\x3daverage\x26trows\x3d10\x26gdfmt\x3dnth_day\x26rpt\x3dTrafficSourcesReport\x26tab\x3d0\x26tchcol\x3d0\x26tst\x3d0\x26tscol\x3dv0\x26tsdir\x3d0\x26mdet\x3dWORLD\x26midx\x3d0\x26gidx\x3d0\x26glcnt\x3d1\x26gdfmt\x3dnth_day");" href="sources?id=16031476&pdr=20100612-20100712&cmp=average&trows=10&gdfmt=nth_day&rpt=TrafficSourcesReport&tab=0&tchcol=0&tst=0&tscol=v0&tsdir=0&mdet=WORLD&midx=0&gidx=0&glcnt=1&gdfmt=nth_day" id="TrafficSourcesReport100798177_module_view_report"> view report</a></b></p>
+                                </div>
+                              </div>
+                            </li>
+                            <li style="display: none;" id="left_after_pad"></li>
+                          </ul>
+                        </div>
+                        <div class="section section_2">
+                          <ul id="f_modules_col_2" class="dashboard_modules">
+                            <li>
+                              <div class="legacy" id="GeoMapReport1066475921_module">
+                                <div class="dashboard_module ">
+                                  <div id="GeoMapReport1066475921_module_title_bar" class="title_bar">
+                                    <div class="rounder"></div>
+                                    <span id="GeoMapReport1066475921_module_title" style="cursor: move;"> Map Overlay </span> <a title="click to remove from dashboard" onClick="dashboard.remove("GeoMapReport1066475921_module", "-DXTyikBAAA.k16LGiWYljk0Ss2jr3k9xbPhP2jW2NwNnltg2BxieVfWrbwCeDBKy23ESyXVO_ca.MQO7p-KlEVxn4xfX4X7mVw"); return false;" class="gadget_remove_button" id="GeoMapReport1066475921_module_remove" href="#"> [remove] </a> </div>
+                                  <div id="GeoMapReport1066475921">
+                                    <div class="graph map">
+                                      <div class="graph_wrapper">
+                                        <div class="graph_wrapper">
+                                          <div id="DashboardComponent_872526541_map_vis">
+                                            <embed width="100%" height="168" salign="tl" scale="noScale" quality="high" bgcolor="#FFFFFF" flashvars="input=%7B%22GeoMap%22%3A%7B%22ControlLabelSets%22%3A%5B%5B%7B%22ValueIndex%22%3A0%2C%22Message%22%3A%22Visits%22%7D%2C%7B%22ValueIndex%22%3A1%2C%22Message%22%3A%22Pages%2FVisit%22%7D%2C%7B%22ValueIndex%22%3A2%2C%22Message%22%3A%22Avg.%20Time%20on%20Site%22%7D%2C%7B%22ValueIndex%22%3A3%2C%22Message%22%3A%22%25%20New%20Visits%22%7D%2C%7B%22ValueIndex%22%3A4%2C%22Message%22%3A%22Bounce%20Rate%22%7D%5D%2C%5B%7B%22ValueIndex%22%3A0%2C%22Message%22%3A%22Visits%22%7D%2C%7B%22ValueIndex%22%3A5%2C%22Message%22%3A%22Goal1%20Conversion%20Rate%22%7D%2C%7B%22ValueIndex%22%3A6%2C%22Message%22%3A%22Goal%20Conversion%20Rate%22%7D%2C%7B%22ValueIndex%22%3A7%2C%22Message%22%3A%22Per%20Visit%20Goal%20Value%22%7D%5D%5D%2C%22Format%22%3A%22DASHBOARD%22%2C%22ValueLabel%22%3A%22Visits%22%2C%22DataLabels%22%3A%5B%22Visits%22%5D%2C%22StateQuery%22%3A%22id%5Cu003d16031476%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%5Cu0026trows%5Cu003d5%5Cu0026gdfmt%5Cu003dnth_day%5Cu0026eid%5Cu003dDashboardRequest%5Cu0026rpt%5Cu003dGeoMapReport%5Cu0026tab%5Cu003d0%5Cu0026tchcol%5Cu003d0%5Cu0026tst%5Cu003d0%5Cu0026tscol%5Cu003dv0%5Cu0026tsdir%5Cu003d0%5Cu0026mdet%5Cu003dWORLD%5Cu0026midx%5Cu003d0%5Cu0026gidx%5Cu003d0%5Cu0026glcnt%5Cu003d1%5Cu0026gdfmt%5Cu003dnth_day%22%2C%22PrimarySegmentKey%22%3A%22COUNTRY%22%2C%22Regions%22%3A%5B%7B%22Lng%22%3A0.0%2C%22Values%22%3A%5B%5B%221753%22%2C%221%2C753%22%5D%5D%2C%22Name%22%3A%22China%22%2C%22Lat%22%3A0.0%2C%22Id%22%3A%22CN%22%2C%22ColorKey%22%3A1753%7D%2C%7B%22Lng%22%3A0.0%2C%22Values%22%3A%5B%5B%223%22%2C%223%22%5D%5D%2C%22Name%22%3A%22United%20States%22%2C%22Lat%22%3A0.0%2C%22Id%22%3A%22US%22%2C%22ColorKey%22%3A3%7D%2C%7B%22Lng%22%3A0.0%2C%22Values%22%3A%5B%5B%222%22%2C%222%22%5D%5D%2C%22Name%22%3A%22Taiwan%22%2C%22Lat%22%3A0.0%2C%22Id%22%3A%22TW%22%2C%22ColorKey%22%3A2%7D%2C%7B%22Lng%22%3A0.0%2C%22Values%22%3A%5B%5B%221%22%2C%221%22%5D%5D%2C%22Name%22%3A%22Hong%20Kong%22%2C%22Lat%22%3A0.0%2C%22Id%22%3A%22HK%22%2C%22ColorKey%22%3A1%7D%2C%7B%22Lng%22%3A0.0%2C%22Values%22%3A%5B%5B%221%22%2C%221%22%5D%5D%2C%22Name%22%3A%22Australia%22%2C%22Lat%22%3A0.0%2C%22Id%22%3A%22AU%22%2C%22ColorKey%22%3A1%7D%5D%2C%22Minimums%22%3A%5B%5B%221%22%2C%221%22%5D%5D%2C%22Compare%22%3Afalse%2C%22TargetId%22%3A%22world%22%2C%22DataIndex%22%3A0%2C%22LabelIndex%22%3A0%2C%22GeographyName%22%3A%22world_COUNTRIES.xml%22%2C%22Maximums%22%3A%5B%5B%221753%22%2C%221%2C753%22%5D%5D%2C%22Link%22%3A%22maps%3Freset%5Cu003d1%22%2C%22ZoomOutEnabled%22%3Atrue%2C%22ZoomLevel%22%3A%22WORLD%22%2C%22UrlPath%22%3A%22%2Fanalytics%2Freporting%2Fmaps%22%2C%22StateBaseQuery%22%3A%22id%5Cu003d16031476%5Cu0026pdr%5Cu003d20100612-20100712%5Cu0026cmp%5Cu003daverage%5Cu0026trows%5Cu003d5%5Cu0026gdfmt%5Cu003dnth_day%22%2C%22Id%22%3A%22DashboardComponent_872526541%22%2C%22ZoomOutMessage%22%3A%22Zoom%20Out%22%7D%7D&locale=en-US&staticFilePath=%2Fanalytics%2Fstatic%2F" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" src="/analytics/static/flash/mini_map.swf">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <p><b><a onClick="return VisualizationModule.changeToReportWithUrl("maps?id\x3d16031476\x26pdr\x3d20100612-20100712\x26cmp\x3daverage\x26trows\x3d10\x26gdfmt\x3dnth_day\x26rpt\x3dGeoMapReport\x26tab\x3d0\x26tchcol\x3d0\x26tst\x3d0\x26tscol\x3dv0\x26tsdir\x3d0\x26mdet\x3dWORLD\x26midx\x3d0\x26gidx\x3d0\x26glcnt\x3d1\x26gdfmt\x3dnth_day");" href="maps?id=16031476&pdr=20100612-20100712&cmp=average&trows=10&gdfmt=nth_day&rpt=GeoMapReport&tab=0&tchcol=0&tst=0&tscol=v0&tsdir=0&mdet=WORLD&midx=0&gidx=0&glcnt=1&gdfmt=nth_day" id="GeoMapReport1066475921_module_view_report"> view report</a></b></p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="legacy" id="ContentReport1950953681_module">
+                                <div class="dashboard_module ">
+                                  <div id="ContentReport1950953681_module_title_bar" class="title_bar">
+                                    <div class="rounder"></div>
+                                    <span id="ContentReport1950953681_module_title" style="cursor: move;"> Content Overview </span> <a title="click to remove from dashboard" onClick="dashboard.remove("ContentReport1950953681_module", "-TXTyikBAAA.Wv6mnmCCbOXCK1ASSxAVTFGulMldfbmpKlxU3TVnpbGnYCbzYYQyaJPctGbtP4j-.JWisj9YAJvB4LjZA5UFPVw"); return false;" class="gadget_remove_button" id="ContentReport1950953681_module_remove" href="#"> [remove] </a> </div>
+                                  <div id="ContentReport1950953681">
+                                    <div class="top_items rows5">
+                                      <table>
+                                        <thead>
+                                          <tr>
+                                            <th class="text"> <div title="Pages" class="text_wrapper">
+                                                <div class="text_wrapper">Pages</div>
+                                              </div>
+                                            </th>
+                                            <th> <div title="Pageviews" class="text_wrapper">
+                                                <div class="text_wrapper">Pageviews</div>
+                                              </div>
+                                            </th>
+                                            <th> <div title="% Pageviews" class="text_wrapper">
+                                                <div class="text_wrapper">% Pageviews</div>
+                                              </div>
+                                            </th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr class="highlight">
+                                            <td class="text"><div title="/index.php?showforum=15" class="text_wrapper">
+                                                <div class="text_wrapper"> <a onClick="window["DashboardComponent_1380088608"]._drillDown(1); return false;" href=""> /index.php?showforum=15 </a> </div>
+                                              </div></td>
+                                            <td> 347 </td>
+                                            <td> 6.94% </td>
+                                          </tr>
+                                          <tr class="">
+                                            <td class="text"><div title="/index.php?act=idx" class="text_wrapper">
+                                                <div class="text_wrapper"> <a onClick="window["DashboardComponent_1380088608"]._drillDown(2); return false;" href=""> /index.php?act=idx </a> </div>
+                                              </div></td>
+                                            <td> 209 </td>
+                                            <td> 4.18% </td>
+                                          </tr>
+                                          <tr class="highlight">
+                                            <td class="text"><div title="/index.php?showtopic=999" class="text_wrapper">
+                                                <div class="text_wrapper"> <a onClick="window["DashboardComponent_1380088608"]._drillDown(3); return false;" href=""> /index.php?showtopic=999 </a> </div>
+                                              </div></td>
+                                            <td> 198 </td>
+                                            <td> 3.96% </td>
+                                          </tr>
+                                          <tr class="">
+                                            <td class="text"><div title="/index.php?showforum=4" class="text_wrapper">
+                                                <div class="text_wrapper"> <a onClick="window["DashboardComponent_1380088608"]._drillDown(4); return false;" href=""> /index.php?showforum=4 </a> </div>
+                                              </div></td>
+                                            <td> 170 </td>
+                                            <td> 3.40% </td>
+                                          </tr>
+                                          <tr class="highlight">
+                                            <td class="text"><div title="/index.php?showforum=3" class="text_wrapper">
+                                                <div class="text_wrapper"> <a onClick="window["DashboardComponent_1380088608"]._drillDown(5); return false;" href=""> /index.php?showforum=3 </a> </div>
+                                              </div></td>
+                                            <td> 165 </td>
+                                            <td> 3.30% </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                  <p><b><a onClick="return VisualizationModule.changeToReportWithUrl("content?id\x3d16031476\x26pdr\x3d20100612-20100712\x26cmp\x3daverage\x26trows\x3d10\x26gdfmt\x3dnth_day\x26rpt\x3dContentReport\x26tab\x3d0\x26tchcol\x3d0\x26tst\x3d0\x26tscol\x3dv0\x26tsdir\x3d0\x26mdet\x3dWORLD\x26midx\x3d0\x26gidx\x3d0\x26glcnt\x3d1\x26gdfmt\x3dnth_day");" href="content?id=16031476&pdr=20100612-20100712&cmp=average&trows=10&gdfmt=nth_day&rpt=ContentReport&tab=0&tchcol=0&tst=0&tscol=v0&tsdir=0&mdet=WORLD&midx=0&gidx=0&glcnt=1&gdfmt=nth_day" id="ContentReport1950953681_module_view_report"> view report</a></b></p>
+                                </div>
+                              </div>
+                            </li>
+                            <li style="display: none;" id="right_after_pad"></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <b class="round_border"> <b class="round_border_layer1"></b> <b class="round_border_layer2"></b> <b class="round_border_layer3"></b> </b> </div>
+    <div id="main_context">
+      <div>
+        <div id="report_nav_div">
+          <div id="report_nav" class="menu-list"> <b class="round_border"> <b class="round_border_layer3"></b> <b class="round_border_layer2"></b> <b class="round_border_layer1"></b> </b>
+            <div class="round_border_content">
+              <div class="menu-item"> <a id="dashboard_nav_item" class="current" onClick="return VisualizationModule.changeReport('dashboard', null)" href="dashboard?dashboard=1&id=16031476&pdr=20100612-20100712&cmp=average">
+                <div class="r1">
+                  <div class="r2">
+                    <div class="r3">
+                      <div class="content">
+                        <div class="icon_wrapper">
+                          <div class="icon"></div>
+                        </div>
+                        Dashboard</div>
+                    </div>
+                  </div>
+                </div>
+                </a>
+                <div id="dashboard_nav_item_items" class="menu-list"> </div>
+              </div>
+              <div class="menu-item"> <a id="intelligence_events_nav_item" class="" onClick="return VisualizationModule.changeReport('daily_events', null)" href="daily_events?id=16031476&pdr=20100612-20100712&cmp=average">
+                <div class="r1">
+                  <div class="r2">
+                    <div class="r3">
+                      <div class="content">
+                        <div class="icon_wrapper">
+                          <div class="icon"></div>
+                        </div>
+                        Intelligence&nbsp;<sup class="beta_label small">Beta</sup></div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+              <div class="menu-item"> <a id="visitors_nav_item" class="" onClick="return VisualizationModule.changeReport('visitors', null)" href="visitors?id=16031476&pdr=20100612-20100712&cmp=average">
+                <div class="r1">
+                  <div class="r2">
+                    <div class="r3">
+                      <div class="content">
+                        <div class="icon_wrapper">
+                          <div class="icon"></div>
+                        </div>
+                        Visitors</div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+              <div class="menu-item"> <a id="traffic_sources_nav_item" class="" onClick="return VisualizationModule.changeReport('sources', null)" href="sources?id=16031476&pdr=20100612-20100712&cmp=average">
+                <div class="r1">
+                  <div class="r2">
+                    <div class="r3">
+                      <div class="content">
+                        <div class="icon_wrapper">
+                          <div class="icon"></div>
+                        </div>
+                        Traffic Sources</div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+              <div class="menu-item"> <a id="content_nav_item" class="" onClick="return VisualizationModule.changeReport('content', null)" href="content?id=16031476&pdr=20100612-20100712&cmp=average">
+                <div class="r1">
+                  <div class="r2">
+                    <div class="r3">
+                      <div class="content">
+                        <div class="icon_wrapper">
+                          <div class="icon"></div>
+                        </div>
+                        Content</div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+              <div class="menu-item"> <a id="goals_nav_item" class="" onClick="return VisualizationModule.changeReport('goal_intro', null)" href="goal_intro?id=16031476&pdr=20100612-20100712&cmp=average">
+                <div class="r1">
+                  <div class="r2">
+                    <div class="r3">
+                      <div class="content">
+                        <div class="icon_wrapper">
+                          <div class="icon"></div>
+                        </div>
+                        Goals</div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+            </div>
+            <b class="round_border"> <b class="round_border_layer1"></b> <b class="round_border_layer2"></b> <b class="round_border_layer3"></b> </b>
+            <div class="custom_reporting"> <b class="round_border"> <b class="round_border_layer3"></b> <b class="round_border_layer2"></b> <b class="round_border_layer1"></b> </b>
+              <div class="round_border_content">
+                <div class="menu-item"> <a id="custom_report_nav_item" class="custom_reporting_section" onClick="goog.analytics.Menu.toggle("custom_report_nav_item", "custom_report_nav_item_items", goog.analytics.MenuType.NAV); return false; return false;" href="#">
+                  <div class="r1">
+                    <div class="r2">
+                      <div class="r3">
+                        <div class="content">
+                          <div class="icon_wrapper">
+                            <div class="icon"></div>
+                          </div>
+                          Custom Reporting</div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                  <div style="display: none;" id="custom_report_nav_item_items" class="menu-list">
+                    <div class="menu-item"> <a id="manage_custom_reports" class="" onClick="return VisualizationModule.changeReport('manage_profile_custom_reports', null)" href="manage_profile_custom_reports?id=16031476&pdr=20100612-20100712&cmp=average">
+                      <div class="r1">
+                        <div class="r2">
+                          <div class="r3">
+                            <div class="content">
+                              <div class="icon_wrapper">
+                                <div class="icon"></div>
+                              </div>
+                              Manage Custom Reports</div>
+                          </div>
+                        </div>
+                      </div>
+                      </a> </div>
+                  </div>
+                </div>
+              </div>
+              <b class="round_border"> <b class="round_border_layer1"></b> <b class="round_border_layer2"></b> <b class="round_border_layer3"></b> </b> </div>
+          </div>
+        </div>
+        <div class="feature settings">
+          <div class="r1">
+            <div class="r2">
+              <div class="r3">
+                <h4>My Customizations</h4>
+                <ul>
+                  <li class="custom_reports"><span class="setting_choice"><a onClick="return VisualizationModule.changeReport("manage_profile_custom_reports", null, true);" href="#">Custom Reports</a>&nbsp;</span></li>
+                  <li class="segments"><span class="setting_choice"><a onClick="return VisualizationModule.changeReport("manage_profile_segments", null, true);" href="#">Advanced Segments</a>&nbsp;</span></li>
+                  <li class="custom_alerts"><span class="setting_choice"><a onClick="return VisualizationModule.changeReport("manage_profile_custom_alerts", null, true);" href="#">Intelligence</a>&nbsp;<b class="beta_label small">Beta</b></span></li>
+                  <li class="emails"><span class="setting_choice"><a onClick="return VisualizationModule.changeReport("manage_emails", null, true);" href="#">Email</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feature help_resources">
+        <div class="r1">
+          <div class="r2">
+            <div class="r3">
+              <h4>Help Resources</h4>
+              <ul>
+                <li class="first"><a onClick="goog.analytics.Menu.toggle("f_help_about", "f_help_about_menu"); return false;" id="f_help_about" href="#">About this Report</a>
+                  <dl style="display: none;" class="contextual_help" id="f_help_about_menu">
+                    <dt><b>About this Report</b></dt>
+                    <dd>
+                      <div>The Dashboard is your customizable collection of report summaries. To add a report to this dashboard, first navigate to the report and then click "Add to Dashboard" at top left (directly below the report title). Change the position of reports in the Dashboard by clicking and dragging them. To remove a report summary from the Dashboard, click "remove" on the report summary. Click "view report" on the report summary to navigate to the full report.</div>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="second"><a onClick="goog.analytics.Menu.toggle("f_help_cu", "f_help_cu_menu"); return false;" id="f_help_cu" href="#">Conversion University</a>
+                  <dl style="display: none;" class="contextual_help" id="f_help_cu_menu">
+                    <dt><b>Conversion University</b></dt>
+                    <dd>
+                      <div>The Dashboard can serve not only as a key performance indicator (KPI) display, but also as a custom navigation menu that allows you to find information quickly. For example, an AdWords keywords report summary would allow you to access the full list of keywords with a single click from the Dashboard.</div>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="third"><a onClick="goog.analytics.Menu.toggle("f_help_faq", "f_help_faq_menu"); return false;" id="f_help_faq" href="#">Common Questions</a>
+                  <dl style="display: none;" class="contextual_help" id="f_help_faq_menu">
+                    <dt><b>Common Questions</b></dt>
+                    <dd>
+                      <div><a href="javascript: _openHelp('answer.py?answer=55541');"> How long does it take to see report data after adding the tracking code? </a></div>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div id="global_footer_nav"><span>&copy; 2010 Google</span><span><a href="http://www.google.com/analytics/" target="GoogleHome">Analytics Home</a></span><span><a href="http://www.google.com/intl/en/analytics/tos.html">Terms of Service</a></span><span><a href="http://www.google.com/intl/en/privacy.html" target="GoogleHome">Privacy Policy</a></span><span><a href="http://www.google.com/support/googleanalytics/bin/request.py?hl=en_US" target="GoogleHelp">Contact us</a></span><span class="last"><a href="http://analytics.blogspot.com/" target="GoogleHome">Analytics Blog (in English)</a></span></div>
+  </div>
+  <div style="display: none;" id="f_loading_message" class="loading_message">
+    <p><b><b><b><img width="16" height="16" alt="" src="images/icons/loading.gif">Loading...</b></b></b></p>
+  </div>
+</div>
+</body>
+</html>

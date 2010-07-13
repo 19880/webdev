@@ -1,0 +1,109 @@
+input, select {
+  font-size: 90%;
+}
+html .text_wrapper {
+  width: 90%;
+}
+html .text_wrapper .text_wrapper {
+  width: 100%;
+}
+html #container {
+  width:expression(document.body.clientWidth < 800 ? "760px" : "auto" );
+}
+.date_controller_form {
+  font-size: 90%;
+}
+.date_controller_form dd {
+  margin: 0 0 .3em 0;
+}
+.date_controller_form #f_dateRangeLengthNotice {
+  display: block;
+  margin: .4em 0 0 0;
+  font-size: 85%;
+}
+.date_range a b b b .comparison_dropdown {
+  height: 44px;
+}
+#report_nav #site_search_nav_item {
+  border-bottom: 1px solid #ffffff;
+}
+
+#report_nav #adsense_nav_item {
+  border-bottom: 1px solid #ffffff;
+}
+
+.graph_options_toggle a .hider {
+  margin-left: -3px;
+}
+
+#date_range_tools {
+  right: -1px;
+}
+
+div#modal_background {
+  width: expression(( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ));
+  height: expression(( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ));
+  left: expression(( ignoreMe = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft) + 'px' );
+  top: expression(( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop) + 'px' );
+}
+
+#modal_background_iframe {
+  width: expression(( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ));
+  height: expression(( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ));
+  left: expression(( ignoreMe = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft) + 'px' );
+  top: expression(( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop) + 'px' );
+  border:0;
+  display:block;
+}
+
+/* Special Handling for the adwords header */
+#adwords_subheader .link_only_content {
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
+.admin_container #adwords_subheader .link_only_content {
+  padding-bottom: 3px;
+}
+
+/* image bullets don't work how you'd think in ie 6/7 */
+.admin_question_list {
+  background: transparent url( ../images/ie_bullet_list.gif ) no-repeat scroll left top;
+  list-style-position: outside;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 7px;
+  margin-top: 10px;
+  padding-left: 13px;
+}
+
+/* Special Handling for segment builder  */
+.orBlock {
+  width: 98%;
+}
+.condition {
+  float: left;
+}
+.condition.add_link {
+  float: none;
+}
+#segment_builder div.rtop,
+#segment_builder div.rbottom {
+  clear: both;
+}
+.matchTypeMenusDiv {
+  display: inline;
+  white-space: nowrap;
+  width: 10%;
+}
+#f_table_graph .text_wrapper .text_wrapper .ie_fix_wrapper {
+  position: absolute;
+  width: 90%;
+}
+#f_table_graph.pie_view .text_wrapper .text_wrapper .ie_fix_wrapper {
+  left: 1.2em;
+  top: 0;
+}
+#f_table_graph.pie_view td.text {
+  width: 20%;
+  text-align: left;
+}
