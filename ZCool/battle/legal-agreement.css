@@ -1,0 +1,23 @@
+/*legal agreements */
+.legal .legal-header { font-weight:normal; font-size:18px; letter-spacing:-0.05em; margin:30px 0 5px 10px; }
+.legal .scroll-container .terms { background-color: #e0dfdd; color: #4a4a4a; height: 225px; margin-left: 10px; padding: 10px 20px; border: 1px solid #d8d7d3; overflow: auto; position: relative; }
+.legal .scroll-container .must-scroll { padding: 10px; background: url('../../images/form/alert-caution.png') repeat-x 0 0; margin: 20px 0 0 15px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;  }
+.legal .scroll-container .must-scroll span { color: #000; text-align: left; font-size: 16px; letter-spacing: -0.05em; font-weight: bold; background: url('../../images/icons/warning.gif') no-repeat 5px 4px; padding: 5px 35px; }
+.legal .scroll-container label { font-size:16px; font-weight:bold; width:100%; text-align:center; display:block;  color:#b4b2b0; letter-spacing: -0.05em }
+.legal .scroll-container .must-scroll.disable { opacity: 0.2; background: #bdbcb9; }
+.legal .scroll-container label { cursor: pointer; }
+.legal .scroll-container label.enabled { color:#4a4a4a }
+.legal .scroll-container label.accepted { color:#000 }
+.legal .scroll-container span.important { font-weight:bold; font-size:20px; color:#AE4C4C; font-family:Georgia,"Times New Roman",Times,serif }
+.legal-agree { padding:10px; margin: 20px 0 }
+
+/* legal terms */
+.legal .terms { font-size:12px }
+/*.legal .terms strong { color:#FFF }*/
+.legal .terms p { line-height:18px; margin:6px 0 }
+.legal .terms h4 { font-size:24px; line-height:30px;  margin:0; padding:0 0 2px 0}
+.legal .terms h5 { text-transform:uppercase; color:#7a96b0; font-weight:normal; font-size:10px; line-height:14px }
+.legal .terms ol { list-style-type:lower-roman; margin:7px 30px 7px 40px; padding:0 }
+.legal .terms ul { list-style-type:disc; margin:7px 30px 7px 20px; padding:0 }
+.legal .terms li { margin-bottom:10px }
+.legal .terms a { text-decoration:underline }
