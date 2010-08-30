@@ -1,0 +1,45 @@
+a span { cursor:pointer }
+button.ui-button.hover span { background-position: 0 -41px }
+button.ui-button.hover span span { background-position: 100% -164px }
+
+/* main */
+#blackout { position: absolute; filter: alpha(opacity=70) }
+
+/* service bar */
+.service-bar { display: inline; zoom: 1; z-index: 76; }
+
+/* search bar */
+#search-bar #search { padding-top: 8px }
+
+/* menu */
+.ui-menu { zoom:1 }
+
+/* classes */
+.opacity0 { filter: alpha(opacity=0) }
+.opacity50 { filter: alpha(opacity=.50) }
+
+/* i18n switcher */
+#international { zoom: 1 }
+
+/* Comments */
+#page-comments .new-post,
+#page-comments .comment,
+#page-comments h3,
+.forum-link,
+#forum-list a.forum-parent,
+.comment-ta { zoom:1 }
+
+/* Forums */
+.deleted .post-character { z-index:40 }
+
+/* bml */
+#news-updates h3,
+#news-updates .article-meta,
+.post,
+.character-options a,
+.bt-lite,
+#page-comments,
+.blizzard-title,
+h3.blog-title,
+comment-ta { zoom:1 }
+.bml-toolbar button { position: relative; zoom: 1 }

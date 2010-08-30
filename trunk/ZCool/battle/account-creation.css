@@ -1,0 +1,66 @@
+/* country selection */
+.creation #kr-warning { color:#FFF;width:650px;margin:10px auto 0;text-align:center; }
+.creation #region-tou { display: none;}
+
+/* captcha */
+.creation .captch-container { background-color: #b9b8b5; padding: 5px 0 20px; margin: 1em 0 2em; }
+.creation .captcha img { height: 77px; width: 300px; border: 5px solid #fff; }
+.creation .captcha p { font-size:12px; line-height: 16px;}
+
+/* privacy message */
+.creation .privacy-message { padding-bottom: 1em; }
+.creation .privacy-message b { color:#000 }
+
+/* forms */
+.creation #exclusive-offers { padding: 20px 30px 0 220px; background: #b9b8b5 url(../../images/locale/en-us/insider-thumb.png) no-repeat; min-height: 100px; margin: 22px 0 40px; }
+.creation #exclusive-offers .checkmark-pos { position: absolute; height: 119px; width: 1px; margin-left: -220px; margin-top: -20px;}
+.creation #exclusive-offers .check { background: url(../../images/icons/check-lrg.png) no-repeat; width: 85px; height: 62px; position: absolute; top: 18px; left: 20px; display: none; }
+.creation #exclusive-offers.active label { color:#4a8432 }
+.creation #exclusive-offers.active .check { display:block }
+.creation #exclusive-offers strong { display: block; margin-bottom: 1em; font-size: 14px;}
+.creation #exclusive-offers label { position: relative; cursor: pointer;}
+.creation #exclusive-offers label input { position: absolute; left: -30px; top: 0;}
+
+.creation #password-rules-link { background:url("../../_images/icons/alert.png") no-repeat 14px -1px; padding-left:35px; font-size:12px; line-height:30px }
+
+
+/*summary*/
+.creation .right-field { font-size:14px; line-height:28px; color:#FFF }
+.creation .edit-information { font-size:12px; }
+.creation .address-list { line-height:18px; padding-top:5px }
+/* success */
+.creation .bnet-success { background:url("../../_images/activating-bnet.jpg") no-repeat; padding-top:130px; margin-top:40px }
+.creation .account-creation { color:#47EB00; text-transform:uppercase; font-size:24px; letter-spacing:-2px; text-align:center }
+.creation .email-verification { font-size:12px; text-align:center; width:780px; margin:20px auto; color:#FFF; font-weight:bold; color:#FFBA00 }
+.creation .email-verification-description { font-size:11px;padding-left:150px;line-height:17px;}
+.creation .email-verification-description ul{ height:80px;}
+.creation .email-verification-description li{ background:url("../../_images/info-bullet.gif") no-repeat;padding-left:10px;}
+.creation .verification h4 { font-size: 24px; }
+.creation .content { background: #E2E1DF url('../../images/icons/email-verification.gif') no-repeat 36px 30px; padding: 24px 24px 24px 124px; }
+.creation .success-email .email-label { font-size:11px; text-transform: uppercase; }
+.creation .success-email .email-right { font-size: 24px; letter-spacing:-0.05em; color: #000; }
+.creation .success-email .email-right strong { margin:5px 0 20px 0; display:block }
+.creation .success-email p { color: #787878; font-size: 11px; line-height: 18px; letter-spacing: 0.01em; }
+.creation .continue-div { border-top: 3px solid #bfbfbf; padding: 15px 0; margin: 15px 0 0 0 }
+
+/*legal agreement accept*/
+.creation .legal .legalHeader { margin-left:0 }
+.creation .legal .scrollContainer .scrollContent { width:auto }
+.creation .legal .scrollContainer .mustScroll { font-size:12px }
+
+/* kr postal code lookup */
+.postal-code-pop { position:fixed; display:none; border:1px solid; background-color:#fff; width: 700px; left:-350px; top:200px; padding:20px; z-index:1000; margin-left:50%}
+.postal-code-result { display:none; border:1px solid #000; height:180px; overflow:auto; padding:10px 20px; width:600px; margin-left:30px; }
+.label-full .search-zip { padding:0 10px 0 0; }
+
+/* age check box */
+.check-age { text-align:center; }
+.section-box label.radio-check { cursor: pointer; margin:0 30px; font-size:14px; }
+
+/*parental control perid select box*/
+#parental-agreement .period { margin:0 15px }
+
+/* Overriding default styles */
+#region-tou .alert  { width: auto; }
+#region-tou .alert.caution .alert-message { background: none; }
+#region-tou .alert .alert-message { padding: 15px 10px }
