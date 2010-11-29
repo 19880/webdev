@@ -3,7 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>无标题文档</title>
-</head>
 <style type="text/css">
 em {
 border-style:solid;
@@ -11,7 +10,8 @@ border-width:10px;
 display:block;
 height:0;
 position:absolute;
-width:0;	
+width:0;
+overflow:hidden;
 }
 em.down {
 border-color:blue transparent transparent;
@@ -26,6 +26,26 @@ em.right {
 border-color:transparent yellow transparent transparent;
 }
 </style>
+<!--[if IE 6]>
+<style type="text/css" media="screen">
+em.down, em.up, em.left, em.right {
+	filter: chroma(color=pink);
+}
+em.down{
+	border-color:blue pink pink;
+}
+em.up {
+border-color:pink pink green;
+}
+em.left {
+border-color:pink pink pink red;
+}
+em.right {
+border-color:pink yellow pink pink;
+}
+</style>
+<![endif]-->
+</head>
 <body>
 <em class="up"></em>
 <em class="down"></em>
