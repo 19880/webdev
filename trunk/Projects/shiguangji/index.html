@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>时光机 - 新浪最火热的应用之一</title>
-<link href="css/main.css" rel="stylesheet" />
 <link href="css/common.css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -37,7 +37,7 @@
       </div>
     </div>
     <div id="mainContent">
-      <div class="pal">
+      <div class="pal clearfix">
         <ul class="tabs clearfix">
           <li><a href="#" class="selected">发布微博</a></li>
           <li><a href="#">批量发布</a></li>
@@ -136,11 +136,11 @@
               <option value="59">59</option>
             </select>
           </div>
-          <div class="postContent postbg clearfix">
+          <div class="postContent postbg">
             <div id="publisher_info" class="wordNumBg">你还可以输入<span class="pipsLim">140</span>字</div>
             <textarea id="publish_editor" class="publish_textarea"></textarea>
           </div>
-          <div class="postOption mvs clearfix">
+          <div class="postOption mvs">
             <ul>
               <li><a href="#" class="OnTit po_faces"><i></i>表情</a></li>
               <li><a href="#" class="OnTit po_image"><i></i>图片</a></li>
@@ -150,12 +150,80 @@
             </ul>
           </div>
           <div class="rfloat">
-            <input type="submit" class="ui-btnp" value="定时发送"/>
-            <input type="submit" class="ui-btng" value="立即发送"/>
+            <input type="submit" class="uiBtnp" value="定时发送"/>
+            <input type="submit" class="uiBtng" value="立即发送"/>
+          </div>
+        </div>
+      </div>
+      <div class="pbl clear">
+        <div class="postrecordWrap">
+          <table width="100%" class="precordGrid uiGrid">
+          	<tr>
+              <th class="header" colspan="4">
+                发送记录
+              </th>
+          	</tr>
+          	<tr>
+              <th class="first"><div class="precord_time"><a>发送时间</a></div></th>
+              <th><div class="precord_weibo">微博内容</div></th>
+              <th>
+                <div class="precord_status">
+                  <select>
+                    <option value="全部状态">全部状态</option>
+                    <option value="待发送">待发送</option>
+                    <option value="发送成功">发送成功</option>
+                    <option value="发送失败">发送失败</option>
+                  </select>
+                </div>
+              </th>
+              <th><div class="precord_oper">操作</div></th>
+          	</tr>
+            <tr>
+              <td class="first">
+                2011-07-15 14:27
+              </td>
+              <td class="hLeft">
+                水粉绿纱纱钉珠衫，双层的网纱面料的，要自己搭配小背心，抹胸。
+              </td>
+              <td>
+                等待发送
+                <div><a href="#" class="fcmb tinyico-send">立即发送</a></div>
+              </td>
+              <td>
+                <div><a href="#" class="fcmb tinyico-edit">修改微博</a></div>
+                <div><a href="#" class="fcmb tinyico-delmsg">删除微博</a></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="first">
+                2011-07-15 11:13
+              </td>
+              <td class="hLeft">
+                【情感心理】祖国就是你一天可以抱怨十遍，却不让外国人微词一句的地方。家就是你一天可以牢骚十次，却不让外人小看一次的地方。孩子就是你一天可以打十次，却不让别人碰一下的小东西。爱人就是你一天可以亲她十次，却不让别人多看一下的宝贝。朋友就是你一天可骚扰十次，也不会有一点嫌你烦的哥们。
+              </td>
+              <td>
+                <span class="fcdg">发送成功</span>
+                <div><a href="#" class="fcmb tinyico-view">查看微博</a></div>
+              </td>
+              <td>
+                <div><a href="#" class="fcmb tinyico-delrecord">删除记录</a></div>
+                <div><a href="#" class="fcmb tinyico-delmsg">删除微博</a></div>
+              </td>
+            </tr>
+          </table>
+          <div class="uiPager hCent">
+            <a href="#" class="uiBtnlink selected">1</a>
+            <a href="#" class="uiBtnlink">2</a>
+            <a href="#" class="uiBtnlink">3</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <div id="footer">
+    Copyright © 2011 . Shiguangji 版权所有.
+    <a href="http://www.cnzz.com/stat/website.php?web_id=2650661" target="_blank" title="站长统计">站长统计</a>
+    &nbsp;&nbsp;&nbsp;意见反馈：<a target="_blank" href="http://t.sina.com.cn/2023728762">@时光机官方</a>
   </div>
 </div>
 </body>
