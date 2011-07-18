@@ -162,7 +162,10 @@ body {
 	background-position: -35px center;
 }
 .userGallery .prev:hover {
-	
+	background-position: -64px center;
+}
+.userGallery .next:hover {
+	background-position: -95px center;
 }
 .postWrap {
 	font-size:14px;
