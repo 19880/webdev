@@ -43,8 +43,28 @@
           <li><a href="#">批量发布</a></li>
         </ul>
         <div class="postWrap">
-          <div class="date mbs">
-            选择时间：
+          <div class="postContent postbg">
+            <div id="publisher_info" class="wordNumBg">你还可以输入<span class="pipsLim">140</span>字</div>
+            <textarea id="publish_editor" class="publish_textarea"></textarea>
+          </div>
+          <div class="clearfix">
+            <div class="postOption mvs">
+              <ul>
+                <li><a href="#" class="OnTit po_faces"><i></i>表情</a></li>
+                <li><a href="#" class="OnTit po_image"><i></i>图片</a></li>
+                <li><a href="#" class="OnTit po_video"><i></i>视频</a></li>
+                <li><a href="#" class="OnTit po_music"><i></i>音乐</a></li>
+                <li><a href="#" class="OnTit po_topic"><i></i>话题</a></li>
+              </ul>
+            </div>
+            <div class="rfloat">
+              <input type="submit" class="uiBtnp" value="定时发送"/>
+              <input type="submit" class="uiBtng" value="立即发送"/>
+            </div>
+          </div>
+          <div class="date postTime">
+            <em class="up"></em>
+            定时发送时间：
             <input type="text" readonly id="pickdater" value="2011-07-14" name="date" class="hasDatepicker mrs"/>
             <select id="hour" name="hour">
               <option value="00">0</option>
@@ -135,23 +155,6 @@
               <option value="58">58</option>
               <option value="59">59</option>
             </select>
-          </div>
-          <div class="postContent postbg">
-            <div id="publisher_info" class="wordNumBg">你还可以输入<span class="pipsLim">140</span>字</div>
-            <textarea id="publish_editor" class="publish_textarea"></textarea>
-          </div>
-          <div class="postOption mvs">
-            <ul>
-              <li><a href="#" class="OnTit po_faces"><i></i>表情</a></li>
-              <li><a href="#" class="OnTit po_image"><i></i>图片</a></li>
-              <li><a href="#" class="OnTit po_video"><i></i>视频</a></li>
-              <li><a href="#" class="OnTit po_music"><i></i>音乐</a></li>
-              <li><a href="#" class="OnTit po_topic"><i></i>话题</a></li>
-            </ul>
-          </div>
-          <div class="rfloat">
-            <input type="submit" class="uiBtnp" value="定时发送"/>
-            <input type="submit" class="uiBtng" value="立即发送"/>
           </div>
         </div>
       </div>

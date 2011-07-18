@@ -143,13 +143,43 @@ body {
 .username a:hover {
 	text-decoration:underline;
 }
+.userGallery li {
+	float:left;
+	width: 80px;
+	text-align:center;
+	margin:10px 3px;
+}
+.userGallery .prev, .userGallery .next {
+	display:block;
+	width: 22px;
+	height:90px;
+	background:url(../images/prevnext.png) no-repeat;
+}
+.userGallery .prev {
+	background-position: -4px center;
+}
+.userGallery .next {
+	background-position: -35px center;
+}
+.userGallery .prev:hover {
+	
+}
 .postWrap {
 	font-size:14px;
 	padding:20px 140px 0;
 	_padding:20px 136px 0;
 }
-.postContent {
-		
+.postTime {
+	position:relative;
+	background:#edeff4;
+	padding: 5px 0 5px 20px;
+	margin:8px 0 0 130px;
+	font-weight:700;
+	zoom:1;
+}
+.postTime em {
+	right: 130px;
+    top: -6px;
 }
 .hasDatepicker {
 	width: 90px;
