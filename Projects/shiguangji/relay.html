@@ -5,6 +5,9 @@
 <title>时光机 - 新浪最火热的应用之一</title>
 <link href="css/common.css" rel="stylesheet" />
 <link href="css/main.css" rel="stylesheet" />
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.2.min.js"></script>
+<script src="js/g.js"></script>
+<script src="js/relay.js"></script>
 </head>
 
 <body>
@@ -39,73 +42,89 @@
     <div id="mainContent">
       <div class="pal clearfix">
         <div class="clearfix mbs">
-          <ul class="uiCategory fsl">
-            <li><a class="selected">最近转发</a></li>
-            <li><a>我关注的人</a></li>
-            <li><a>我的粉丝</a></li>
-            <li style="margin-left: 20px;">
-              <div style="border: 1px solid rgb(255, 94, 134);">
-                <div style="border-style: solid; border-width: 1px 0pt 0pt 1px; border-color: rgb(223, 223, 223); padding-right: 25px;">
-                  <input value="输入微博地址或昵称寻找" style="border: 0pt none; color: rgb(170, 170, 170); padding: 5px; width: 240px;">
+          <ul id="userCategory" class="uiCategory fsl">
+            <li><a id="uc_recent" href="json/user.php" class="item selected">最近转发</a></li>
+            <li><a id="uc_attention" href="json/userSearch.php" class="item">我关注的人</a></li>
+            <li><a id="uc_fans" href="json/user.php" class="item">我的粉丝</a></li>
+            <li class="mll">
+              <div class="uiQuery">
+                <div class="outerwrap">
+                  <div class="innerwrap">
+                    <form id="userSearchForm" action="json/userSearch.php">
+                      <input id="userSearch" value="输入微博地址或昵称寻找" autocomplete="off" class="text DOMControl_placeholder"/>
+                      <button type="submit" class="submit">
+                        <img src="images/search.png"/>
+                      </button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </li>
           </ul>
         </div>
-        <div class="userGallery clearfix clear">
-          <a class="prev lfloat" title="上一页"></a>
-          <div class="lfloat">
-            <ul>
-              <li>
-                <a href="">
-                  <img src="http://tp2.sinaimg.cn/1945584665/50/5598620610/0" alt="">
-                </a>
-                <div><a href="">吴琼琼爱画画</a></div>
-              </li>
-              <li>
-                <a href="">
-                  <img src="http://tp1.sinaimg.cn/1624950264/50/5605932673/0" alt="">
-                </a>
-                <div><a href="">小新娘Alex</a></div>
-              </li>
-              <li>
-                <a href="">
-                  <img src="http://tp3.sinaimg.cn/1644395354/50/1283204225/1" alt="">
-                </a>
-                <div><a href="">冷笑话精选</a></div>
-              </li>
-              <li>
-                <a href=""><img src="http://tp2.sinaimg.cn/2135732201/50/5600363126/1" alt="">
-                </a>
-                <div><a href="">九牛子</a></div>
-              </li>
-              <li>
-                <a href="">
-                  <img src="http://tp4.sinaimg.cn/1732445395/50/5601819782/0" alt="">
-                </a>
-                <div><a href="">_唐賤賤</a></div>
-              </li>
-              <li>
-                <a href="">
-                  <img src="http://tp4.sinaimg.cn/1845487983/50/1300716698/1" alt="">
-                </a>
-                <div><a href="">观星-Clark</a></div>
-              </li>
-              <li>
-                <a href="">
-                  <img src="http://tp4.sinaimg.cn/1850605903/50/5603268714/0" alt="">
-                </a>
-                <div><a href="">何佳扬</a></div>
-              </li>
-              <li>
-                <a href="">
-                  <img src="http://tp2.sinaimg.cn/2142170481/50/5601354822/0" alt="">
-                </a>
-                <div><a href="">桃Fiona</a></div>
-              </li>
-            </ul>
+        <div id="userGallery" class="userGallery clearfix clear loading mbm">
+          <div class="wrap hidden">
+            <a class="prev lfloat" title="上一页"></a>
+            <div class="main lfloat clearfix">
+              <ul></ul>
+            </div>
+            <a class="next lfloat" title="下一页"></a>
           </div>
-          <a class="next lfloat" title="下一页"></a>
+        </div>
+        <div class="forwardList">
+          <ul>
+            <li>
+              <div class="UIImageBlock clearfix">
+                <a href="" class="UIImageBlock_Image"><img class="img" src="http://tp4.sinaimg.cn/1767167227/50/1297651947/0" alt=""></a>
+                <div class="UIImageBlock_Content">
+                  <div class="mbs">
+                    <div class="mbs">
+                      <a href="http://weibo.com/aboutfacebook" title="Facebook那点事儿" class="fwb">Facebook那点事儿</a>：Google+现在正成为Facebook的竞争对手，其用户量在不到一个月的时间内达到1000万人。这一信息也显示Facebook团队也想体验一下谷歌最新社交网络。<a title="http://btui.it/byS6" href="http://t.cn/aW04at?u=1777378505" target="_blank" mt="url">http://t.cn/aW04at</a>
+                    </div>
+                    <a href="#"><img vimg="1" class="imgicon" src="http://ww1.sinaimg.cn/thumbnail/6954d4fbjw1djby812yj1j.jpg"></a>
+                  </div>
+                  <div>
+                    <div class="lfloat">
+                      <a target="_blank" href="http://api.t.sina.com.cn/1045313254/statuses/14762812966">2011-07-19 10:33</a>
+                    </div>
+                    <div class="rfloat">
+                      <a class="fcmb tinyico-forward" href="#">转发微博</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="UIImageBlock clearfix">
+                <a href="" class="UIImageBlock_Image"><img class="img" src="http://tp4.sinaimg.cn/1767167227/50/1297651947/0" alt=""></a>
+                <div class="UIImageBlock_Content">
+                  <div class="mbs">
+                    <a href="http://weibo.com/aboutfacebook" title="Facebook那点事儿" class="fwb">Facebook那点事儿</a>：Google+现在正成为Facebook的竞争对手，其用户量在不到一个月的时间内达到1000万人。这一信息也显示Facebook团队也想体验一下谷歌最新社交网络。<a title="http://btui.it/byS6" href="http://t.cn/aW04at?u=1777378505" target="_blank" mt="url">http://t.cn/aW04at</a>
+                  </div>
+                  <div class="MIB_assign mbs">
+                    <i class="ufiNub"></i>
+                    <div class="mbs">
+                      <a href="http://weibo.com/sumclcn">@尚客茶品</a>：如果错过了西藏，错过了云南，错过了台湾游，那么还有一个人间天堂等着你，“欲把西湖比西子，从来佳茗似佳人”，闻名全国的西湖龙井茶就产于这里。<a href="#">#梦回茶乡#</a>
+                    </div>
+                    <a href="#"><img src="http://ww4.sinaimg.cn/thumbnail/71bb4938jw1djc0m3kj7rj.jpg" class="imgicon"/></a>
+                  </div>
+                  <div>
+                    <div class="lfloat">
+                      <a target="_blank" href="http://api.t.sina.com.cn/1045313254/statuses/14762812966">2011-07-19 10:33</a>
+                    </div>
+                    <div class="rfloat">
+                      <a class="fcmb tinyico-forward" href="#">转发微博</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="uiPager">
+            <a href="#" class="uiBtnlink selected">1</a>
+            <a href="#" class="uiBtnlink">2</a>
+            <a href="#" class="uiBtnlink">3</a>
+          </div>
         </div>
       </div>
     </div>
