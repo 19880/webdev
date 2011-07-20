@@ -145,14 +145,12 @@ body {
 }
 .userGallery li {
 	float:left;
-	width: 80px;
-	text-align:center;
-	margin:10px 3px;
 }
 .userGallery .prev, .userGallery .next {
 	display:block;
 	width: 22px;
-	height:90px;
+	height:26px;
+	margin-top: 30px;
 	background:url(../images/prevnext.png) no-repeat;
 }
 .userGallery .prev {
@@ -167,6 +165,51 @@ body {
 .userGallery .next:hover {
 	background-position: -95px center;
 }
+.userGallery img {
+	width: 50px;
+	height: 50px;
+}
+.userGallery .main {
+	position:relative;
+	width:691px;
+	height:100px;
+	overflow:hidden;
+}
+.userGallery .main a {
+	position:relative;
+	display: block;
+	padding:10px 0;
+	margin:0 3px;
+	width: 80px;
+	text-align:center;
+}
+.userGallery .main a:hover {
+	text-decoration:none;
+	background:url(../images/ug_hover.png);
+}
+.userGallery .main .selected, .userGallery .main .selected:hover {
+	background:url(../images/ug_selected.png);
+}
+.userGallery .selected .tick {
+	position: absolute;
+	display:none;
+	width:14px;
+	height:14px;
+	background: url(../images/ug_tick.png);
+	left: 50px;
+	top:50px;
+}
+.userGallery .selected .tick {
+	display:block;
+}
+.userGallery .main ul {
+	position: absolute;
+	top:0;
+	left:0;
+}
+.loading {
+	background: url(../images/loading.gif) center no-repeat;
+}
 .postWrap {
 	font-size:14px;
 	padding:20px 140px 0;
@@ -174,7 +217,7 @@ body {
 }
 .postTime {
 	position:relative;
-	background:#edeff4;
+	background:#e6e6e6;
 	padding: 5px 0 5px 20px;
 	margin:8px 0 0 130px;
 	font-weight:700;
@@ -257,7 +300,8 @@ body {
 .tinyico-edit,
 .tinyico-delmsg,
 .tinyico-delrecord,
-.tinyico-view {
+.tinyico-view,
+.tinyico-forward {
 	display:inline-block;
 	background:url(../images/tiny_ico.png) no-repeat;
 	padding-left:16px;
@@ -277,6 +321,9 @@ body {
 .tinyico-view {
 	background-position: 2px -43px;
 }
+.tinyico-forward {
+	background-position: 0 -74px;
+}
 .postrecordWrap {
 	padding:20px 50px;
 }
@@ -294,4 +341,35 @@ body {
 }
 .precord_oper {
 	width:80px;
+}
+
+
+.forwardList {
+	margin:0 30px;
+	min-height:300px;
+	border:dashed #E6E6E6;
+	border-width:2px 0;
+}
+.forwardList a {
+	color: #5F81A6;
+}
+.forwardList li {
+	border-bottom: 1px dashed #E7E7E7;
+	padding:8px 0;
+	zoom:1;
+}
+.MIB_assign {
+	position:relative;
+	background:#F6F6F6; 
+	border:1px solid #E5E5E5;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding:6px;
+	margin-top: 10px;
+	zoom:1;
+}
+.MIB_assign .ufiNub {
+	position:absolute;
+	top:-8px;
+	left: 30px;
 }

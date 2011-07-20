@@ -33,6 +33,9 @@ button, input, select, textarea {
     overflow: hidden;
     visibility: hidden;
 }
+.DOMControl_placeholder {
+    color: #999;
+}
 .lfloat{float:left}
 .rfloat{float:right}
 .pas{padding:5px}
@@ -91,6 +94,7 @@ button, input, select, textarea {
 .fcdr{color:#B6423C}
 .noborder{border:none}
 .hCent{text-align:center}
+.hidden {display:none}
 em {
 	position:absolute;
 	border-style:solid;
@@ -101,7 +105,7 @@ em {
 	overflow:hidden;
 }
 em.up {
-	border-color:#FFF #FFF #EDEFF4;
+	border-color:#FFF #FFF #e6e6e6;
 	border-width:0 6px 6px 6px;
 }
 .tabs {
@@ -144,6 +148,8 @@ em.up {
 	padding:3px 8px;
 	*padding:4px 8px 2px;
 	font-weight:700;
+	border: 1px solid #FFF;
+	outline:none;
 }
 .uiCategory .selected {
 	color:#FFF;
@@ -244,4 +250,50 @@ em.up {
 }
 .uiPager {
 	margin: 10px 0;
+}
+.uiQuery .outerwrap {
+	position:absolute;
+	border: 1px solid #FF5E86;
+}
+.uiQuery .innerwrap {
+	border: solid #DFDFDF; 
+	border-width: 1px 0pt 0pt 1px;
+	padding-right: 25px;
+}
+.uiQuery .text {
+	border: 0 none;
+	padding: 5px;
+	width: 240px;
+	height: 15px;
+	line-height:15px;
+}
+.uiQuery .submit {
+	position: absolute;
+	padding: 0; 
+	background: url(../images/btn.png) 0 0 repeat-x; 
+	border: 0 none;
+	top: 0;
+	right: 0pt;
+	width:26px;
+	height: 26px;
+	*height: 28px;
+	cursor:pointer;
+}
+.uiQuery .submit:active {
+	background-position:0 -30px;
+}
+.UIImageBlock_Image {
+    float: left;
+    margin-right: 10px;
+}
+.UIImageBlock_Content{display:table-cell;*display:block;vertical-align:top;width:10000px;*width:auto;zoom:1}
+.UIImageBlock_Image{float:left;margin-right:8px}
+.UIImageBlock_Image .img,img.UIImageBlock_Image,i.UIImageBlock_Image{display:block}
+.UIImageBlock_Ext{float:right}
+.ufiNub {
+	display:block;
+	background:url(../images/arrow.gif) -24px -3px;
+	width:13px;
+	height:8px;
+	overflow:hidden;
 }
