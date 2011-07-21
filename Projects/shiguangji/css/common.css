@@ -25,6 +25,7 @@ button, input, select, textarea {
 .clear {
     clear: both;
 }
+.clearfix{display:block;zoom:1}
 .clearfix:after {
     clear: both;
     content: ".";
@@ -252,7 +253,7 @@ em.up {
 	margin: 10px 0;
 }
 .uiQuery .outerwrap {
-	position:absolute;
+	position: relative;
 	border: 1px solid #FF5E86;
 }
 .uiQuery .innerwrap {
@@ -276,7 +277,7 @@ em.up {
 	right: 0pt;
 	width:26px;
 	height: 26px;
-	*height: 28px;
+	*height: 29px;
 	cursor:pointer;
 }
 .uiQuery .submit:active {

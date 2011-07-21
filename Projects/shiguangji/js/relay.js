@@ -1,3 +1,5 @@
+var wbUserID = 11259342;
+
 $(function(){	
 	
 	var firstLoad = true;						// 是否第一次加载
@@ -12,14 +14,15 @@ $(function(){
 	var _hasAnimate = false;					// 是否进行动画
 	var _ajaxUrl = 'json/user.php';				// 加载地址
 	var $userGallery = $('#userGallery');
-	var $userGalleryWrap = $userGallery.find('.wrap');
 	var $userGalleryPrev = $userGallery.find('.prev');
 	var $userGalleryNext = $userGallery.find('.next');
 	var $userGalleryContainer = $userGallery.find('.main>ul');
 	var $userCategoryItem = $('#userCategory .item');
 	var $userSearchForm = $('#userSearchForm');
 	var $userSearch = $('#userSearch');
+	var $forwardList = $('#forwardList');
 	var originalImg = 'http://tp3.sinaimg.cn/2023728762/50/5597571831/0';
+	var selectedClass = 'selected';
 	
 	function initUserGallery(){
 		loadnum = 1;
@@ -36,46 +39,73 @@ $(function(){
 	$('#userCategory .item').click(function(){
 		var $this = $(this);
 		
-		initUserGallery();
-		
-		UserGalleryStateLoading();
-		
-		$userCategoryItem.removeClass('selected');
-		$(this).addClass('selected');
+		$userCategoryItem.removeClass(selectedClass);
+		$(this).addClass(selectedClass);
 		
 		var _id = $this[0].id;
 		_ajaxUrl = $this.attr('href');
-		loadUserGallery();
+		
+		if( _id == 'uc_my' ){
+			$userGallery.slideUp();
+			loadUserWeibo(wbUserID);
+		} else {
+			initUserGallery();
+			loadUserGallery();
+		}
 		
 		return false;
 	});	
 	
 	/**
 	 * 用户画廊
-	 */
-	function UserGalleryStateLoading(){
-		$userGallery.addClass('loading');
-		$userGalleryWrap.addClass('hidden');
+	 */	
+	// 点击头像链接加载微博
+	function clickImglink(){
+		var $this = $(this);
+		$userGalleryContainer.find('a').removeClass(selectedClass);
+		$this.addClass(selectedClass);
+		loadUserWeibo($this.attr('uid'));
 	}
-	function UserGalleryStateCompleted(){
-		$userGallery.removeClass('loading');
-		$userGalleryWrap.removeClass('hidden');
+	// Ajax请求微博数据
+	function loadUserWeibo(uid, page){
+		uid = uid || wbUserID;
+		page = page || 1;
+		
+		$.ajax({
+			url: 'json/weibo_list_ajax.php',
+			dataType: "json",
+			data: {
+				u_id: uid,
+				page: page
+			},
+			beforeSend: function(){
+				$forwardList.empty();
+			},
+			success: function( data ){
+				//console.log(data);
+				$forwardList.html(data.html);
+			}
+		});
 	}
+	loadUserWeibo(wbUserID);
 	function loadUserGallery(q){		
-		var ajaxdata = {page: loadnum,count: count*num,uid: 823};
+		var ajaxdata = {page: loadnum,count: count*num,uid: wbUserID};
 		
 		if(q){
 			ajaxdata.q = q;
 		}
 		
+		$('#uc_loading').show();
 		$.ajax({
 			url: _ajaxUrl,
 			dataType: "json",
 			data: ajaxdata,
 			success: function(data){
 				//console.log(data);
-				UserGalleryStateCompleted();
 				
+				$('#uc_loading').hide();
+				
+				// 生成画廊Html
 				$.each(data, function(i, n){
 					var $uImg = $TAG('img',  _preImg+i).addClass('mts');
 					if(firstLoad && i>= 8) {
@@ -86,7 +116,14 @@ $(function(){
 					//$uImg.attr('src', n.uimg);
 					//var _imglink = $TAG('a').append($uImg);
 					//var _link = $TAG('a').text(n.uname);
-					var _link = $TAG('a').append($uImg, $TAG('div').text(n.uname).addClass('mts'), '<i class="tick"></i>');
+					var _link = 
+						$TAG('a')
+							.attr('uid', n.uid)
+							.append($uImg, $TAG('div')
+							.text(n.uname).addClass('mts'), '<i class="tick"></i>')
+							.click(function(){
+								clickImglink.call(this);
+							});
 					
 					//$userGalleryContainer.append( $TAG('li').append(_imglink, $TAG('div').append(_link)) );
 					$userGalleryContainer.append( $TAG('li').append(_link) );
@@ -95,10 +132,11 @@ $(function(){
 				firstLoad = false;
 				loadnum++;
 				totalpage += num;
+				
+				$userGallery.slideDown();
 			}
 		});
 	}
-	loadUserGallery('json/user.php');
 	
 	$userGalleryPrev.click(function(e){
 		if( _hasAnimate || page == 1 ) return false;
@@ -160,8 +198,8 @@ $(function(){
 		}
 		
 		initUserGallery();
-		UserGalleryStateLoading();
-		$userCategoryItem.removeClass('selected');
+		$userCategoryItem.removeClass(selectedClass);
+		$userGallery.slideDown();
 		_ajaxUrl = $(this).attr('action');
 		loadUserGallery(_val);
 		return false;
