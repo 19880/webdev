@@ -181,6 +181,7 @@ body {
 	padding:10px 0;
 	margin:0 3px;
 	width: 80px;
+	height:83px;
 	text-align:center;
 }
 .userGallery .main a:hover {
@@ -345,7 +346,6 @@ body {
 
 
 .forwardList {
-	margin:0 30px;
 	min-height:300px;
 	border:dashed #E6E6E6;
 	border-width:2px 0;
