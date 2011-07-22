@@ -1,7 +1,7 @@
 <?php
 $html = <<<EOF
   <ul>
-    <li>
+    <li class="item pvm">
       <div class="UIImageBlock clearfix">
         <a href="" class="UIImageBlock_Image"><img class="img" src="http://tp4.sinaimg.cn/1767167227/50/1297651947/0" alt=""></a>
         <div class="UIImageBlock_Content">
@@ -22,7 +22,7 @@ $html = <<<EOF
         </div>
       </div>
     </li>
-    <li>
+    <li class="item pvm">
       <div class="UIImageBlock clearfix">
         <a href="" class="UIImageBlock_Image"><img class="img" src="http://tp4.sinaimg.cn/1767167227/50/1297651947/0" alt=""></a>
         <div class="UIImageBlock_Content">
