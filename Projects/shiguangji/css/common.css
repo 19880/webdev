@@ -96,6 +96,7 @@ button, input, select, textarea {
 .noborder{border:none}
 .hCent{text-align:center}
 .hidden {display:none}
+.w20{width:20px}
 em {
 	position:absolute;
 	border-style:solid;
@@ -106,8 +107,10 @@ em {
 	overflow:hidden;
 }
 em.up {
-	border-color:#FFF #FFF #e6e6e6;
-	border-width:0 6px 6px 6px;
+	border-width:0 6px 6px;
+}
+em.down {
+	border-width:6px 6px 0;
 }
 .tabs {
 	background:url(../images/tabsbg.png) bottom no-repeat;
@@ -218,7 +221,8 @@ em.up {
 .uiGrid .vTop{vertical-align:top}
 .uiGrid .hLeft{text-align:left}
 .uiGrid .hCent{text-align:center}
-.uiGrid .header {
+.uiGrid .hRight{text-align:right}
+.girdS1 .header {
 	background:#e6e6e6;
 	border: solid #bdbdbd;
 	border-width:1px 0;
@@ -228,7 +232,7 @@ em.up {
 	color:#000;
 	font-size:14px;
 }
-.uiGrid th {
+.girdS1 th {
 	border:solid #dbdbdb;
 	border-width:1px 0 1px 1px;
 	background:#f3f3f3;
@@ -236,17 +240,17 @@ em.up {
     text-align: left;
 	vertical-align:bottom;
 }
-.uiGrid td {
+.girdS1 td {
 	border:solid #e7e7e7;
 	border-width:1px 0 1px 1px;
 	background:#FFF;
 	padding: 8px 5px;
 	color:#666;
 }
-.uiGrid .first {
+.girdS1 .first {
 	border-left: 0 none;
 }
-.uiGrid th a{
+.girdS1 th a{
 	color:#333;
 }
 .uiPager {
@@ -297,4 +301,14 @@ em.up {
 	width:13px;
 	height:8px;
 	overflow:hidden;
+}
+
+.uiList {
+	min-height:300px;
+	border:dashed #E6E6E6;
+	border-width:2px 0;
+}
+.uiList .item {
+	border-bottom: 1px dashed #E7E7E7;
+	zoom:1;
 }

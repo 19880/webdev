@@ -213,20 +213,35 @@ body {
 }
 .postWrap {
 	font-size:14px;
-	padding:20px 140px 0;
-	_padding:20px 136px 0;
+	width: 483px;
+	margin:auto;
 }
 .postTime {
-	position:relative;
-	background:#e6e6e6;
-	padding: 5px 0 5px 20px;
 	margin:8px 0 0 130px;
 	font-weight:700;
-	zoom:1;
 }
 .postTime em {
+	border-color:#FFF #FFF #e6e6e6;
 	right: 130px;
     top: -6px;
+}
+.postTimes {
+	margin: 10px 30px;
+	font-size: 14px;
+	font-weight:700;
+}
+.postTimes em {
+	border-width:10px;
+	border-color:#e6e6e6 #FFF #FFF;
+    bottom: -20px;
+    left: 70px;
+}
+.grayTip {
+	position: relative;
+	padding:6px 20px;
+}
+.grayTip {
+	background: #E6E6E6;
 }
 .hasDatepicker {
 	width: 90px;
@@ -255,6 +270,8 @@ body {
 	-webkit-border-radius: 3px;
 	margin-bottom:3px;
 	padding:3px;
+	overflow-x:hidden;
+	overflow-y:auto;
 }
 .postOption {
 	float:left;
@@ -345,18 +362,8 @@ body {
 }
 
 
-.forwardList {
-	min-height:300px;
-	border:dashed #E6E6E6;
-	border-width:2px 0;
-}
 .forwardList a {
 	color: #5F81A6;
-}
-.forwardList li {
-	border-bottom: 1px dashed #E7E7E7;
-	padding:8px 0;
-	zoom:1;
 }
 .MIB_assign {
 	position:relative;
