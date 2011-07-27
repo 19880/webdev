@@ -114,7 +114,6 @@ body {
 	zoom:1
 }
 #mainContent {
-	margin-right: 160px;
 	overflow:hidden;
 	zoom:1;
 }
@@ -217,13 +216,12 @@ body {
 	margin:auto;
 }
 .postTime {
-	margin:8px 0 0 130px;
+	margin-left:130px;
 	font-weight:700;
 }
 .postTime em {
 	border-color:#FFF #FFF #e6e6e6;
-	right: 130px;
-    top: -6px;
+	margin-left: 205px;
 }
 .postTimes {
 	margin: 10px 30px;
@@ -236,11 +234,8 @@ body {
     bottom: -20px;
     left: 70px;
 }
-.grayTip {
-	position: relative;
+.grayTip .wrap {
 	padding:6px 20px;
-}
-.grayTip {
 	background: #E6E6E6;
 }
 .hasDatepicker {
@@ -277,12 +272,12 @@ body {
 	float:left;
 }
 .postOption li {
+	position:relative;
 	float: left;
 	margin-right:8px;
 }
 .OnTit {
-	position:relative;
-	display: inline-block;
+	display: block;
 	padding-left:15px;
 	outline:none;
 }
@@ -313,6 +308,27 @@ body {
 }
 .po_topic i {
 	background-position: -71px 1px;
+}
+.po_image {
+	overflow:hidden;
+}
+.po_image .wrap {
+	position:absolute;
+    height: 25px;
+    width: 45px;
+	left:0;
+	top:0;
+	Z-INDEX: 1;
+	overflow:hidden;
+}
+.po_image .iptFile {
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+    opacity: 0;
+    -moz-opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	cursor:pointer;
 }
 .tinyico-send,
 .tinyico-edit,

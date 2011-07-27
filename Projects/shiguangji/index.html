@@ -5,6 +5,11 @@
 <title>时光机 - 新浪最火热的应用之一</title>
 <link href="css/common.css" rel="stylesheet" />
 <link href="css/main.css" rel="stylesheet" />
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.2.min.js"></script>
+<script src="js/g.js"></script>
+<script src="js/overlay.js"></script>
+<script src="js/jquery.bgiframe.js"></script>
+<script src="js/publishweibo.js"></script>
 </head>
 
 <body>
@@ -45,116 +50,126 @@
         <div class="postWrap ptl">
           <div class="postContent postbg">
             <div id="publisher_info" class="wordNumBg">你还可以输入<span class="pipsLim">140</span>字</div>
-            <textarea id="publish_editor" class="publish_textarea"></textarea>
+            <textarea id="publish_editor" class="publish_textarea" autocomplete="off"></textarea>
           </div>
           <div class="clearfix">
             <div class="postOption mvs">
               <ul>
-                <li><a href="#" class="OnTit po_faces"><i></i>表情</a></li>
-                <li><a href="#" class="OnTit po_image"><i></i>图片</a></li>
-                <li><a href="#" class="OnTit po_video"><i></i>视频</a></li>
-                <li><a href="#" class="OnTit po_music"><i></i>音乐</a></li>
-                <li><a href="#" class="OnTit po_topic"><i></i>话题</a></li>
+                <li class="po_faces"><a href="javascript:void(0)" class="OnTit"><i></i>表情</a></li>
+                <li class="po_image">
+                  <a href="javascript:void(0)" class="OnTit">
+                    <i></i>图片
+                    <form target="ifr_upload_img" enctype="multipart/form-data" method="post" action="json/user.php">
+                      <div class="wrap">
+                        <input type="file" class="iptFile" value="" name="upload_pic">
+                      </div>
+                    </form>
+                  </a>
+                </li>
+                <li class="po_video"><a href="javascript:void(0)" class="OnTit"><i></i>视频</a></li>
+                <li class="po_music"><a href="javascript:void(0)" class="OnTit"><i></i>音乐</a></li>
+                <li class="po_topic"><a href="javascript:void(0)" class="OnTit"><i></i>话题</a></li>
               </ul>
             </div>
             <div class="rfloat">
-              <input type="submit" class="uiBtnp" value="定时发送"/>
-              <input type="submit" class="uiBtng" value="立即发送"/>
+              <button type="submit" class="uiBtnp mrs"><span>定时发送</span></button><button class="uiBtng"><span>立即发送</span></button>
             </div>
           </div>
-          <div class="date grayTip postTime">
+          <div class="date grayTip postTime clear">
             <em class="up"></em>
-            定时发送时间：
-            <input type="text" readonly id="pickdater" value="2011-07-14" name="date" class="hasDatepicker mrs"/>
-            <select id="hour" name="hour">
-              <option value="00">0</option>
-              <option value="01">1</option>
-              <option value="02">2</option>
-              <option value="03">3</option>
-              <option value="04">4</option>
-              <option value="05">5</option>
-              <option value="06">6</option>
-              <option value="07">7</option>
-              <option value="08">8</option>
-              <option value="09">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-              <option value="13">13</option>
-              <option value="14">14</option>
-              <option value="15">15</option>
-              <option value="16">16</option>
-              <option value="17">17</option>
-              <option value="18">18</option>
-              <option value="19">19</option>
-              <option value="20">20</option>
-              <option value="21">21</option>
-              <option value="22">22</option>
-              <option value="23">23</option>
-            </select>
-            :
-            <select id="minute" name="minute">
-              <option value="00">00</option>
-              <option value="01">01</option>
-              <option value="02">02</option>
-              <option value="03">03</option>
-              <option value="04">04</option>
-              <option value="05">05</option>
-              <option value="06">06</option>
-              <option value="07">07</option>
-              <option value="08">08</option>
-              <option value="09">09</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-              <option value="13">13</option>
-              <option value="14">14</option>
-              <option value="15">15</option>
-              <option value="16">16</option>
-              <option value="17">17</option>
-              <option value="18">18</option>
-              <option value="19">19</option>
-              <option value="20">20</option>
-              <option value="21">21</option>
-              <option value="22">22</option>
-              <option value="23">23</option>
-              <option value="24">24</option>
-              <option value="25">25</option>
-              <option value="26">26</option>
-              <option value="27">27</option>
-              <option value="28">28</option>
-              <option value="29">29</option>
-              <option value="30">30</option>
-              <option value="31">31</option>
-              <option value="32">32</option>
-              <option value="33">33</option>
-              <option value="34">34</option>
-              <option value="35">35</option>
-              <option value="36">36</option>
-              <option value="37">37</option>
-              <option value="38">38</option>
-              <option value="39">39</option>
-              <option value="40">40</option>
-              <option value="41">41</option>
-              <option value="42">42</option>
-              <option value="43">43</option>
-              <option value="44">44</option>
-              <option value="45">45</option>
-              <option value="46">46</option>
-              <option value="47">47</option>
-              <option value="48">48</option>
-              <option value="49">49</option>
-              <option value="50">50</option>
-              <option value="51">51</option>
-              <option value="52">52</option>
-              <option value="53">53</option>
-              <option value="54">54</option>
-              <option value="55">55</option>
-              <option value="56">56</option>
-              <option value="57">57</option>
-              <option value="58">58</option>
-              <option value="59">59</option>
-            </select>
+            <div class="wrap">
+              定时发送时间：
+              <input type="text" readonly id="pickdater" value="2011-07-14" name="date" class="hasDatepicker mrs"/>
+              <select id="hour" name="hour">
+                <option value="00">0</option>
+                <option value="01">1</option>
+                <option value="02">2</option>
+                <option value="03">3</option>
+                <option value="04">4</option>
+                <option value="05">5</option>
+                <option value="06">6</option>
+                <option value="07">7</option>
+                <option value="08">8</option>
+                <option value="09">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+              </select>
+              :
+              <select id="minute" name="minute">
+                <option value="00">00</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+                <option value="44">44</option>
+                <option value="45">45</option>
+                <option value="46">46</option>
+                <option value="47">47</option>
+                <option value="48">48</option>
+                <option value="49">49</option>
+                <option value="50">50</option>
+                <option value="51">51</option>
+                <option value="52">52</option>
+                <option value="53">53</option>
+                <option value="54">54</option>
+                <option value="55">55</option>
+                <option value="56">56</option>
+                <option value="57">57</option>
+                <option value="58">58</option>
+                <option value="59">59</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
@@ -229,5 +244,17 @@
     &nbsp;&nbsp;&nbsp;意见反馈：<a target="_blank" href="http://t.sina.com.cn/2023728762">@时光机官方</a>
   </div>
 </div>
+<!--
+<div class="uiBox" style="left: 300px; top: 198.5px; width:400px;">
+  <div class="uiBoxContainer">
+    <div class="uiBoxContent">    
+      <div class="uiBoxArrow"></div>
+      <div class="pam">
+        asdasasd
+      </div>
+    </div>
+  </div>
+</div>
+-->
 </body>
 </html>
