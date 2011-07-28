@@ -39,8 +39,13 @@ $(function(){
 		$form.submit(function(){
 			//console.log( $(this).serialize() );
 			$uiBox.remove();
-			WBP.funTextAsTopic($('#publish_editor')[0],'http://video/url ');
-			$('#publish_editor')[0].focus();
+			if( $.browser.msie ){
+				var cursor = WBP.getCur($('#publish_editor')[0]);
+				console.log(cursor[0]);
+				console.log(cursor[1]);
+				WBP.setSelectText($('#publish_editor')[0], cursor[0],cursor[1]);
+			}
+			WBP.insertText($('#publish_editor')[0],'http://video/url ');
 			return false;
 		});
 		
@@ -118,5 +123,9 @@ $(function(){
 	$('.po_topic .OnTit').click(function(){
 		WBP.insertTopic($('#publish_editor')[0]);
 		return false;
+	});
+	
+	$('#publish_editor').bind('mouseup keyup', function(){
+		WBP.cacheCur(this);
 	});
 });
