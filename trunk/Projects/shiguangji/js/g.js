@@ -11,6 +11,9 @@ function $TAG(tagName, attr){
 	}
 	return $(_dom);
 }
+function $ELEBYID( _id ){
+    return document.getElementById(_id);
+}
 function $EVENT(obj, events, func){
 	if(obj.addEventListener){
         obj.addEventListener(events,func,false);
@@ -55,7 +58,7 @@ SGJ.BOX = function(conf){
 
 WBP = {
 	TOPIC : '自定义话题',
-	funGetSelected : function(element) {
+	getSelected : function(element) {
 	    if (!window.getSelection) { 
 	        //IE浏览器
 	        return document.selection.createRange().text;
@@ -63,49 +66,112 @@ WBP = {
 	        return element.value.substr(element.selectionStart, element.selectionEnd - element.selectionStart);
 	    }
 	}, 
-	funInsertTopic : function(textObj) {
+	setSelectText: function(textObj, start, end){
+		end = end || start;
+		
+	    if (textObj.createTextRange) {
+	        var range = textObj.createTextRange();
+	        range.moveEnd("character", -1 * textObj.value.length) 
+	        range.moveEnd("character", end);
+	        range.moveStart("character", start);
+	        range.select();
+	    } else {
+	        textObj.setSelectionRange(start, end);
+	    	textObj.focus();
+	    }
+	},
+	getSelectedText : function (textObj) {
+        var text = "";
+        var getText = function (obj) {
+            if (obj.selectionStart != undefined && obj.selectionEnd != undefined) {
+                return obj.value.substring(obj.selectionStart, obj.selectionEnd);
+            } else {
+                return "";
+            }
+        };
+        if (window.getSelection) {
+            text = getText(textObj);
+        } else {
+            text = document.selection.createRange().text;
+        }
+        return text;
+    },
+	getCursorPos : function (textObj) {
+        var position = 0;
+        if (document.selection) {
+            textObj.focus();
+            var range = document.selection.createRange();
+            var caretPos = range.duplicate();
+            caretPos.moveToElementText(textObj);
+            caretPos.setEndPoint("EndToEnd", range);
+            textObj.selectionStart = caretPos.text.length - range.text.length;
+            textObj.selectionEnd = textObj.selectionStart + range.text.length;
+            position = textObj.selectionStart;
+        } else {
+            if (textObj.selectionStart || textObj.selectionStart == "0") {
+                position = textObj.selectionStart;
+            }
+        }
+        return position;
+    },
+	cacheCur: function(textObj){
 		var _self = this;
-	    var topic = "#" + _self.TOPIC + "#", value = textObj.value, index = value.indexOf(topic);
+		var selectTxt = _self.getSelectedText(textObj);
+		var txtLength = (selectTxt == "" || selectTxt == null) ? 0 : selectTxt.length;
+		var cursorPosition = _self.getCursorPos(textObj);
+		var rangeAttr = cursorPosition + "&" + txtLength;
+		textObj.setAttribute("range", rangeAttr);
+	},
+	getCur: function (textObj) {
+		var rangeAttr = textObj.getAttribute("range");
+		return rangeAttr ? rangeAttr.split("&"):[0,0];
+	},
+	insertTopic : function(textObj) {
+		var _self = this;
+	    var topic = "#" + _self.TOPIC + "#", 
+	    	value = textObj.value, 
+	    	index = value.indexOf(topic);
+	    
 	    if (index === -1) {
 	        //匹配
 	        _self.funTextAsTopic(textObj, topic);
 	    } 
 	    value = textObj.value;
 	    index = value.indexOf(topic);
-	    if (textObj.createTextRange) {
-	        var range = textObj.createTextRange();
-	        range.moveEnd("character", -1 * value.length)           
-	        range.moveEnd("character", index + 6);
-	        range.moveStart("character", index + 1);
-	        range.select();    
-	    } else {
-	        textObj.setSelectionRange(index + 1, index + 6);
-	        textObj.focus();
-	    }
-	}, 
-	funTextAsTopic : function(textObj, textFeildValue) {
+	    _self.funSelectText(textObj, index+1, index + topic.length - 1);
+	},
+	insertText : function(textObj, textFeildValue) {
+		var _self = this;
+		var cursorPosition = 0;
+		
 	    textObj.focus();
 	    if (textObj.createTextRange) {
-	        var caretPos = document.selection.createRange().duplicate();
-	        document.selection.empty();
+			var range = document.selection.createRange();
+	        var caretPos = range.duplicate();
 	        caretPos.text = textFeildValue;
+	        
+            caretPos.moveToElementText(textObj);
+            caretPos.setEndPoint("EndToEnd", range);
+            cursorPosition = caretPos.text.length - range.text.length + textFeildValue.length;
 	    } else if (textObj.setSelectionRange) {
 	        var rangeStart = textObj.selectionStart;
 	        var rangeEnd = textObj.selectionEnd;
 	        var tempStr1 = textObj.value.substring(0, rangeStart);
 	        var tempStr2 = textObj.value.substring(rangeEnd);
 	        textObj.value = tempStr1 + textFeildValue + tempStr2;
-	        textObj.blur();
-	    }
+	        
+			cursorPosition = rangeStart + textFeildValue.length;
+		}
+        _self.setSelectText(textObj, cursorPosition);
 	},
 	insertTopic: function(oTextarea){
 		var _self = this;
-		var textSelection = _self.funGetSelected(oTextarea);
+		var textSelection = _self.getSelected(oTextarea);
 	    if (!textSelection || textSelection === _self.TOPIC) {
 	        //没有文字选中，光标处插入
-	        _self.funInsertTopic(oTextarea);    
+	        _self.insertTopic(oTextarea);
 	    } else {
-	        _self.funTextAsTopic(oTextarea, "#" + textSelection + "#");
+	        _self.insertText(oTextarea, "#" + textSelection + "#");
 	    }
 	}
 };
