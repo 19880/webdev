@@ -504,12 +504,6 @@ Core.Events.removeEvent = function (oElement, fHandler, sName) {
  * Copyright (c) 2009, Sina Inc. All rights reserved.
  * 浏览器类型检测
  */
-/**
- *
- * @param 
- * @return 
- * @author FlashSoft | fangchao@staff.sina.com.cn
- */
 
 Sina.pkg("Core.Base");
 
@@ -721,15 +715,15 @@ Core.Dom.getXY = function (el) {
 	var scrollPos = Core.System.getScrollPos(el.ownerDocument);
 	return [box.left + scrollPos[1], box.top + scrollPos[0]];
 	// IE end
-	parentNode = el.parentNode;
-	while (parentNode.tagName && !/^body|html$/i.test(parentNode.tagName)) {
-		if (Core.Dom.getStyle(parentNode, "display").search(/^inline|table-row.*$/i)) { 
-			pos[0] -= parentNode.scrollLeft;
-			pos[1] -= parentNode.scrollTop;
-		}
-		parentNode = parentNode.parentNode; 
-	}
-	return pos;
+//	parentNode = el.parentNode;
+//	while (parentNode.tagName && !/^body|html$/i.test(parentNode.tagName)) {
+//		if (Core.Dom.getStyle(parentNode, "display").search(/^inline|table-row.*$/i)) { 
+//			pos[0] -= parentNode.scrollLeft;
+//			pos[1] -= parentNode.scrollTop;
+//		}
+//		parentNode = parentNode.parentNode; 
+//	}
+//	return pos;
 };
 if(!$IE) {
 	Core.Dom.getXY = function (el) {
@@ -787,8 +781,8 @@ if(!$IE) {
 		param = typeof param == "object" ? param : {};
 		var snap = $C('div');
 			snap.innerHTML = html;
-        var it = {}, i = 0, domList = {}, actList = {}, nodes = snap.getElementsByTagName("*"), len = nodes.length, cv = param.clear || 1, mk = param.mm || "mm", dk = param.dd || "dd", c, mm, dd;
-		for(i; i<len; i++){
+        var it = {}, domList = {}, actList = {}, nodes = snap.getElementsByTagName("*"), len = nodes.length, cv = param.clear || 1, mk = param.mm || "mm", dk = param.dd || "dd", c, mm, dd;
+		for(var i=0; i<len; i++){
 			c = nodes[i];
 			dd = c.getAttribute(dk);
 			mm = c.getAttribute(mk);
@@ -840,10 +834,10 @@ App.TextareaUtils = (function(){
 	 */
 	it.selectionStart = function( oElement ){
 		if(!ds){return oElement.selectionStart}
-		var er = ds.createRange(), value, len, s=0;
+		var er = ds.createRange(), value, len;
 		var er1 = document.body.createTextRange();
 			er1.moveToElementText(oElement);
-			for(s; er1.compareEndPoints("StartToStart", er)<0; s++){
+			for(var s=0; er1.compareEndPoints("StartToStart", er)<0; s++){
 				er1.moveStart('character', 1);
 			}
 		return s
@@ -1063,21 +1057,19 @@ App.unit = function(){
 	
 	proxy.PopUp = function(){
 		var it = App.unit(), u = it.u, wrap, body, mask, cp = "position:absolute;clear:both;", ch = "visibility:hidden;display:none", cs = "width:100%;height:100%", rall = App.removeChildren;
-		with(it.wrap = wrap = $C("div")){
-			appendChild(it.body = body = $C("div"));
-			style.cssText = [cp,ch,"z-index:"+zIndex++].join(";");
-		}
+		it.wrap = wrap = $C("div");
+		wrap.appendChild(it.body = body = $C("div"));
+		wrap.style.cssText = [cp,ch,"z-index:"+zIndex++].join(";");
 		/**
 		 * 设置弹层蒙板,默认不进行初始化，如果有需要则执行 PopUp.mask()
 		 */
 		it.mask = u(function(){
 			if(!mask){
 				wrap.insertBefore(mask = $C("iframe"),body);
-				with(mask){
-					frameborder = 0;
-					src = "about:blank";
-					style.cssText = [cp,cs,"filter:alpha(opacity=0);opacity:0;z-index:-1"].join(";");
-				}
+				
+				mask.frameborder = 0;
+				mask.src = "about:blank";
+				mask.style.cssText = [cp,cs,"filter:alpha(opacity=0);opacity:0;z-index:-1"].join(";");
 			}
 		})
 		/**
@@ -1094,20 +1086,16 @@ App.unit = function(){
 		 * @param {Number} y 必选能数
 		 */
 		it.position = u(function(x, y){
-			with(wrap.style){
-				left = x + "px";
-				top = y + "px";
-			}
+			wrap.style.left = x + "px";
+			wrap.style.top = y + "px";
 		})
 		/**
 		 * 显示隐藏弹层
 		 * @param {Boolean} b 必选参数，可选参数为 true, false, 1, 0
 		 */
 		it.visible = u(function( b ){
-			with(wrap.style){
-				visibility = b? "visible": "hidden";
-				display = b? "": "none";
-			}
+			wrap.style.visibility = b? "visible": "hidden";
+			wrap.style.display = b? "": "none";
 		})
 		/**
 		 * 设置弹层深度
@@ -2047,7 +2035,7 @@ App.PopUpSwfPlayer = (function(){
 		}
 		//如果用户的flash播放器不达标，则进行提示
 		if(!swfobject.hasFlashPlayerVersion("9.0.0")){
-			App.alert({"code":"CD0084"});
+			App.alert({"code":"您还未安装flash播放器！"});
 			return
 		}
 		//创建包装容器
@@ -2148,7 +2136,7 @@ App.PopUpSwfPlayer = (function(){
 		add(b, clear, "keyup");
 		//点击任意位置取消显示
 		add(popUp.oMask, clear, "mouseup");
-		popUp.oMask.title = $CLTMSG["CF0105"];
+		popUp.oMask.title = '点击关闭';
 	}
 })();
 
@@ -2158,13 +2146,13 @@ App.PopUpSwfPlayer = (function(){
 
 
 App.group = function(items, action, setClass){
-	var it = {}, i = 0, len = items.length, selectedStyle, unselectedStyle, add = Core.Events.addEvent;
+	var it = {}, len = items.length, selectedStyle, unselectedStyle, add = Core.Events.addEvent;
 	it.current = -1;
 	it.items = items;
-	it.selected
+//	it.selected
 	selectedStyle   = setClass && setClass["selected"]   || null;
 	unselectedStyle = setClass && setClass["unselected"] || null;
-	for(i; i<len; i++){
+	for(var i=0; i<len; i++){
 		(function(item, index){
 			add(item, function(e){
 				if(it.current == index && setClass){return}
@@ -2194,9 +2182,6 @@ App.removeChildren = function(parent){
 /**
  * @id Core.String.leftB
  * Copyright (c) 2008, Sina Inc. All rights reserved. 
- * @fileoverview 字符串 html 编码/解码
- */
-/**
  * 
  * @author L.Ming | liming1@staff.sina.com.cn
  */
@@ -2205,10 +2190,7 @@ Sina.pkg("Core.String");
 /**
  * @id Core.String.byteLength
  * Copyright (c) 2008, Sina Inc. All rights reserved. 
- * @fileoverview 字符串 html 编码/解码
- */
-
-/**
+ *
  * 将unicode字符计算为2个
  * @param {String} str 需要进行处理的字符串
  * @return {Number} 返回长度
@@ -2277,7 +2259,7 @@ Core.String.leftB = function(str, len){
 				insertFunc,
 				setCss = { "selected": "cur", "unselected": " "};
 				splitHTML = '<li class="magiclicur" style="visibility:hidden">|</li>',
-				panelHTML = '<table class="mBlogLayer"><tbody><tr><td class="top_l"></td><td class="top_c"></td><td class="top_r"></td></tr><tr><td class="mid_l"></td><td class="mid_c"><div class="layerBox phiz_layerN"><div class="layerBoxTop"><div class="layerArrow" style="left:6px;"></div><div class="topCon"><ul class="phiz_menu"><li id="face" class="cur"><a href="#" onclick="this.blur();return false;">'+$CLTMSG["CL0901"]+'</a></li><li id="ani" act="topTab" class="magic"><a href="#" onclick="this.blur();return false;"><strong></strong>'+$CLTMSG["CL0902"]+'</a></li></ul><a id="close" href="#" onclick="return false;" title="'+$CLTMSG["CL0701"]+'" class="close"></a><div class="clearit"></div></div></div><div class="magicT"><div class="magicTL"><ul id="tab"></ul></div><div class="magicTR"><a href="#" onclick="return false;" id="prevBtn" class="magicbtnL02" title="'+$CLTMSG["CX0076"]+'"></a><a href="#" onclick="return false;" id="nextBtn" title="'+$CLTMSG["CX0077"]+'" class="magicbtnR02"></a></div><div class="clear"></div></div><div class="layerBoxCon" style="width:450px;"><div id="hotPanel" class="faceItemPicbgT"><ul id="hot"></ul><div class="clearit"></div></div><div id="normPanel" class="faceItemPicbg"><ul id="norm"></ul><div class="clearit"></div></div><div id="pagePanel" class="magicB"><div id="magicNotes" class="magic_tit" style="display:none">'+$CLTMSG["CL0904"]+'</div><div class="pages" id="pageing"></div></div></div></div></td><td class="mid_r"></td></tr><tr><td class="bottom_l"></td><td class="bottom_c"></td><td class="bottom_r"></td></tr></tbody></table>';			
+				panelHTML = '<table class="mBlogLayer"><tbody><tr><td class="top_l"></td><td class="top_c"></td><td class="top_r"></td></tr><tr><td class="mid_l"></td><td class="mid_c"><div class="layerBox phiz_layerN"><div class="layerBoxTop"><div class="layerArrow" style="left:6px;"></div><div class="topCon"><ul class="phiz_menu"><li id="face" class="cur"><a href="#" onclick="this.blur();return false;">常用表情</a></li><li id="ani" act="topTab" class="magic"><a href="#" onclick="this.blur();return false;"><strong></strong>魔法表情</a></li></ul><a id="close" href="#" onclick="return false;" title="关闭" class="close"></a><div class="clearit"></div></div></div><div class="magicT"><div class="magicTL"><ul id="tab"></ul></div><div class="magicTR"><a href="#" onclick="return false;" id="prevBtn" class="magicbtnL02" title="上一页"></a><a href="#" onclick="return false;" id="nextBtn" title="下一页" class="magicbtnR02"></a></div><div class="clear"></div></div><div class="layerBoxCon" style="width:450px;"><div id="hotPanel" class="faceItemPicbgT"><ul id="hot"></ul><div class="clearit"></div></div><div id="normPanel" class="faceItemPicbg"><ul id="norm"></ul><div class="clearit"></div></div><div id="pagePanel" class="magicB"><div id="magicNotes" class="magic_tit" style="display:none">点击<em class="play_btn2"></em>预览魔法动画</div><div class="pages" id="pageing"></div></div></div></div></td><td class="mid_r"></td></tr><tr><td class="bottom_l"></td><td class="bottom_c"></td><td class="bottom_r"></td></tr></tbody></table>';
 			return function(target,editor,offsetX,offsetY,width,flush,fInsertFunc){
 				if(target.tagName == "A"){target.href = "####";}
 				insertFunc = fInsertFunc || function(){return false;};
@@ -2301,12 +2283,12 @@ Core.String.leftB = function(str, len){
 						tabIndex   = 0;
 					function insertIcon(data, parent){
 						removeAll(parent);
-						var i = 0, len = data.length, iconList = [], c, acts, icons, plays, className = '', viewButton = '', nv;
-						for(i; i<len; i++){
+						var len = data.length, iconList = [], c, acts, icons, plays, className = '', viewButton = '', nv;
+						for(var i=0; i<len; i++){
 							c = data[i];
 							nv = encodeTitle(c.title);
 							cType == 1 && (className = 'class="face_box"');
-							cType == 1 && (viewButton = ('<a action="play" title="' + $CLTMSG['CL0912'] + '" class="play_btn" href="#" onclick="return false;"></a><span class="face_box_tex">' + (cs.byteLength(nv)>8?cs.leftB(nv,6)+"...":nv) + '</span>'));
+							cType == 1 && (viewButton = ('<a action="play" title="表情预览" class="play_btn" href="#" onclick="return false;"></a><span class="face_box_tex">' + (cs.byteLength(nv)>8?cs.leftB(nv,6)+"...":nv) + '</span>'));
 							iconList.push(['<li action="icon" title="', nv, '"><a href="#" onclick="return false;" ', className, '>', '<img src="', c.icon, '"/>', '</a>', viewButton, '</li>'].join(""));
 						}
 						acts = b2(iconList.join(""), parent)["actList"];
@@ -2359,9 +2341,9 @@ Core.String.leftB = function(str, len){
 					//初始化页
 					function initPage(data){
 						removeAll(pageing);
-						var i = 0, len = data.length, pageList = [], pages;
+						var len = data.length, pageList = [], pages;
 						if(!len){return}
-						for(i; i<len; i++){
+						for(var i=0; i<len; i++){
 							pageList.push('<a action="pageBtn" href="#" onclick="return false;">' + (i+1) + '</a>');
 						}
 						pages = b2(pageList.join(""),pageing)["actList"]["pageBtn"];
@@ -2378,9 +2360,9 @@ Core.String.leftB = function(str, len){
 					function initTab(json){
 						//循环类别
 						removeAll(tab);
-						var data = [{"type":$CLTMSG["CL0914"],"icon":json.data.norm}].concat(json.data.more);
-						var i = 0, len = data.length, current, tabList = [], tabs;
-						for(i; i<len; i++){
+						var data = [{"type":'默认',"icon":json.data.norm}].concat(json.data.more);
+						var len = data.length, current, tabList = [], tabs;
+						for(var i=0; i<len; i++){
 							current = data[i];
 							if(!current || !current.type){continue}
 							tabList.push('<li style="visibility:hidden"><a action="tabs" onclick="return false;" href="#">' + current.type + '</a></li>')
@@ -2394,9 +2376,9 @@ Core.String.leftB = function(str, len){
 							item.blur();
 						},{ "selected": "magicTcur", "unselected": " "});
 						fire(tabs[0],"mouseup");
-						var pi = 1, mi = 0, lil = tab.getElementsByTagName("li"), ml = lil.length, pageList = [], step = 0, cacheList = [], pl;
+						var pi = 1, lil = tab.getElementsByTagName("li"), ml = lil.length, pageList = [], step = 0, cacheList = [], pl;
 						setTimeout(function(){
-							for(mi; mi<ml; mi++){
+							for(var mi=0; mi<ml; mi++){
 								lil[mi].style.visibility = "visible";
 								lil[mi].style.display = "";
 								var width = lil[mi].innerHTML=="|"? 8: lil[mi].offsetWidth;
@@ -2416,8 +2398,8 @@ Core.String.leftB = function(str, len){
 								nextBtn.className = pi==pl? "magicbtnR01": "magicbtnR02";
 							}
 							function toggle(list, b){
-								var i = 0; len = list.length, end = Math.max(len - 1,0);
-								for(i; i<len; i++){
+								var len = list.length, end = Math.max(len - 1,0);
+								for(var i=0; i<len; i++){
 									list[i].style.visibility = b?"visible":"hidden";
 									list[i].style.display = !b?"none": ((i==0||i==end)&&list[i].innerHTML=="|")?"none":"";
 								}

@@ -378,6 +378,16 @@ body {
 }
 
 
+
+.wordNumBg .over, .wordNumOver .surplus {
+	display:none;
+}
+.wordNumOver .over {
+	display:block;
+}
+.wordNumBg .over {
+	color:#CC0000;
+}
 .forwardList a {
 	color: #5F81A6;
 }

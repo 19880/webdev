@@ -126,7 +126,7 @@ WBP = {
 		var rangeAttr = textObj.getAttribute("range");
 		return rangeAttr ? rangeAttr.split("&"):[0,0];
 	},
-	insertTopic : function(textObj) {
+	insertNewTopic : function(textObj) {
 		var _self = this;
 	    var topic = "#" + _self.TOPIC + "#", 
 	    	value = textObj.value, 
@@ -134,11 +134,11 @@ WBP = {
 	    
 	    if (index === -1) {
 	        //匹配
-	        _self.funTextAsTopic(textObj, topic);
+	        _self.insertText(textObj, topic);
 	    } 
 	    value = textObj.value;
 	    index = value.indexOf(topic);
-	    _self.funSelectText(textObj, index+1, index + topic.length - 1);
+	    _self.setSelectText(textObj, index+1, index + topic.length - 1);
 	},
 	insertText : function(textObj, textFeildValue) {
 		var _self = this;
@@ -169,9 +169,18 @@ WBP = {
 		var textSelection = _self.getSelected(oTextarea);
 	    if (!textSelection || textSelection === _self.TOPIC) {
 	        //没有文字选中，光标处插入
-	        _self.insertTopic(oTextarea);
+	        _self.insertNewTopic(oTextarea);
 	    } else {
 	        _self.insertText(oTextarea, "#" + textSelection + "#");
 	    }
+	},
+	getTextNum: function(txt){
+		var str = txt.replace(/(^\s*)|(\s*$)/g, "")  ;
+        var myLen = 0;
+        for (var i = 0; i < str.length; i++) {
+            if (str.charCodeAt(i) > 0 && str.charCodeAt(i) < 128) myLen++;
+            else myLen += 2;
+        }
+        return (Math.ceil(myLen / 2));
 	}
 };
