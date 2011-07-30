@@ -5,11 +5,14 @@
 <title>时光机 - 新浪最火热的应用之一</title>
 <link href="css/common.css" rel="stylesheet" />
 <link href="css/main.css" rel="stylesheet" />
+<link href="css/face.css" rel="stylesheet" />
 <script src="js/jquery-1.6.2.min.js"></script>
 <script src="js/g.js"></script>
 <script src="js/overlay.js"></script>
 <script src="js/jquery.bgiframe.js"></script>
 <script src="js/publishweibo.js"></script>
+<script src="js/facesina.min.js"></script>
+<script src="js/WdatePicker/WdatePicker.js"></script>
 </head>
 
 <body>
@@ -47,17 +50,24 @@
           <li><a href="#" class="selected">发布微博</a></li>
           <li><a href="#">批量发布</a></li>
         </ul>
-        <div class="postWrap ptl">
+        <div class="postWrap postForm ptl">
           <div class="postContent postbg">
-            <div id="publisher_info" class="wordNumBg">你还可以输入<span class="pipsLim">140</span>字</div>
-            <textarea id="publish_editor" class="publish_textarea" autocomplete="off"></textarea>
+            <div id="publisher_info_0" class="wordNumBg">
+              <div class="surplus">
+                你还可以输入<span class="pipsLim">140</span>字
+              </div>
+              <div class="over">
+                已超出<span class="pipsLim">0</span>字
+              </div>
+            </div>
+            <textarea id="publish_editor_0" class="publish_textarea" autocomplete="off"></textarea>
           </div>
           <div class="clearfix">
             <div class="postOption mvs">
               <ul>
-                <li class="po_faces"><a href="javascript:void(0)" class="OnTit" onClick="App.showFaces(this,$E('publish_editor'),-29,5);"><i></i>表情</a></li>
+                <li class="po_faces"><a id="po_faces_0" href="javascript:void(0)" class="OnTit"><i></i>表情</a></li>
                 <li class="po_image">
-                  <a href="javascript:void(0)" class="OnTit">
+                  <a id="po_image_0" href="javascript:void(0)" class="OnTit">
                     <i></i>图片
                     <form target="ifr_upload_img" enctype="multipart/form-data" method="post" action="json/user.php">
                       <div class="wrap">
@@ -66,21 +76,21 @@
                     </form>
                   </a>
                 </li>
-                <li class="po_video"><a href="javascript:void(0)" class="OnTit"><i></i>视频</a></li>
-                <li class="po_music"><a href="javascript:void(0)" class="OnTit"><i></i>音乐</a></li>
-                <li class="po_topic"><a href="javascript:void(0)" class="OnTit"><i></i>话题</a></li>
+                <li class="po_video"><a id="po_video_0" href="javascript:void(0)" class="OnTit"><i></i>视频</a></li>
+                <li class="po_music"><a id="po_music_0" href="javascript:void(0)" class="OnTit"><i></i>音乐</a></li>
+                <li class="po_topic"><a id="po_topic_0" href="javascript:void(0)" class="OnTit"><i></i>话题</a></li>
               </ul>
             </div>
             <div class="rfloat">
-              <button type="submit" class="uiBtnp mrs"><span>定时发送</span></button><button class="uiBtng"><span>立即发送</span></button>
+              <button class="postTimeBtn uiBtnp mrs"><span>定时发送</span></button><button class="postNowBtn uiBtng"><span>立即发送</span></button>
             </div>
           </div>
           <div class="date grayTip postTime clear">
             <em class="up"></em>
             <div class="wrap">
               定时发送时间：
-              <input type="text" readonly id="pickdater" value="2011-07-14" name="date" class="hasDatepicker mrs"/>
-              <select id="hour" name="hour">
+              <input type="text" readonly id="pickdater_0" value="2011-07-14" name="date" class="hasDatepicker mrs" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'%y-%M-%d'})" autocomplete="off"/>
+              <select id="hour_0" name="hour" autocomplete="off">
                 <option value="00">0</option>
                 <option value="01">1</option>
                 <option value="02">2</option>
@@ -107,7 +117,7 @@
                 <option value="23">23</option>
               </select>
               :
-              <select id="minute" name="minute">
+              <select id="minute_0" name="minute" autocomplete="off">
                 <option value="00">00</option>
                 <option value="01">01</option>
                 <option value="02">02</option>
@@ -205,11 +215,11 @@
               </td>
               <td>
                 等待发送
-                <div><a href="#" class="fcmb tinyico-send">立即发送</a></div>
+                <div><a href="#" class="fcmb tinyico-send pr_sendnow">立即发送</a></div>
               </td>
               <td>
-                <div><a href="#" class="fcmb tinyico-edit">修改微博</a></div>
-                <div><a href="#" class="fcmb tinyico-delmsg">删除微博</a></div>
+                <div><a href="#" class="fcmb tinyico-edit pr_editweibo">修改微博</a></div>
+                <div><a href="#" class="fcmb tinyico-delmsg pr_delweibo">删除微博</a></div>
               </td>
             </tr>
             <tr>
@@ -221,11 +231,11 @@
               </td>
               <td>
                 <span class="fcdg">发送成功</span>
-                <div><a href="#" class="fcmb tinyico-view">查看微博</a></div>
+                <div><a href="#" class="fcmb tinyico-view pr_goweibo">查看微博</a></div>
               </td>
               <td>
-                <div><a href="#" class="fcmb tinyico-delrecord">删除记录</a></div>
-                <div><a href="#" class="fcmb tinyico-delmsg">删除微博</a></div>
+                <div><a href="#" class="fcmb tinyico-delrecord pr_delrecord">删除记录</a></div>
+                <div><a href="#" class="fcmb tinyico-delmsg pr_delweibo">删除微博</a></div>
               </td>
             </tr>
           </table>

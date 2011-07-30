@@ -646,3 +646,12 @@
 .layerBtn a {
 	margin:0 5px;
 }
+.layerArrow {
+    background: url("http://img1.t.sinajs.cn/t3/style/images/common/new_index_bg.png?id=201107261600") no-repeat -142px -71px;
+    height: 8px;
+    left: 134px;
+    overflow: hidden;
+    position: absolute;
+    top: -8px;
+    width: 16px;
+}
