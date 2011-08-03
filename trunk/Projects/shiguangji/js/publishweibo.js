@@ -1,4 +1,5 @@
 $(function(){
+	var win = window;
 	
 	/**
 	 * 创建选项BOX
@@ -211,4 +212,11 @@ $(function(){
 	});
 	$('.publish_textarea').bind('keyup', WBWordnum);
 	$('.postTimeBtn').click(WBPostTimeSubmit);
+	
+	/**
+	 * 立即发送
+	 */
+	win.WBSendNow = function(){
+		var _box = new SGJ.BOX();
+	}
 });
