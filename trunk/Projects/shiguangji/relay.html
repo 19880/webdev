@@ -67,6 +67,7 @@
           </div>
         </div>
         <div id="userGallery" class="userGallery clearfix mbm hidden">
+          <div class="userGalleryNoData hCent">没有数据！</div>
           <div class="wrap">
             <a class="prev lfloat" title="上一页"></a>
             <div class="main lfloat clearfix">
@@ -75,7 +76,14 @@
             <a class="next lfloat" title="下一页"></a>
           </div>
         </div>
-        <div id="forwardList" class="uiList forwardList mtl loading">
+        <div id="forwardList" class="uiList forwardList mtl">
+          <ul></ul>
+        </div>
+        <div class="uiMorePager">
+          <a class="uiMorePagerPrimary uiBoxLightgray hCent" onClick="loadUserWeibo()">点击加载更多微博</a>
+          <span class="uiMorePagerLoader uiBoxLightgray">
+            <img src="images/ajax-loader.gif"/>
+          </span>
         </div>
       </div>
     </div>

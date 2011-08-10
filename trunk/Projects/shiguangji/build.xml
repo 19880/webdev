@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="project" default="move" basedir=".">
+	<property name="build" value="build"/>
+	<property name="uihtmls" value="E:\ui\shiguangji\htmls\"/>
+	<target name="copy">
+		<copy todir="${build}/css" overwrite="true">
+			<fileset dir="css" includes="**/*"/>
+		</copy>
+		<copy todir="${build}/js" overwrite="true">
+			<fileset dir="js" includes="**/*"/>
+		</copy>
+	</target>
+	<target name="compiler" depends="copy">
+		<apply executable="java" dest="${build}/css" failonerror="true" parallel="false" verbose="true">  
+		  <fileset dir="${build}/css" includes="**/*.css" excludes="**/*.min.css"/>  
+		  <arg line="-jar"/>  
+		  <arg path="D:\Program Files\Js Complier\YUI Complier\yuicompressor.jar"/>
+		  <arg line="--charset utf-8"/>  
+		  <srcfile/>  
+		  <arg line="-o"/>  
+    	  <mapper type="regexp" from="^(.*)\.(css|js)$" to="\1-min.\2"/>
+		  <targetfile/>  
+		</apply>
+		<apply executable="java" dest="${build}/js" failonerror="true" parallel="false">  
+		  <fileset dir="${build}/js" includes="**/*.js" excludes="**/*.min.js"/>  
+		  <arg line="-jar"/>  
+		  <arg path="D:\Program Files\Js Complier\Closure Compiler\compiler.jar"/>  
+		  <arg line="--js"/>  
+		  <srcfile/>  
+		  <arg line="--js_output_file"/>  
+		  <targetfile/>  
+		  <mapper type="regexp" from="^(.*)\.(css|js)$" to="\1-min.\2"/>  
+		</apply>
+	</target>
+	<target name="move" depends="compiler">
+		<move todir="${build}/css" includeemptydirs="false">
+			<fileset dir="${build}/css">
+				<include name="**/*-min.css"/>
+			</fileset>
+    		<mapper type="regexp" from="^(.*)-min\.(css|js)$" to="\1.\2"/>
+  		</move>
+		<move todir="${build}/js" includeemptydirs="false">
+			<fileset dir="${build}/js">
+				<include name="**/*-min.js"/>
+			</fileset>
+    		<mapper type="regexp" from="^(.*)-min\.(css|js)$" to="\1.\2"/>
+  		</move>
+	</target>
+</project> 
