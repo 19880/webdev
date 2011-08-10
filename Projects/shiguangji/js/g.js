@@ -22,36 +22,77 @@ function $EVENT(obj, events, func){
     }
 }
 
-SGJ = {};
+var BOXMASK = {
+	color: '#FFFFFF',
+	loadSpeed: 200,
+	opacity: 0.5,
+	zIndex: 849
+};
+
+var SGJ = {};
 SGJ.BOX = function(conf){	
 	var defaults = {
 		width: 400,
 		appendTo: 'body',
-		top: '40%',
+		top: '30%',
 		closeOnClick: false,
 		load: true,
 		loading: true,
-		loadingText: '载入中...'
+		loadingText: '载入中...',
+		title: '',
+		body: '',
+		oneInstance: false,
+		onClose: function(){
+			$uiBox.remove();
+		}
 	};
+	
+	function setStatLoaded(){
+		if( conf.loading ){
+			$uiBoxContent.empty().append($uiBoxClose, $uiBoxTitle, $uiBoxBody);
+			conf.loading = false;
+		}
+	}
 	
 	var conf = $.extend(true, {}, defaults, conf);
 	var $uiBoxContent = $TAG('div', {cls:'uiBoxContent'});
 	var $uiBoxContainer = $TAG('div', {cls:'uiBoxContainer'}).append($uiBoxContent);
 	var $uiBox = $TAG('div', {cls:'uiBox'}).append($uiBoxContainer).css({width:conf.width});
+	var $uiBoxClose = $TAG('div', {cls:'uiClose'}).click(function(){$uiBox.overlay().close();});
+	var $uiBoxTitle = $TAG('div', {cls:'uiBoxTitle'});
+	var $uiBoxBody = $TAG('div');
 	
 	$uiBox.appendTo(conf.appendTo);
 	$uiBox.overlay(conf);
 	
 	if( conf.loading ){
 		$uiBoxContent.append($TAG('div', {cls:'uiBoxLoading'}).text(conf.loadingText));
+	} else {
+		$uiBoxContent.append($uiBoxClose, $uiBoxTitle, $uiBoxBody);
+		$uiBoxTitle.append(conf.title);
+		$uiBoxBody.append(conf.body);
 	}
 	
 	return {
+		setTitle: function( _title ){
+			setStatLoaded();
+			$uiBoxTitle.empty().append(_title);
+		},
+		setBody: function( _body ){
+			setStatLoaded();
+			$uiBoxBody.empty().append(_body);
+		},
+		bgiframe: function(){
+			$uiBox.bgiframe();
+		},
 		getBox: function(){
 			return $uiBox;
 		},
 		remove: function(){
 			$uiBox.remove();
+		},
+		close: function(){
+			$uiBox.overlay().close();
 		}
 	};
 }
@@ -182,5 +223,79 @@ WBP = {
             else myLen += 2;
         }
         return (Math.ceil(myLen / 2));
+	},
+	// 验证发送时间是否有效
+	validatePostTime: function( _date, _hour, _minute ){
+		
+		var dateArray = _date.split('-');
+		var dates = dateArray.join('/');
+		var time = [_hour, _minute, '00'].join(':');
+		
+		var postTime = new Date(dates + ' ' + time).getTime();
+		var nowTime = new Date().getTime();
+		
+		if( postTime < nowTime ){
+			var alertbox = new SGJ.BOX({
+				loading: false,
+				title: '过去时间？',
+				body: '<div class="fcr fsl fwb pam hCent">定时的时间已经失效，请检查！</div>',
+				mask: BOXMASK
+			});
+			setTimeout(function(){alertbox.close()},1000);
+			return false;
+		} else {
+			return true;
+		}
+	},
+	alertError: function( obj, msg ){
+		if( !obj ){
+			obj = new SGJ.BOX({
+				mask: BOXMASK
+			});
+		} 
+		
+		msg = msg || '出现异常';
+		
+		obj.setTitle('出错啦！！');
+		obj.setBody(
+			$TAG('div', {cls:'pal clearfix'}).append(
+				$TAG('div', {cls:'lfloat errorIco mrs'}),
+				$TAG('div', {cls:'fsl fcr tbcell'}).append('错误信息：' + msg, '<br>请联系 @时光机官方')
+			)
+		);
+		setTimeout(function(){obj.close()}, 2000);
+	},
+	noticeInput: function( obj, orbit, times, delay ){
+		orbit = orbit || ["#fee", "#fdd", "#fcc", "#fdd", "#fee", "#fff"];
+		times = times || 2;
+		delay = delay || 50;
+		
+		var i = 0;
+		var length = orbit.length;
+		var total = times * length;
+		var animate = setInterval(function(){
+			obj.style.backgroundColor = orbit[i%length];
+			i++;
+			if( i == total ){
+				clearInterval(animate);
+			}
+		}, delay);
+	},
+	// 统计字数
+	wordNum: function(){
+		var _self = this;
+		var count = Math.floor( WBP.getTextNum(_self.value) );	
+		var $wordNumBg = $('.wordNumBg');
+		var $pipsLim = $wordNumBg.find('.pipsLim');
+		
+		if(count>140){
+			$wordNumBg.addClass('wordNumOver');
+			$pipsLim.text(count-140);
+			$(_self).data('pubtextc',1);
+		}else{
+			$wordNumBg.removeClass('wordNumOver');
+			$pipsLim.text(140-count);
+			$(_self).data('pubtextc',0);
+		}
 	}
 };
