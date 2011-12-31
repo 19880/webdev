@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 删除空白符换行 -->
+<project name="project" default="replace-spare" basedir=".">
+  <property name="html.dir" value="."/>
+  <target name="replace-spare">
+    <replaceregexp match="\r+\s*|\n+\s*|\r\n+\s*|\t+\s*" replace="" flags="gm" byline="false" encoding="utf-8">
+      <fileset dir="${html.dir}" includes="**/*.html"/>
+    </replaceregexp>
+  </target>
+</project>
