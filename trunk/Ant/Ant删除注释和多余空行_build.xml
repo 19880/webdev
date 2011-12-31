@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 删除注释和多余空行 -->
+<project name="project" default="replace-spareline" basedir=".">
+  <property name="html.dir" value="."/>
+  <target name="replace-note">
+    <replaceregexp match="&lt;!-- (.*)? --&gt;" replace="" flags="g" byline="true" encoding="utf-8"><!-- 删除注释 -->
+      <fileset dir="${html.dir}" includes="**/*.html"/>
+    </replaceregexp>
+  </target>
+  <target name="replace-spareline" depends="replace-note">
+    <replaceregexp match="^[ |\t]*[\n|\r\n]+" replace="" flags="gm" byline="false" encoding="utf-8"><!-- 删除多余空行 -->
+      <fileset dir="${html.dir}" includes="**/*.html"/>
+    </replaceregexp>
+  </target>
+</project>
