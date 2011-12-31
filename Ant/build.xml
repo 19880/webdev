@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="project" default="replaceimgurl" basedir=".">
+  <property name="build" value="../social/templates/default"/>
+  <property name="core.css.files" value="common.css, style.css" />
+  <property name="excludes.compiler.css.files" value="**/*.min.css" />
+  <property name="excludes.compiler.js.files" value="**/*.min.js, jquery.js" />
+  <!-- start compiler -->
+  <target name="concatenate">
+    <concat destfile="css/main.css" force="no">
+      <filelist dir="css" files="${core.css.files}" />
+	  <fileset dir="css" includes="${core.files}" />
+    </concat>
+  </target>
+  <target name="copy" depends="concatenate">
+    <copy todir="${build}/images" overwrite="true">
+      <fileset dir="images" includes="**/*"/>
+    </copy>
+    <copy todir="${build}/css" overwrite="true">
+      <fileset dir="css" includes="**/*" excludes="${core.css.files}"/>
+    </copy>
+    <copy todir="${build}/js" overwrite="true">
+      <fileset dir="js" includes="**/*"/>
+    </copy>
+  </target>
+  <target name="compiler" depends="copy">
+    <apply executable="java" dest="${build}/css" failonerror="true" parallel="false" verbose="true">
+      <fileset dir="${build}/css" includes="**/*.css" excludes="${excludes.compiler.css.files}"/>
+      <arg line="-jar"/>
+      <arg path="D:\Program Files\Js Complier\YUI Complier\yuicompressor.jar"/>
+      <arg line="--charset utf-8"/>
+      <srcfile/>
+      <arg line="-o"/>
+      <mapper type="regexp" from="^(.*)\.(css|js)$" to="\1-min.\2"/>
+      <targetfile/>
+    </apply>
+    <apply executable="java" dest="${build}/js" failonerror="true" parallel="false">
+      <fileset dir="${build}/js" includes="**/*.js" excludes="${excludes.compiler.js.files}"/>
+      <arg line="-jar"/>
+      <arg path="D:\Program Files\Js Complier\Closure Compiler\compiler.jar"/>
+      <arg line="--js"/>
+      <srcfile/>
+      <arg line="--js_output_file"/>
+      <targetfile/>
+      <mapper type="regexp" from="^(.*)\.(css|js)$" to="\1-min.\2"/>
+    </apply>
+  </target>
+  <target name="move" depends="compiler">
+    <move todir="${build}/css" includeemptydirs="false">
+      <fileset dir="${build}/css">
+        <include name="**/*-min.css"/>
+      </fileset>
+      <mapper type="regexp" from="^(.*)-min\.(css|js)$" to="\1.\2"/>
+    </move>
+    <move todir="${build}/js" includeemptydirs="false">
+      <fileset dir="${build}/js">
+        <include name="**/*-min.js"/>
+      </fileset>
+      <mapper type="regexp" from="^(.*)-min\.(css|js)$" to="\1.\2"/>
+    </move>
+  </target>
+  <!-- end compiler -->
+  <target name="replaceimgurl">
+    <replace dir="css" value="http://6cube/">
+      <include name="**/*.css"/>
+      <replacetoken>../</replacetoken>
+    </replace>
+  </target>
+</project>
